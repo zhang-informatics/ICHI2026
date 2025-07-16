@@ -1,0 +1,131 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('images/umn_2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 4.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.hero-text p {
+    font-size: 2.1rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #7a0019;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling */
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #ffcc33;
+    color: #7a0019;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #7a0019;
+    color: #ffcc33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: #777;
+}
