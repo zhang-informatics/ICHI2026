@@ -120,20 +120,26 @@ footer {
     color: #7a0019;
 }
 
-@media (max-width: 768px) {
-  .committee-group {
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (max-width: 992px) {
   .committee-card {
-    width: 90%;
-    max-width: 300px;
-    margin: 10px 0;
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .committee-card {
+    width: 100%;
   }
 
-  .committee-card img {
-    width: 100%;
-    height: auto;
+  .cards-container {
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  main#committee-container {
+    padding: 1rem;
   }
 }
