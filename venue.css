@@ -79,3 +79,19 @@ section p {
     background-color: #ffcc33;
     color: #7a0019;
 }
+
+@media (max-width: 768px) {
+  .img-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
