@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call for Workshops | ICHI 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navigation -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">CALLS ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
+            <li><a href="call-for-workshops.html">Call for Workshops</a></li>
+            <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
+            <li><a href="call-for-industry-track.html">Call for Industry Track</a></li>
+            <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
+          </ul>
+        </li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="attending.html">Attending</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="keynotes.html">Keynotes</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('assets/images/call-for-workshops-bg.jpg');">
+  <div class="hero-text">
+    <h1>Call for Workshops</h1>
+    <div style="margin-top: 1.5rem;">
+      <a href="https://easychair.org/conferences/?conf=ichi2026" class="button">Submission</a>
+      <a href="assets/files/workshop_template.docx" class="button secondary" target="_blank">Template</a>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<main class="container" style="margin-top: 2rem; padding-bottom: 2rem;">
+  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem;">Overview</h2>
+  <p>ICHI 2026 invites proposals for half-day and full-day workshops addressing timely topics in health informatics research, practice, or education. Workshops should facilitate interactive discussions and collaborative work among participants from academia, industry, and healthcare organizations.</p>
+
+  <h2>Submission Guidelines</h2>
+  <ul>
+    <li>Workshop proposals should be 3–4 pages and include objectives, format, organizers, and target audience.</li>
+    <li>Clearly indicate whether the workshop is half-day or full-day.</li>
+    <li>Accepted workshops will be held on the first day of the conference (June 1, 2026).</li>
+  </ul>
+
+  <h2>Topics of Interest</h2>
+  <ul>
+    <li>Health AI applications</li>
+    <li>Wearable & remote patient monitoring</li>
+    <li>Privacy and fairness in health data</li>
+    <li>Multimodal health data integration</li>
+    <li>Human factors in digital health</li>
+    <li>Data-driven decision support</li>
+  </ul>
+
+  <h2>Important Dates</h2>
+  <ul>
+    <li><strong>Proposal submission deadline:</strong> January 15, 2026</li>
+    <li><strong>Notification of acceptance:</strong> February 15, 2026</li>
+    <li><strong>Workshop day:</strong> June 1, 2026</li>
+  </ul>
+
+  <section class="committee-section">
+    <h2>Workshop Chairs</h2>
+    <div class="committee-grid">
+      <div class="committee-card">
+        <img src="assets/images/halil_kiligluco.png" alt="Halil Kiligluco">
+        <h4>Halil Kiligluco, PhD</h4>
+        <p>University of Minnesota, USA</p>
+      </div>
+      <div class="committee-card">
+        <img src="assets/images/mingquan_lin.png" alt="Mingquan Lin">
+        <h4>Mingquan Lin, PhD</h4>
+        <p>University of Minnesota, USA</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>

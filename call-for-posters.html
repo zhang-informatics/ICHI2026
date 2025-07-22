@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call for Posters and Demos | ICHI 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navigation -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">CALLS ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
+            <li><a href="call-for-workshops.html">Call for Workshops</a></li>
+            <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
+            <li><a href="call-for-industry-track.html">Call for Industry Track</a></li>
+            <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
+          </ul>
+        </li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="attending.html">Attending</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="keynotes.html">Keynotes</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('assets/images/call-for-posters-bg.jpg');">
+  <div class="hero-text">
+    <h1>Call for Posters and Demos</h1>
+    <div style="margin-top: 1.5rem;">
+      <a href="https://easychair.org/conferences/?conf=ichi2026" class="button">Submission</a>
+      <a href="assets/files/poster_template.pptx" class="button secondary" target="_blank">Template</a>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<main class="container" style="margin-top: 2rem; padding-bottom: 2rem;">
+  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem;">Overview</h2>
+
+  <p>The Poster and Demo track of ICHI 2026 provides a forum for late-breaking results, ongoing research projects, and innovative prototypes in the area of health informatics. We encourage submissions that describe research ideas, preliminary results, and systems demonstrations that will provoke discussion and benefit from community feedback.</p>
+
+  <h2>Submission Guidelines</h2>
+  <ul>
+    <li>Poster/demo abstracts should be no longer than 2 pages (including references).</li>
+    <li>Submissions must follow IEEE formatting guidelines.</li>
+    <li>All accepted posters will be presented during a dedicated interactive session at the conference.</li>
+  </ul>
+
+  <h2>Topics of Interest</h2>
+  <ul>
+    <li>Visualization of health data</li>
+    <li>Prototypes of health IT systems</li>
+    <li>Mobile and wearable device integration</li>
+    <li>Interactive applications for clinicians or patients</li>
+    <li>Virtual or augmented reality in healthcare</li>
+    <li>Machine learning model interfaces</li>
+    <li>Student-led early-stage innovations</li>
+  </ul>
+
+  <h2>Important Dates</h2>
+  <ul>
+    <li><strong>Poster/demo submission deadline:</strong> February 15, 2026</li>
+    <li><strong>Notification of acceptance:</strong> March 30, 2026</li>
+    <li><strong>Camera-ready version:</strong> April 15, 2026</li>
+    <li><strong>Poster/demo session:</strong> June 2, 2026</li>
+  </ul>
+
+  <section class="committee-section">
+    <h2>Poster and Demonstration Chairs</h2>
+    <div class="committee-grid">
+      <div class="committee-card">
+        <img src="assets/images/kai_ding.png" alt="Kai Ding">
+        <h4>Kai Ding, PhD</h4>
+        <p>Johns Hopkins University, USA</p>
+      </div>
+      <div class="committee-card">
+        <img src="assets/images/feng_xie.png" alt="Feng Xie">
+        <h4>Feng Xie, PhD</h4>
+        <p>University of Minnesota, USA</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>

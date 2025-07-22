@@ -90,14 +90,6 @@ main {
     color: #555;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    background-color: #eeeeee;
-    margin-top: 40px;
-}
-
 #backToTop {
     display: none;
     position: fixed;

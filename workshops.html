@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops | ICHI 2026</title>
+  <link rel="stylesheet" href="workshops-style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">CALLS ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
+            <li><a href="call-for-workshops.html">Call for Workshops</a></li>
+            <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
+            <li><a href="call-for-industry-track.html">Call for Industry Track</a></li>
+            <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
+          </ul>
+        </li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="attending.html">Attending</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="keynotes.html">Keynotes</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero" style="background-image: url('assets/images/workshops-bg.jpg');">
+  <div class="hero-text">
+    <h1>ICHI 2026 Workshops</h1>
+  </div>
+</section>
+
+<!-- Workshop Section -->
+<main class="container" style="margin-top: 2rem; padding-bottom: 2rem;">
+  <p>ICHI 2026 will feature a diverse selection of workshops, each focusing on innovative and emerging topics in health informatics. Below is a list of accepted workshops. Please visit each workshop’s website for specific submission guidelines and dates.</p>
+
+  <div class="workshop-list">
+    <section class="workshop-item">
+      <h2>The First Workshop on Applying LLMs in LMICs for Healthcare Solutions</h2>
+      <ul>
+        <li><strong>Deadline for full paper submissions:</strong> March 21, 2024</li>
+        <li><strong>Author notification:</strong> April 12, 2024</li>
+        <li><strong>Camera-ready submission:</strong> April 21, 2024</li>
+        <li><strong>Workshop date:</strong> June 3, 2024</li>
+      </ul>
+      <a class="button" href="https://example.com/llm-lmics" target="_blank">More Information</a>
+    </section>
+
+    <section class="workshop-item">
+      <h2>Data Privacy and Data Analysis in Healthcare Systems</h2>
+      <ul>
+        <li><strong>Deadline for full paper submissions:</strong> March 21, 2024</li>
+        <li><strong>Author notification:</strong> April 12, 2024</li>
+        <li><strong>Camera-ready submission:</strong> April 21, 2024</li>
+        <li><strong>Workshop date:</strong> June 3, 2024</li>
+      </ul>
+      <a class="button" href="https://example.com/data-privacy" target="_blank">More Information</a>
+    </section>
+
+    <!-- Add more workshop items here -->
+  </div>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Organizing Committee | ICHI 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsors | ICHI 2026</title>
+  <link rel="stylesheet" href="workshops-style.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="committee.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,7 +34,7 @@
         <li><a href="attending.html">Attending</a></li>
         <li><a href="program.html">Program</a></li>
         <li><a href="keynotes.html">Keynotes</a></li>
-        <li><a href="committee.html" class="active">Committee</a></li>
+        <li><a href="committee.html">Committee</a></li>
         <li><a href="venue.html">Venue</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
       </ul>
@@ -42,20 +42,35 @@
   </div>
 </header>
 
-<!-- Header Section -->
-<section class="hero" style="background-image: url('assets/images/committee-bg.jpeg');">
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('assets/images/sponsors-bg.jpeg');">
   <div class="hero-text">
-    <h1>Organizing Committee</h1>
+    <h1>Sponsors</h1>
   </div>
 </section>
 
-<!-- Committee Grid Section -->
-<main>
-  <div id="committee-container"></div>
-</main>
+<!-- Main Content -->
+<main class="container" style="padding: 2rem 0;">
+  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem;">Thank You to Our Sponsors</h2>
+  <p>ICHI 2026 gratefully acknowledges the support of the following organizations and institutions. Their contributions help make this conference possible and foster innovation in health informatics.</p>
 
-<!-- Back to Top -->
-<button onclick="scrollToTop()" id="backToTop" title="Back to Top">↑</button>
+  <div class="sponsor-grid" style="margin-top: 2rem;">
+    <!-- Example Sponsor Logos -->
+    <div class="sponsor-logo">
+      <img src="assets/images/sponsor1.png" alt="Sponsor 1 Logo">
+    </div>
+    <div class="sponsor-logo">
+      <img src="assets/images/sponsor2.png" alt="Sponsor 2 Logo">
+    </div>
+    <div class="sponsor-logo">
+      <img src="assets/images/sponsor3.png" alt="Sponsor 3 Logo">
+    </div>
+    <!-- Add more sponsors as needed -->
+  </div>
+
+  <h3 style="margin-top: 3rem; color: var(--umn-maroon);">Interested in becoming a sponsor?</h3>
+  <p>We welcome new sponsors and partners. Please <a href="mailto:ichi2026@umn.edu">contact the organizing committee</a> for sponsorship opportunities and benefits.</p>
+</main>
 
 <!-- Footer -->
 <div id="footer"></div>
@@ -65,7 +80,5 @@
           .then(html => { document.getElementById('footer').innerHTML = html; });
 </script>
 
-<!-- Committee Rendering -->
-<script src="committee.js"></script>
 </body>
 </html>

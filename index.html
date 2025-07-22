@@ -2,50 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICHI 2026 - IEEE Conference on Health Informatics</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Hero Section -->
-<header class="hero">
-    <div class="hero-overlay">
-        <div class="hero-text">
-            <h1>Welcome to ICHI 2026</h1>
-            <h2>14th IEEE International Conference on Health Informatics</h2>
-            <p>June 1–4, 2026 &nbsp; | &nbsp; Minneapolis, MN</p>
-        </div>
+
+<!-- Top Navigation -->
+<header class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">CALLS ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="call-for-papers.html">Call for Papers</a></li>
+                        <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
+                        <li><a href="call-for-workshops.html">Call for Workshops</a></li>
+                        <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
+                        <li><a href="call-for-industry-track.html">Call for Industry Track</a></li>
+                        <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
+                    </ul>
+                </li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="attending.html">Attending</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="keynotes.html">Keynotes</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<!-- Navigation -->
-<nav class="main-nav">
-    <ul>
-        <li><a href="#theme">Theme</a></li>
-        <li><a href="committee.html">Committee</a></li>
-        <li><a href="venue.html">Venue</a></li>
-    </ul>
-</nav>
-
-<!-- Theme Section -->
-<section id="theme">
-    <h2>Conference Theme</h2>
-    <p>
-        <strong>Transforming Health in the Era of GenAI and Data Science</strong><br><br>
-        Advances in generative artificial intelligence—spanning large language models, image and signal synthesis, and multi‑modal data fusion—are poised to revolutionize every aspect of healthcare, from accelerating drug discovery and automating clinical documentation to powering personalized diagnostics and patient engagement. Early successes demonstrate that Generative AI (GenAI) can draft patient‑friendly educational materials, simulate realistic physiological signals for training, and flag novel biomarkers; however, challenges around model reliability, interpretability, data privacy, and clinical integration must be rigorously addressed. This theme invites submissions that explore innovative applications of GenAI in biomedical research, healthcare delivery, and public health, as well as critical evaluations of algorithmic performance, safeguards against hallucination and bias, frameworks for ethical deployment, and strategies for human‑AI teaming in clinical environments. We especially welcome work that demonstrates real‑world impact, robust validation, and pathways for translating GenAI breakthroughs into safe, equitable, and scalable solutions for diverse patient populations.
-    </p>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>ICHI 2026</h1>
+        <p>The 14th IEEE International Conference on Health Informatics</p>
+        <p>June 1–4, 2026 · Minneapolis, MN</p>
+    </div>
 </section>
 
-<!-- Committee Placeholder Section -->
-<section id="committee">
-    <h2>Organizing Committee</h2>
-    <p>The full committee information is available in the dedicated committee section.</p>
-    <a class="button" href="committee.html">View Committee</a>
-</section>
+<!-- Later sections such as Welcome & News -->
+<main class="container">
+    <section class="welcome-news">
+        <div class="welcome">
+            <h2>Welcome to IEEE ICHI 2026!</h2>
+            <p>ICHI 2026 is a premier community forum for computer science, data science, and health informatics, inviting submissions on GenAI, health data, and innovative applications in healthcare.</p>
+        </div>
+        <div class="news">
+            <h2>Latest News</h2>
+            <ul>
+                <li><strong>July 2025:</strong> Website is online</li>
+                <li><strong>August 2025:</strong> XXX </li>
+            </ul>
+        </div>
+    </section>
+</main>
 
-<footer>
-    <p>&copy; 2026 ICHI. All rights reserved.</p>
-</footer>
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
 </body>
 </html>

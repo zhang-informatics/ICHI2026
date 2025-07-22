@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Organizing Committee | ICHI 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program | ICHI 2026</title>
+  <link rel="stylesheet" href="workshops-style.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="committee.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,7 +34,7 @@
         <li><a href="attending.html">Attending</a></li>
         <li><a href="program.html">Program</a></li>
         <li><a href="keynotes.html">Keynotes</a></li>
-        <li><a href="committee.html" class="active">Committee</a></li>
+        <li><a href="committee.html">Committee</a></li>
         <li><a href="venue.html">Venue</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
       </ul>
@@ -42,20 +42,36 @@
   </div>
 </header>
 
-<!-- Header Section -->
-<section class="hero" style="background-image: url('assets/images/committee-bg.jpeg');">
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('assets/images/program-bg.jpg');">
   <div class="hero-text">
-    <h1>Organizing Committee</h1>
+    <h1>Program Schedule</h1>
   </div>
 </section>
 
-<!-- Committee Grid Section -->
-<main>
-  <div id="committee-container"></div>
-</main>
+<!-- Main Content -->
+<main class="container" style="padding: 2rem 0;">
+  <h2 style="color: var(--umn-maroon);">Overview</h2>
+  <p>The ICHI 2026 program will include keynote talks, paper sessions, poster and demo presentations, tutorials, workshops, and industry panels.</p>
+  <p>More detailed information will be available in Spring 2026. Below is a tentative outline of the schedule.</p>
 
-<!-- Back to Top -->
-<button onclick="scrollToTop()" id="backToTop" title="Back to Top">↑</button>
+  <h2 style="margin-top: 2rem;">Tentative Schedule</h2>
+  <ul>
+    <li><strong>June 1, 2026 (Monday):</strong> Tutorials, Doctoral Consortium, Workshops</li>
+    <li><strong>June 2–4, 2026:</strong> Main Conference (Keynotes, Papers, Posters, Demos)</li>
+  </ul>
+
+  <h2 style="margin-top: 2rem;">Key Highlights</h2>
+  <ul>
+    <li>Plenary Keynotes from globally recognized experts in GenAI and Health Informatics</li>
+    <li>Parallel tracks: Analytics, Human Factors, Systems</li>
+    <li>Panel discussions on ethics, policy, and AI translation in clinical practice</li>
+    <li>Student poster competition and travel award session</li>
+  </ul>
+
+  <h2 style="margin-top: 2rem;">Program at a Glance (Coming Soon)</h2>
+  <p>Check back here for the detailed downloadable PDF version of the full conference program in Spring 2026.</p>
+</main>
 
 <!-- Footer -->
 <div id="footer"></div>
@@ -65,7 +81,5 @@
           .then(html => { document.getElementById('footer').innerHTML = html; });
 </script>
 
-<!-- Committee Rendering -->
-<script src="committee.js"></script>
 </body>
 </html>
