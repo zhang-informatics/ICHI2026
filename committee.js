@@ -25,12 +25,12 @@ const committeeData = {
         { name: "Alexander Alekseyenko", title: "Publicity Chair", affiliation: "Medical University of South Carolina, USA", image: "assets/images/alexander_alekseyenko.png", email: "alekseye@musc.edu" }
     ],
     "Industry Track Chairs": [
-        { name: "Xinxin Zhu", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png" },
-        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg" },
-        { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg" }
+        { name: "Xinxin Zhu", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
+        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg", email: "" },
+        { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute" }
     ],
     "Poster and Demonstration Chairs": [
-        { name: "Kai Ding", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png" },
+        { name: "Kai Ding", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
         { name: "Feng Xie", title: "Poster & Demo Chair", affiliation: "University of Minnesota, USA", image: "assets/images/feng_xie.png", email: "xie00469@umn.edu" }
     ],
     "Workshop Chairs": [
