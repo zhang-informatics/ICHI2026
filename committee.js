@@ -17,7 +17,8 @@ const committeeData = {
         { name: "Yong Chen", title: "Systems Track Chair", affiliation: "University of Pennsylvania, USA", image: "assets/images/yong_chen.png", email: "ychen123@upenn.edu" }
     ],
     "Early Submission Chairs": [
-        { name: "Xiaolei Huang", title: "Early Submission Chair", affiliation: "University of Memphis, TN, USA", image: "assets/images/xiaolei_huang.jpg", email: "xhuang7@memphis.edu" }
+        { name: "Xiaolei Huang", title: "Early Submission Chair", affiliation: "University of Memphis, TN, USA", image: "assets/images/xiaolei_huang.jpg", email: "xhuang7@memphis.edu" },
+        { name: "Chun-Nan Hsu", title: "Early Submission Chair", affiliation: "University of California, San Diego, USA", image: "assets/images/chunnan_hsu.jpeg", email: "chhsu@ucsd.edu" }
     ],
     "Publicity Chairs": [
         { name: "Nicolas Garcelon", title: "Publicity Chair", affiliation: "Imagine Institute, Paris, France", image: "assets/images/nicolas_garcelon.png", email: "nicolas.garcelon@institutimagine.org" },
