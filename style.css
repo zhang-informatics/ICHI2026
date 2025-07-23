@@ -103,6 +103,7 @@ img {
     margin-top: 64px;
     position: relative;
 }
+
 .hero::after {
     content: '';
     position: absolute;
@@ -110,7 +111,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.2); /* Light dark overlay */
+    background: rgba(0,0,0,0); /* brighter overlay */
 }
 
 .hero-text {
