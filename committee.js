@@ -26,7 +26,7 @@ const committeeData = {
     ],
     "Industry Track Chairs": [
         { name: "Xinxin Zhu", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
-        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg", email: "" },
+        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg", email: "Changqingzhou@gmail.com" },
         { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute" }
     ],
     "Poster and Demonstration Chairs": [
