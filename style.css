@@ -296,6 +296,23 @@ ul {
     margin-bottom: 0.5rem;
 }
 
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
     .footer-columns {
         flex-direction: column;
