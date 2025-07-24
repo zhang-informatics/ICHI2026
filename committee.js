@@ -22,7 +22,8 @@ const committeeData = {
     ],
     "Publicity Chairs": [
         { name: "Nicolas Garcelon", title: "Publicity Chair", affiliation: "Imagine Institute, Paris, France", image: "assets/images/nicolas_garcelon.png", email: "nicolas.garcelon@institutimagine.org" },
-        { name: "Alexander Alekseyenko", title: "Publicity Chair", affiliation: "Medical University of South Carolina, USA", image: "assets/images/alexander_alekseyenko.png", email: "alekseye@musc.edu" }
+        { name: "Alexander Alekseyenko", title: "Publicity Chair", affiliation: "Medical University of South Carolina, USA", image: "assets/images/alexander_alekseyenko.png", email: "alekseye@musc.edu" },
+        { name: "Aarti Sathyanarayana", title: "Publicity Chair", affiliation: "Northeastern University, USA", image: "assets/images/a_sathyanarayana.jpg", email: "a.sathyanarayana@northeastern.edu" }
     ],
     "Industry Track Chairs": [
         { name: "Xinxin Zhu", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
