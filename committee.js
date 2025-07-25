@@ -1,73 +1,73 @@
 const committeeData = {
     "General Chairs": [
-        { name: "Rui Zhang", title: "General Chair", affiliation: "University of Minnesota", image: "assets/images/rui_zhang.png", email: "ruizhang@umn.edu" },
-        { name: "Cui Tao", title: "General Chair", affiliation: "Mayo Clinic", image: "assets/images/cui_tao.png", email: "tao.cui@mayo.edu" }
+        { name: "Rui Zhang, PhD", title: "General Chair", affiliation: "University of Minnesota", image: "assets/images/rui_zhang.png", email: "ruizhang@umn.edu" },
+        { name: "Cui Tao, PhD", title: "General Chair", affiliation: "Mayo Clinic", image: "assets/images/cui_tao.png", email: "tao.cui@mayo.edu" }
     ],
     "Analytics Track Chairs": [
-        { name: "Yi Xing", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" },
-        { name: "Yonghui Wu", title: "Analytics Track Chair", affiliation: "University of Florida, USA", image: "assets/images/yonghui_wu.png", email: "yonghui.wu@ufl.edu" },
-        { name: "Nan Liu", title: "Analytics Track Chair", affiliation: "Duke-NUS, Singapore", image: "assets/images/nan_liu.png", email: "liu.nan@duke-nus.edu.sg" }
+        { name: "Yi Xing, PhD", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" },
+        { name: "Yonghui Wu, PhD", title: "Analytics Track Chair", affiliation: "University of Florida, USA", image: "assets/images/yonghui_wu.png", email: "yonghui.wu@ufl.edu" },
+        { name: "Nan Liu, PhD", title: "Analytics Track Chair", affiliation: "Duke-NUS, Singapore", image: "assets/images/nan_liu.png", email: "liu.nan@duke-nus.edu.sg" }
     ],
     "Human Factors Track Chairs": [
-        { name: "Jenna Marquard", title: "Human Factors Track Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jenna_marquard.png", email: "marquard@umn.edu"},
-        { name: "Mustafa Ozkaynak", title: "Human Factors Track Chair", affiliation: "University of Colorado, USA", image: "assets/images/mustafa_ozkaynak.png", email: "mustafa.ozkaynak@cuanschutz.edu" }
+        { name: "Jenna Marquard, PhD", title: "Human Factors Track Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jenna_marquard.png", email: "marquard@umn.edu"},
+        { name: "Mustafa Ozkaynak, PhD", title: "Human Factors Track Chair", affiliation: "University of Colorado, USA", image: "assets/images/mustafa_ozkaynak.png", email: "mustafa.ozkaynak@cuanschutz.edu" }
     ],
     "Systems Track Chairs": [
-        { name: "Yiye Zhang", title: "Systems Track Chair", affiliation: "Weill Cornell Medicine, USA", image: "assets/images/yiye_zhang.png", email: "yiz2014@med.cornell.edu" },
-        { name: "Yong Chen", title: "Systems Track Chair", affiliation: "University of Pennsylvania, USA", image: "assets/images/yong_chen.png", email: "ychen123@upenn.edu" }
+        { name: "Yiye Zhang, PhD", title: "Systems Track Chair", affiliation: "Weill Cornell Medicine, USA", image: "assets/images/yiye_zhang.png", email: "yiz2014@med.cornell.edu" },
+        { name: "Yong Chen, PhD", title: "Systems Track Chair", affiliation: "University of Pennsylvania, USA", image: "assets/images/yong_chen.png", email: "ychen123@upenn.edu" }
     ],
     "Early Submission Chairs": [
-        { name: "Xiaolei Huang", title: "Early Submission Chair", affiliation: "University of Memphis, TN, USA", image: "assets/images/xiaolei_huang.jpg", email: "xhuang7@memphis.edu" },
-        { name: "Chun-Nan Hsu", title: "Early Submission Chair", affiliation: "University of California, San Diego, USA", image: "assets/images/chunnan_hsu.jpeg", email: "chhsu@ucsd.edu" }
+        { name: "Xiaolei Huang, PhD", title: "Early Submission Chair", affiliation: "University of Memphis, TN, USA", image: "assets/images/xiaolei_huang.jpg", email: "xhuang7@memphis.edu" },
+        { name: "Chun-Nan Hsu, PhD", title: "Early Submission Chair", affiliation: "University of California, San Diego, USA", image: "assets/images/chunnan_hsu.jpeg", email: "chhsu@ucsd.edu" }
     ],
     "Publicity Chairs": [
-        { name: "Nicolas Garcelon", title: "Publicity Chair", affiliation: "Imagine Institute, Paris, France", image: "assets/images/nicolas_garcelon.png", email: "nicolas.garcelon@institutimagine.org" },
-        { name: "Alexander Alekseyenko", title: "Publicity Chair", affiliation: "Medical University of South Carolina, USA", image: "assets/images/alexander_alekseyenko.png", email: "alekseye@musc.edu" },
-        { name: "Aarti Sathyanarayana", title: "Publicity Chair", affiliation: "Northeastern University, USA", image: "assets/images/a_sathyanarayana.jpg", email: "a.sathyanarayana@northeastern.edu" }
+        { name: "Nicolas Garcelon, PhD", title: "Publicity Chair", affiliation: "Imagine Institute, Paris, France", image: "assets/images/nicolas_garcelon.png", email: "nicolas.garcelon@institutimagine.org" },
+        { name: "Alexander Alekseyenko, PhD", title: "Publicity Chair", affiliation: "Medical University of South Carolina, USA", image: "assets/images/alexander_alekseyenko.png", email: "alekseye@musc.edu" },
+        { name: "Aarti Sathyanarayana, PhD", title: "Publicity Chair", affiliation: "Northeastern University, USA", image: "assets/images/a_sathyanarayana.jpg", email: "a.sathyanarayana@northeastern.edu" }
     ],
     "Industry Track Chairs": [
-        { name: "Xinxin Zhu", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
-        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg", email: "Changqingzhou@gmail.com" },
-        { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute" }
+        { name: "Xinxin Zhu, PhD", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
+        { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg" },
+        { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute"  }
     ],
     "Poster and Demonstration Chairs": [
-        { name: "Kai Ding", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
-        { name: "Feng Xie", title: "Poster & Demo Chair", affiliation: "University of Minnesota, USA", image: "assets/images/feng_xie.png", email: "xie00469@umn.edu" }
+        { name: "Kai Ding, PhD", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
+        { name: "Feng Xie, PhD", title: "Poster & Demo Chair", affiliation: "University of Minnesota, USA", image: "assets/images/feng_xie.png", email: "xie00469@umn.edu" }
     ],
     "Workshop Chairs": [
-        { name: "Halil Kiligluco", title: "Workshop Chair", affiliation: "University of Illinois-Urban Champion, USA", image: "assets/images/halil_kiligluco.png", email: "halil@illinois.edu" },
-        { name: "Mingquan Lin", title: "Workshop Chair", affiliation: "University of Minnesota, USA", image: "assets/images/mingquan_lin.png", email: "lin01231@umn.edu" }
+        { name: "Halil Kiligluco, PhD", title: "Workshop Chair", affiliation: "University of Illinois-Urban Champion, USA", image: "assets/images/halil_kiligluco.png", email: "halil@illinois.edu" },
+        { name: "Mingquan Lin, PhD", title: "Workshop Chair", affiliation: "University of Minnesota, USA", image: "assets/images/mingquan_lin.png", email: "lin01231@umn.edu" }
     ],
     "Financial Chairs": [
-        { name: "Xiaoyi Chen", title: "Financial Chair", affiliation: "University of Minnesota, USA", image: "assets/images/xiaoyi_chen.jpg", email: "chen9435@umn.edu" },
-        { name: "Lindsay Bork Nichols", title: "Financial Chair", affiliation: "University of Minnesota, USA", image: "assets/images/lindsay_nichols.png", email: "lindsay@umn.edu" }
+        { name: "Xiaoyi Chen, PhD", title: "Financial Chair", affiliation: "University of Minnesota, USA", image: "assets/images/xiaoyi_chen.jpg", email: "chen9435@umn.edu" },
+        { name: "Lindsay Bork Nichols, MBA", title: "Financial Chair", affiliation: "University of Minnesota, USA", image: "assets/images/lindsay_nichols.png", email: "lindsay@umn.edu" }
     ],
     "Doctoral Consortium Chairs": [
-        { name: "Jie Ding", title: "Doctoral Consortium Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
-        { name: "Dezhi Wu", title: "Doctoral Consortium Chair", affiliation: "University of South Carolina, USA", image: "assets/images/dezhi_wu.png", email: "dezhiwu@cec.sc.edu" }
+        { name: "Jie Ding, PhD", title: "Doctoral Consortium Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
+        { name: "Dezhi Wu, PhD", title: "Doctoral Consortium Chair", affiliation: "University of South Carolina, USA", image: "assets/images/dezhi_wu.png", email: "dezhiwu@cec.sc.edu" }
     ],
     "Tutorial Chairs": [
-        { name: "Chang Su", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu " },
-        { name: "Lichao Sun", title: "Tutorial Chair", affiliation: "Lehigh University", image: "assets/images/lichao_sun.png", email: "is221@lehigh.edu" }
+        { name: "Chang Su, PhD", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu" },
+        { name: "Lichao Sun, PhD", title: "Tutorial Chair", affiliation: "Lehigh University", image: "assets/images/lichao_sun.png", email: "is221@lehigh.edu" }
     ],
     "Women in Healthcare Informatics Chairs": [
-        { name: "Robin Austin", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
-        { name: "Megan Salwei", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" }
+        { name: "Robin Austin, PhD", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
+        { name: "Megan Salwei, PhD", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" }
     ],
     "Publication Chairs": [
-        { name: "Ming Huang", title: "Publication Chair", affiliation: "University of Texas Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
-        { name: "Patrizia Vizza", title: "Publication Chair", affiliation: "Magna Graecia University, Italy", image: "assets/images/patrizia_vizza.jpg", email: "vizzap@unicz.it" }
+        { name: "Ming Huang, PhD", title: "Publication Chair", affiliation: "University of Texas Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
+        { name: "Patrizia Vizza, PhD", title: "Publication Chair", affiliation: "Magna Graecia University, Italy", image: "assets/images/patrizia_vizza.jpg", email: "vizzap@unicz.it" }
     ],
     "Sponsorship Chairs": [
-        { name: "Chris Tignanelli", title: "Sponsorship Chair", affiliation: "University of Minnesota, USA", image: "assets/images/chris_tignanelli.png", email: "ctignane@umn.edu" },
-        { name: "Nansu Zhong", title: "Sponsorship Chair", affiliation: "Mayo Clinic, USA", image: "assets/images/nansu_zhong.jpg", email: "zong.nansu@mayo.edu" }
+        { name: "Chris Tignanelli, MD, MS, MBA", title: "Sponsorship Chair", affiliation: "University of Minnesota, USA", image: "assets/images/chris_tignanelli.png", email: "ctignane@umn.edu" },
+        { name: "Nansu Zhong, PhD", title: "Sponsorship Chair", affiliation: "Mayo Clinic, USA", image: "assets/images/nansu_zhong.jpg", email: "zong.nansu@mayo.edu" }
     ],
     "Local Chairs": [
-        { name: "Genevieve Melton-Meaux", title: "Local Chair", affiliation: "University of Minnesota, USA", image: "assets/images/genevieve_melton.png", email: "gmelton@umn.edu" },
-        { name: "Ju Sun", title: "Local Chair", affiliation: "University of Minnesota, USA", image: "assets/images/ju_sun.png", email: "jusun@umn.edu" }
+        { name: "Genevieve Melton-Meaux, MD, PhD", title: "Local Chair", affiliation: "University of Minnesota, USA", image: "assets/images/genevieve_melton.png", email: "gmelton@umn.edu" },
+        { name: "Ju Sun, PhD", title: "Local Chair", affiliation: "University of Minnesota, USA", image: "assets/images/ju_sun.png", email: "jusun@umn.edu" }
     ],
     "Web Chair": [
-        { name: "Yu Hou", title: "Web Chair", affiliation: "University of Minnesota, USA", image: "assets/images/yu_hou.png", email: "hou00127@umn.edu" }
+        { name: "Yu Hou, PhD", title: "Web Chair", affiliation: "University of Minnesota, USA", image: "assets/images/yu_hou.png", email: "hou00127@umn.edu" }
     ]
 };
 
