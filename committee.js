@@ -4,9 +4,9 @@ const committeeData = {
         { name: "Cui Tao", title: "General Chair", affiliation: "Mayo Clinic", image: "assets/images/cui_tao.png", email: "tao.cui@mayo.edu" }
     ],
     "Analytics Track Chairs": [
+        { name: "Yi Xing", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" },
         { name: "Yonghui Wu", title: "Analytics Track Chair", affiliation: "University of Florida, USA", image: "assets/images/yonghui_wu.png", email: "yonghui.wu@ufl.edu" },
-        { name: "Nan Liu", title: "Analytics Track Chair", affiliation: "Duke-NUS, Singapore", image: "assets/images/nan_liu.png", email: "liu.nan@duke-nus.edu.sg" },
-        { name: "Yi Xing", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" }
+        { name: "Nan Liu", title: "Analytics Track Chair", affiliation: "Duke-NUS, Singapore", image: "assets/images/nan_liu.png", email: "liu.nan@duke-nus.edu.sg" }
     ],
     "Human Factors Track Chairs": [
         { name: "Jenna Marquard", title: "Human Factors Track Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jenna_marquard.png", email: "marquard@umn.edu"},
@@ -55,7 +55,8 @@ const committeeData = {
         { name: "Megan Salwei", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" }
     ],
     "Publication Chairs": [
-        { name: "Ming Huang", title: "Publication Chair", affiliation: "University of Texas Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" }
+        { name: "Ming Huang", title: "Publication Chair", affiliation: "University of Texas Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
+        { name: "Patrizia Vizza", title: "Publication Chair", affiliation: "Magna Graecia University, Italy", image: "assets/images/patrizia_vizza.jpg", email: "vizzap@unicz.it" }
     ],
     "Sponsorship Chairs": [
         { name: "Chris Tignanelli", title: "Sponsorship Chair", affiliation: "University of Minnesota, USA", image: "assets/images/chris_tignanelli.png", email: "ctignane@umn.edu" },
