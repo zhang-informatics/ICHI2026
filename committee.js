@@ -4,7 +4,7 @@ const committeeData = {
         { name: "Cui Tao, PhD", title: "General Chair", affiliation: "Mayo Clinic", image: "assets/images/cui_tao.png", email: "tao.cui@mayo.edu" }
     ],
     "Analytics Track Chairs": [
-        { name: "Yi Xing, PhD", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" },
+        { name: "Yi Xing, PhD", title: "Analytics Track Chair", affiliation: "Children’s Hospital of Philadelphia, USA", image: "assets/images/yi_xing.png", email: "xingyi@chop.edu" },
         { name: "Yonghui Wu, PhD", title: "Analytics Track Chair", affiliation: "University of Florida, USA", image: "assets/images/yonghui_wu.png", email: "yonghui.wu@ufl.edu" },
         { name: "Nan Liu, PhD", title: "Analytics Track Chair", affiliation: "Duke-NUS, Singapore", image: "assets/images/nan_liu.png", email: "liu.nan@duke-nus.edu.sg" }
     ],
