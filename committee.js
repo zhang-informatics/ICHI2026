@@ -31,7 +31,7 @@ const committeeData = {
         { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute"  }
     ],
     "Poster and Demonstration Chairs": [
-        { name: "Kai Ding, PhD", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
+        { name: "Kai Ding, PhD, MS, MBA", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
         { name: "Feng Xie, PhD", title: "Poster & Demo Chair", affiliation: "University of Minnesota, USA", image: "assets/images/feng_xie.png", email: "xie00469@umn.edu" }
     ],
     "Workshop Chairs": [
@@ -48,7 +48,7 @@ const committeeData = {
     ],
     "Tutorial Chairs": [
         { name: "Chang Su, PhD", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu" },
-        { name: "Lichao Sun, PhD", title: "Tutorial Chair", affiliation: "Lehigh University", image: "assets/images/lichao_sun.png", email: "is221@lehigh.edu" }
+        { name: "Lichao Sun, PhD", title: "Tutorial Chair", affiliation: "Lehigh University", image: "assets/images/lichao_sun.png", email: "lis221@lehigh.edu" }
     ],
     "Women in Healthcare Informatics Chairs": [
         { name: "Robin Austin, PhD", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
