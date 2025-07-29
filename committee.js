@@ -35,7 +35,7 @@ const committeeData = {
         { name: "Feng Xie, PhD", title: "Poster & Demo Chair", affiliation: "University of Minnesota, USA", image: "assets/images/feng_xie.png", email: "xie00469@umn.edu" }
     ],
     "Workshop Chairs": [
-        { name: "Halil Kiligluco, PhD", title: "Workshop Chair", affiliation: "University of Illinois-Urban Champion, USA", image: "assets/images/halil_kiligluco.png", email: "halil@illinois.edu" },
+        { name: "Halil Kilicoglu, PhD", title: "Workshop Chair", affiliation: "University of Illinois, Urbana-Champaign, IL, USA", image: "assets/images/halil_kiligluco.png", email: "halil@illinois.edu" },
         { name: "Mingquan Lin, PhD", title: "Workshop Chair", affiliation: "University of Minnesota, USA", image: "assets/images/mingquan_lin.png", email: "lin01231@umn.edu" }
     ],
     "Financial Chairs": [
