@@ -55,7 +55,7 @@ const committeeData = {
         { name: "Megan Salwei, PhD", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" }
     ],
     "Publication Chairs": [
-        { name: "Ming Huang, PhD", title: "Publication Chair", affiliation: "University of Texas Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
+        { name: "Ming Huang, PhD", title: "Publication Chair", affiliation: "University of Texas Health Science Center at Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
         { name: "Patrizia Vizza, PhD", title: "Publication Chair", affiliation: "Magna Graecia University, Italy", image: "assets/images/patrizia_vizza.jpg", email: "vizzap@unicz.it" }
     ],
     "Sponsorship Chairs": [
