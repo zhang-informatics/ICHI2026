@@ -44,7 +44,8 @@ const committeeData = {
     ],
     "Doctoral Consortium Chairs": [
         { name: "Jie Ding, PhD", title: "Doctoral Consortium Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
-        { name: "Dezhi Wu, PhD", title: "Doctoral Consortium Chair", affiliation: "University of South Carolina, USA", image: "assets/images/dezhi_wu.png", email: "dezhiwu@cec.sc.edu" }
+        { name: "Dezhi Wu, PhD", title: "Doctoral Consortium Chair", affiliation: "University of South Carolina, USA", image: "assets/images/dezhi_wu.png", email: "dezhiwu@cec.sc.edu"},
+        { name: "Gondy Leroy, PhD", title: "Doctoral Consortium Chair", affiliation: "The University of Arizona, USA", image: "assets/images/gondy_leroy.png", email: "gondyleroy@arizona.edu"}
     ],
     "Tutorial Chairs": [
         { name: "Chang Su, PhD", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu" },
