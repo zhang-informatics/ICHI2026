@@ -162,19 +162,8 @@ ul {
 }
 
 del {
-  text-decoration: none; 
-  color: red;
-  position: relative;
-}
-
-del::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: red;
+  text-decoration: line-through;
+  text-decoration-color: red;
 }
 
 .button {
