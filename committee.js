@@ -44,13 +44,16 @@ const committeeData = {
         { name: "Lindsay Bork Nichols, MBA", title: "Financial Chair", affiliation: "University of Minnesota, USA", image: "assets/images/lindsay_nichols.png", email: "lindsay@umn.edu" }
     ],
     "Doctoral Consortium Chairs": [
-        { name: "Jie Ding, PhD", title: "Doctoral Consortium Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
         { name: "Dezhi Wu, PhD", title: "Doctoral Consortium Chair", affiliation: "University of South Carolina, USA", image: "assets/images/dezhi_wu.png", email: "dezhiwu@cec.sc.edu"},
         { name: "Gondy Leroy, PhD", title: "Doctoral Consortium Chair", affiliation: "The University of Arizona, USA", image: "assets/images/gondy_leroy.png", email: "gondyleroy@arizona.edu"}
     ],
     "Tutorial Chairs": [
         { name: "Chang Su, PhD", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu" },
         { name: "Lichao Sun, PhD", title: "Tutorial Chair", affiliation: "Lehigh University", image: "assets/images/lichao_sun.png", email: "lis221@lehigh.edu" }
+    ],
+    "Data Challenge Chairs": [
+        { name: "Jie Ding, PhD", title: "Data Challenge Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
+        { name: "Yu Huang, PhD", title: "Data Challenge Chair", affiliation: "Indiana University, USA", image: "assets/images/yu_huang.png", email: "yh60@iu.edu" },
     ],
     "Women in Healthcare Informatics Chairs": [
         { name: "Robin Austin, PhD", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
