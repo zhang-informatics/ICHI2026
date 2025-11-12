@@ -6,6 +6,9 @@
   <title>Venue | ICHI 2026</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <script async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzCUUBp2zp02WXiJZ_48g1d5tyHAhO_ZE&callback=initMap">
+  </script>
 </head>
 <body>
 
@@ -62,14 +65,7 @@
     <li><b>June 4: McNamara Alumni Center, University of Minnesota</b>. 200 SE Oak St, Minneapolis, MN 55455, USA</li>
   </ul>
 
-  <iframe
-          width="100%"
-          height="400"
-          style="border:0; margin: 1rem 0;"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCzCUUBp2zp02WXiJZ_48g1d5tyHAhO_ZE&q=Coffman+Memorial+Union,+300+Washington+Ave+SE,+Minneapolis,+MN+55455,+USA&q=McNamara+Alumni+Center,+200+SE+Oak+St,+Minneapolis,+MN+55455,+USA">
-  </iframe>
+  <div id="map" style="width: 100%; height: 400px; border-radius: 8px; margin: 1rem 0; border: 1px solid #ccc;"></div>
 
   <h2 style="color: var(--umn-maroon); margin-top: 2rem;">Getting to Minneapolis</h2>
   <p>Minneapolis is served by Minneapolis–Saint Paul International Airport (MSP), with easy access to downtown via light rail, taxi, and ride-share options. The venue is approximately 25 minutes from the airport.</p>
@@ -91,6 +87,61 @@
 <!-- Footer -->
 <div id="footer"></div>
 <script>
+  function initMap() {
+    const coffman = { lat: 44.9737, lng: -93.2354 };
+    const mcnamara = { lat: 44.9744, lng: -93.2313 };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 16,
+      center: { lat: 44.9740, lng: -93.2333 },
+      mapTypeControl: true,
+      streetViewControl: false,
+    });
+
+    const locations = [
+      { position: coffman, title: "Coffman Memorial Union" },
+      { position: mcnamara, title: "McNamara Alumni Center" }
+    ];
+
+    locations.forEach(loc => {
+      const marker = new google.maps.Marker({
+        position: loc.position,
+        map,
+        title: loc.title,
+      });
+
+      const labelDiv = document.createElement("div");
+      labelDiv.style.position = "absolute";
+      labelDiv.style.backgroundColor = "#fff";
+      labelDiv.style.padding = "3px 6px";
+      labelDiv.style.border = "1px solid #ccc";
+      labelDiv.style.borderRadius = "4px";
+      labelDiv.style.fontSize = "13px";
+      labelDiv.style.fontWeight = "bold";
+      labelDiv.style.color = "#7a0019"; // UMN maroon
+      labelDiv.style.boxShadow = "0 1px 4px rgba(0,0,0,0.2)";
+      labelDiv.style.whiteSpace = "nowrap";
+      labelDiv.innerText = loc.title;
+
+      const label = new google.maps.OverlayView();
+      label.onAdd = function() {
+        const pane = this.getPanes().overlayImage;
+        pane.appendChild(labelDiv);
+      };
+      label.draw = function() {
+        const projection = this.getProjection();
+        const pos = projection.fromLatLngToDivPixel(loc.position);
+        labelDiv.style.left = pos.x + "px";
+        labelDiv.style.top = (pos.y - 60) + "px";
+        labelDiv.style.transform = "translate(-50%, 0)";
+      };
+      label.onRemove = function() {
+        labelDiv.parentNode.removeChild(labelDiv);
+      };
+      label.setMap(map);
+    });
+  }
+  
   fetch('footer.html')
           .then(res => res.text())
           .then(html => { document.getElementById('footer').innerHTML = html; });
