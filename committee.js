@@ -29,7 +29,7 @@ const committeeData = {
         { name: "Xinxin Zhu, PhD", title: "Industry Track Chair", affiliation: "Boston Scientific, USA", image: "assets/images/xinxin_zhu.png", email: "katie.zhu@bsci.com" },
         { name: "Chung-Ching Zhou", title: "Industry Track Chair", affiliation: "United Health Group, USA", image: "assets/images/chung_ching_zhou.jpeg", email: "Changqingzhou@gmail.com" },
         { name: "Ikram Khan", title: "Industry Track Chair", affiliation: "Health AI Institute", image: "assets/images/ikram_khan.jpg", email: "ikram@healthai.institute"  },
-        { name: "Prasanna Desikan", title: "Industry Track Chair", affiliation: "PrimeOrbit", image: "assets/images/prasanna_desikan.jpg", email: "prasanna@gmail.com"  }
+        { name: "Prasanna Desikan", title: "Industry Track Chair", affiliation: "Centific", image: "assets/images/prasanna_desikan.jpg", email: "prasanna@gmail.com"  }
     ],
     "Poster and Demonstration Chairs": [
         { name: "Kai Ding, PhD, MS, MBA", title: "Poster & Demo Chair", affiliation: "Johns Hopkins University, USA", image: "assets/images/kai_ding.png", email: "kai@jhu.edu" },
