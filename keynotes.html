@@ -7,10 +7,108 @@
   <link rel="stylesheet" href="workshops-style.css" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* 移除原来的网格布局，改为列表布局 */
+    .keynote-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem; /* 每个演讲者之间的间距 */
+      margin-top: 2rem;
+    }
+
+    .keynote-item {
+      display: flex;
+      gap: 2rem;
+      border-bottom: 1px solid #eee; /* 每人下面加一条分割线 */
+      padding-bottom: 3rem;
+    }
+    
+    /* 最后一个元素去掉分割线 */
+    .keynote-item:last-child {
+      border-bottom: none;
+    }
+
+    /* 左侧照片区域 */
+    .keynote-photo {
+      flex: 0 0 200px; /* 固定宽度 */
+      text-align: center;
+    }
+
+    .keynote-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    /* 右侧文字区域 */
+    .keynote-info {
+      flex: 1;
+    }
+
+    .keynote-track {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: var(--umn-gold); /* 使用主题色 */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .keynote-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--umn-maroon);
+      margin-bottom: 0.2rem;
+    }
+
+    .keynote-affil {
+      font-size: 1rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .keynote-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .keynote-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      color: #444;
+      text-align: justify;
+    }
+
+    .label {
+      font-weight: bold;
+      color: var(--umn-maroon);
+    }
+
+    /* 移动端适配：手机上变回上下结构 */
+    @media (max-width: 768px) {
+      .keynote-item {
+        flex-direction: column;
+        align-items: center;
+      }
+      .keynote-photo {
+        width: 180px;
+        margin-bottom: 1rem;
+      }
+      .keynote-info {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Top Navigation -->
 <header class="navbar">
   <div class="container">
     <a href="index.html" class="logo">
@@ -23,7 +121,6 @@
           <a href="#">CALLS ▾</a>
           <ul class="dropdown-content">
             <li><a href="call-for-early-submission.html">Call for Early Submission</a></li>
-            <li><a href="call-for-health-data-challenge.html">Call for Health Data Challenge</a></li>
             <li><a href="call-for-papers.html">Call for Papers</a></li>
             <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
             <li><a href="call-for-workshops.html">Call for Workshops</a></li>
@@ -44,35 +141,73 @@
   </div>
 </header>
 
-<!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/images/keynote-bg.jpg');">
   <div class="hero-text">
     <h1>Keynote Speakers</h1>
   </div>
 </section>
 
-<!-- Main Content -->
-<main class="container" style="padding: 2rem 0;">
-  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem;">Meet Our Keynote Speakers</h2>
-  <p>The ICHI 2026 Organizing Committee is proud to present a lineup of distinguished keynote speakers who are leaders in health informatics, AI, and healthcare innovation. Details will be updated as they are confirmed.</p>
+<main class="container" style="padding: 3rem 0;">
+  
+  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem; border-bottom: 2px solid var(--umn-gold); display:inline-block; padding-bottom: 5px;">
+    Distinguished Keynote Speakers
+  </h2>
+  <p style="margin-bottom: 2rem; color: #555;">
+    The ICHI 2026 Organizing Committee is proud to present a lineup of distinguished keynote speakers who are leaders in health informatics, AI, and healthcare innovation.
+  </p>
 
-  <div class="committee-grid" style="margin-top: 2rem;">
-    <!-- Example keynote speaker -->
-    <div class="committee-card">
-      <img src="assets/images/keynote1.png" alt="Keynote Speaker 1">
-      <h4>Dr. XXX</h4>
-<!--      <p>Professor, AI in Health<br/>Harvard University</p>-->
+  <div class="keynote-list">
+    
+    <div class="keynote-item">
+      <div class="keynote-photo">
+        <img src="assets/images/keynote1.png" alt="Dr. Speaker Name">
+      </div>
+      <div class="keynote-info">
+        <div class="keynote-track">Research Track Keynote</div>
+        <div class="keynote-name">Dr. Name Surname</div>
+        <div class="keynote-affil">Professor of Computer Science, University of X, Country</div>
+        
+        <div class="keynote-title">Talk Title: AI in Healthcare - Challenges and Future</div>
+        
+        <div class="keynote-text">
+          <span class="label">Abstract:</span> 
+          Here is the abstract of the talk. Neural networks have achieved great success in many tasks. However, their black-box nature limits their use in sensitive areas such as medical applications... (Add your text here)
+        </div>
+        
+        <div class="keynote-text">
+          <span class="label">Bio:</span> 
+          Dr. Name Surname is a Professor at... Her research interests include machine learning, data science, and health informatics. She has served as the Chair of... (Add bio here)
+        </div>
+      </div>
     </div>
-    <div class="committee-card">
-      <img src="assets/images/keynote2.png" alt="Keynote Speaker 2">
-      <h4>xxx</h4>
-<!--      <p>Director, Clinical Informatics<br/>Stanford Health Care</p>-->
+
+    <div class="keynote-item">
+      <div class="keynote-photo">
+        <img src="assets/images/keynote2.png" alt="Dr. Name Two">
+      </div>
+      <div class="keynote-info">
+        <div class="keynote-track">XX Track Keynote</div>
+        <div class="keynote-name">Dr. Name Two</div>
+        <div class="keynote-affil">Chief Data Scientist, Hospital Name, USA</div>
+        
+        <div class="keynote-title">Talk Title: XXX</div>
+        
+        <div class="keynote-text">
+          <span class="label">Abstract:</span> 
+          XXX...
+        </div>
+        
+        <div class="keynote-text">
+          <span class="label">Bio:</span> 
+          Dr. Hoifung Poon is the General Manager at Microsoft Research, where he leads the Real-World Evidence (RWE) research group to advance AI in precision health. His research interests focus on developing next-generation AI technology to accelerate progress in access, safety, and preventative care. He leads biomedical AI research and incubation at Microsoft, with a particular focus on scaling real-world evidence generation by structuring all medical data, including biomedical large language models (LLMs), multimodal learning, and causal learning.
+          Dr. Poon has been recognized as the "Technology Champion" of 2024 by the Puget Sound Business Journal. His work spans diverse topics in machine learning and natural language processing (NLP), earning Best Paper Awards at top conferences such as NAACL, EMNLP, and UAI. He is among the first to develop and apply large language models in biomedicine (e.g., PubMedBERT, BioGPT). He received his Ph.D. in Computer Science and Engineering from the University of Washington and his B.S. in Computer Science from Sun Yat-Sen University. He is also an affiliated faculty member at the University of Washington Medical School.
+        </div>
+      </div>
     </div>
-    <!-- More keynote speakers can be added below -->
+
   </div>
-</main>
+  </main>
 
-<!-- Footer -->
 <div id="footer"></div>
 <script>
   fetch('footer.html')
