@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner Conferences | ICHI 2026</title>
+  <link rel="stylesheet" href="workshops-style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navigation -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">CALLS ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="call-for-early-submission.html">Call for Early Submission</a></li>
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="call-for-posters.html">Call for Posters and Demos</a></li>
+            <li><a href="call-for-workshops.html">Call for Workshops</a></li>
+            <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
+            <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
+          </ul>
+        </li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="industry.html">Industry</a></li>
+        <li><a href="attending.html">Attending</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="keynotes.html">Keynotes</a></li>
+        <li><a href="partner_conferences.html">Partner Conferences</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('assets/images/mayo_summit_bg.webp');">
+  <div class="hero-text">
+    <h1>Partner Conferences</h1>
+  </div>
+</section>
+
+<!-- Main Content -->
+<main class="container" style="padding: 2rem 0;">
+  <h2 style="color: var(--umn-maroon);">Mayo Clinic AI Summit</h2>
+  <p>ICHI registrants will be offered a special discounted registration rate for the Mayo AI Summit.</p>
+  <p>June 4-5, 2026 | Mayo Civic Center</p>
+  <p>More detailed information will be available at <a href="https://ai-summit.com/" target="_blank">Mayo 2026 Clinic AI Summit</a></p>
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>
