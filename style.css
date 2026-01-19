@@ -341,3 +341,57 @@ del {
         font-size: 2.2rem;
     }
 }
+
+* =========================================
+   Bottom Identity Footer (Logos & Copyright)
+   ========================================= */
+.footer-identity {
+    /* 使用淡灰色背景，或者你可以改成 var(--umn-gold) */
+    background-color: var(--umn-gold);
+    padding: 2rem 0;
+    text-align: center; /* 让所有文字内容居中 */
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Logo 容器：弹性布局，水平居中 */
+.identity-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* 两个 Logo 之间的间距 */
+    margin-bottom: 1rem; /* Logo 与下方文字的间距 */
+}
+
+/* 限制 Logo 高度，保持整齐 */
+.identity-logos img {
+    height: 38px;
+    width: auto;
+}
+
+/* 版权文字样式 */
+.identity-copyright {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 0.5rem; /* 版权与隐私政策之间的间距 */
+}
+
+/* 隐私政策链接样式 */
+.identity-privacy a {
+    font-size: 0.9rem;
+    color: #00629B; /* 使用 IEEE 蓝或深色 */
+    text-decoration: none;
+}
+
+.identity-privacy a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式调整：手机端如果屏幕太小，Logo 可以稍微缩小 */
+@media (max-width: 480px) {
+    .identity-logos {
+        gap: 20px;
+    }
+    .identity-logos img {
+        height: 32px;
+    }
+}
