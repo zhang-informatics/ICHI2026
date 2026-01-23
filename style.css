@@ -395,3 +395,44 @@ del {
         height: 32px;
     }
 }
+
+/* 表格整体样式 */
+.registration-table {
+    width: 100%;
+    max-width: 800px; /* 限制最大宽度，防止太宽 */
+    border-collapse: collapse; /* 合并边框，去除双线 */
+    font-family: Arial, sans-serif; /* 使用无衬线字体，接近截图风格 */
+    color: #333; /* 字体颜色 */
+}
+
+/* 表头样式 (Author Registration Fee...) */
+.registration-table th {
+    text-align: left; /* 左对齐 */
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700; /* 加粗 */
+    border-bottom: 1px solid #e0e0e0; /* 下划线，颜色较浅 */
+}
+
+/* 所有的单元格通用样式 */
+.registration-table td {
+    padding: 15px 0; /* 上下留白 */
+    border-bottom: 1px solid #e0e0e0; /* 每一行都有下划线 */
+    font-size: 16px;
+}
+
+/* 第一列样式 (Member/Non-Member) */
+.registration-table td:first-child {
+    font-weight: 700; /* 加粗 */
+    width: 60%; /* 第一列稍微宽一些 */
+}
+
+/* 第二列样式 (价格) */
+.registration-table td:last-child {
+    font-weight: 400; /* 正常粗细 */
+}
+
+/* 去掉最后一行底部的线（可选，如果需要完全还原截图保留即可，截图里看起来每一行都有线） */
+/* .registration-table tr:last-child td {
+    border-bottom: none;
+} */
