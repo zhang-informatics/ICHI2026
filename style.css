@@ -250,6 +250,38 @@ del {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
+/* Sponsors Section Styling */
+.sponsor-section {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    text-align: center; /* 确保标题居中 */
+}
+
+.sponsor-tier h3 {
+    color: var(--umn-maroon);
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* 调整现有 sponsor-grid 以确保在单个赞助商时也完美居中 */
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sponsor-logo img {
+    height: 120px; /* 稍微调大一点以匹配 Gold 级别 */
+    max-width: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
 /* Footer */
 /* Footer container layout */
 .footer {
