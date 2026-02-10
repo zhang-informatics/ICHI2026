@@ -57,7 +57,8 @@ const committeeData = {
     ],
     "Women in Healthcare Informatics Chairs": [
         { name: "Robin Austin, PhD", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
-        { name: "Megan Salwei, PhD", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" }
+        { name: "Megan Salwei, PhD", title: "Women in HI Event Chair", affiliation: "Vanderbilt University, USA", image: "assets/images/megan_salwei.png", email: "megan.salwei@vumc.org" },
+        { name: "Suhyun Park, PhD, RN", title: "Women in HI Event Chair", affiliation: "UTHealth Houston, USA", image: "assets/images/sunyun_park.jpg", email: "Suhyun.Park@uth.tmc.edu" }
     ],
     "Publication Chairs": [
         { name: "Ming Huang, PhD", title: "Publication Chair", affiliation: "University of Texas Health Science Center at Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
