@@ -49,7 +49,7 @@ const committeeData = {
     ],
     "Young Scholar Symposium Chairs": [
         { name: "Jue Hou, PhD", title: "Young Scholar Symposium Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jue_hou.jpg", email: "hou00123@umn.edu"},
-        { name: "Shuteng Niu, PhD", title: "Young Scholar Symposium Chair", affiliation: "Mayo Clinic, USA", image: "assets/images/shuteng_niu.png", email: "niu.shuteng@mayo.edu"}
+        { name: "Shuteng Niu, PhD", title: "Young Scholar Symposium Chair", affiliation: "Mayo Clinic, USA", image: "assets/images/shuteng_niu.jpg", email: "niu.shuteng@mayo.edu"}
     ],
     "Tutorial Chairs": [
         { name: "Chang Su, PhD", title: "Tutorial Chair", affiliation: "Weill Cornell Medicine", image: "assets/images/chang_su.png", email: "chs4001@med.cornell.edu" },
