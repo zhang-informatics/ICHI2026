@@ -66,7 +66,7 @@ const committeeData = {
     ],
     "Publication Chairs": [
         { name: "Ming Huang, PhD", title: "Publication Chair", affiliation: "University of Texas Health Science Center at Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
-        { name: "Patrizia Vizza, PhD", title: "Publication Chair", affiliation: "Magna Graecia University, Italy", image: "assets/images/patrizia_vizza.jpg", email: "vizzap@unicz.it" }
+        { name: "Patrizia Vizza, PhD", title: "Publication Chair", affiliation: "University of Calabria, Italy", image: "assets/images/patrizia_vizza.jpg", email: "patrizia.vizza@dimes.unical.it" }
     ],
     "Sponsorship Chairs": [
         { name: "Chris Tignanelli, MD, MS, MBA", title: "Sponsorship Chair", affiliation: "University of Minnesota, USA", image: "assets/images/chris_tignanelli.png", email: "ctignane@umn.edu" },
