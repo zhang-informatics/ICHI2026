@@ -250,80 +250,67 @@ del {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
-/* ===========================
-   Sponsors Layout (scalable)
-   =========================== */
+/* =========================================
+   Sponsor logo sizing: Gold > Silver
+   (append at the END of style.css)
+   ========================================= */
 
-/* 每个等级区块之间间距 */
-.sponsor-section {
-  margin-bottom: 2.2rem;
-}
-
-/* 用 grid 自动排版，而不是固定一排 */
+/* 统一logo容器（不依赖你之前的重复定义） */
 .sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-/* logo 展示卡片 */
 .sponsor-logo {
-  height: 140px;
+  /* 给logo一个“视觉盒子”，更整齐 */
+  width: 340px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 18px;
   background: #fff;
   border: 1px solid #e7e7e7;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.sponsor-logo:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
-}
-
-/* 图片统一规则 */
 .sponsor-logo img {
-  max-height: 110px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.10));
 }
 
-/* Silver logo 如果留白大，单独放大 */
-.sponsor-logo img[src*="best_paper_sponsor"] {
-  transform: scale(1.35);
+/* Gold：第1个 h3 后面的 sponsor-grid */
+.sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
+  max-height: 130px;   /* Gold 更大 */
 }
 
-/* ===========================
-   Sponsor tiers visual scale
-   =========================== */
-
-/* Gold：更大一点（视觉 hierarchy） */
-.gold-sponsors .sponsor-logo {
-  height: 160px;
-}
-.gold-sponsors img {
-  max-height: 130px;
+/* Silver：第2个 h3 后面的 sponsor-grid */
+.sponsor-tier h3:nth-of-type(2) + .sponsor-grid .sponsor-logo img {
+  max-height: 105px;   /* Silver 稍小，避免“盖过”Gold */
 }
 
-/* Bronze：稍微小一点 */
-.bronze-sponsors .sponsor-logo {
-  height: 120px;
-}
-.bronze-sponsors img {
-  max-height: 95px;
+/* 如果你的 silver PNG 留白很多，可以轻微补偿，但不要太夸张 */
+.sponsor-tier h3:nth-of-type(2) + .sponsor-grid img[src*="best_paper_sponsor"] {
+  transform: scale(1.12);   /* 1.10~1.18 之间都可，先用1.12比较稳 */
+  transform-origin: center;
 }
 
-/* 手机端 */
+/* 手机端：盒子更窄一点 */
 @media (max-width: 520px) {
-  .sponsor-grid {
-    grid-template-columns: 1fr;
+  .sponsor-logo {
+    width: 100%;
+    max-width: 380px;
+    height: 140px;
   }
+  .sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img { max-height: 120px; }
+  .sponsor-tier h3:nth-of-type(2) + .sponsor-grid .sponsor-logo img { max-height: 98px; }
 }
 
 /* Footer */
