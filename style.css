@@ -250,36 +250,80 @@ del {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
-/* Sponsors Section Styling */
+/* ===========================
+   Sponsors Layout (scalable)
+   =========================== */
+
+/* 每个等级区块之间间距 */
 .sponsor-section {
-    margin-top: 3rem;
-    padding: 2rem 0;
-    border-top: 1px solid #ddd;
-    text-align: center; /* 确保标题居中 */
+  margin-bottom: 2.2rem;
 }
 
-.sponsor-tier h3 {
-    color: var(--umn-maroon);
-    margin: 1.5rem 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-/* 调整现有 sponsor-grid 以确保在单个赞助商时也完美居中 */
+/* 用 grid 自动排版，而不是固定一排 */
 .sponsor-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+  align-items: center;
 }
 
+/* logo 展示卡片 */
+.sponsor-logo {
+  height: 140px;
+  padding: 12px 18px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sponsor-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+/* 图片统一规则 */
 .sponsor-logo img {
-    height: 120px; /* 稍微调大一点以匹配 Gold 级别 */
-    max-width: 250px;
-    object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  max-height: 110px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Silver logo 如果留白大，单独放大 */
+.sponsor-logo img[src*="best_paper_sponsor"] {
+  transform: scale(1.35);
+}
+
+/* ===========================
+   Sponsor tiers visual scale
+   =========================== */
+
+/* Gold：更大一点（视觉 hierarchy） */
+.gold-sponsors .sponsor-logo {
+  height: 160px;
+}
+.gold-sponsors img {
+  max-height: 130px;
+}
+
+/* Bronze：稍微小一点 */
+.bronze-sponsors .sponsor-logo {
+  height: 120px;
+}
+.bronze-sponsors img {
+  max-height: 95px;
+}
+
+/* 手机端 */
+@media (max-width: 520px) {
+  .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
