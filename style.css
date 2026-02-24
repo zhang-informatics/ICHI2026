@@ -468,3 +468,62 @@ del {
 /* .registration-table tr:last-child td {
     border-bottom: none;
 } */
+
+/* =========================================
+   Attraction Image Rows / Grids (Venue page)
+   ========================================= */
+
+.attractions-gallery {
+  margin: 0.75rem 0 1.25rem 0;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns by default */
+}
+
+.attraction-card {
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06):contentReference[oaicite:6]{index=6}s ease, box-shadow 0.2s ease;
+}
+
+.attraction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.attraction-card figcaption {
+  padding: 0.65rem 0.75rem 0.7rem 0.75rem;
+  font-weight: 700;
+  color: var(--umn-maroon);
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
+/* Wider screens: show 3 in a row for the museum section (auto) */
+@media (min-width: 900px) {
+  .attractions-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .attraction-card img {
+    height: 180px;
+  }
+}
+
+/* Phones: 1 per row */
+@media (max-width: 520px) {
+  .attractions-gallery {
+    grid-template-columns: 1fr;
+  }
+  .attraction-card img {
+    height: 190px;
+  }
+}
