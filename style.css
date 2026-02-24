@@ -527,3 +527,27 @@ del {
     height: 190px;
   }
 }
+
+/* =========================================
+   Unified content photos (Venue / Hotels)
+   ========================================= */
+
+.content-photo {
+  width: 100%;
+  max-width: 920px;          /* 控制最大宽度，避免超大撑满屏幕 */
+  height: 320px;             /* 统一高度（你也可以改成 280/360） */
+  object-fit: cover;         /* 统一裁切方式：保证不变形、画面铺满 */
+  display: block;
+  margin: 0.75rem auto 1rem; /* 居中 + 上下留白 */
+  border-radius: 12px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* 手机端：稍微更高一点，观感更饱满 */
+@media (max-width: 520px) {
+  .content-photo {
+    height: 220px;
+    max-width: 100%;
+  }
+}
