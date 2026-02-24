@@ -267,8 +267,8 @@ del {
 
 .sponsor-logo {
   /* 给logo一个“视觉盒子”，更整齐 */
-  width: 340px;
-  height: 150px;
+  width: 380px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,20 +286,19 @@ del {
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.10));
 }
 
-/* Gold：第1个 h3 后面的 sponsor-grid */
+/* Gold sponsor */
 .sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
-  max-height: 130px;   /* Gold 更大 */
+  max-height: 155px;   /* 原来130 */
 }
 
-/* Silver：第2个 h3 后面的 sponsor-grid */
+/* Silver sponsor */
 .sponsor-tier h3:nth-of-type(2) + .sponsor-grid .sponsor-logo img {
-  max-height: 105px;   /* Silver 稍小，避免“盖过”Gold */
+  max-height: 125px;   /* 原来105 */
 }
 
-/* 如果你的 silver PNG 留白很多，可以轻微补偿，但不要太夸张 */
+/* Silver png 留白补偿 */
 .sponsor-tier h3:nth-of-type(2) + .sponsor-grid img[src*="best_paper_sponsor"] {
-  transform: scale(1.12);   /* 1.10~1.18 之间都可，先用1.12比较稳 */
-  transform-origin: center;
+  transform: scale(1.18);
 }
 
 /* 手机端：盒子更窄一点 */
