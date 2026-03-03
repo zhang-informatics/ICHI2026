@@ -521,7 +521,8 @@ del {
   border: 1px solid #e7e7e7;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06):contentReference[oaicite:6]{index=6}s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .attraction-card:hover {
