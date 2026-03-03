@@ -18,33 +18,7 @@
     <a href="index.html" class="logo">
       <img src="assets/images/ieee-logo.png" alt="IEEE ICHI 2026 Logo" />
     </a>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">CALLS ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="call-for-early-submission.html">Call for Early Submission (Closed)</a></li>
-            <li><a href="call-for-health-data-challenge.html">Call for Health Data Challenge (Closed)</a></li>
-            <li><a href="call-for-young-scholar-symposium.html">Call for Young Scholar Symposium <a style="color:red">(NEW)</li>
-            <li><a href="call-for-papers.html">Call for Papers (Closed)</a></li>
-            <li><a href="call-for-posters.html">Call for Posters and Demos (Closed)</a></li>
-            <li><a href="call-for-workshops.html">Call for Workshops</a></li>
-            <li><a href="call-for-doctorial-consortium.html">Call for Doctorial Consortium</a></li>
-            <li><a href="call-for-tutorials.html">Call for Tutorials</a></li>
-          </ul>
-        </li>
-        <li><a href="workshops.html">Workshops</a></li>
-        <li><a href="industry.html">Industry</a></li>
-        <li><a href="attending.html">Attending</a></li>
-        <li><a href="venue.html" class="active">Venue</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a href="keynotes.html">Keynotes</a></li>
-        <li><a href="partner_conferences.html">Partner Conferences</a></li>
-        <li><a href="committee.html">Committee</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
-      </ul>
-    </nav>
+    <div id="top-nav"></div>
   </div>
 </header>
 
@@ -260,6 +234,10 @@
     });
   }
   
+  fetch('nav.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('top-nav').innerHTML = html; });
+
   fetch('footer.html')
           .then(res => res.text())
           .then(html => { document.getElementById('footer').innerHTML = html; });
