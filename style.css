@@ -295,24 +295,33 @@ del {
   filter: none !important;               /* 如果你不想要阴影就关掉 */
 }
 
-/* Gold：第1个 h3 后面的那组（Mayo）——更高一点 */
-.sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
-  max-height: 180px !important;
-  max-width: min(360px, 100%) !important;  /* Mayo 这种方形/竖向logo别拉太宽 */
+/* Platinum：CHS 横向 logo 适合更宽的展示 */
+.sponsor-grid-platinum .sponsor-logo img {
+  max-height: 165px !important;
+  max-width: min(1100px, 100%) !important;
 }
 
-/* Silver：第2个 h3 后面的那组（IU/Regenstrief banner）——更宽更显眼 */
-.sponsor-tier h3:nth-of-type(2) + .sponsor-grid .sponsor-logo img {
+/* Gold：Mayo 这种方形/竖向 logo 更适合用高度撑起来 */
+.sponsor-grid-gold .sponsor-logo img {
+  max-height: 180px !important;
+  max-width: min(360px, 100%) !important;
+}
+
+/* Silver：横幅 logo 靠宽度撑起来更自然 */
+.sponsor-grid-silver .sponsor-logo img {
   max-height: 150px !important;
-  max-width: min(980px, 100%) !important;  /* 横幅logo靠宽度撑起来 */
+  max-width: min(980px, 100%) !important;
 }
 
 /* 手机端：再稍微收一点高度，避免太占屏 */
 @media (max-width: 520px) {
-  .sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
+  .sponsor-grid-platinum .sponsor-logo img {
+    max-height: 110px !important;
+  }
+  .sponsor-grid-gold .sponsor-logo img {
     max-height: 150px !important;
   }
-  .sponsor-tier h3:nth-of-type(2) + .sponsor-grid .sponsor-logo img {
+  .sponsor-grid-silver .sponsor-logo img {
     max-height: 115px !important;
   }
 }
@@ -330,13 +339,21 @@ del {
   font-size: clamp(1.35rem, 2.2vw, 1.7rem);
 }
 
-.sponsors-highlight .sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
+.sponsors-highlight .sponsor-grid-platinum .sponsor-logo img {
+  max-height: 180px !important;
+  max-width: min(1180px, 100%) !important;
+}
+
+.sponsors-highlight .sponsor-grid-gold .sponsor-logo img {
   max-height: 220px !important;
   max-width: min(430px, 100%) !important;
 }
 
 @media (max-width: 520px) {
-  .sponsors-highlight .sponsor-tier h3:nth-of-type(1) + .sponsor-grid .sponsor-logo img {
+  .sponsors-highlight .sponsor-grid-platinum .sponsor-logo img {
+    max-height: 120px !important;
+  }
+  .sponsors-highlight .sponsor-grid-gold .sponsor-logo img {
     max-height: 180px !important;
   }
 }
