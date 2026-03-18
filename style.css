@@ -271,18 +271,28 @@ del {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  gap: 0.7rem;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.38rem 1rem;
-  border: 1px solid rgba(122, 0, 25, 0.16);
-  border-radius: 999px;
-  background: linear-gradient(180deg, #ffffff 0%, #faf5f6 100%);
-  box-shadow: 0 8px 20px rgba(122, 0, 25, 0.08);
+  padding: 0.46rem 1.15rem;
+  border: 1px solid rgba(122, 0, 25, 0.24);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fcf6f7 0%, #f0dfe4 100%);
+  box-shadow: 0 6px 16px rgba(122, 0, 25, 0.08);
   color: var(--umn-maroon);
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.sponsors-highlight .sponsor-tier h3::before,
+.sponsors-highlight .sponsor-tier h3::after {
+  content: "";
+  width: 1.4rem;
+  height: 1px;
+  background: rgba(122, 0, 25, 0.32);
 }
 
 /* 让 logo 行始终居中 */
