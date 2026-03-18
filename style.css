@@ -266,6 +266,25 @@ del {
   margin: 1.75rem 0 0.75rem;
 }
 
+/* 让 sponsor 标题像独立标签一样浮在 logo 上方，避免和 logo 视觉混在一起 */
+.sponsors-highlight .sponsor-tier h3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.38rem 1rem;
+  border: 1px solid rgba(122, 0, 25, 0.16);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff 0%, #faf5f6 100%);
+  box-shadow: 0 8px 20px rgba(122, 0, 25, 0.08);
+  color: var(--umn-maroon);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 /* 让 logo 行始终居中 */
 .sponsor-grid {
   display: flex;
@@ -340,8 +359,8 @@ del {
 }
 
 .sponsors-highlight .sponsor-grid-platinum .sponsor-logo img {
-  max-height: 180px !important;
-  max-width: min(1180px, 100%) !important;
+  max-height: 155px !important;
+  max-width: min(1020px, 100%) !important;
 }
 
 .sponsors-highlight .sponsor-grid-gold .sponsor-logo img {
@@ -351,7 +370,7 @@ del {
 
 @media (max-width: 520px) {
   .sponsors-highlight .sponsor-grid-platinum .sponsor-logo img {
-    max-height: 120px !important;
+    max-height: 100px !important;
   }
   .sponsors-highlight .sponsor-grid-gold .sponsor-logo img {
     max-height: 180px !important;
