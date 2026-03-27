@@ -44,6 +44,33 @@
     </li><br>
   </ul>
 
+  <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
+
+  <h2>Hotel Information</h2>
+  <p><strong>Graduate by Hilton Minneapolis</strong></p>
+  <p>615 Washington Ave SE, Minneapolis, MN 55414</p><br>
+  <img class="content-photo" src="assets/images/Graduate_Hilton_Minneapolis.jpg" alt="Graduate by Hilton Minneapolis">
+
+  <ul>
+    <li>For booking reservations online, use this link: <a href="https://book.passkey.com/gt/220821570?gtid=73c86521175849867e1570ea1f3325e8" target="_blank">ICHI HILTON 2026</a></li>
+    <li>Or you may call the hotel at <strong>(612) 379-8888</strong> to request the UM ICHI 2026 room block (group code 93W).</li>
+    <li>Deadline for block reservations is <strong>Monday, May 11th, 2026</strong>.</li>
+  </ul><br>
+
+  <p><strong>Courtyard Minneapolis Downtown</strong></p>
+  <p>1500 Washington Ave South Minneapolis, MN 55454</p><br>
+  <img class="content-photo" src="assets/images/Courtyard_Minneapolis_Downtown.avif" alt="Courtyard Minneapolis Downtown">
+
+  <ul>
+    <li>For booking reservations online, use this link: <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1757430658274&key=GRP&app=resvlink" target="_blank">ICHI COURTYARD 2026</a></li>
+    <li>Or you may call (<strong>877) 699-3216</strong> and mention the group name “IEEE International Conference on Health Informatics (ICHI 2026).”</li>
+    <li>Deadline for block reservations is <strong>Sunday, May 10th, 2026</strong></li>
+  </ul><br>
+
+  <p>Additional hotel options are available throughout downtown Minneapolis and in the surrounding areas within a short distance of the conference venue.</p>
+
+  <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
+
   <h2 style="color: var(--umn-maroon); margin-top: 2rem;">About Twin Cities (Minneapolis and Saint Paul)</h2>
   <p>Minneapolis–Saint Paul International Airport (MSP) is located approximately 10 miles from the University of Minnesota Twin Cities campus. The drive typically takes about 20 minutes, depending on traffic conditions. Public transportation is also convenient and reliable. Visitors can take the METRO Blue Line light rail from the airport to downtown Minneapolis. From there, the METRO Green Line provides direct service to the University of Minnesota campus, with stops at East Bank and Stadium Village, both within walking distance of the conference venues.</p><br>
   <p>Downtown Minneapolis sits just across the Mississippi River from campus. It is approximately 5–10 minutes away by car or light rail. The Green Line provides a direct connection between the University district and downtown, making it easy for visitors to explore without needing a car. Rideshare services such as Uber and Lyft are readily available, and parking ramps are located near Coffman Memorial Union for those who prefer to drive.</p><br>
@@ -146,87 +173,122 @@
   
   <p>Minneapolis also has a strong healthcare and research presence, supported by leading hospitals, medical technology companies, and the University of Minnesota’s nationally recognized research programs.</p><br>
 
-  <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
-  
-  <h2>Hotel Information</h2>
-  <p><strong>Graduate by Hilton Minneapolis</strong></p>
-  <p>615 Washington Ave SE, Minneapolis, MN 55414</p><br>
-  <img class="content-photo" src="assets/images/Graduate_Hilton_Minneapolis.jpg" alt="Graduate by Hilton Minneapolis">
-
-  <ul>
-    <li>For booking reservations online, use this link: <a href="https://book.passkey.com/gt/220821570?gtid=73c86521175849867e1570ea1f3325e8" target="_blank">ICHI HILTON 2026</a></li>
-    <li>Or you may call the hotel at <strong>(612) 379-8888</strong> to request the UM ICHI 2026 room block (group code 93W).</li>
-    <li>Deadline for block reservations is <strong>Monday, May 11th, 2026</strong>.</li>
-  </ul><br>
-
-  <p><strong>Courtyard Minneapolis Downtown</strong></p>
-  <p>1500 Washington Ave South Minneapolis, MN 55454</p><br>
-  <img class="content-photo" src="assets/images/Courtyard_Minneapolis_Downtown.avif" alt="Courtyard Minneapolis Downtown">
-
-  <ul>
-    <li>For booking reservations online, use this link: <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1757430658274&key=GRP&app=resvlink" target="_blank">ICHI COURTYARD 2026</a></li>
-    <li>Or you may call (<strong>877) 699-3216</strong> and mention the group name “IEEE International Conference on Health Informatics (ICHI 2026).”</li>
-    <li>Deadline for block reservations is <strong>Sunday, May 10th, 2026</strong></li>
-  </ul><br>
-
-  <p>Additional hotel options are available throughout downtown Minneapolis and in the surrounding areas within a short distance of the conference venue.</p>
-  
 </main>
 
 <!-- Footer -->
 <div id="footer"></div>
 <script>
-  function initMap() {
+  function geocodeAddress(geocoder, address) {
+    return new Promise((resolve, reject) => {
+      geocoder.geocode({ address }, (results, status) => {
+        if (status === "OK" && results[0]) {
+          resolve(results[0].geometry.location);
+        } else {
+          reject(new Error(`Geocode failed for ${address}: ${status}`));
+        }
+      });
+    });
+  }
+
+  function addLabeledMarker(map, bounds, loc) {
+    const marker = new google.maps.Marker({
+      position: loc.position,
+      map,
+      title: loc.title,
+    });
+
+    bounds.extend(loc.position);
+
+    const labelDiv = document.createElement("div");
+    labelDiv.style.position = "absolute";
+    labelDiv.style.backgroundColor = loc.kind === "hotel" ? "#f8f4ec" : "#fff";
+    labelDiv.style.padding = "3px 6px";
+    labelDiv.style.border = "1px solid #ccc";
+    labelDiv.style.borderRadius = "4px";
+    labelDiv.style.fontSize = "13px";
+    labelDiv.style.fontWeight = "bold";
+    labelDiv.style.color = loc.kind === "hotel" ? "#5b4a1f" : "#7a0019";
+    labelDiv.style.boxShadow = "0 1px 4px rgba(0,0,0,0.2)";
+    labelDiv.style.whiteSpace = "nowrap";
+    labelDiv.innerText = loc.label;
+
+    const label = new google.maps.OverlayView();
+    label.onAdd = function() {
+      const pane = this.getPanes().overlayImage;
+      pane.appendChild(labelDiv);
+    };
+    label.draw = function() {
+      const projection = this.getProjection();
+      const pos = projection.fromLatLngToDivPixel(loc.position);
+      labelDiv.style.left = pos.x + "px";
+      labelDiv.style.top = (pos.y - (loc.labelOffsetY || 60)) + "px";
+      labelDiv.style.transform = "translate(-50%, 0)";
+    };
+    label.onRemove = function() {
+      labelDiv.parentNode.removeChild(labelDiv);
+    };
+    label.setMap(map);
+
+    return { marker, label };
+  }
+
+  async function initMap() {
     const coffman = { lat: 44.9737, lng: -93.2354 };
+    const geocoder = new google.maps.Geocoder();
 
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
+      zoom: 15,
       center: coffman,
       mapTypeControl: true,
       streetViewControl: false,
     });
 
-    const locations = [
-      { position: coffman, title: "Coffman Memorial Union" }
+    const locationSources = [
+      { position: coffman, title: "Coffman Memorial Union", label: "Coffman", kind: "venue", labelOffsetY: 60 },
+      {
+        address: "615 Washington Ave SE, Minneapolis, MN 55414",
+        title: "Graduate by Hilton Minneapolis",
+        label: "Graduate",
+        kind: "hotel",
+        labelOffsetY: 38,
+      },
+      {
+        address: "1500 Washington Ave South Minneapolis, MN 55454",
+        title: "Courtyard Minneapolis Downtown",
+        label: "Courtyard",
+        kind: "hotel",
+        labelOffsetY: 76,
+      }
     ];
 
-    locations.forEach(loc => {
-      const marker = new google.maps.Marker({
-        position: loc.position,
-        map,
-        title: loc.title,
+    const resolvedLocations = await Promise.all(locationSources.map(async (loc) => {
+      if (loc.position) {
+        return loc;
+      }
+
+      try {
+        return {
+          ...loc,
+          position: await geocodeAddress(geocoder, loc.address),
+        };
+      } catch (error) {
+        console.warn(error.message);
+        return null;
+      }
+    }));
+
+    const bounds = new google.maps.LatLngBounds();
+    resolvedLocations.filter(Boolean).forEach((loc) => addLabeledMarker(map, bounds, loc));
+
+    if (!bounds.isEmpty()) {
+      map.fitBounds(bounds);
+
+      google.maps.event.addListenerOnce(map, "bounds_changed", () => {
+        if (map.getZoom() > 15) {
+          map.setZoom(15);
+        }
       });
-
-      const labelDiv = document.createElement("div");
-      labelDiv.style.position = "absolute";
-      labelDiv.style.backgroundColor = "#fff";
-      labelDiv.style.padding = "3px 6px";
-      labelDiv.style.border = "1px solid #ccc";
-      labelDiv.style.borderRadius = "4px";
-      labelDiv.style.fontSize = "13px";
-      labelDiv.style.fontWeight = "bold";
-      labelDiv.style.color = "#7a0019"; // UMN maroon
-      labelDiv.style.boxShadow = "0 1px 4px rgba(0,0,0,0.2)";
-      labelDiv.style.whiteSpace = "nowrap";
-      labelDiv.innerText = loc.title;
-
-      const label = new google.maps.OverlayView();
-      label.onAdd = function() {
-        const pane = this.getPanes().overlayImage;
-        pane.appendChild(labelDiv);
-      };
-      label.draw = function() {
-        const projection = this.getProjection();
-        const pos = projection.fromLatLngToDivPixel(loc.position);
-        labelDiv.style.left = pos.x + "px";
-        labelDiv.style.top = (pos.y - 60) + "px";
-        labelDiv.style.transform = "translate(-50%, 0)";
-      };
-      label.onRemove = function() {
-        labelDiv.parentNode.removeChild(labelDiv);
-      };
-      label.setMap(map);
-    });
+    }
   }
   
   fetch('nav.html')
