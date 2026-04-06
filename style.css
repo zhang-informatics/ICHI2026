@@ -533,46 +533,102 @@ del {
     }
 }
 
-/* 表格整体样式 */
+/* Registration fee table */
+.registration-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin: 1.25rem 0 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+    border: 1px solid #e3ddd7;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
 .registration-table {
     width: 100%;
-    max-width: 800px; /* 限制最大宽度，防止太宽 */
-    border-collapse: collapse; /* 合并边框，去除双线 */
-    font-family: Arial, sans-serif; /* 使用无衬线字体，接近截图风格 */
-    color: #333; /* 字体颜色 */
+    min-width: 980px;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    color: #333;
 }
 
-/* 表头样式 (Author Registration Fee...) */
-.registration-table th {
-    text-align: left; /* 左对齐 */
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 700; /* 加粗 */
-    border-bottom: 1px solid #e0e0e0; /* 下划线，颜色较浅 */
+.registration-table thead th {
+    padding: 1.2rem 1rem;
+    text-align: center;
+    vertical-align: bottom;
+    background: linear-gradient(180deg, #f5f1ed 0%, #ece5de 100%);
+    border-bottom: 1px solid #ddd2c9;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #2d2a28;
 }
 
-/* 所有的单元格通用样式 */
-.registration-table td {
-    padding: 15px 0; /* 上下留白 */
-    border-bottom: 1px solid #e0e0e0; /* 每一行都有下划线 */
-    font-size: 16px;
+.registration-table thead th:first-child {
+    width: 40%;
+    text-align: left;
 }
 
-/* 第一列样式 (Member/Non-Member) */
-.registration-table td:first-child {
-    font-weight: 700; /* 加粗 */
-    width: 60%; /* 第一列稍微宽一些 */
+.registration-heading {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2f2b29;
 }
 
-/* 第二列样式 (价格) */
-.registration-table td:last-child {
-    font-weight: 400; /* 正常粗细 */
+.registration-subheading {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #5e554e;
 }
 
-/* 去掉最后一行底部的线（可选，如果需要完全还原截图保留即可，截图里看起来每一行都有线） */
-/* .registration-table tr:last-child td {
+.registration-table tbody th,
+.registration-table tbody td {
+    padding: 1.15rem 1rem;
+    border-bottom: 1px solid #ece4dd;
+    font-size: 1.05rem;
+    background: #fff;
+}
+
+.registration-table tbody tr:nth-child(even) th,
+.registration-table tbody tr:nth-child(even) td {
+    background: #fcfaf8;
+}
+
+.registration-table tbody tr:last-child th,
+.registration-table tbody tr:last-child td {
     border-bottom: none;
-} */
+}
+
+.registration-table tbody th {
+    text-align: left;
+    font-weight: 700;
+    color: #2f2b29;
+}
+
+.registration-table tbody td {
+    text-align: center;
+    font-weight: 500;
+    color: #3d3a38;
+}
+
+@media (max-width: 900px) {
+    .registration-table {
+        min-width: 900px;
+    }
+
+    .registration-table thead th,
+    .registration-table tbody th,
+    .registration-table tbody td {
+        padding: 1rem 0.85rem;
+    }
+}
 
 /* =========================================
    Attraction Image Rows / Grids (Venue page)
