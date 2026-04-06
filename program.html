@@ -6,7 +6,332 @@
   <title>Program | ICHI 2026</title>
   <link rel="stylesheet" href="workshops-style.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    .program-page {
+      padding: 2.25rem 0 3rem;
+    }
+
+    .program-intro {
+      max-width: 980px;
+      margin: 0 auto 2rem;
+    }
+
+    .program-intro h2 {
+      margin-bottom: 0.65rem;
+    }
+
+    .program-intro p {
+      color: #564f4a;
+      margin-bottom: 0.9rem;
+      font-size: 1.02rem;
+    }
+
+    .agenda-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-top: 0.35rem;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      background: #f7efe7;
+      color: #6a4b2c;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .agenda-highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .agenda-highlight {
+      padding: 1.1rem 1.15rem;
+      border-radius: 18px;
+      border: 1px solid #eadfd7;
+      background: linear-gradient(180deg, #fffdfa 0%, #f8f3ee 100%);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .agenda-highlight h3 {
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+      color: var(--umn-maroon);
+    }
+
+    .agenda-highlight p {
+      margin: 0;
+      color: #5f5954;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .agenda-jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0 0 2rem;
+    }
+
+    .agenda-jump a {
+      display: inline-block;
+      padding: 0.72rem 1.05rem;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--umn-maroon);
+      border: 1px solid #ddd1c9;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .agenda-jump a:hover {
+      background: #f8f0e8;
+    }
+
+    .agenda-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 0 0 2rem;
+      padding: 1rem 1.05rem;
+      border: 1px solid #eadfd7;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffdfa 0%, #f8f3ee 100%);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .agenda-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #eadfd7;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #4d4742;
+    }
+
+    .agenda-legend-swatch {
+      width: 0.95rem;
+      height: 0.95rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      flex: 0 0 auto;
+    }
+
+    .agenda-legend-swatch-workshop {
+      background: #fff7e8;
+      border-color: #efd3a3;
+    }
+
+    .agenda-legend-swatch-scientific {
+      background: #f9eef1;
+      border-color: #e7c9d0;
+    }
+
+    .agenda-legend-swatch-keynote {
+      background: #fff5d8;
+      border-color: #edcf7b;
+    }
+
+    .agenda-legend-swatch-industry {
+      background: #eef6fa;
+      border-color: #bfd5e2;
+    }
+
+    .agenda-legend-swatch-special {
+      background: #f7f3ef;
+      border-color: #ddd1c6;
+    }
+
+    .agenda-legend-swatch-social {
+      background: #f3f7ec;
+      border-color: #cfddbb;
+    }
+
+    .agenda-day {
+      margin-top: 2rem;
+    }
+
+    .agenda-day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .agenda-day-header h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 2.2vw, 2.05rem);
+    }
+
+    .agenda-day-header p {
+      margin: 0;
+      color: #7b7068;
+      font-size: 0.94rem;
+      white-space: nowrap;
+    }
+
+    .agenda-table-wrap {
+      overflow-x: auto;
+      border: 1px solid #e6ddd5;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+    }
+
+    .agenda-table {
+      width: 100%;
+      min-width: 1120px;
+      border-collapse: separate;
+      border-spacing: 0;
+      table-layout: fixed;
+    }
+
+    .agenda-table thead th {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      padding: 1rem 0.85rem;
+      text-align: center;
+      font-size: 0.94rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #2e2a28;
+      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
+      border-bottom: 1px solid #ddcfc4;
+    }
+
+    .agenda-time-col {
+      position: sticky;
+      left: 0;
+      z-index: 5 !important;
+      width: 150px;
+      text-align: left !important;
+      color: var(--umn-maroon) !important;
+    }
+
+    .agenda-time {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      padding: 1rem 0.85rem;
+      vertical-align: top;
+      text-align: left;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--umn-maroon);
+      background: #faf5f0;
+      border-right: 1px solid #e9ddd4;
+      border-bottom: 1px solid #efe6df;
+    }
+
+    .agenda-table td {
+      padding: 0.8rem;
+      vertical-align: top;
+      border-bottom: 1px solid #efe6df;
+      background: #fff;
+    }
+
+    .agenda-empty {
+      background: linear-gradient(180deg, #fff 0%, #fbf8f5 100%);
+    }
+
+    .agenda-table tbody tr:last-child td,
+    .agenda-table tbody tr:last-child .agenda-time {
+      border-bottom: none;
+    }
+
+    .agenda-slot {
+      min-height: 84px;
+      padding: 0.8rem 0.85rem;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    }
+
+    .agenda-slot-workshop {
+      background: #fff7e8;
+      border-color: #efd3a3;
+    }
+
+    .agenda-slot-scientific {
+      background: #f9eef1;
+      border-color: #e7c9d0;
+    }
+
+    .agenda-slot-keynote {
+      background: #fff5d8;
+      border-color: #edcf7b;
+    }
+
+    .agenda-slot-industry {
+      background: #eef6fa;
+      border-color: #bfd5e2;
+    }
+
+    .agenda-slot-consortium {
+      background: #eef8f3;
+      border-color: #c7dfd2;
+    }
+
+    .agenda-slot-social {
+      background: #f3f7ec;
+      border-color: #cfddbb;
+    }
+
+    .agenda-slot-special {
+      background: #f7f3ef;
+      border-color: #ddd1c6;
+    }
+
+    .agenda-slot-shared {
+      background: #f5f5f5;
+      border-color: #dddddd;
+    }
+
+    .agenda-badge {
+      display: inline-block;
+      margin-bottom: 0.45rem;
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.09);
+      color: var(--umn-maroon);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .agenda-slot-text {
+      font-size: 0.94rem;
+      line-height: 1.45;
+      color: #342f2c;
+      text-wrap: pretty;
+    }
+
+    @media (max-width: 900px) {
+      .agenda-highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .agenda-day-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .agenda-day-header p {
+        white-space: normal;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -19,6 +344,7 @@
         <div id="top-nav"></div>
     </div>
 </header>
+
 <!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/images/program-bg.jpg');">
   <div class="hero-text">
@@ -27,27 +353,449 @@
 </section>
 
 <!-- Main Content -->
-<main class="container" style="padding: 2rem 0;">
-<!--  <h2 style="color: var(&#45;&#45;umn-maroon);">Overview</h2>-->
-<!--  <p>The ICHI 2026 program will include keynote talks, paper sessions, poster and demo presentations, tutorials, workshops, and industry panels.</p>-->
-<!--  <p>More detailed information will be available in Spring 2026. Below is a tentative outline of the schedule.</p>-->
+<main class="container program-page">
+  <section class="program-intro">
+    <h2>Program at a Glance</h2>
+    <p>The tentative IEEE ICHI 2026 agenda includes workshops, keynote talks, scientific sessions, the doctoral consortium, young scholar programming, industry track panels, poster sessions, and the data challenge.</p>
+    <p>Below is a web-friendly version of the current agenda, organized by day and room for easier reading.</p>
+    <div class="agenda-note">Tentative schedule. Final timing and room assignments may be updated.</div>
+  </section>
 
-<!--  <h2 style="margin-top: 2rem;">Tentative Schedule</h2>-->
-<!--  <ul>-->
-<!--    <li><strong>June 1, 2026 (Monday):</strong> Tutorials, Doctoral Consortium, Workshops</li>-->
-<!--    <li><strong>June 2–3, 2026:</strong> Main Conference (Keynotes, Papers, Posters, Demos)</li>-->
-<!--  </ul>-->
+  <section class="agenda-highlight-grid" aria-label="Agenda highlights">
+    <article class="agenda-highlight">
+      <h3>Monday, June 1</h3>
+      <p>Workshops, doctoral consortium activities, JHIR presentations, special sessions, and the opening keynote by Anita Burgun.</p>
+    </article>
+    <article class="agenda-highlight">
+      <h3>Tuesday, June 2</h3>
+      <p>Young Scholar programming, industry panels, scientific sessions, poster session, reception, and the keynote by Hoifung Poon.</p>
+    </article>
+    <article class="agenda-highlight">
+      <h3>Wednesday, June 3</h3>
+      <p>Parallel scientific sessions, the data challenge, the closing keynote by Li Shen, and conference wrap-up.</p>
+    </article>
+  </section>
 
-<!--  <h2 style="margin-top: 2rem;">Key Highlights</h2>-->
-<!--  <ul>-->
-<!--    <li>Plenary Keynotes from globally recognized experts in GenAI and Health Informatics</li>-->
-<!--    <li>Parallel tracks: Analytics, Human Factors, Systems</li>-->
-<!--    <li>Panel discussions on ethics, policy, and AI translation in clinical practice</li>-->
-<!--    <li>Student poster competition and travel award session</li>-->
-<!--  </ul>-->
+  <nav class="agenda-jump" aria-label="Jump to program day">
+    <a href="#monday-june-1">Monday</a>
+    <a href="#tuesday-june-2">Tuesday</a>
+    <a href="#wednesday-june-3">Wednesday</a>
+  </nav>
 
-  <h2 style="margin-top: 2rem;">Program at a Glance (Coming Soon)</h2>
-<!--  <p>Check back here for the detailed downloadable PDF version of the full conference program in Spring 2026.</p>-->
+  <section class="agenda-legend" aria-label="Program legend">
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-workshop"></span>Workshop</div>
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-scientific"></span>Scientific Session</div>
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-keynote"></span>Keynote</div>
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-industry"></span>Industry Track</div>
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-special"></span>Special Session / Committee</div>
+    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-social"></span>Social / Posters</div>
+  </section>
+
+  <section class="agenda-day" id="monday-june-1">
+  <div class="agenda-day-header">
+    <h2>Monday, June 1</h2>
+    <p>Tentative agenda subject to change.</p>
+  </div>
+  <div class="agenda-table-wrap">
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th scope="col" class="agenda-time-col">Time</th>
+          <th scope="col">Lobby</th>
+          <th scope="col">CR 301/302</th>
+          <th scope="col">Mississippi</th>
+          <th scope="col">CR 303</th>
+          <th scope="col">CR 324</th>
+          <th scope="col">CR 325</th>
+          <th scope="col">Theater</th>
+          <th scope="col">Campus Club</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 1</span><div class="agenda-slot-text">Clinical Natural Language Processing for Quality of Life</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 2</span><div class="agenda-slot-text">Hi-Edu 2026</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 3</span><div class="agenda-slot-text">Food and Health Knowledge Graphs Using Large Language Models (LLMs)</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 4</span><div class="agenda-slot-text">The 3rd workshop on Data Privacy and Data Analysis in Healthcare Systems (DPDAHS)</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 5</span><div class="agenda-slot-text">AI for Rare Diseases</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 1</span><div class="agenda-slot-text">Clinical Natural Language Processing for Quality of Life</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 2</span><div class="agenda-slot-text">Hi-Edu 2026</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 3</span><div class="agenda-slot-text">Food and Health Knowledge Graphs Using Large Language Models (LLMs)</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 4</span><div class="agenda-slot-text">The 3rd workshop on Data Privacy and Data Analysis in Healthcare Systems (DPDAHS)</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 5</span><div class="agenda-slot-text">AI for Rare Diseases</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Anita Burgun</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-consortium"><span class="agenda-badge">Doctoral Consortium</span><div class="agenda-slot-text">Doctoral Consortium</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 6</span><div class="agenda-slot-text">Trust-AI 2026: Trustworthy AI for IoMT</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Session</span><div class="agenda-slot-text">JHIR Selected Presentation</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 7</span><div class="agenda-slot-text">Health Digital Twins for Clinical Development and Clinical Practice: Multi-Scale Data, Models, and Trustworthy Translation</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:00 PM - 3:30 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:30 PM - 5:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Session</span><div class="agenda-slot-text">NPJ Health Systems Special Section</div></div></td>
+          <td><div class="agenda-slot agenda-slot-consortium"><span class="agenda-badge">Doctoral Consortium</span><div class="agenda-slot-text">Doctoral Consortium</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 6</span><div class="agenda-slot-text">Trust-AI 2026: Trustworthy AI for IoMT</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Committee</span><div class="agenda-slot-text">ICHI Steering Committee Meeting</div></div></td>
+          <td><div class="agenda-slot agenda-slot-workshop"><span class="agenda-badge">Workshop 7</span><div class="agenda-slot-text">Health Digital Twins for Clinical Development and Clinical Practice: Multi-Scale Data, Models, and Trustworthy Translation</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="agenda-day" id="tuesday-june-2">
+  <div class="agenda-day-header">
+    <h2>Tuesday, June 2</h2>
+    <p>Tentative agenda subject to change.</p>
+  </div>
+  <div class="agenda-table-wrap">
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th scope="col" class="agenda-time-col">Time</th>
+          <th scope="col">Lobby</th>
+          <th scope="col">CR 301/302</th>
+          <th scope="col">Mississippi</th>
+          <th scope="col">CR 303</th>
+          <th scope="col">CR 324</th>
+          <th scope="col">CR 325</th>
+          <th scope="col">Theater</th>
+          <th scope="col">Campus Club</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Session</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Session</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Clinical Note Mining, Event Extraction, and Summarization</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 1</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Session</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Session</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 2</span><div class="agenda-slot-text">Human Factors Track<br>Human-Centered AI Design, Decision Support, and Clinical Communication</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 2</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Hoifung Poon</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Session</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare<br>Prasanna Desikan, Harshit Rajgarhia, Shivali Dalmia and Ananya Mantravadi.</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 3</span><div class="agenda-slot-text">Systems Track<br>Clinical Decision Support Systems and Medical Agents</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 4</span><div class="agenda-slot-text">Analytics Track<br>Clinical LLMs for Reasoning, Matching, and QA</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 3</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:00 PM - 3:30 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:30 PM - 5:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Session</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare<br>Prasanna Desikan, Harshit Rajgarhia, Shivali Dalmia and Ananya Mantravadi.</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 5</span><div class="agenda-slot-text">Systems Track<br>Trustworthy LLM Systems, Privacy, and Security</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Event</span><div class="agenda-slot-text">Women in Health</div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Industry Keynote</span><div class="agenda-slot-text">Dr. Teplitzky</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">5:00 PM - 6:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-social"><span class="agenda-badge">Poster Session</span><div class="agenda-slot-text">Poster Session</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-industry"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Networking Event</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">6:00 PM - 8:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-social"><span class="agenda-badge">Social</span><div class="agenda-slot-text">Reception</div></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="agenda-day" id="wednesday-june-3">
+  <div class="agenda-day-header">
+    <h2>Wednesday, June 3</h2>
+    <p>Tentative agenda subject to change.</p>
+  </div>
+  <div class="agenda-table-wrap">
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th scope="col" class="agenda-time-col">Time</th>
+          <th scope="col">Lobby</th>
+          <th scope="col">CR 301/302</th>
+          <th scope="col">Mississippi</th>
+          <th scope="col">CR 303</th>
+          <th scope="col">CR 324</th>
+          <th scope="col">CR 325</th>
+          <th scope="col">Theater</th>
+          <th scope="col">Campus Club</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 6</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 8</span><div class="agenda-slot-text">Analytics Track<br>Biomedical Knowledge Representation and Text Mining</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 9</span><div class="agenda-slot-text">Systems Track<br>Population Health Platforms, Data Infrastructure, and Knowledge Systems</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 10</span><div class="agenda-slot-text">Analytics Track<br>Medical Imaging, Segmentation, and Cancer Analytics</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 7</span><div class="agenda-slot-text">Human Factors Track<br>Patient Experience, Portals, and Digital Engagement</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 11</span><div class="agenda-slot-text">Human Factors Track<br>Ambient, Wearable, and Assessment Technologies in Care Delivery</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 13</span><div class="agenda-slot-text">Analytics Track<br>Physiological Signal Learning from EEG, ECG, and Sleep Data</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 14</span><div class="agenda-slot-text">Analytics Track<br>Speech, Wearable, and Functional Assessment</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 15</span><div class="agenda-slot-text">Systems Track<br>Edge, Wearable, and Assistive Health Technologies</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 12</span><div class="agenda-slot-text">Systems Track<br>Engagement, Coaching, and Conversational Health Systems</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">11:45 AM - 12:30 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">12:30 PM - 2:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 17</span><div class="agenda-slot-text">Systems Track<br>Clinical Trajectories and Early Warning Systems</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 18</span><div class="agenda-slot-text">Analytics Track<br>Clinical Outcome and Longitudinal Risk Prediction</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 19</span><div class="agenda-slot-text">Systems Track<br>Imaging, Surgery, and Visual Analytics Platforms</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 16</span><div class="agenda-slot-text">Analytics Track<br>Neurological and Mental Health Analytics</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">2:00 PM - 3:30 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 20</span><div class="agenda-slot-text">Analytics Track<br>Patient Risk Assessment and Personalized Care Analytics</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 22</span><div class="agenda-slot-text">Analytics Track<br>Genomics, Microbiome, and Precision Medicine</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 23</span><div class="agenda-slot-text">Analytics Track<br>Advanced Learning Architectures for Disease and Therapy Modeling</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Competition</span><div class="agenda-slot-text">Data Challenge</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 21</span><div class="agenda-slot-text">Analytics Track<br>Statistical, Temporal, and Causal Methods</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:30 PM - 3:45 PM</th>
+          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">3:45 PM - 4:45 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Li Shen</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="agenda-time">4:45 PM - 5:00 PM</th>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Session</span><div class="agenda-slot-text">Closing remarks</div></div></td>
+          <td class="agenda-empty"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 </main>
 
 <!-- Footer -->
