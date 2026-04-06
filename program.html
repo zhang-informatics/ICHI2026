@@ -9,153 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;display=swap" rel="stylesheet">
   <style>
     .program-page {
-      padding: 2.25rem 0 3rem;
-    }
-
-    .program-intro {
-      max-width: 980px;
-      margin: 0 auto 2rem;
-    }
-
-    .program-intro h2 {
-      margin-bottom: 0.65rem;
-    }
-
-    .program-intro p {
-      color: #564f4a;
-      margin-bottom: 0.9rem;
-      font-size: 1.02rem;
-    }
-
-    .agenda-note {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      margin-top: 0.35rem;
-      padding: 0.7rem 1rem;
-      border-radius: 999px;
-      background: #f7efe7;
-      color: #6a4b2c;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .agenda-highlight-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin: 1.5rem 0 2rem;
-    }
-
-    .agenda-highlight {
-      padding: 1.1rem 1.15rem;
-      border-radius: 18px;
-      border: 1px solid #eadfd7;
-      background: linear-gradient(180deg, #fffdfa 0%, #f8f3ee 100%);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-    }
-
-    .agenda-highlight h3 {
-      margin-bottom: 0.35rem;
-      font-size: 1.05rem;
-      color: var(--umn-maroon);
-    }
-
-    .agenda-highlight p {
-      margin: 0;
-      color: #5f5954;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .agenda-jump {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin: 0 0 2rem;
-    }
-
-    .agenda-jump a {
-      display: inline-block;
-      padding: 0.72rem 1.05rem;
-      border-radius: 999px;
-      background: #fff;
-      color: var(--umn-maroon);
-      border: 1px solid #ddd1c9;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
-    }
-
-    .agenda-jump a:hover {
-      background: #f8f0e8;
-    }
-
-    .agenda-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin: 0 0 2rem;
-      padding: 1rem 1.05rem;
-      border: 1px solid #eadfd7;
-      border-radius: 18px;
-      background: linear-gradient(180deg, #fffdfa 0%, #f8f3ee 100%);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
-    }
-
-    .agenda-legend-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid #eadfd7;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #4d4742;
-    }
-
-    .agenda-legend-swatch {
-      width: 0.95rem;
-      height: 0.95rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      flex: 0 0 auto;
-    }
-
-    .agenda-legend-swatch-workshop {
-      background: #fff7e8;
-      border-color: #efd3a3;
-    }
-
-    .agenda-legend-swatch-scientific {
-      background: #f9eef1;
-      border-color: #e7c9d0;
-    }
-
-    .agenda-legend-swatch-keynote {
-      background: #fff5d8;
-      border-color: #edcf7b;
-    }
-
-    .agenda-legend-swatch-industry {
-      background: #eef6fa;
-      border-color: #bfd5e2;
-    }
-
-    .agenda-legend-swatch-special {
-      background: #f7f3ef;
-      border-color: #ddd1c6;
-    }
-
-    .agenda-legend-swatch-social {
-      background: #f3f7ec;
-      border-color: #cfddbb;
+      padding: 1.25rem 0 3rem;
     }
 
     .agenda-day {
       margin-top: 2rem;
+    }
+
+    .agenda-day:first-of-type {
+      margin-top: 0;
     }
 
     .agenda-day-header {
@@ -163,18 +25,22 @@
       justify-content: space-between;
       align-items: end;
       gap: 1rem;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.9rem;
+      padding: 0 0 0.15rem;
     }
 
     .agenda-day-header h2 {
       margin: 0;
       font-size: clamp(1.5rem, 2.2vw, 2.05rem);
+      color: var(--umn-maroon);
+      letter-spacing: -0.01em;
     }
 
     .agenda-day-header p {
       margin: 0;
       color: #7b7068;
       font-size: 0.94rem;
+      font-weight: 600;
       white-space: nowrap;
     }
 
@@ -188,10 +54,10 @@
 
     .agenda-table {
       width: 100%;
-      min-width: 1120px;
+      min-width: 1420px;
       border-collapse: separate;
       border-spacing: 0;
-      table-layout: fixed;
+      table-layout: auto;
     }
 
     .agenda-table thead th {
@@ -208,19 +74,27 @@
       border-bottom: 1px solid #ddcfc4;
     }
 
+    .agenda-table thead th:not(.agenda-time-col) {
+      min-width: 150px;
+    }
+
     .agenda-time-col {
       position: sticky;
       left: 0;
       z-index: 5 !important;
-      width: 150px;
+      width: 170px;
+      min-width: 170px;
       text-align: left !important;
       color: var(--umn-maroon) !important;
+      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
     }
 
     .agenda-time {
       position: sticky;
       left: 0;
       z-index: 2;
+      width: 170px;
+      min-width: 170px;
       padding: 1rem 0.85rem;
       vertical-align: top;
       text-align: left;
@@ -234,7 +108,8 @@
     }
 
     .agenda-table td {
-      padding: 0.8rem;
+      min-width: 150px;
+      padding: 0.7rem;
       vertical-align: top;
       border-bottom: 1px solid #efe6df;
       background: #fff;
@@ -250,11 +125,51 @@
     }
 
     .agenda-slot {
-      min-height: 84px;
-      padding: 0.8rem 0.85rem;
-      border-radius: 14px;
+      min-height: 70px;
+      padding: 0.72rem 0.78rem;
+      border-radius: 16px;
       border: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    .agenda-slot-workshop .agenda-badge {
+      background: rgba(239, 211, 163, 0.48);
+    }
+
+    .agenda-slot-scientific .agenda-badge {
+      background: rgba(231, 201, 208, 0.5);
+    }
+
+    .agenda-slot-keynote .agenda-badge {
+      background: rgba(237, 207, 123, 0.44);
+    }
+
+    .agenda-slot-industry .agenda-badge {
+      background: rgba(191, 213, 226, 0.55);
+    }
+
+    .agenda-slot-consortium .agenda-badge {
+      background: rgba(199, 223, 210, 0.58);
+    }
+
+    .agenda-slot-social .agenda-badge {
+      background: rgba(207, 221, 187, 0.55);
+    }
+
+    .agenda-slot-special .agenda-badge,
+    .agenda-slot-shared .agenda-badge {
+      background: rgba(220, 209, 198, 0.52);
+    }
+
+    .agenda-slot-workshop,
+    .agenda-slot-scientific,
+    .agenda-slot-keynote,
+    .agenda-slot-industry,
+    .agenda-slot-consortium,
+    .agenda-slot-social,
+    .agenda-slot-special,
+    .agenda-slot-shared {
+      box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
     }
 
     .agenda-slot-workshop {
@@ -298,30 +213,31 @@
     }
 
     .agenda-badge {
-      display: inline-block;
-      margin-bottom: 0.45rem;
-      padding: 0.22rem 0.55rem;
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      margin-bottom: 0.52rem;
+      padding: 0.32rem 0.66rem;
       border-radius: 999px;
       background: rgba(122, 0, 25, 0.09);
       color: var(--umn-maroon);
-      font-size: 0.76rem;
+      font-size: 0.71rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      text-transform: none;
+      white-space: nowrap;
     }
 
     .agenda-slot-text {
-      font-size: 0.94rem;
-      line-height: 1.45;
+      font-size: 0.93rem;
+      line-height: 1.42;
+      font-weight: 600;
       color: #342f2c;
       text-wrap: pretty;
     }
 
     @media (max-width: 900px) {
-      .agenda-highlight-grid {
-        grid-template-columns: 1fr;
-      }
-
       .agenda-day-header {
         flex-direction: column;
         align-items: flex-start;
@@ -329,6 +245,14 @@
 
       .agenda-day-header p {
         white-space: normal;
+      }
+
+      .program-page {
+        padding-top: 1rem;
+      }
+
+      .agenda-table {
+        min-width: 1200px;
       }
     }
   </style>
@@ -354,43 +278,6 @@
 
 <!-- Main Content -->
 <main class="container program-page">
-  <section class="program-intro">
-    <h2>Program at a Glance</h2>
-    <p>The tentative IEEE ICHI 2026 agenda includes workshops, keynote talks, scientific sessions, the doctoral consortium, young scholar programming, industry track panels, poster sessions, and the data challenge.</p>
-    <p>Below is a web-friendly version of the current agenda, organized by day and room for easier reading.</p>
-    <div class="agenda-note">Tentative schedule. Final timing and room assignments may be updated.</div>
-  </section>
-
-  <section class="agenda-highlight-grid" aria-label="Agenda highlights">
-    <article class="agenda-highlight">
-      <h3>Monday, June 1</h3>
-      <p>Workshops, doctoral consortium activities, JHIR presentations, special sessions, and the opening keynote by Anita Burgun.</p>
-    </article>
-    <article class="agenda-highlight">
-      <h3>Tuesday, June 2</h3>
-      <p>Young Scholar programming, industry panels, scientific sessions, poster session, reception, and the keynote by Hoifung Poon.</p>
-    </article>
-    <article class="agenda-highlight">
-      <h3>Wednesday, June 3</h3>
-      <p>Parallel scientific sessions, the data challenge, the closing keynote by Li Shen, and conference wrap-up.</p>
-    </article>
-  </section>
-
-  <nav class="agenda-jump" aria-label="Jump to program day">
-    <a href="#monday-june-1">Monday</a>
-    <a href="#tuesday-june-2">Tuesday</a>
-    <a href="#wednesday-june-3">Wednesday</a>
-  </nav>
-
-  <section class="agenda-legend" aria-label="Program legend">
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-workshop"></span>Workshop</div>
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-scientific"></span>Scientific Session</div>
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-keynote"></span>Keynote</div>
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-industry"></span>Industry Track</div>
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-special"></span>Special Session / Committee</div>
-    <div class="agenda-legend-item"><span class="agenda-legend-swatch agenda-legend-swatch-social"></span>Social / Posters</div>
-  </section>
-
   <section class="agenda-day" id="monday-june-1">
   <div class="agenda-day-header">
     <h2>Monday, June 1</h2>
