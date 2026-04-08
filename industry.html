@@ -5,7 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Industry Track | ICHI 2026</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    .industry-track-page {
+      padding: 1.25rem 0 3rem;
+    }
+
+    .agenda-day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+      padding: 0 0 0.15rem;
+    }
+
+    .agenda-day-header h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 2.2vw, 2rem);
+      color: var(--umn-maroon);
+      letter-spacing: -0.01em;
+    }
+
+    .agenda-day-header p {
+      margin: 0;
+      color: #7b7068;
+      font-size: 0.94rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .agenda-table-wrap {
+      overflow-x: auto;
+      border: 1px solid #e6ddd5;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+    }
+
+    .agenda-table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: separate;
+      border-spacing: 0;
+      table-layout: auto;
+    }
+
+    .agenda-table thead th {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      padding: 1rem 0.9rem;
+      text-align: center;
+      font-size: 0.94rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #2e2a28;
+      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
+      border-bottom: 1px solid #ddcfc4;
+    }
+
+    .agenda-time-col {
+      position: sticky;
+      left: 0;
+      z-index: 5 !important;
+      width: 190px;
+      min-width: 190px;
+      text-align: left !important;
+      color: var(--umn-maroon) !important;
+      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
+    }
+
+    .agenda-room-col {
+      min-width: 720px;
+    }
+
+    .agenda-time {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      width: 190px;
+      min-width: 190px;
+      padding: 1rem 0.9rem;
+      vertical-align: top;
+      text-align: left;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--umn-maroon);
+      background: #faf5f0;
+      border-right: 1px solid #e9ddd4;
+      border-bottom: 1px solid #efe6df;
+    }
+
+    .agenda-table td {
+      padding: 0.8rem;
+      vertical-align: top;
+      border-bottom: 1px solid #efe6df;
+      background: #fff;
+    }
+
+    .agenda-table tbody tr:last-child td,
+    .agenda-table tbody tr:last-child .agenda-time {
+      border-bottom: none;
+    }
+
+    .agenda-slot {
+      min-height: 72px;
+      padding: 0.8rem 0.9rem;
+      border-radius: 16px;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    .agenda-slot-industry {
+      background: #eef6fa;
+      border-color: #bfd5e2;
+    }
+
+    .agenda-slot-keynote {
+      background: #fff5d8;
+      border-color: #edcf7b;
+    }
+
+    .agenda-slot-social {
+      background: #f3f7ec;
+      border-color: #cfddbb;
+    }
+
+    .agenda-slot-shared {
+      background: #f5f5f5;
+      border-color: #dddddd;
+    }
+
+    .agenda-slot-industry .agenda-badge {
+      background: rgba(191, 213, 226, 0.55);
+    }
+
+    .agenda-slot-keynote .agenda-badge {
+      background: rgba(237, 207, 123, 0.44);
+    }
+
+    .agenda-slot-social .agenda-badge {
+      background: rgba(207, 221, 187, 0.55);
+    }
+
+    .agenda-slot-shared .agenda-badge {
+      background: rgba(220, 209, 198, 0.52);
+    }
+
+    .agenda-badge {
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      margin-bottom: 0.55rem;
+      padding: 0.32rem 0.7rem;
+      border-radius: 999px;
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      text-transform: none;
+      white-space: nowrap;
+    }
+
+    .agenda-slot-text {
+      font-size: 0.96rem;
+      line-height: 1.48;
+      font-weight: 600;
+      color: #342f2c;
+      text-wrap: pretty;
+    }
+
+    .agenda-slot-text .agenda-subline {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: #5a514c;
+    }
+
+    .industry-track-page .committee-section {
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .industry-track-page {
+        padding-top: 1rem;
+      }
+
+      .agenda-day-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .agenda-day-header p {
+        white-space: normal;
+      }
+
+      .agenda-table {
+        min-width: 860px;
+      }
+
+      .agenda-room-col {
+        min-width: 620px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -27,12 +234,142 @@
 </section>
 
 <!-- Main Content -->
-<main class="container" style="margin-top: 2rem; padding-bottom: 2rem;">
-  <h2>To be announced...</h2>
-
-  <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
-
-  <h2 style="color: var(--umn-maroon); margin-bottom: 1rem;">Industry Track</h2>
+<main class="container industry-track-page">
+  <section class="agenda-day">
+    <div class="agenda-day-header">
+      <h2>Industry Track Agenda</h2>
+      <p>Tuesday, June 2, 2026 | Theater</p>
+    </div>
+    <div class="agenda-table-wrap">
+      <table class="agenda-table">
+        <thead>
+          <tr>
+            <th scope="col" class="agenda-time-col">Time</th>
+            <th scope="col" class="agenda-room-col">Theater</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-social">
+                <span class="agenda-badge">Networking</span>
+                <div class="agenda-slot-text">Networking Breakfast</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">8:15 AM - 8:35 AM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-keynote">
+                <span class="agenda-badge">Policy Keynote</span>
+                <div class="agenda-slot-text">
+                  Ram D. Sriram
+                  <span class="agenda-subline">Evaluating Large Language Models for Clinical Decision Support</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">8:35 AM - 9:45 AM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-industry">
+                <span class="agenda-badge">Policy Panel</span>
+                <div class="agenda-slot-text">From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">9:45 AM - 10:00 AM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-shared">
+                <span class="agenda-badge">Break</span>
+                <div class="agenda-slot-text">Morning Break</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">10:00 AM - 11:30 AM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-industry">
+                <span class="agenda-badge">Panel</span>
+                <div class="agenda-slot-text">The GenAI Data Chasm: Are we building a Human-Aligned Unified Data Ecosystem or Just Deeper, More Intelligent Silos?</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-keynote">
+                <span class="agenda-badge">Conference Keynote</span>
+                <div class="agenda-slot-text">
+                  Hoifung Poon, PhD
+                  <span class="agenda-subline">Towards Virtual Patient: AI for Accelerating Medical Discovering</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-shared">
+                <span class="agenda-badge">Conference</span>
+                <div class="agenda-slot-text">Lunch</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-industry">
+                <span class="agenda-badge">Panel</span>
+                <div class="agenda-slot-text">AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">3:00 PM - 3:20 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-shared">
+                <span class="agenda-badge">Break</span>
+                <div class="agenda-slot-text">Afternoon Break</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">3:20 PM - 4:20 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-keynote">
+                <span class="agenda-badge">Industry Keynote</span>
+                <div class="agenda-slot-text">
+                  Ben Teplitzky, PhD
+                  <span class="agenda-subline">From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cariac Monitoring</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">4:30 PM - 6:00 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-social">
+                <span class="agenda-badge">Networking</span>
+                <div class="agenda-slot-text">Professional Networking and Social Hour</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="agenda-time">6:00 PM - 8:00 PM</th>
+            <td>
+              <div class="agenda-slot agenda-slot-social">
+                <span class="agenda-badge">Reception</span>
+                <div class="agenda-slot-text">ICHI Reception</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <section class="committee-section">
     <h2>Industry Track Chairs</h2>
