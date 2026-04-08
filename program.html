@@ -10,6 +10,8 @@
   <style>
     .program-page {
       padding: 1.25rem 0 3rem;
+      width: min(98vw, 1760px);
+      max-width: 1760px;
     }
 
     .agenda-day {
@@ -45,7 +47,7 @@
     }
 
     .agenda-table-wrap {
-      overflow-x: auto;
+      overflow: hidden;
       border: 1px solid #e6ddd5;
       border-radius: 20px;
       background: #fff;
@@ -54,10 +56,18 @@
 
     .agenda-table {
       width: 100%;
-      min-width: 1420px;
+      min-width: 0;
       border-collapse: separate;
       border-spacing: 0;
-      table-layout: auto;
+      table-layout: fixed;
+    }
+
+    .agenda-col-time {
+      width: 156px;
+    }
+
+    .agenda-col-room {
+      width: calc((100% - 156px) / 8);
     }
 
     .agenda-table thead th {
@@ -75,15 +85,15 @@
     }
 
     .agenda-table thead th:not(.agenda-time-col) {
-      min-width: 150px;
+      min-width: 0;
     }
 
     .agenda-time-col {
       position: sticky;
       left: 0;
       z-index: 5 !important;
-      width: 170px;
-      min-width: 170px;
+      width: 156px;
+      min-width: 156px;
       text-align: left !important;
       color: var(--umn-maroon) !important;
       background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
@@ -93,12 +103,12 @@
       position: sticky;
       left: 0;
       z-index: 2;
-      width: 170px;
-      min-width: 170px;
-      padding: 1rem 0.85rem;
+      width: 156px;
+      min-width: 156px;
+      padding: 0.95rem 0.8rem;
       vertical-align: top;
       text-align: left;
-      font-size: 0.93rem;
+      font-size: 0.9rem;
       font-weight: 700;
       line-height: 1.35;
       color: var(--umn-maroon);
@@ -108,8 +118,8 @@
     }
 
     .agenda-table td {
-      min-width: 150px;
-      padding: 0.7rem;
+      min-width: 0;
+      padding: 0.58rem;
       vertical-align: top;
       border-bottom: 1px solid #efe6df;
       background: #fff;
@@ -125,8 +135,8 @@
     }
 
     .agenda-slot {
-      min-height: 70px;
-      padding: 0.72rem 0.78rem;
+      min-height: 64px;
+      padding: 0.62rem 0.66rem;
       border-radius: 16px;
       border: 1px solid transparent;
       box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -216,12 +226,12 @@
       display: inline-flex;
       align-items: center;
       max-width: 100%;
-      margin-bottom: 0.52rem;
-      padding: 0.32rem 0.66rem;
+      margin-bottom: 0.44rem;
+      padding: 0.28rem 0.58rem;
       border-radius: 999px;
       background: rgba(122, 0, 25, 0.09);
       color: var(--umn-maroon);
-      font-size: 0.71rem;
+      font-size: 0.67rem;
       font-weight: 700;
       line-height: 1;
       letter-spacing: 0.01em;
@@ -230,11 +240,12 @@
     }
 
     .agenda-slot-text {
-      font-size: 0.93rem;
-      line-height: 1.42;
+      font-size: 0.89rem;
+      line-height: 1.36;
       font-weight: 600;
       color: #342f2c;
       text-wrap: pretty;
+      overflow-wrap: anywhere;
     }
 
     .agenda-slot-link {
@@ -262,10 +273,17 @@
 
       .program-page {
         padding-top: 1rem;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .agenda-table-wrap {
+        overflow-x: auto;
       }
 
       .agenda-table {
         min-width: 1200px;
+        table-layout: auto;
       }
     }
   </style>
@@ -297,6 +315,10 @@
   </div>
   <div class="agenda-table-wrap">
     <table class="agenda-table">
+      <colgroup>
+        <col class="agenda-col-time">
+        <col span="8" class="agenda-col-room">
+      </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
@@ -420,6 +442,10 @@
   </div>
   <div class="agenda-table-wrap">
     <table class="agenda-table">
+      <colgroup>
+        <col class="agenda-col-time">
+        <col span="8" class="agenda-col-room">
+      </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
@@ -565,6 +591,10 @@
   </div>
   <div class="agenda-table-wrap">
     <table class="agenda-table">
+      <colgroup>
+        <col class="agenda-col-time">
+        <col span="8" class="agenda-col-room">
+      </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
