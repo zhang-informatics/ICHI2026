@@ -569,6 +569,21 @@ del {
 }
 
 /* Registration fee table */
+.registration-clarification {
+    margin: 0.9rem 0 1rem;
+    padding: 0.95rem 1.1rem;
+    background: #f8f1e8;
+    border-left: 4px solid var(--umn-maroon);
+    border-radius: 10px;
+    color: #4a433d;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.registration-clarification strong {
+    color: var(--umn-maroon);
+}
+
 .registration-table-wrap {
     width: 100%;
     max-width: 100%;
