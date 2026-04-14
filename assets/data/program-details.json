@@ -1,0 +1,960 @@
+{
+  "scientific-1": {
+    "kind": "scientific",
+    "badge": "Scientific Session 1",
+    "title": "Responsible, Fair, and Privacy-Preserving Health AI",
+    "track": "Analytics Track",
+    "date": "Tuesday, June 2",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction",
+        "authors": "Amimul Ehsan Zoha, Gondy Leroy, John N. Galgiani and Fariba Donovan"
+      },
+      {
+        "title": "Correcting LLM Policy-Inducted Bias in Sexual Orientation Identification Using Cue-Augmented Fine-Tuning",
+        "authors": "Lindsay Welton, Ying Liu, Genevieve Melton, Rui Zhang and Elliot Arsoniadis"
+      },
+      {
+        "title": "The Role of Prompting Strategies in AI-Assisted Thematic Analysis",
+        "authors": "Jiaxuan Zhang, Dezhi Wu, Sai Vuruma, Lucas Aust, Bharat Sowrya Yaddanapalli, Rithika Markanti, Valerie Vera, Xiaoming Li, Jiajia Zhang and Bankole Olatosi"
+      },
+      {
+        "title": "Pathology Shortcuts: Detecting and Mitigating Reliance on Non-Target Pathologies in Chest X-ray AI",
+        "authors": "Han-Jay Shu, Shun-Ting Chang, Meng-Ping Huang, Hao Lee, Takeshi Tohyama, Ahram Han and Po-Chih Kuo"
+      },
+      {
+        "title": "Explaining Fairness Enhancement with Collaborative Learning for Prediction of Treatment Completion in Patients with Substance Use Disorder",
+        "authors": "Mary Lucas, Quyen Ngo and Christopher Yang"
+      },
+      {
+        "title": "From Promising Capabilities to Pervasive Bias: Assessing Large Language Models for Emergency Department Triage",
+        "authors": "Joseph Lee, Tianqi Shang, Jae Young Baik, Duy Duong-Tran, Shu Yang, Lingyao Li and Li Shen"
+      }
+    ]
+  },
+  "scientific-2": {
+    "kind": "scientific",
+    "badge": "Scientific Session 2",
+    "title": "Trustworthy LLM Systems, Privacy, and Security",
+    "track": "Systems Track",
+    "date": "Tuesday, June 2",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Digital Twins for Digital Health: LLM‑Enhanced Vulnerability Insight and DDoS Protection for Electronic Health Records",
+        "authors": "Mangolika Bhattacharya, Anindya Sarkar, Todd Thomas, Rudra Prasad Baksi and Mihai Penica"
+      },
+      {
+        "title": "Linguistic and Persona-Based Vulnerabilities in LLM Safety Responses to Antibiotic-Related Queries",
+        "authors": "David Alexis García Espinosa, Luis Eduardo Flores Luna, Ángel Andrés Moreno Sánchez and Luis Fernando Caporal Montes de Oca"
+      },
+      {
+        "title": "Distilling GPT-4o model to improve small language model on HeadQA",
+        "authors": "Zaifu Zhan, Min Zeng, Shuang Zhou and Rui Zhang"
+      },
+      {
+        "title": "Reliable Curation of EHR Dataset via Large Language Models under Environmental Constraints",
+        "authors": "Raymond M Xiong, Panyu Chen, Tianze Dong, Jian Lu, Louis Hu, Nathan Yu, Benjamin Goldstein, Danyang Zhuo and Anru R Zhang"
+      },
+      {
+        "title": "Mask-PII: A Hybrid System for Anonymizing Personally Identifiable Information in Healthcare Data",
+        "authors": "Mukesh Kumar Patel, Chiu C Tan, Javad Mohammad Alizadeh and Huanmei Wu"
+      },
+      {
+        "title": "A Comprehensive Evaluation of the Phi Family of Small Language Models in Healthcare",
+        "authors": "Raghav Awasthi, Shalini Shree, Atharva Bhattad, Shreya Mishra, Nishant Singh, Avneesh Khare, Sai Prasad Ramachandran, Avneep Aggarwal, Renee Zachariah, Dwarikanath Mahapatra, Jacek B. Cywinski, Kamal Maheshwari, Ashish K Khanna, Francis Papay and Piyush Mathur"
+      }
+    ]
+  },
+  "scientific-3": {
+    "kind": "scientific",
+    "badge": "Scientific Session 3",
+    "title": "Human-Centered AI Design, Decision Support, and Clinical Communication",
+    "track": "Human Factors Track",
+    "date": "Tuesday, June 2",
+    "time": "1:30 PM - 3:00 PM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Promise and Caution: Mapping Opportunities for AI Decision Support in Emergency Medical Services",
+        "authors": "Zhan Zhang, Vanessa Agbugba, Enze Bai, Sian Billings, Xiao Luo and Kathleen Adelgais"
+      },
+      {
+        "title": "Operationalizing Institutional AI Readiness in Hospitals: A Design Science Maturity Model",
+        "authors": "Mike Krey, Karlo Filipovic, Said Rosch, Luka Saban and Mustafa Uzdilli"
+      },
+      {
+        "title": "Patient-Centered Design Recommendations for AI-Generated Discharge Summaries",
+        "authors": "Pantea Habibi, Haleh Vatani, Paul Landes, Barbara Di Eugenio, Richard Cameron, Andrew Boyd, Pamela Martyn-Nemeth, Carolyn Dickens, Karen Dunn Lopez and Debaleena Chattopadhyay"
+      },
+      {
+        "title": "Designing with Commitment: Lessons Learned from Multimodal Data Collection to Improve Patient-Physician Communication",
+        "authors": "Jonathan Singer, Hiu Ching Hung, Tobias Pertlwieser, Philipp Kreis, Carolin Müller, Meike Schmitt, Hanna Huebner, Katharina Seitz, Julia Gocke, Irem Karaman, Miriam Saatze, Annika Krückel, Chloë Goossens, Peter Uhrig, Andreas Maier, Peter Fasching and Manuel Hörner"
+      },
+      {
+        "title": "RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs",
+        "authors": "Asiyah Ahmad, Samuel Ehrenstein, Ian Thomas and Naim Oudeh"
+      },
+      {
+        "title": "Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort",
+        "authors": "Baris Karacan, Barbara Di Eugenio, Patrick Thornton, Joanna Tess and Subhash Kumar Kolar"
+      }
+    ]
+  },
+  "scientific-4": {
+    "kind": "scientific",
+    "badge": "Scientific Session 4",
+    "title": "Clinical Decision Support Systems and Medical Agents",
+    "track": "Systems Track",
+    "date": "Tuesday, June 2",
+    "time": "1:30 PM - 3:00 PM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "EXAIM: Explainable AI Middleware for Real-Time Multi-Agent Clinical Decision Support",
+        "authors": "Abem Woldesenbet and Andy Behrens"
+      },
+      {
+        "title": "Systematic Evaluation of Large Language Models for Post-Discharge Clinical Action Extraction",
+        "authors": "Shivali Dalmia, Ananya Mantravadi and Prasanna Desikan"
+      },
+      {
+        "title": "Enhancing Clinical Trial Patient Matching through Knowledge Augmentation and Reasoning with Multi-Agent",
+        "authors": "Hanwen Shi, Jin Zhang and Kunpeng Zhang"
+      },
+      {
+        "title": "BLUEmed: Retrieval-Augmented Multi-Agent Debate for Clinical Error Detection",
+        "authors": "Saukun Thika You, Nguyen Anh Khoa Tran, Wesley Kenneth Marizane, Hanshu Rao, Qiunan Zhang and Xiaolei Huang"
+      },
+      {
+        "title": "Pseudocode Generation from Clinical Protocol Flowchart using Large Vision-Language Models",
+        "authors": "Le Zhou, Xiao Luo, Chinmay Chandra and Zhan Zhang"
+      },
+      {
+        "title": "MediHive: A Decentralized Agent Collective for Medical Reasoning",
+        "authors": "Xiaoyang Wang and Christopher Yang"
+      }
+    ]
+  },
+  "scientific-5": {
+    "kind": "scientific",
+    "badge": "Scientific Session 5",
+    "title": "Population Health Platforms, Data Infrastructure, and Knowledge Systems",
+    "track": "Systems Track",
+    "date": "Tuesday, June 2",
+    "time": "3:30 PM - 5:00 PM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Patient Portal Enrollment Before and During the COVID-19 Pandemic",
+        "authors": "Iyinoluwa Tugbobo, Lisa Yanek and Casey Taylor"
+      },
+      {
+        "title": "Data Integration and Sharing Architecture for Rapid Emergency Response",
+        "authors": "Colin Dzieia, Eduard Wolf, Pinar Bisgin and Michael Pantförder"
+      },
+      {
+        "title": "Preventing Epidemic Spread Using Leaky Vaccines",
+        "authors": "Da Qi Chen, Ann Li, George Li, Madhav Marathe, Aravind Srinivasan, Anil Vullikanti and Jiayi Wu"
+      },
+      {
+        "title": "AI-Assisted Variable Discovery and Biological Validation for Diabetes Modeling",
+        "authors": "Xinyi Yang, Yusuf Akbulut, Harun Pirim, Fumou Sun and Juan Li"
+      },
+      {
+        "title": "Dynamic-Capacity Relational Graph Convolutional Networks for Large-Scale Biomedical Knowledge Graph Completion",
+        "authors": "Mohammed Lnu, Bofan He, Huanying Gu and Jerry Cheng"
+      },
+      {
+        "title": "Integration of Artificial Intelligence-Based Chatbots and Geographic Information Systems for Healthcare Access: A Systematic Review",
+        "authors": "Bharat Sowrya Yaddanapalli and Dezhi Wu"
+      }
+    ]
+  },
+  "scientific-6": {
+    "kind": "scientific",
+    "badge": "Scientific Session 6",
+    "title": "Patient Experience, Portals, and Digital Engagement",
+    "track": "Human Factors Track",
+    "date": "Wednesday, June 3",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "Mississippi",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Voices from Reddit: Users' Experiences and Opinions with Generative AI for Health Problems",
+        "authors": "Yuanying Pang, Lovinta Atrinawati, Ruoyu Li, Zhe He and Mia Liza A. Lustria"
+      },
+      {
+        "title": "Patient Portal Use Among Older Adults: A Systematic Review and Meta-Analysis",
+        "authors": "Nina Sakhnini and Debaleena Chattopadhyay"
+      },
+      {
+        "title": "When “Try Harder” Backfires: Agent-Based Simulation of Tone-Dependent Attrition in Diet Coaching",
+        "authors": "Claire Chen and Jake Chen"
+      },
+      {
+        "title": "Unintentional Information Blocking: A Longitudinal Analysis of Availability Failures in mHealth (2011-2025)",
+        "authors": "Timoteo Kelly and John Robert Bautista"
+      },
+      {
+        "title": "High-Stake AI Chatbot Systems in Mental Health Care: A Systematic Literature Review from a Critical Safety Perspective",
+        "authors": "Deniz Turk and Dezhi Wu"
+      },
+      {
+        "title": "Design and Evaluation of an AI-Driven Personalized Mobile App to Provide Multifaceted Health Support for Type 2 Diabetes Patients in China",
+        "authors": "Yibo Meng, Zhiming Liu and Haochen Qin"
+      }
+    ]
+  },
+  "scientific-7": {
+    "kind": "scientific",
+    "badge": "Scientific Session 7",
+    "title": "Engagement, Coaching, and Conversational Health Systems",
+    "track": "Systems Track",
+    "date": "Wednesday, June 3",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "CR 303",
+    "paperCount": 5,
+    "papers": [
+      {
+        "title": "EngageTriBoost: Predictive Modeling of User Engagement in Digital Mental Health Intervention Using Explainable Machine Learning",
+        "authors": "Ha Na Cho, Cheryl King, Daniel Eisenberg and Kai Zheng"
+      },
+      {
+        "title": "PRISM-Coach: Privacy-by-Design Adaptive Group Assignment for Digital Lifestyle Coaching at Scale",
+        "authors": "Nariman Mani and Salma Attaranasl"
+      },
+      {
+        "title": "Mind Companion: An Embodied Conversational Agent for Process-Based Psychotherapy",
+        "authors": "Sofie Kamber, Lukas Diebold, Pascal Riachi, Stella Brogna, Andrew Gloster and Rafael Wampfler"
+      },
+      {
+        "title": "Toward Accessible Psychotherapy Training Using AI-Driven Interactive Patient Avatars",
+        "authors": "Pascal Riachi, Sofie Kamber, Stella Brogna, Andrew Gloster and Rafael Wampfler"
+      },
+      {
+        "title": "Persona-Guided LLM Adaptation for Culturally Personalized Diabetes Prevention MCQs",
+        "authors": "Jason Fan, Chase Fensore, Jacob Shtulman, Rima Pai, Dewan Shoaib, Megha Shah and Joyce Ho"
+      }
+    ]
+  },
+  "scientific-8": {
+    "kind": "scientific",
+    "badge": "Scientific Session 8",
+    "title": "Clinical Note Mining, Event Extraction, and Summarization",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Harnessing Language Models for Preoperative Frailty Detection in Clinical Notes",
+        "authors": "Chen Bai, Masoud Rouhizadeh, Catherine Price, Nicole Lavin, Raed Yacoub, Mohammad Al-Ani, Todd Manini, Yonghui Wu and Mamoun Mardini"
+      },
+      {
+        "title": "Leveraging Large Language Models for Extracting Social Determinants of Health in Real-World Clinical Notes",
+        "authors": "Kiersten Campbell, Rana Jreich, Josephine Buclez, Sweta Balaji, Ravi Parikh, Matthew Reyna and Selen Bozkurt"
+      },
+      {
+        "title": "Comparing LLM and Fine-Tuned Model Performance on NVDRS Circumstance Extraction with Varying Prompt Complexity",
+        "authors": "Geoffrey Martin, Yifan Peng and Xuan Zhong Feng"
+      },
+      {
+        "title": "Seizure Frequency Extraction and Normalization from EMU Reports based on Large Language Models and Ontology",
+        "authors": "Ran Hu, M R Sandhya Rani, Shiqiang Tao, Guo-Qiang Zhang, Samden Lhatoo, Degui Zhi, Licong Cui and Rashmie Abeysinghe"
+      },
+      {
+        "title": "Using reasoning LLMs to extract SDOH events from clinical notes",
+        "authors": "Ertan Dogan, Yifan Peng and Kunyu Yu"
+      },
+      {
+        "title": "Toward Complete Hospital Discharge Summarization with Abstract Meaning Representation",
+        "authors": "Paul Landes, Sitara Rao, Aaron Chaise and Barbara Di Eugenio"
+      }
+    ]
+  },
+  "scientific-9": {
+    "kind": "scientific",
+    "badge": "Scientific Session 9",
+    "title": "Biomedical Knowledge Representation and Text Mining",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Robust Biomedical Publication Type and Study Design Classification with Knowledge-Guided Perturbations",
+        "authors": "Shufan Ming, Joe Menke, Neil R. Smalheiser and Halil Kilicoglu"
+      },
+      {
+        "title": "Ontokeeper-Desktop: a semiotic driven ontology evaluation tool for biomedical ontologies",
+        "authors": "Muhammad Amith, Xubing Hao, Yang Gong, Licong Cui and Cui Tao"
+      },
+      {
+        "title": "Complementary Evidence Pathways for LLM-Based Gene-Disease Plausibility Assessment",
+        "authors": "Evan Yu, Ginger Gu, Laila Rasmy, Ziqian Xie and Degui Zhi"
+      },
+      {
+        "title": "Curation and Extraction of Drug-Related Entities from Reddit Platform",
+        "authors": "Zewei Wang, Zihan Xu, Yishu Wei, Michael Chary and Yifan Peng"
+      },
+      {
+        "title": "KoPA-DR: Large Language Models Enhance Biomedical Knowledge Graph Completion for Drug Repurposing",
+        "authors": "Yang Zhao, Zoran Obradovic and Xinghua Shi"
+      },
+      {
+        "title": "Semantic Knowledge Guided Diffusion Model for Biomedical Ontology Definition Generation",
+        "authors": "Shailesh Dahal, Ratri Mukherjee, Nicholas Mathews, Bijaya Adhikari and Kishlay Jha"
+      }
+    ]
+  },
+  "scientific-10": {
+    "kind": "scientific",
+    "badge": "Scientific Session 10",
+    "title": "Clinical LLMs for Reasoning, Matching, and QA",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "Theater",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Guided Clinical Reasoning with LLMs: Reconstructing the PHQ-9 from Multimodal Inputs",
+        "authors": "Rafael Trujillo and Christian Poellabauer"
+      },
+      {
+        "title": "Identify Patients at Risk of HIV Using a Clinical Large Language Model from Electronic Health Records",
+        "authors": "Yiyang Liu, Ziyi Chen, Pogul Suman, Hwayoung Cho, Mattia Prosperi and Yonghui Wu"
+      },
+      {
+        "title": "Evolution of LLMs for Clinical Information Extraction: A Comparative Study of GPT and Llama Models",
+        "authors": "Vipina Keloth, Yang Ren, Kriti Bhattarai and Hua Xu"
+      },
+      {
+        "title": "LLM-Match: Matching Eligible Patients to Trials Based on Large Language Models and Retrieval-Augmented Generation",
+        "authors": "Xiaodi Li, Shaika Chowdhury, Chung-Il Wi, Maria Vassilaki, Xiaoke Liu, Terence T. Sio, Owen Garrick, Young J. Juhn, James R. Cerhan, Cui Tao and Nansu Zong"
+      },
+      {
+        "title": "PRISM-Consult: A Panel-of-Experts Architecture for Clinician-Aligned Diagnosis",
+        "authors": "Lionel Levine, John Santerre, Alexander Young, T. Barry Levine, Francis Campion and Majid Sarrafzadeh"
+      },
+      {
+        "title": "Large Language Models for Radiology QA: Benchmarking and Error Taxonomy on RadQA",
+        "authors": "Alaleh Hamidi and Kirk Roberts"
+      }
+    ]
+  },
+  "scientific-11": {
+    "kind": "scientific",
+    "badge": "Scientific Session 11",
+    "title": "Ambient, Wearable, and Assessment Technologies in Care Delivery",
+    "track": "Human Factors Track",
+    "date": "Wednesday, June 3",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "Mississippi",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Associating Healthcare Teamwork with Patient Outcomes for Predictive Analysis",
+        "authors": "Hsiao-Ying Lu and Kwan-Liu Ma"
+      },
+      {
+        "title": "Multimodal VAE Nowcasting with LOCF-Residual Correction for Annual Checkups Under Deviation Regimes and Fragmented Modalities",
+        "authors": "Chenhui Huang, Fumiyuki Nihey, Yuki Kosaka, Kentaro Nakahara, Yoshinori Tamada and Koichi Murashita"
+      },
+      {
+        "title": "Ambient Intelligence in Intensive Care Units of the Future",
+        "authors": "David Przewozny, Detlef Runde, Falko Schmid, Felix Tirschmann and Paul Chojecki"
+      },
+      {
+        "title": "Predictive Modeling of Familial Risk Patterns in Neurological and Mental Health Conditions Using Survey-Derived Health Data",
+        "authors": "Sophia Kozlowski, Wish Shao and Navid Hashemi Tonekaboni"
+      },
+      {
+        "title": "Real-Time Correction of Metamorphopsia Using Wearable Technology: Methodology and Clinical Results",
+        "authors": "Amal Alshahranii, William Innes, Rich Davison and Gary Ushaw"
+      },
+      {
+        "title": "Supporting Reliable Stuttering Assessment in Bengali Using Self-Supervised Speech Representations",
+        "authors": "Rakibuz Sultan and Beenish Chaudhry"
+      }
+    ]
+  },
+  "scientific-12": {
+    "kind": "scientific",
+    "badge": "Scientific Session 12",
+    "title": "Physiological Signal Learning from EEG, ECG, and Sleep Data",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "CR 303",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Optimizing EEG Graph Structure for Seizure Detection: An Information Bottleneck and Self-Supervised Learning Approach",
+        "authors": "Lincan Li, Rikuto Kotoge, Xihao Piao, Zheng Chen and Yushun Dong"
+      },
+      {
+        "title": "Multimodal EEG-IMU Fusion for Motor Assessment: Leveraging Task-Dependent Complementarity for Robustness",
+        "authors": "Zhenan Yin, Lalitha Pranathi Pulavarthy and Saptarshi Purkayastha"
+      },
+      {
+        "title": "End-to-End EEG-Based Auditory Attention Decoding for Cochlear Implant Users",
+        "authors": "Ian Pope, Jusung Ham, Inyong Choi, Yu-Hsiang Wu, Bijaya Adhikari and Octav Chipara"
+      },
+      {
+        "title": "Federated ECG Classification via Embedding-Level Data Augmentation",
+        "authors": "Nikil Sharan Prabahar Balasubramanian and Sagnik Dakshit"
+      },
+      {
+        "title": "Multi-cohort Sleep EEG-based Depression Detection Using Multi-modal Data from the National Sleep Research Resource",
+        "authors": "Maryamsadat Mohtashamian, Xiaojin Li, Laila Rasmy and Licong Cui"
+      },
+      {
+        "title": "Attention Based Hierarchical Modeling of EKGs for Interpretable Cardiac Disease Detection",
+        "authors": "Eyiara Oladipo, Sarwar Nazrul, Mario Padilla Rodriguez and Mohamed Nafea"
+      }
+    ]
+  },
+  "scientific-13": {
+    "kind": "scientific",
+    "badge": "Scientific Session 13",
+    "title": "Speech, Wearable, and Functional Assessment",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "One Week of Pre‑Program Actigraphy Identifies Dropout Risk in Home‑Based Pulmonary Rehabilitation for COPD",
+        "authors": "Louis Faust, Stephanie Zawada, Michelle Grady, Stacey J. Winham, Roberto P. Benzo and Emma Fortune"
+      },
+      {
+        "title": "Within-Subject Speech Variability as a Reliable Indicator of Concussion",
+        "authors": "Rahmina Rubaiat and Christian Poellabauer"
+      },
+      {
+        "title": "Apnea Events Detection using Low-Fidelity Proxy Signals",
+        "authors": "Meghna Singh and Jaideep Srivastava"
+      },
+      {
+        "title": "GeHirNet: A Sex-Aware Hierarchical Model for Fair and Accurate Voice Pathology Classification",
+        "authors": "Fan Wu, Kaicheng Zhao, Elgar Fleisch and Filipe Barata"
+      },
+      {
+        "title": "Multimodal Skeleton and Ultrasound-Based Modeling for Predicting Upper Limb Disease Severity Progression in Neuromuscular Disorders",
+        "authors": "Arafat Rahman, Ariful Islam, Allison N. McCrady, Silvia S. Blemker, Rebecca J. Scharf and Laura E. Barnes"
+      },
+      {
+        "title": "Wearable-Based Modeling of Upper-Limb Point-to-Point Movements for Severity Estimation in Neuromuscular Disorders",
+        "authors": "Ariful Islam, Arafat Rahman, Alejandro Vistorte Salgado, Rebecca J. Scharf, Silvia S. Blemker and Laura E. Barnes"
+      }
+    ]
+  },
+  "scientific-14": {
+    "kind": "scientific",
+    "badge": "Scientific Session 14",
+    "title": "Edge, Wearable, and Assistive Health Technologies",
+    "track": "Systems Track",
+    "date": "Wednesday, June 3",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Real-Time Asthma Triggers via mHealth Integration: Environmental Sensing, Wearable Telemetry, and Natural Language Processing",
+        "authors": "Aravind Kuruvikkattil, Rashmita Kudamala, Charulata Sree Pokala and Saptarshi Purkayastha"
+      },
+      {
+        "title": "Real‑Time Environment‑Specific Deep Denoising for Edge‑Assisted Hearing Aids",
+        "authors": "Yumna Anwar, Ian Pope, Yu-Hsiang Wu, Steve Goddard and Octav Chipara"
+      },
+      {
+        "title": "Using 3D Measurements to Detect Wound Progression",
+        "authors": "Dahlia Musa, Frank Guido-Sanz, Mindi Anderson, Ji Meng Loh, Desiree Diaz and Salam Daher"
+      },
+      {
+        "title": "Hardware-Aware Edge Deep Learning for Multimodal Biomedical Monitoring on Resource-Constrained SoCs",
+        "authors": "Sara Aly and Shahnam Mirzaei"
+      },
+      {
+        "title": "A Scalable Dual-Camera Platform for Behavioral Assessment in Healthcare",
+        "authors": "Mostafa Habibi, Mehrdad Nourani and Dennis Sullivan"
+      },
+      {
+        "title": "Electrotactile, Vibrotactile, and Thermal Feedback in a Wearable CPR Training Game",
+        "authors": "Yibo Meng, Zhiming Liu and Ye Lyumnshan"
+      }
+    ]
+  },
+  "scientific-15": {
+    "kind": "scientific",
+    "badge": "Scientific Session 15",
+    "title": "Neurological and Mental Health Analytics",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "Theater",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Quantifying the Uncertainty and Risk Contributions of Activities of Daily Living Features in Dementia Prediction",
+        "authors": "Souvik Bag, Eunji Jeon, Muskan Garg, Xingyi Liu, Maria Vassilaki, Ronald Petersen, Jennifer St. Sauver and Sunghwan Sohn"
+      },
+      {
+        "title": "Machine Learning Framework for Multiple Sclerosis Detection: Comparative Analysis of Gut Microbiome and Neuroimaging Biomarkers",
+        "authors": "Mahlet Andargei and Mai Oudah"
+      },
+      {
+        "title": "Unifying Acoustic Features and Text with Multimodal LLMs for Neurodegenerative Screening",
+        "authors": "Qingfeng Zhang, Yuanxiong Guo and Yanmin Gong"
+      },
+      {
+        "title": "Interpretable Alzheimer’s Diagnosis via Multimodal Fusion of Regional Brain Experts",
+        "authors": "Farica Zhuang, Shu Yang, Dinara Aliyeva, Zixuan Wen, Duy Duong-Tran, Christos Davatzikos, Tianlong Chen, Song Wang and Li Shen"
+      },
+      {
+        "title": "Graph-Based Biomarker Discovery and Interpretation for Alzheimer's Disease",
+        "authors": "Maryam Khalid, Fadeel Sher Khan, John Broussard and Arko Barman"
+      },
+      {
+        "title": "Staging and Pseudotime Inference of Alzheimer's Disease Progression using Multimodal Imaging Data",
+        "authors": "Akira A. Nair, Zixuan Wen, Zexuan Wang, Jingwen Yan, Andrew J. Saykin, Heng Huang, Paul Thompson, Christos Davatzikos and Li Shen"
+      }
+    ]
+  },
+  "scientific-16": {
+    "kind": "scientific",
+    "badge": "Scientific Session 16",
+    "title": "Clinical Trajectories and Early Warning Systems",
+    "track": "Systems Track",
+    "date": "Wednesday, June 3",
+    "time": "12:30 PM - 2:00 PM",
+    "room": "CR 303",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Modeling Patient Care Trajectories with Transformer Hawkes Processes",
+        "authors": "Saumya Pandey and Varun Chandola"
+      },
+      {
+        "title": "AI-Driven Early-Warning System to Predict Multi-Organ Deterioration in Critical Care Patients",
+        "authors": "Chaitanya Krishna Kasaraneni and Sarmista Thalapaneni"
+      },
+      {
+        "title": "Autism Spectrum Disorder Computable Phenotyping Using Electronic Health Records with Verified Autism Diagnoses",
+        "authors": "Amber Angell, Yongqiu Li, Hesamedin Hakimjavadi, Camille Parchment, Larry Yin, Srikar Chamala, Jiang Bian, Lindsay Thompson and Yi Guo"
+      },
+      {
+        "title": "STEP-PD: Stage-Aware and Explainable Parkinson’s Disease Severity Classification from Longitudinal Multimodal Clinical Assessments",
+        "authors": "Md Mezbahul Islam, John Michael Templeton, Christian Poellabauer and Ananda Mondal"
+      },
+      {
+        "title": "Territory-Aware Discrete-Time Deep Learning for Ischemic Stroke Recurrence and Mortality Risk Prediction with Patients Risk Trajectories Using Longitudinal EHR Data",
+        "authors": "Samrat Kumar Dey, Adnan I. Qureshi and Chi-Ren Shyu"
+      },
+      {
+        "title": "Benchmarking Early Deterioration Prediction Across Hospital-Rich and MCI-Like Emergency Triage Under Constrained Sensing",
+        "authors": "Kma Solaiman, Joshua Sebastian and Karma Tobden"
+      }
+    ]
+  },
+  "scientific-17": {
+    "kind": "scientific",
+    "badge": "Scientific Session 17",
+    "title": "Clinical Outcome and Longitudinal Risk Prediction",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "12:30 PM - 2:00 PM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Clinical Hierarchical Multi-Expert Attention Model for Dental Implant Outcome Prediction",
+        "authors": "Almonzer Salah Nooraldaim, Xin Lai, Xiaoyan Zhu and Jiayin Wang"
+      },
+      {
+        "title": "Conditional Flow Matching for Prediction of Future Health Checkup Results using Cross-sectional Data",
+        "authors": "Keisuke Suzuki, Yuki Kosaka, Kosuke Nishihara, Mana Hashimoto, Fumiyuki Nihey, Kentaro Nakahara, Yoshinori Tamada and Koichi Murashita"
+      },
+      {
+        "title": "Improving Survival Prediction of Head and Neck Cancer Patients by Modeling Long-term Symptom Burden",
+        "authors": "Yaohua Wang, Eric A. Anyimadu, Clifton D. Fuller, Amy C. Moreno, Xinhua Zhang, G. Elisabeta Marai and Guadalupe Canahuate"
+      },
+      {
+        "title": "Unified Heterogeneous Event Sequence Modeling for Remission-Stage Risk Prediction among Cancer Survivors with Multiple Chronic Conditions",
+        "authors": "Haochen Liu, Naveen Abedin, Nicholas Kidd, Kathleen Porter, Wen You and Jundong Li"
+      },
+      {
+        "title": "A Domain-Structured Ensemble Framework for Perioperative Outcome Prediction Using Electronic Health Record Data",
+        "authors": "Shikhar Shukla and Cristina Barboi"
+      },
+      {
+        "title": "Enhancing Lung Cancer Treatment Outcome Prediction through Semantic Feature Engineering Using Large Language Models",
+        "authors": "Mun Hwan Lee, Shaika Chowdhury, Xiaodi Li, Sivaraman Rajaganapathy, Eric Klee, Ping Yang, Terence Sio, Liewei Wang, James Cerhan and Nansu Zong"
+      }
+    ]
+  },
+  "scientific-18": {
+    "kind": "scientific",
+    "badge": "Scientific Session 18",
+    "title": "Patient Risk Assessment and Personalized Care Analytics",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "12:30 PM - 2:00 PM",
+    "room": "CR 325",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Concept-Based Missingness-Aware Recurrent Encoding for Prolonged ICU Stay Prediction",
+        "authors": "Yoshitaka Nozaki, Takashi Ohnishi, Shuhei Noyori, Israa Alqassem and Konosuke Temmei"
+      },
+      {
+        "title": "When PCOS Meets Eating Disorders: An Explainable AI Approach to Detecting the Hidden Triple Burden",
+        "authors": "Apoorv Prasad and Susan McRoy"
+      },
+      {
+        "title": "LLM-Powered Personalized Glycemic Assessment in Type 2 Diabetes with Wearable Sensor Data",
+        "authors": "Yifan Gao, Yanmin Gong, Yun Shi and Yuanxiong Guo"
+      },
+      {
+        "title": "Characterizing Geographic Variation in GLP-1 Receptor Agonist Prescribing Using Interpretable Machine Learning",
+        "authors": "Zhouzhou Chu, Sherry Yun Wang, Ang Li and Bowei Tian"
+      },
+      {
+        "title": "Instruction Fine-Tuned Language Model for Pediatric Fall Risk Assessment via Iterative Training using Generated Clinical Texts",
+        "authors": "Thasina Tabashum, Fahmida Yasmin Rifat, Shou-Jen Wang, Joseph Krzak, Karen Kruger, Adam Graf, Ross Chafetz, Jon Davids, Anita Bagley, Jason Woloff, Susan Sienko, Jeremy Bauer and Mark Albert"
+      },
+      {
+        "title": "PURmgmt: A Culturally Tailored Digital Intervention for High-Purine Diet Management in China",
+        "authors": "Yibo Meng, Bingyi Liu and Zhiming Liu"
+      }
+    ]
+  },
+  "scientific-19": {
+    "kind": "scientific",
+    "badge": "Scientific Session 19",
+    "title": "Statistical, Temporal, and Causal Methods",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "12:30 PM - 2:00 PM",
+    "room": "Theater",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Mining Electronic Health Records to Investigate Effectiveness of Ensemble Deep Clustering",
+        "authors": "Manar Samad, Yina Hou and Shrabani Ghosh"
+      },
+      {
+        "title": "Vine Copulas for Analyzing Multivariate Conditional Dependencies in Electronic Health Records Data",
+        "authors": "Manar Samad, Yina Hou, Megan Witherow and Norou Diawara"
+      },
+      {
+        "title": "Three Data Bipartitioning Methods to Improve Prediction of Time to Death",
+        "authors": "Michael Sossi and Alex Freitas"
+      },
+      {
+        "title": "A Resuable Shapelet Library for Temporal Exposure Pattern Discovery",
+        "authors": "Sukrut Shishupal, Katherine Sward, Mollie Cummins, Amanda Bakian, Rob Smart, Randy Madsen, Urvi Varma, Julio Facelli and Ramkiran Gouripeddi"
+      },
+      {
+        "title": "Beyond Single-Score Matching: A Two-Dimensional Propensity Score Method for Mixed Covariate Types",
+        "authors": "Kostiantyn Botnar, Justin T. Nguyen, Kamil Khanipov and George Golovko"
+      },
+      {
+        "title": "Transfer Learning for Meta-analysis Under Covariate Shift",
+        "authors": "Zilong Wang, Ali Abdeen and Turgay Ayer"
+      }
+    ]
+  },
+  "scientific-20": {
+    "kind": "scientific",
+    "badge": "Scientific Session 20",
+    "title": "Imaging, Surgery, and Visual Analytics Platforms",
+    "track": "Systems Track",
+    "date": "Wednesday, June 3",
+    "time": "2:00 PM - 3:30 PM",
+    "room": "Mississippi",
+    "paperCount": 5,
+    "papers": [
+      {
+        "title": "Multi-environment lifelong deep reinforcement learning for medical imaging",
+        "authors": "Guangyao Zheng, Shuhao Lai, Vladimir Braverman, Michael Jacobs, Vishwa Parekh and Doris Leung"
+      },
+      {
+        "title": "A Quality Assurance Framework for Governing Reliability in Clinical AI Systems: A Case Study in EEG-Based Seizure Detection",
+        "authors": "Qaisar Khan"
+      },
+      {
+        "title": "Gestalt-GNN: Multimodal Panoptic Reasoning for Uncertainty-Aware Medical Image Segmentation",
+        "authors": "Srikanth Vemula and Anne Sinko"
+      },
+      {
+        "title": "BRAVE: Neuroanatomy-anchored Brain Region Annotation, Visualization, and Exploration Engine for BRAIN Initiative Cell Atlas Network",
+        "authors": "Xiaojin Li, Yan Huang, Wei-Chun Chou, Ling Tong, Shiwei Lin, Rashmie Abeysinghe, Licong Cui, Shiqiang Tao and Guo-Qiang Zhang"
+      },
+      {
+        "title": "Legible surgery: visual analytics of video and robot logs for education and research",
+        "authors": "Ye Li, Hong Seo Lim, Ken Whaler, Kiran Bhattacharyya and Anthony Jarc"
+      }
+    ]
+  },
+  "scientific-21": {
+    "kind": "scientific",
+    "badge": "Scientific Session 21",
+    "title": "Medical Imaging, Segmentation, and Cancer Analytics",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "2:00 PM - 3:30 PM",
+    "room": "CR 303",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "GCFSeg: Text-Guided Pulmonary Infection Segmentation for Clinical Decision Support via Adaptive Frequency-Domain Feature Decoupling",
+        "authors": "Hai Li, Wanli Xing and Chenglu Li"
+      },
+      {
+        "title": "Automated Renal Cell Carcinoma Grading by Fusing Histomics, Machine and Deep Learning Analysis",
+        "authors": "Fnu Neha and Arvind K. Bansal"
+      },
+      {
+        "title": "Clinically-Informed Modeling for Pediatric Brain Tumor Classification from Whole-Slide Histopathology Images",
+        "authors": "Joakim Nguyen, Jian Yu, Jinrui Fang, Nicholas Konz, Tianlong Chen, Sanjay Krishnan, Chandra Krishnan, Ying Ding, Hairong Wang and Ankita Shukla"
+      },
+      {
+        "title": "From Routine Imaging to Risk Stratification: Multimodal Vision-Language Survival Modeling for Pancreatic Cancer",
+        "authors": "David Le, Ramon Correa-Medero, Amara Tariq, Vedant Joshi Parthesh, Fnu Murlidhar, Hexin Dong, Yifan Peng, George Shih, Zhen Wang, Rahul Pannala, Yano Motoyo and Imon Banerjee"
+      },
+      {
+        "title": "Multimodal Slice Interaction Network Enhanced by Transfer Learning for Precise Segmentation of Internal Gross Tumor Volume in Lung Cancer PET/CT Imaging",
+        "authors": "Yi Luo, Yike Guo, Hamed Hooshangnejad, Rui Zhang, Xue Feng, Quan Chen, Wil Ngwa, Zongwei Zhou and Kai Ding"
+      },
+      {
+        "title": "A Hybrid Classical-Quantum Machine Learning Framework for Tumor Mutation Classification: A Comprehensive Study of Quantum Optimizers in Medical Image Analysis",
+        "authors": "Md Jobair Hossain Faruk, Md Kamrul Siam, Jerry Q. Cheng, Huanying Gu, Louis P. Dehner and Mai He"
+      }
+    ]
+  },
+  "scientific-22": {
+    "kind": "scientific",
+    "badge": "Scientific Session 22",
+    "title": "Genomics, Microbiome, and Precision Medicine",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "2:00 PM - 3:30 PM",
+    "room": "CR 324",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Efficient Genome-by-k-mer Matrix Construction for Population-Scale Health Analytics",
+        "authors": "Mohammadali Serajian, Mahsa Lotfollahi, Oded Green, Kaleb Smith, Simone Marini, Mattia Prosperi and Christina Boucher"
+      },
+      {
+        "title": "Robust Clustering Analysis of Genes Related to Age-related Macular Degeneration using RNA-seq",
+        "authors": "Brayan Gutierrez, Rinki Ratnapriya and Arko Barman"
+      },
+      {
+        "title": "Microbiome-Based Non-Invasive Screening for Endometriosis Using Machine Learning",
+        "authors": "Aruzhan Bolatova and Mai Oudah"
+      },
+      {
+        "title": "Mechanistic Validation and Structural Analysis of PAH-Associated SOX17 for Real-World Relevance",
+        "authors": "Lingtao Chen, Yuling Deng, Zhiyu Dai, Shuteng Niu, Cui Tao, Kazi Fahim Ahmad Nasif, Bobin Deng and Yixin Xie"
+      },
+      {
+        "title": "Vulnerabilities in the Tower: Assessing Embedding Nucleotide Inference Risks in Hybrid CNN-Transformer Genomic Large Language Models (HgLLMs)",
+        "authors": "Reem Al-Saidi, Erman Ayday and Ziad Kobti"
+      },
+      {
+        "title": "SensitiveCancerGPT: Generative AI for Actionable Pharmacogenomics in Precision Oncology",
+        "authors": "Shaika Chowdhury, Mun Hwan Lee, Sivaraman Rajaganapathy, Lichao Sun, Liewei Wang, Ping Yang, James Cerhan and Nansu Zong"
+      }
+    ]
+  },
+  "scientific-23": {
+    "kind": "scientific",
+    "badge": "Scientific Session 23",
+    "title": "Advanced Learning Architectures for Disease and Therapy Modeling",
+    "track": "Analytics Track",
+    "date": "Wednesday, June 3",
+    "time": "2:00 PM - 3:30 PM",
+    "room": "Theater",
+    "paperCount": 6,
+    "papers": [
+      {
+        "title": "Forecasting and Analyzing MRSA Infection Patterns with Community and Healthcare Transmission Dynamics",
+        "authors": "Rituparna Datta, Jiaming Cui, Gregory R. Madden and Anil Vullikanti"
+      },
+      {
+        "title": "Reinforcement Learning-Guided Adaptive Fusion Model: Hybrid-Parametrized Quantum Circuits for Robust Histopathological Tumor Classification",
+        "authors": "Md Jobair Hossain Faruk, Md Kamrul Siam, Jerry Q. Cheng, Huanying Gu and Mai He"
+      },
+      {
+        "title": "A Deep Reinforcement Learning Framework based on Frequent Temporal Patterns as States for Optimal Therapy: Assessment in the Hypokalemia domain",
+        "authors": "Kfir Sofer and Yuval Shahar"
+      },
+      {
+        "title": "A Comparative Study of Machine Learning and Language Model Approaches for Classifying Mental Health Disorders",
+        "authors": "Aejin Lee, Rajesh Das, Ashlee Huang, Balu Bhasuran and Zhe He"
+      },
+      {
+        "title": "A Calibrated Class-Weighted Ensemble Framework for Relationship Classification in SNOMED CT with Domain-Specific BERT Models",
+        "authors": "T M Rubaith Bashar, Mengjia Xu and James Geller"
+      },
+      {
+        "title": "Cluster-Guided Self-Supervised Learning with Triplet Refinement for Longitudinal Heart Rate Time Series",
+        "authors": "Hyungtaek Kwon, Isac Park, Wenchen Li, Elinor Schoenfeld and Fan Ye"
+      }
+    ]
+  },
+  "keynote-anita": {
+    "kind": "keynote",
+    "badge": "Keynote",
+    "title": "From Data to Decisions: Building Learning Health Systems in Hospitals",
+    "speaker": "Anita Burgun, MD, PhD, FIAHSI",
+    "affiliation": "Professor of Medical Informatics, Université Paris Cité; Director of Department of Medical Informatics, Georges Pompidou European Hospital and Necker Children’s Hospital",
+    "date": "Monday, June 1",
+    "time": "11:45 AM - 12:45 PM",
+    "room": "Theater",
+    "bio": "Prof. Anita Burgun is a full professor of biomedical informatics and statistics at Université Paris Cité. She leads the Departments of Medical Informatics at Georges Pompidou European Hospital and Necker Children’s Hospital. Her research focuses on clinical and translational biomedical informatics, large-scale health data integration, and data-driven approaches for precision medicine.",
+    "externalLink": {
+      "href": "keynotes.html",
+      "label": "View keynote page"
+    }
+  },
+  "keynote-hoifung": {
+    "kind": "keynote",
+    "badge": "Keynote",
+    "title": "Towards Virtual Patient: AI for Accelerating Medical Discovery",
+    "speaker": "Hoifung Poon, PhD",
+    "affiliation": "General Manager, Microsoft Research, USA",
+    "date": "Tuesday, June 2",
+    "time": "11:45 AM - 12:45 PM",
+    "room": "Theater",
+    "abstract": "This keynote explores how multimodal generative AI can learn the language of patients from longitudinal clinical, imaging, and multi-omics data to create virtual patient world models. These digital twins can synthesize population-scale real-world evidence and help accelerate medical discovery through AI-powered virtual clinical trials.",
+    "externalLink": {
+      "href": "keynotes.html#hoifung-poon",
+      "label": "View keynote page"
+    }
+  },
+  "keynote-li": {
+    "kind": "keynote",
+    "badge": "Keynote",
+    "title": "Harnessing AI and Informatics to Advance Dementia Research and Aging Care",
+    "speaker": "Li Shen, PhD, FAIMBE, FACMI, FAMIA",
+    "affiliation": "Professor of Informatics, Radiology and CIS, University of Pennsylvania, USA",
+    "date": "Wednesday, June 3",
+    "time": "3:45 PM - 4:45 PM",
+    "room": "Theater",
+    "abstract": "This keynote highlights recent progress in integrating genetics, multi-omics, imaging, and clinical data to support dementia research and aging care. It also examines the role of trustworthy multimodal and generative AI in diagnosis, risk stratification, disease staging, and support for patients and caregivers.",
+    "externalLink": {
+      "href": "keynotes.html",
+      "label": "View keynote page"
+    }
+  },
+  "industry-panel-1": {
+    "kind": "industry",
+    "badge": "Industry Track",
+    "title": "Panel 1: Policy Session",
+    "date": "Tuesday, June 2",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "Theater",
+    "summary": [
+      "This block combines the Industry Track policy keynote and the policy panel on governing AI and health informatics in the age of intelligent care.",
+      "It covers AI accountability in clinical decision support, data privacy, health equity, and the governance of real-world data in healthcare and regulation."
+    ],
+    "moderator": "Ikram Khan, Health AI Institute",
+    "participants": [
+      "Keynote: Ram D. Sriram, PhD — Evaluating Large Language Models for Clinical Decision Support",
+      "Senator Eric Lucero, Minnesota Senate Representative",
+      "Jesse Isaacman-Beck, PhD, U.S. Department of Health & Human Services",
+      "Tyler Winkelman, MD, MSc, HHRI (MN HER Consortium)"
+    ],
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  },
+  "industry-panel-2": {
+    "kind": "industry",
+    "badge": "Industry Track",
+    "title": "Panel 2: The GenAI Data Chasm",
+    "date": "Tuesday, June 2",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "Theater",
+    "summary": [
+      "This panel examines the gap between having healthcare data and having data that is trustworthy, representative, and fit for a medical-grade AI ecosystem.",
+      "The discussion focuses on whether the field is building a human-aligned unified data ecosystem or creating deeper and more intelligent silos."
+    ],
+    "moderator": "Prasanna Desikan, Centific",
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  },
+  "industry-panel-3": {
+    "kind": "industry",
+    "badge": "Industry Track",
+    "title": "Panel 3: AI Enablement in Practice",
+    "date": "Tuesday, June 2",
+    "time": "1:30 PM - 3:00 PM",
+    "room": "Theater",
+    "summary": [
+      "This panel explores practical strategies, enablers, and pitfalls in moving AI from research to real-world clinical deployment.",
+      "Topics include workflow integration, lifecycle management, regulation, bias mitigation, and building trust with clinicians and patients."
+    ],
+    "moderator": "Jim Southwick",
+    "participants": [
+      "Matt Loth, University of Minnesota",
+      "Deepika (Deepa) Appana, HealthPartners",
+      "Julie Thompson, PhD, Boston Scientific"
+    ],
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  },
+  "industry-keynote-ben": {
+    "kind": "industry",
+    "badge": "Industry Keynote",
+    "title": "From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring",
+    "speaker": "Ben Teplitzky, PhD",
+    "affiliation": "AI/ML Research Fellow, Patient Management, Boston Scientific, USA",
+    "date": "Tuesday, June 2",
+    "time": "3:30 PM - 5:00 PM",
+    "room": "Theater",
+    "abstract": "Using BeatLogic as a case study, this keynote examines what it takes to move from an impressive algorithm to a trusted operational AI capability in ambulatory cardiac monitoring, including dataset design, annotation quality, validation strategy, workflow integration, and human oversight.",
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  },
+  "industry-networking": {
+    "kind": "industry",
+    "badge": "Industry Track",
+    "title": "Professional Networking and Social Hour",
+    "date": "Tuesday, June 2",
+    "time": "5:00 PM - 6:00 PM",
+    "room": "Theater / Industry Track community space",
+    "summary": [
+      "A networking-focused session for follow-up conversations across industry, academia, and healthcare delivery.",
+      "The current planning notes also include a speed-networking component in this block."
+    ],
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  }
+}

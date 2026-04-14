@@ -261,6 +261,240 @@
       text-underline-offset: 0.12em;
     }
 
+
+    .agenda-slot.program-detail-trigger,
+    .agenda-slot-link.program-detail-trigger {
+      cursor: pointer;
+    }
+
+    .agenda-slot.program-detail-trigger {
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .agenda-slot.program-detail-trigger:hover,
+    .agenda-slot.program-detail-trigger:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(77, 45, 32, 0.11);
+      border-color: rgba(122, 0, 25, 0.24);
+      outline: none;
+    }
+
+    .agenda-slot-link.program-detail-trigger {
+      display: block;
+      height: 100%;
+      outline: none;
+    }
+
+    .agenda-slot.program-detail-trigger:hover .agenda-slot-text,
+    .agenda-slot.program-detail-trigger:focus-visible .agenda-slot-text,
+    .agenda-slot-link.program-detail-trigger:hover .agenda-slot-text,
+    .agenda-slot-link.program-detail-trigger:focus-visible .agenda-slot-text {
+      color: var(--umn-maroon);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.12em;
+    }
+
+    .program-detail-modal[hidden] {
+      display: none;
+    }
+
+    .program-detail-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1100;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+    }
+
+    .program-detail-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(31, 22, 20, 0.6);
+      backdrop-filter: blur(3px);
+    }
+
+    .program-detail-dialog {
+      position: relative;
+      width: min(980px, calc(100vw - 2rem));
+      max-height: calc(100vh - 2rem);
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid #e5d9cf;
+      background: #fff;
+      box-shadow: 0 24px 60px rgba(25, 18, 16, 0.24);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .program-detail-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #e3d8cf;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.92);
+      color: var(--umn-maroon);
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .program-detail-close:hover,
+    .program-detail-close:focus-visible {
+      background: #f8f1eb;
+      outline: none;
+    }
+
+    .program-detail-header {
+      padding: 1.35rem 1.5rem 1rem;
+      border-bottom: 1px solid #eee3da;
+      background: linear-gradient(180deg, #faf4ee 0%, #ffffff 100%);
+    }
+
+    .program-detail-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.34rem 0.76rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .program-detail-title {
+      margin: 0.8rem 0 0;
+      color: #2f2724;
+      font-size: clamp(1.45rem, 2.6vw, 2rem);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      max-width: calc(100% - 3rem);
+      text-wrap: pretty;
+    }
+
+    .program-detail-subtitle {
+      margin: 0.55rem 0 0;
+      color: #5a4f49;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.55;
+      text-wrap: pretty;
+    }
+
+    .program-detail-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.95rem;
+    }
+
+    .program-detail-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.36rem 0.72rem;
+      border-radius: 999px;
+      background: #f7f1eb;
+      border: 1px solid #e7d9cd;
+      color: #5c504a;
+      font-size: 0.83rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .program-detail-body {
+      padding: 1.2rem 1.5rem 1.45rem;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .program-detail-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .program-detail-section h4 {
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: 0.98rem;
+      line-height: 1.35;
+    }
+
+    .program-detail-section p,
+    .program-detail-section li {
+      margin: 0;
+      color: #433934;
+      font-size: 0.96rem;
+      line-height: 1.68;
+      text-wrap: pretty;
+    }
+
+    .program-detail-section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .program-detail-papers {
+      display: grid;
+      gap: 0.78rem;
+    }
+
+    .program-paper-item {
+      padding: 0.9rem 1rem;
+      border-radius: 16px;
+      border: 1px solid #e9ddd3;
+      background: #fcfaf8;
+    }
+
+    .program-paper-title {
+      margin: 0;
+      color: #2f2724;
+      font-size: 0.98rem;
+      font-weight: 700;
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+
+    .program-paper-authors {
+      margin: 0.42rem 0 0;
+      color: #615551;
+      font-size: 0.92rem;
+      line-height: 1.58;
+    }
+
+    .program-detail-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.4rem;
+    }
+
+    .program-detail-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.62rem 0.92rem;
+      border-radius: 999px;
+      background: var(--umn-maroon);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .program-detail-link:hover,
+    .program-detail-link:focus-visible {
+      background: #5f0016;
+      outline: none;
+    }
+
     @media (max-width: 900px) {
       .agenda-day-header {
         flex-direction: column;
@@ -385,7 +619,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Anita Burgun</div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-anita"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Anita Burgun</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -478,8 +712,8 @@
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Clinical Note Mining, Event Extraction, and Summarization</div></div></td>
-          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link" href="industry.html"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 1</div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-1"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-panel-1"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 1</div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -500,8 +734,8 @@
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 2</span><div class="agenda-slot-text">Human Factors Track<br>Human-Centered AI Design, Decision Support, and Clinical Communication</div></div></td>
-          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link" href="industry.html"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 2</div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-2"><span class="agenda-badge">Scientific Session 2</span><div class="agenda-slot-text">Systems Track<br>Trustworthy LLM Systems, Privacy, and Security</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-panel-2"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 2</div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -512,7 +746,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Hoifung Poon</div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-hoifung"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Hoifung Poon</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -532,9 +766,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 3</span><div class="agenda-slot-text">Systems Track<br>Clinical Decision Support Systems and Medical Agents</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 4</span><div class="agenda-slot-text">Analytics Track<br>Clinical LLMs for Reasoning, Matching, and QA</div></div></td>
-          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link" href="industry.html"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 3</div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-3"><span class="agenda-badge">Scientific Session 3</span><div class="agenda-slot-text">Human Factors Track<br>Human-Centered AI Design, Decision Support, and Clinical Communication</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-4"><span class="agenda-badge">Scientific Session 4</span><div class="agenda-slot-text">Systems Track<br>Clinical Decision Support Systems and Medical Agents</div></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-panel-3"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Panel 3</div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -554,9 +788,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 5</span><div class="agenda-slot-text">Systems Track<br>Trustworthy LLM Systems, Privacy, and Security</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-5"><span class="agenda-badge">Scientific Session 5</span><div class="agenda-slot-text">Systems Track<br>Population Health Platforms, Data Infrastructure, and Knowledge Systems</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><a class="agenda-slot-link" href="assets/docs/Women-in-Health.pdf" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Special Event</span><div class="agenda-slot-text">Women in Health: From mentorship to sponsorship: advancing women into health informatics leadership</div></a></div></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link" href="industry.html"><span class="agenda-badge">Industry Keynote</span><div class="agenda-slot-text">Dr. Teplitzky</div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-keynote-ben"><span class="agenda-badge">Industry Keynote</span><div class="agenda-slot-text">Ben Teplitzky</div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -567,7 +801,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link" href="industry.html"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Networking Event</div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-networking"><span class="agenda-badge">Industry Track</span><div class="agenda-slot-text">Networking Event</div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -624,11 +858,11 @@
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 6</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 8</span><div class="agenda-slot-text">Analytics Track<br>Biomedical Knowledge Representation and Text Mining</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 9</span><div class="agenda-slot-text">Systems Track<br>Population Health Platforms, Data Infrastructure, and Knowledge Systems</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 10</span><div class="agenda-slot-text">Analytics Track<br>Medical Imaging, Segmentation, and Cancer Analytics</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 7</span><div class="agenda-slot-text">Human Factors Track<br>Patient Experience, Portals, and Digital Engagement</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-6"><span class="agenda-badge">Scientific Session 6</span><div class="agenda-slot-text">Human Factors Track<br>Patient Experience, Portals, and Digital Engagement</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-7"><span class="agenda-badge">Scientific Session 7</span><div class="agenda-slot-text">Systems Track<br>Engagement, Coaching, and Conversational Health Systems</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-8"><span class="agenda-badge">Scientific Session 8</span><div class="agenda-slot-text">Analytics Track<br>Clinical Note Mining, Event Extraction, and Summarization</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-9"><span class="agenda-badge">Scientific Session 9</span><div class="agenda-slot-text">Analytics Track<br>Biomedical Knowledge Representation and Text Mining</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-10"><span class="agenda-badge">Scientific Session 10</span><div class="agenda-slot-text">Analytics Track<br>Clinical LLMs for Reasoning, Matching, and QA</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -646,11 +880,11 @@
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 11</span><div class="agenda-slot-text">Human Factors Track<br>Ambient, Wearable, and Assessment Technologies in Care Delivery</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 13</span><div class="agenda-slot-text">Analytics Track<br>Physiological Signal Learning from EEG, ECG, and Sleep Data</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 14</span><div class="agenda-slot-text">Analytics Track<br>Speech, Wearable, and Functional Assessment</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 15</span><div class="agenda-slot-text">Systems Track<br>Edge, Wearable, and Assistive Health Technologies</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 12</span><div class="agenda-slot-text">Systems Track<br>Engagement, Coaching, and Conversational Health Systems</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-11"><span class="agenda-badge">Scientific Session 11</span><div class="agenda-slot-text">Human Factors Track<br>Ambient, Wearable, and Assessment Technologies in Care Delivery</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-12"><span class="agenda-badge">Scientific Session 12</span><div class="agenda-slot-text">Analytics Track<br>Physiological Signal Learning from EEG, ECG, and Sleep Data</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-13"><span class="agenda-badge">Scientific Session 13</span><div class="agenda-slot-text">Analytics Track<br>Speech, Wearable, and Functional Assessment</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-14"><span class="agenda-badge">Scientific Session 14</span><div class="agenda-slot-text">Systems Track<br>Edge, Wearable, and Assistive Health Technologies</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-15"><span class="agenda-badge">Scientific Session 15</span><div class="agenda-slot-text">Analytics Track<br>Neurological and Mental Health Analytics</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -669,21 +903,21 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 17</span><div class="agenda-slot-text">Systems Track<br>Clinical Trajectories and Early Warning Systems</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 18</span><div class="agenda-slot-text">Analytics Track<br>Clinical Outcome and Longitudinal Risk Prediction</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 19</span><div class="agenda-slot-text">Systems Track<br>Imaging, Surgery, and Visual Analytics Platforms</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 16</span><div class="agenda-slot-text">Analytics Track<br>Neurological and Mental Health Analytics</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-16"><span class="agenda-badge">Scientific Session 16</span><div class="agenda-slot-text">Systems Track<br>Clinical Trajectories and Early Warning Systems</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-17"><span class="agenda-badge">Scientific Session 17</span><div class="agenda-slot-text">Analytics Track<br>Clinical Outcome and Longitudinal Risk Prediction</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-18"><span class="agenda-badge">Scientific Session 18</span><div class="agenda-slot-text">Analytics Track<br>Patient Risk Assessment and Personalized Care Analytics</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-19"><span class="agenda-badge">Scientific Session 19</span><div class="agenda-slot-text">Analytics Track<br>Statistical, Temporal, and Causal Methods</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">2:00 PM - 3:30 PM</th>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 20</span><div class="agenda-slot-text">Analytics Track<br>Patient Risk Assessment and Personalized Care Analytics</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 22</span><div class="agenda-slot-text">Analytics Track<br>Genomics, Microbiome, and Precision Medicine</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 23</span><div class="agenda-slot-text">Analytics Track<br>Advanced Learning Architectures for Disease and Therapy Modeling</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-20"><span class="agenda-badge">Scientific Session 20</span><div class="agenda-slot-text">Systems Track<br>Imaging, Surgery, and Visual Analytics Platforms</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-21"><span class="agenda-badge">Scientific Session 21</span><div class="agenda-slot-text">Analytics Track<br>Medical Imaging, Segmentation, and Cancer Analytics</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-22"><span class="agenda-badge">Scientific Session 22</span><div class="agenda-slot-text">Analytics Track<br>Genomics, Microbiome, and Precision Medicine</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Competition</span><div class="agenda-slot-text">Data Challenge</div></div></td>
-          <td><div class="agenda-slot agenda-slot-scientific"><span class="agenda-badge">Scientific Session 21</span><div class="agenda-slot-text">Analytics Track<br>Statistical, Temporal, and Causal Methods</div></div></td>
+          <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-23"><span class="agenda-badge">Scientific Session 23</span><div class="agenda-slot-text">Analytics Track<br>Advanced Learning Architectures for Disease and Therapy Modeling</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -705,7 +939,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Li Shen</div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-li"><span class="agenda-badge">Keynote</span><div class="agenda-slot-text">Li Shen</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -723,6 +957,21 @@
     </table>
   </div>
 </section>
+
+<div class="program-detail-modal" id="program-detail-modal" hidden>
+  <div class="program-detail-backdrop" data-program-detail-close="true"></div>
+  <div class="program-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="program-detail-title">
+    <button type="button" class="program-detail-close" id="program-detail-close" aria-label="Close detail dialog">×</button>
+    <div class="program-detail-header">
+      <div class="program-detail-badge" id="program-detail-badge">Session Detail</div>
+      <h3 class="program-detail-title" id="program-detail-title"></h3>
+      <p class="program-detail-subtitle" id="program-detail-subtitle" hidden></p>
+      <div class="program-detail-meta" id="program-detail-meta"></div>
+    </div>
+    <div class="program-detail-body" id="program-detail-body"></div>
+  </div>
+</div>
+
 </main>
 
 <!-- Footer -->
@@ -735,6 +984,183 @@
   fetch('footer.html')
           .then(res => res.text())
           .then(html => { document.getElementById('footer').innerHTML = html; });
+
+  const programDetailModal = document.getElementById('program-detail-modal');
+  const programDetailClose = document.getElementById('program-detail-close');
+  const programDetailBadge = document.getElementById('program-detail-badge');
+  const programDetailTitle = document.getElementById('program-detail-title');
+  const programDetailSubtitle = document.getElementById('program-detail-subtitle');
+  const programDetailMeta = document.getElementById('program-detail-meta');
+  const programDetailBody = document.getElementById('program-detail-body');
+  let programDetailData = {};
+  let lastProgramDetailTrigger = null;
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function toParagraphs(value) {
+    if (!value) return [];
+    return Array.isArray(value) ? value.filter(Boolean) : [value];
+  }
+
+  function renderProgramDetail(detail) {
+    programDetailBadge.textContent = detail.badge || 'Session Detail';
+    programDetailTitle.textContent = detail.title || '';
+
+    const subtitle = detail.speaker || detail.track || '';
+    if (subtitle) {
+      programDetailSubtitle.hidden = false;
+      programDetailSubtitle.textContent = subtitle + (detail.affiliation ? ` | ${detail.affiliation}` : '');
+    } else {
+      programDetailSubtitle.hidden = true;
+      programDetailSubtitle.textContent = '';
+    }
+
+    const chips = [detail.track, detail.date, detail.time, detail.room];
+    if (detail.paperCount) {
+      chips.push(`${detail.paperCount} papers`);
+    }
+    programDetailMeta.innerHTML = chips
+      .filter(Boolean)
+      .map(item => `<span class="program-detail-chip">${escapeHtml(item)}</span>`)
+      .join('');
+
+    const sections = [];
+
+    if (detail.summary) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Overview</h4>
+          ${toParagraphs(detail.summary).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+        </section>
+      `);
+    }
+
+    if (detail.abstract) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Abstract</h4>
+          ${toParagraphs(detail.abstract).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+        </section>
+      `);
+    }
+
+    if (detail.bio) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Bio</h4>
+          ${toParagraphs(detail.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+        </section>
+      `);
+    }
+
+    if (detail.moderator || (detail.participants && detail.participants.length)) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Participants</h4>
+          ${detail.moderator ? `<p><strong>Moderator:</strong> ${escapeHtml(detail.moderator)}</p>` : ''}
+          ${detail.participants && detail.participants.length ? `<ul>${detail.participants.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
+        </section>
+      `);
+    }
+
+    if (detail.papers && detail.papers.length) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Papers in this session</h4>
+          <div class="program-detail-papers">
+            ${detail.papers.map(paper => `
+              <article class="program-paper-item">
+                <p class="program-paper-title">${escapeHtml(paper.title)}</p>
+                <p class="program-paper-authors">${escapeHtml(paper.authors)}</p>
+              </article>
+            `).join('')}
+          </div>
+        </section>
+      `);
+    }
+
+    if (detail.externalLink && detail.externalLink.href) {
+      sections.push(`
+        <div class="program-detail-footer">
+          <a class="program-detail-link" href="${escapeHtml(detail.externalLink.href)}">${escapeHtml(detail.externalLink.label || 'Learn more')}</a>
+        </div>
+      `);
+    }
+
+    programDetailBody.innerHTML = sections.join('');
+  }
+
+  function openProgramDetail(detailKey, trigger) {
+    const detail = programDetailData[detailKey];
+    if (!detail) {
+      return false;
+    }
+
+    lastProgramDetailTrigger = trigger || null;
+    renderProgramDetail(detail);
+    programDetailModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    programDetailClose.focus();
+    return true;
+  }
+
+  function closeProgramDetail() {
+    programDetailModal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastProgramDetailTrigger) {
+      lastProgramDetailTrigger.focus();
+    }
+  }
+
+  programDetailClose.addEventListener('click', closeProgramDetail);
+
+  document.addEventListener('click', (event) => {
+    const trigger = event.target.closest('.program-detail-trigger[data-detail-key]');
+    if (trigger) {
+      const opened = openProgramDetail(trigger.dataset.detailKey, trigger);
+      if (opened && trigger.tagName === 'A') {
+        event.preventDefault();
+      }
+      return;
+    }
+
+    if (event.target.closest('[data-program-detail-close="true"]')) {
+      closeProgramDetail();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !programDetailModal.hidden) {
+      closeProgramDetail();
+      return;
+    }
+
+    const trigger = event.target.closest('.program-detail-trigger[data-detail-key]');
+    if (!trigger) {
+      return;
+    }
+
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openProgramDetail(trigger.dataset.detailKey, trigger);
+    }
+  });
+
+  fetch('assets/data/program-details.json')
+    .then(res => res.ok ? res.json() : {})
+    .then(data => {
+      programDetailData = data || {};
+    })
+    .catch(() => {
+      programDetailData = {};
+    });
 </script>
 
 </body>
