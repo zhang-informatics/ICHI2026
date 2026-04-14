@@ -8,215 +8,374 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;display=swap" rel="stylesheet">
   <style>
     .industry-track-page {
-      padding: 1.25rem 0 3rem;
+      padding: 1.4rem 0 3rem;
     }
 
-    .agenda-day-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 1rem;
-      margin-bottom: 0.9rem;
-      padding: 0 0 0.15rem;
+    .industry-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.95fr);
+      gap: 1.4rem;
+      margin-bottom: 2.2rem;
+      padding: 1.6rem 1.7rem;
+      border: 1px solid #e4d8cd;
+      border-radius: 28px;
+      background: linear-gradient(140deg, #f9f3ee 0%, #ffffff 68%);
+      box-shadow: 0 18px 42px rgba(77, 45, 32, 0.08);
     }
 
-    .agenda-day-header h2 {
+    .industry-kicker {
+      margin: 0 0 0.5rem;
+      color: var(--umn-maroon);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .industry-intro h2 {
+      margin: 0 0 0.8rem;
+      color: var(--umn-maroon);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .industry-lead {
       margin: 0;
-      font-size: clamp(1.5rem, 2.2vw, 2rem);
-      color: var(--umn-maroon);
-      letter-spacing: -0.01em;
-    }
-
-    .agenda-day-header p {
-      margin: 0;
-      color: #7b7068;
-      font-size: 0.94rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .agenda-table-wrap {
-      overflow-x: auto;
-      border: 1px solid #e6ddd5;
-      border-radius: 20px;
-      background: #fff;
-      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
-    }
-
-    .agenda-table {
-      width: 100%;
-      min-width: 980px;
-      border-collapse: separate;
-      border-spacing: 0;
-      table-layout: auto;
-    }
-
-    .agenda-table thead th {
-      position: sticky;
-      top: 0;
-      z-index: 3;
-      padding: 1rem 0.9rem;
-      text-align: center;
-      font-size: 0.94rem;
-      font-weight: 700;
-      line-height: 1.25;
-      color: #2e2a28;
-      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
-      border-bottom: 1px solid #ddcfc4;
-    }
-
-    .agenda-time-col {
-      position: sticky;
-      left: 0;
-      z-index: 5 !important;
-      width: 190px;
-      min-width: 190px;
-      text-align: left !important;
-      color: var(--umn-maroon) !important;
-      background: linear-gradient(180deg, #f4eee8 0%, #ebe2da 100%);
-    }
-
-    .agenda-room-col {
-      min-width: 720px;
-    }
-
-    .agenda-time {
-      position: sticky;
-      left: 0;
-      z-index: 2;
-      width: 190px;
-      min-width: 190px;
-      padding: 1rem 0.9rem;
-      vertical-align: top;
-      text-align: left;
-      font-size: 0.93rem;
-      font-weight: 700;
-      line-height: 1.35;
-      color: var(--umn-maroon);
-      background: #faf5f0;
-      border-right: 1px solid #e9ddd4;
-      border-bottom: 1px solid #efe6df;
-    }
-
-    .agenda-table td {
-      padding: 0.8rem;
-      vertical-align: top;
-      border-bottom: 1px solid #efe6df;
-      background: #fff;
-    }
-
-    .agenda-table tbody tr:last-child td,
-    .agenda-table tbody tr:last-child .agenda-time {
-      border-bottom: none;
-    }
-
-    .agenda-slot {
-      min-height: 72px;
-      padding: 0.8rem 0.9rem;
-      border-radius: 16px;
-      border: 1px solid transparent;
-      box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
-    }
-
-    .agenda-slot-industry {
-      background: #eef6fa;
-      border-color: #bfd5e2;
-    }
-
-    .agenda-slot-keynote {
-      background: #fff5d8;
-      border-color: #edcf7b;
-    }
-
-    .agenda-slot-social {
-      background: #f3f7ec;
-      border-color: #cfddbb;
-    }
-
-    .agenda-slot-shared {
-      background: #f5f5f5;
-      border-color: #dddddd;
-    }
-
-    .agenda-slot-industry .agenda-badge {
-      background: rgba(191, 213, 226, 0.55);
-    }
-
-    .agenda-slot-keynote .agenda-badge {
-      background: rgba(237, 207, 123, 0.44);
-    }
-
-    .agenda-slot-social .agenda-badge {
-      background: rgba(207, 221, 187, 0.55);
-    }
-
-    .agenda-slot-shared .agenda-badge {
-      background: rgba(220, 209, 198, 0.52);
-    }
-
-    .agenda-badge {
-      display: inline-flex;
-      align-items: center;
-      max-width: 100%;
-      margin-bottom: 0.55rem;
-      padding: 0.32rem 0.7rem;
-      border-radius: 999px;
-      color: var(--umn-maroon);
-      font-size: 0.72rem;
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0.01em;
-      text-transform: none;
-      white-space: nowrap;
-    }
-
-    .agenda-slot-text {
-      font-size: 0.96rem;
-      line-height: 1.48;
-      font-weight: 600;
-      color: #342f2c;
+      color: #4b413c;
+      font-size: 1.02rem;
+      line-height: 1.75;
       text-wrap: pretty;
     }
 
-    .agenda-slot-text .agenda-subline {
+    .industry-theme-card {
+      align-self: stretch;
+      padding: 1.25rem 1.3rem;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(122, 0, 25, 0.06) 0%, rgba(246, 239, 230, 0.95) 100%);
+      border: 1px solid #e3d4c7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.55rem;
+    }
+
+    .theme-label {
+      display: inline-flex;
+      align-self: flex-start;
+      padding: 0.34rem 0.78rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .industry-theme-card h3 {
+      margin: 0;
+      color: #2f2825;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .industry-theme-card p {
+      margin: 0;
+      color: #655953;
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    .industry-events {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .industry-event {
+      display: grid;
+      grid-template-columns: 165px minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .industry-event-time {
+      padding: 0.85rem 0.9rem;
+      border-radius: 22px;
+      background: #f6efe9;
+      border: 1px solid #e7dacf;
+      color: var(--umn-maroon);
+      box-shadow: 0 8px 18px rgba(77, 45, 32, 0.05);
+    }
+
+    .industry-event-time strong {
       display: block;
-      margin-top: 0.35rem;
-      font-size: 0.92rem;
-      font-weight: 500;
-      color: #5a514c;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .industry-event-time span {
+      display: block;
+      margin-top: 0.28rem;
+      color: #6c6059;
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .industry-event-card {
+      position: relative;
+      overflow: hidden;
+      padding: 1.35rem 1.45rem 1.4rem;
+      border-radius: 28px;
+      border: 1px solid #e5d9cf;
+      background: #ffffff;
+      box-shadow: 0 18px 36px rgba(77, 45, 32, 0.08);
+    }
+
+    .industry-event-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      border-radius: 28px 0 0 28px;
+      background: #d4c3b4;
+    }
+
+    .event-keynote {
+      background: linear-gradient(180deg, #fff9e8 0%, #ffffff 74%);
+    }
+
+    .event-keynote::before {
+      background: #ddb24a;
+    }
+
+    .event-panel {
+      background: linear-gradient(180deg, #f2f8fb 0%, #ffffff 74%);
+    }
+
+    .event-panel::before {
+      background: #9cbdd0;
+    }
+
+    .event-social {
+      background: linear-gradient(180deg, #f3f8ee 0%, #ffffff 74%);
+    }
+
+    .event-social::before {
+      background: #abc28e;
+    }
+
+    .event-shared {
+      background: linear-gradient(180deg, #f7f5f3 0%, #ffffff 74%);
+    }
+
+    .event-shared::before {
+      background: #cfc1b4;
+    }
+
+    .event-header {
+      margin-bottom: 0.95rem;
+    }
+
+    .event-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0.7rem;
+      padding: 0.38rem 0.84rem;
+      border-radius: 999px;
+      color: var(--umn-maroon);
+      background: rgba(122, 0, 25, 0.07);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .event-header h3 {
+      margin: 0;
+      color: #2f2724;
+      font-size: clamp(1.28rem, 2.4vw, 1.82rem);
+      line-height: 1.22;
+      text-wrap: pretty;
+    }
+
+    .event-subtitle {
+      margin: 0.55rem 0 0;
+      color: #5b4f49;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    .event-summary,
+    .event-main p {
+      margin: 0;
+      color: #433934;
+      font-size: 1rem;
+      line-height: 1.75;
+      text-wrap: pretty;
+    }
+
+    .event-main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+      min-width: 0;
+    }
+
+    .event-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 244px;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .event-side {
+      min-width: 0;
+    }
+
+    .speaker-card,
+    .details-card {
+      padding: 1rem;
+      border-radius: 22px;
+      border: 1px solid #e4d8ce;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    }
+
+    .speaker-photo {
+      overflow: hidden;
+      margin-bottom: 0.85rem;
+      border-radius: 18px;
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(180deg, #efe2d8 0%, #e2d0c0 100%);
+    }
+
+    .speaker-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .speaker-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: var(--umn-maroon);
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .speaker-card h4,
+    .details-card h4 {
+      margin: 0 0 0.45rem;
+      color: var(--umn-maroon);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .speaker-card p,
+    .details-card p,
+    .details-card li {
+      margin: 0;
+      color: #5f534d;
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+
+    .details-card ul {
+      margin: 0.55rem 0 0;
+      padding-left: 1.05rem;
+    }
+
+    .details-card li + li {
+      margin-top: 0.36rem;
+    }
+
+    .event-label {
+      color: var(--umn-maroon);
+      font-weight: 700;
     }
 
     .industry-track-page .committee-section {
-      margin-top: 2.5rem;
+      margin-top: 3rem;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 980px) {
+      .industry-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .industry-event {
+        grid-template-columns: 1fr;
+      }
+
+      .industry-event-time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .industry-event-time span {
+        margin-top: 0;
+        text-align: right;
+      }
+
+      .event-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .speaker-card,
+      .details-card {
+        max-width: 420px;
+      }
+    }
+
+    @media (max-width: 640px) {
       .industry-track-page {
         padding-top: 1rem;
       }
 
-      .agenda-day-header {
+      .industry-intro {
+        padding: 1.25rem 1.15rem;
+        border-radius: 24px;
+      }
+
+      .industry-event-card {
+        padding: 1.15rem 1.15rem 1.2rem;
+        border-radius: 24px;
+      }
+
+      .industry-event-card::before {
+        width: 5px;
+        border-radius: 24px 0 0 24px;
+      }
+
+      .industry-event-time {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .agenda-day-header p {
-        white-space: normal;
+      .industry-event-time span {
+        text-align: left;
       }
 
-      .agenda-table {
-        min-width: 860px;
-      }
-
-      .agenda-room-col {
-        min-width: 620px;
+      .speaker-card,
+      .details-card {
+        max-width: none;
       }
     }
   </style>
 </head>
 <body>
 
-<!-- Top Navigation -->
 <header class="navbar">
   <div class="container">
     <a href="index.html" class="logo">
@@ -226,149 +385,295 @@
   </div>
 </header>
 
-<!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/images/call-for-industry-bg.jpg');">
   <div class="hero-text">
     <h1>Industry Track</h1>
   </div>
 </section>
 
-<!-- Main Content -->
 <main class="container industry-track-page">
-  <section class="agenda-day">
-    <div class="agenda-day-header">
+  <section class="industry-intro">
+    <div>
+      <p class="industry-kicker">Tuesday, June 2, 2026 | Theater</p>
       <h2>Industry Track Agenda</h2>
-      <p>Tuesday, June 2, 2026 | Theater</p>
+      <p class="industry-lead">
+        The Industry Track brings together leaders from industry, academia, and healthcare organizations to share practical perspectives on healthcare AI enablement using real-world data. The program below follows the current ICHI 2026 agenda order while expanding each event with session focus, speaker context, and discussion details.
+      </p>
     </div>
-    <div class="agenda-table-wrap">
-      <table class="agenda-table">
-        <thead>
-          <tr>
-            <th scope="col" class="agenda-time-col">Time</th>
-            <th scope="col" class="agenda-room-col">Theater</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-social">
-                <span class="agenda-badge">Networking</span>
-                <div class="agenda-slot-text">Networking Breakfast</div>
+    <aside class="industry-theme-card">
+      <span class="theme-label">Theme</span>
+      <h3>Healthcare AI Enablement Using Real-World Data</h3>
+      <p>Practical perspectives on adoption, governance, validation, and deployment in real-world healthcare settings.</p>
+    </aside>
+  </section>
+
+  <section class="industry-events">
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>7:30 AM - 8:15 AM</strong>
+        <span>Networking Breakfast</span>
+      </div>
+      <div class="industry-event-card event-social">
+        <div class="event-header">
+          <span class="event-badge">Networking</span>
+          <h3>Networking Breakfast</h3>
+        </div>
+        <p class="event-summary">An informal breakfast to welcome attendees and open the day with conversations across industry, academia, and healthcare delivery.</p>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>8:15 AM - 8:35 AM</strong>
+        <span>Policy Keynote</span>
+      </div>
+      <div class="industry-event-card event-keynote">
+        <div class="event-header">
+          <span class="event-badge">Policy Keynote</span>
+          <h3>Evaluating Large Language Models for Clinical Decision Support</h3>
+          <p class="event-subtitle">Ram D. Sriram, PhD | Senior Science Advisor, Information Technology Laboratory, National Institute of Standards and Technology (NIST), USA</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Moderator:</span> Ikram Khan, Health AI Institute</p>
+            <p><span class="event-label">Abstract:</span> Large language models are increasingly used to support clinicians by analyzing unstructured text, medical literature, and practice guidelines. This keynote examines the growing need for rigorous AI metrology in healthcare, with a focus on standardized ways to measure the accuracy, reliability, and trustworthiness of clinical LLMs. The talk also reviews emerging evaluation metrics for healthcare chatbots from an end-user perspective, including language understanding, clinical task performance, conversational effectiveness, and the additional measurement challenges introduced by agentic AI systems.</p>
+          </div>
+          <aside class="event-side">
+            <div class="speaker-card">
+              <div class="speaker-photo">
+                <div class="speaker-avatar">RS</div>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">8:15 AM - 8:35 AM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-keynote">
-                <span class="agenda-badge">Policy Keynote</span>
-                <div class="agenda-slot-text">
-                  Ram D. Sriram
-                  <span class="agenda-subline">Evaluating Large Language Models for Clinical Decision Support</span>
-                </div>
+              <h4>Ram D. Sriram</h4>
+              <p>Senior Science Advisor, Information Technology Laboratory</p>
+              <p>National Institute of Standards and Technology</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>8:35 AM - 9:45 AM</strong>
+        <span>Policy Panel</span>
+      </div>
+      <div class="industry-event-card event-panel">
+        <div class="event-header">
+          <span class="event-badge">Policy Panel</span>
+          <h3>From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care</h3>
+          <p class="event-subtitle">A cross-sector discussion on policy, accountability, privacy, equity, and real-world data governance.</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Panel overview:</span> The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them. This panel convenes leaders from industry, government, and standards bodies to examine where innovation meets regulation, including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and the governance of real-world data for drug and device evaluation.</p>
+            <p>The discussion is designed to surface practical pathways for policy that both enable innovation and protect patients, while inviting the ICHI community to consider how researchers and technologists can actively shape the regulatory landscape instead of only reacting to it.</p>
+          </div>
+          <aside class="event-side">
+            <div class="details-card">
+              <h4>Moderator and Panelists</h4>
+              <p><span class="event-label">Moderator:</span> Ikram Khan, Health AI Institute</p>
+              <ul>
+                <li>Senator Eric Lucero, Minnesota Senate Representative</li>
+                <li>Ram D. Sriram, PhD, National Institute of Standards and Technology (NIST)</li>
+                <li>Jesse Isaacman-Beck, PhD, U.S. Department of Health &amp; Human Services</li>
+                <li>Tyler Winkelman, MD, MSc, HHRI (MN HER Consortium)</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>9:45 AM - 10:00 AM</strong>
+        <span>Break</span>
+      </div>
+      <div class="industry-event-card event-shared">
+        <div class="event-header">
+          <span class="event-badge">Break</span>
+          <h3>Morning Break</h3>
+        </div>
+        <p class="event-summary">A short mid-morning break before the late-morning industry panel discussion.</p>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>10:00 AM - 11:30 AM</strong>
+        <span>Panel Discussion</span>
+      </div>
+      <div class="industry-event-card event-panel">
+        <div class="event-header">
+          <span class="event-badge">Panel Discussion</span>
+          <h3>The GenAI Data Chasm: Are we building a Human-Aligned Unified Data Ecosystem or Just Deeper, More Intelligent Silos?</h3>
+          <p class="event-subtitle">Success stories, lessons learned, technical challenges, and practical solutions in applied healthcare AI.</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Panel overview:</span> This session focuses on one of the biggest barriers to successful AI adoption in healthcare: the gap between simply having data and having data that is trustworthy, representative, and fit for purpose in a medical-grade AI ecosystem. The discussion examines how generative AI ambitions in diagnostics, drug discovery, patient care, and smart medical devices depend on building a more robust and unified data foundation.</p>
+            <p>Panelists will explore whether the field is moving toward safe, scalable, human-aligned data ecosystems or creating deeper and more intelligent silos that trap value, amplify bias, and weaken real-world impact for patients, providers, and innovators.</p>
+          </div>
+          <aside class="event-side">
+            <div class="details-card">
+              <h4>Discussion Focus</h4>
+              <p><span class="event-label">Moderator:</span> Prasanna Desikan, Centific</p>
+              <ul>
+                <li>Trustworthy and representative real-world data</li>
+                <li>Unified infrastructure versus fragmented AI silos</li>
+                <li>Bias, safety, and long-term scalability</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>11:45 AM - 12:45 PM</strong>
+        <span>Conference Keynote</span>
+      </div>
+      <div class="industry-event-card event-keynote">
+        <div class="event-header">
+          <span class="event-badge">Conference Keynote</span>
+          <h3>Towards Virtual Patient: AI for Accelerating Medical Discovery</h3>
+          <p class="event-subtitle">Hoifung Poon, PhD | General Manager, Microsoft Research, USA</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Abstract:</span> Today, medical discovery advances one clinical trial at a time, often taking years and costing more than $100 million per study. As precision health moves beyond one-size-fits-all care, this keynote explores how multimodal generative AI can learn the language of patients from longitudinal clinical, imaging, and multi-omics data to create a virtual patient world model. Such digital twins could synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials.</p>
+          </div>
+          <aside class="event-side">
+            <div class="speaker-card">
+              <div class="speaker-photo">
+                <img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD">
               </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">8:35 AM - 9:45 AM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-industry">
-                <span class="agenda-badge">Policy Panel</span>
-                <div class="agenda-slot-text">From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care</div>
+              <h4>Hoifung Poon, PhD</h4>
+              <p>General Manager</p>
+              <p>Microsoft Research, USA</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>12:45 PM - 1:30 PM</strong>
+        <span>Conference Lunch</span>
+      </div>
+      <div class="industry-event-card event-shared">
+        <div class="event-header">
+          <span class="event-badge">Conference</span>
+          <h3>Lunch</h3>
+        </div>
+        <p class="event-summary">Lunch break for attendees before the afternoon industry panel and keynote sessions.</p>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>1:30 PM - 3:00 PM</strong>
+        <span>Panel Discussion</span>
+      </div>
+      <div class="industry-event-card event-panel">
+        <div class="event-header">
+          <span class="event-badge">Panel Discussion</span>
+          <h3>AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption</h3>
+          <p class="event-subtitle">Public-private partnerships and industry-academia collaboration in real-world deployment.</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Panel overview:</span> As artificial intelligence matures from research prototypes to real-world clinical deployment, healthcare leaders face hard questions about how to scale adoption safely and effectively. This panel examines lessons learned from AI implementations across industry, academia, and care delivery organizations, with attention to workflow integration, model lifecycle management, regulatory expectations, bias mitigation, clinician trust, and patient trust.</p>
+            <p>The session emphasizes practical enablers, recurring pitfalls, and actionable approaches for organizations working toward responsible and equitable AI integration.</p>
+          </div>
+          <aside class="event-side">
+            <div class="details-card">
+              <h4>Moderator and Panelists</h4>
+              <p><span class="event-label">Moderator:</span> Jim Southwick</p>
+              <ul>
+                <li>Matt Loth, University of Minnesota</li>
+                <li>Deepika (Deepa) Appana, HealthPartners</li>
+                <li>Julie Thompson, PhD, Boston Scientific</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>3:00 PM - 3:20 PM</strong>
+        <span>Break</span>
+      </div>
+      <div class="industry-event-card event-shared">
+        <div class="event-header">
+          <span class="event-badge">Break</span>
+          <h3>Afternoon Break</h3>
+        </div>
+        <p class="event-summary">A short break before the closing industry keynote and the evening networking program.</p>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>3:20 PM - 4:20 PM</strong>
+        <span>Industry Keynote</span>
+      </div>
+      <div class="industry-event-card event-keynote">
+        <div class="event-header">
+          <span class="event-badge">Industry Keynote</span>
+          <h3>From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring</h3>
+          <p class="event-subtitle">Ben Teplitzky, PhD | AI/ML Research Fellow, Patient Management, Boston Scientific, USA</p>
+        </div>
+        <div class="event-layout">
+          <div class="event-main">
+            <p><span class="event-label">Abstract:</span> Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. Using BeatLogic as a case study, this keynote traces how an early deep-learning platform for comprehensive ECG annotation evolved into a broader operational capability for ambulatory cardiac monitoring. The talk highlights the informatics challenges behind adoption, including dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and model evolution after deployment.</p>
+            <p>The session offers a pragmatic roadmap for organizations that want to move from impressive algorithms to human-centered AI systems that are safe, scalable, and genuinely useful in healthcare.</p>
+          </div>
+          <aside class="event-side">
+            <div class="speaker-card">
+              <div class="speaker-photo">
+                <img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD">
               </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">9:45 AM - 10:00 AM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-shared">
-                <span class="agenda-badge">Break</span>
-                <div class="agenda-slot-text">Morning Break</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">10:00 AM - 11:30 AM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-industry">
-                <span class="agenda-badge">Panel</span>
-                <div class="agenda-slot-text">The GenAI Data Chasm: Are we building a Human-Aligned Unified Data Ecosystem or Just Deeper, More Intelligent Silos?</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-keynote">
-                <span class="agenda-badge">Conference Keynote</span>
-                <div class="agenda-slot-text">
-                  Hoifung Poon, PhD
-                  <span class="agenda-subline">Towards Virtual Patient: AI for Accelerating Medical Discovering</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-shared">
-                <span class="agenda-badge">Conference</span>
-                <div class="agenda-slot-text">Lunch</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-industry">
-                <span class="agenda-badge">Panel</span>
-                <div class="agenda-slot-text">AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">3:00 PM - 3:20 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-shared">
-                <span class="agenda-badge">Break</span>
-                <div class="agenda-slot-text">Afternoon Break</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">3:20 PM - 4:20 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-keynote">
-                <span class="agenda-badge">Industry Keynote</span>
-                <div class="agenda-slot-text">
-                  Ben Teplitzky, PhD
-                  <span class="agenda-subline">From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cariac Monitoring</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">4:30 PM - 6:00 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-social">
-                <span class="agenda-badge">Networking</span>
-                <div class="agenda-slot-text">Professional Networking and Social Hour</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="agenda-time">6:00 PM - 8:00 PM</th>
-            <td>
-              <div class="agenda-slot agenda-slot-social">
-                <span class="agenda-badge">Reception</span>
-                <div class="agenda-slot-text">ICHI Reception</div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+              <h4>Ben Teplitzky, PhD</h4>
+              <p>AI/ML Research Fellow, Patient Management</p>
+              <p>Boston Scientific, USA</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>4:30 PM - 6:00 PM</strong>
+        <span>Networking</span>
+      </div>
+      <div class="industry-event-card event-social">
+        <div class="event-header">
+          <span class="event-badge">Networking</span>
+          <h3>Professional Networking and Social Hour</h3>
+        </div>
+        <p class="event-summary">An extended networking block for follow-up conversations, peer exchange, and informal community building across the Industry Track. The current planning notes also include a speed-dating style networking component during this session.</p>
+      </div>
+    </article>
+
+    <article class="industry-event">
+      <div class="industry-event-time">
+        <strong>6:00 PM - 8:00 PM</strong>
+        <span>Reception</span>
+      </div>
+      <div class="industry-event-card event-social">
+        <div class="event-header">
+          <span class="event-badge">Reception</span>
+          <h3>ICHI Reception</h3>
+        </div>
+        <p class="event-summary">Join the broader ICHI 2026 community for the evening reception and continue the day's conversations beyond the Industry Track program.</p>
+      </div>
+    </article>
   </section>
 
   <section class="committee-section">

@@ -35,6 +35,23 @@
       text-align: center;
     }
 
+    .keynote-photo.keynote-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #efe4da 0%, #dfccbe 100%);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .keynote-photo.keynote-avatar span {
+      color: var(--umn-maroon);
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
     .keynote-photo img {
       width: 100%;
       height: auto;
@@ -46,6 +63,7 @@
     /* 右侧文字区域 */
     .keynote-info {
       flex: 1;
+      min-width: 0;
     }
 
     .keynote-track {
@@ -160,7 +178,7 @@
       </div>
     </div>
 
-    <div class="keynote-item">
+    <div class="keynote-item" id="hoifung-poon">
       <div class="keynote-photo">
         <img src="assets/images/hoifung_poon.png" alt="Dr. Poon">
       </div>
@@ -235,14 +253,44 @@ Distinguished Member, and a Distinguished Contributor of the IEEE Computer Socie
       </div>
     </div>
 
-    <div class="keynote-item">
+    <div class="keynote-item" id="ram-sriram">
+      <div class="keynote-photo keynote-avatar" aria-hidden="true">
+        <span>RS</span>
+      </div>
+      <div class="keynote-info">
+        <div class="keynote-track">Policy Keynote (Industry Track)</div>
+        <div class="keynote-name">Ram D. Sriram, PhD</div>
+        <div class="keynote-affil">Senior Science Advisor, Information Technology Laboratory, National Institute of Standards and Technology (NIST), USA</div>
+
+        <div class="keynote-title">Talk Title: Evaluating Large Language Models for Clinical Decision Support</div>
+
+        <div class="keynote-text">
+          <span class="label">Abstract:</span>
+          Large language models (LLMs) are increasingly being used to support clinicians by analyzing unstructured text, medical literature, and clinical guidance. This keynote examines the growing need for rigorous AI metrology in healthcare, focusing on standardized methods to assess the accuracy, reliability, and trustworthiness of LLMs. The talk reviews emerging evaluation metrics for healthcare chatbots from an end-user perspective, including language understanding, performance on real-world clinical tasks, conversational effectiveness, and the specific measurement needs introduced by agentic AI architectures.
+        </div>
+
+        <div class="keynote-text">
+          <span class="label">Bio:</span>
+          Ram D. Sriram is currently a Senior Science Advisor in the Information Technology Laboratory at the National Institute of Standards and Technology. Before joining NIST, he served on the engineering faculty at the Massachusetts Institute of Technology, where he helped establish the Intelligent Engineering Systems Laboratory. He has authored or co-authored more than 300 publications, including several books, and was a founding co-editor of the International Journal for AI in Engineering. Sriram has received multiple lifetime achievement and pioneer awards, a distinguished alumnus award from IIT Madras, and fellowship status from major engineering, computing, medical, and scientific societies including ACM, IEEE, AIMBE, and AAAS.
+        </div>
+      </div>
+    </div>
+
+    <div class="keynote-item" id="ben-teplitzky">
       <div class="keynote-photo">
-        <img src="assets/images/teplitzky.jpg" alt="Dr. Teplitzky">
+        <img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD">
       </div>
       <div class="keynote-info">
         <div class="keynote-track">Keynote (Industry Track)</div>
-        <div class="keynote-name">Dr. Teplitzky</div>
-        <div class="keynote-affil">AI Research Fellow, Cardiac Rhythm Management Division, Boston Scientific, USA</div>
+        <div class="keynote-name">Ben Teplitzky, PhD</div>
+        <div class="keynote-affil">AI/ML Research Fellow, Patient Management, Boston Scientific, USA</div>
+
+        <div class="keynote-title">Talk Title: From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring</div>
+
+        <div class="keynote-text">
+          <span class="label">Abstract:</span>
+          Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. This keynote traces the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation into a broader case study in healthcare AI enablement. The talk highlights the harder informatics problems behind adoption, including dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous model evolution in the field.
+        </div>
 
         <div class="keynote-text">
           <span class="label">Bio:</span>
