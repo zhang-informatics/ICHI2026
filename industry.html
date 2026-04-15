@@ -63,7 +63,6 @@
 
     .theme-label,
     .event-badge,
-    .person-role,
     .modal-role {
       display: inline-flex;
       align-items: center;
@@ -76,6 +75,16 @@
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .person-role {
+      display: inline-block;
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
@@ -385,6 +394,10 @@
       max-width: 430px;
     }
 
+    .event-keynote .person-card.keynote-speaker-card .person-role {
+      display: none;
+    }
+
     .event-keynote .person-photo {
       flex: 0 0 110px;
       width: 110px;
@@ -397,27 +410,36 @@
     }
 
     .event-keynote .person-actions {
-      margin-top: 0.35rem;
+      margin-top: 0.5rem;
     }
 
     .bio-button {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
+      gap: 0.35rem;
       width: fit-content;
-      padding: 0.55rem 0.88rem;
-      border-radius: 999px;
-      border: 1px solid rgba(122, 0, 25, 0.2);
-      background: rgba(122, 0, 25, 0.06);
+      padding: 0;
+      border: none;
+      background: none;
       color: var(--umn-maroon);
-      font-size: 0.84rem;
+      font-size: 0.9rem;
       font-weight: 700;
+      line-height: 1.3;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.16em;
       cursor: pointer;
+    }
+
+    .bio-button::after {
+      content: "→";
+      font-size: 0.92em;
+      line-height: 1;
     }
 
     .bio-button:hover,
     .bio-button:focus-visible {
-      background: rgba(122, 0, 25, 0.1);
+      color: #5f0016;
       outline: none;
     }
 
@@ -709,25 +731,16 @@
           <h3>Evaluating Large Language Models for Clinical Decision Support</h3>
           <p class="event-subtitle">A policy-focused keynote on AI metrology, trustworthiness, and rigorous evaluation standards for clinical LLMs.</p>
         </div>
-        <div class="event-copy">
+        <div class="event-copy is-simple">
           <div class="event-section">
             <h4>Abstract</h4>
-            <p>Large language models are increasingly being used to support clinicians by analyzing unstructured text, medical literature, and clinical guidance. This keynote examines the growing need for rigorous AI metrology in healthcare, focusing on standardized methods to assess the accuracy, reliability, and trustworthiness of LLMs.</p>
-            <p>The talk also reviews emerging evaluation metrics for healthcare chatbots from an end-user perspective, including language understanding, performance on real-world clinical tasks, conversational effectiveness, and the specific measurement needs introduced by agentic AI architectures.</p>
+            <p>Large Language Models, (LLMs) are extensively being used by the healthcare profession. These systems are aiding the clinician in decision making by analyzing unstructured text, medical literature, and various guidelines to provide precise and personalized treatment in line with the P9 concept that we outlined in our earlier work. However, there is a need for rigorous measurement and evaluation of these systems.</p>
+            <p>This talk delves into the emerging field of AI metrology, which seeks to establish standardized methods for assessing the accuracy, reliability, and trustworthiness of AI models in general, LLMs in particular. After providing a brief overview of LLMs use in health care, we explore state-of-the-art evaluation metrics designed to assess health care chatbots from an end-user perspective. These metrics encompass an evaluation of language processing abilities, impact on real-world clinical tasks, and effectiveness in user-interactive conversations.</p>
+            <p>Finally, we discuss ongoing work in Agentic AI and the specific metrics required to evaluate these architectures.</p>
           </div>
-          <aside class="event-note-card">
-            <div class="event-section">
-              <h4>Session Snapshot</h4>
-              <ul>
-                <li>Examines how clinical LLMs can be evaluated for accuracy, reliability, and trust.</li>
-                <li>Highlights AI metrology as a practical foundation for healthcare deployment.</li>
-                <li>Connects evaluation design to real-world clinical decision support settings.</li>
-              </ul>
-            </div>
-          </aside>
         </div>
         <div class="event-people">
-          <article class="person-card">
+          <article class="person-card keynote-speaker-card">
             <div class="person-photo"><img src="assets/images/sriram.jpg" alt="Ram D. Sriram, PhD"></div>
             <div class="person-body">
               <span class="person-role">Speaker</span>
@@ -926,25 +939,16 @@
           <h3>Towards Virtual Patient: AI for Accelerating Medical Discovery</h3>
           <p class="event-subtitle">A conference keynote on multimodal generative AI, digital twins, and virtual patient models for real-world evidence.</p>
         </div>
-        <div class="event-copy">
+        <div class="event-copy is-simple">
           <div class="event-section">
             <h4>Abstract</h4>
-            <p>Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing vast amounts of time and money. This keynote explores how multimodal generative AI can learn the language of patients from longitudinal EHR, imaging, and multi-omics data to create virtual patient world models.</p>
-            <p>Such digital twins can synthesize population-scale real-world evidence from hundreds of millions of patients and help accelerate discovery through AI-powered virtual clinical trials.</p>
+            <p>Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health in which we recognize that “one size doesn't fit all” and thus try to tailor treatments for each individual, continuing on today's discovery processes is clearly not sustainable.</p>
+            <p>The confluence of technological advances and social policies has led to rapid digitization of multimodal, longitudinal patient journeys, such as electronic health records (EHRs), imaging, and multiomics. Our overarching research agenda lies in advancing multimodal generative AI to learn the language of patients and create a virtual patient world model as digital twin for forecasting disease progression and treatment response.</p>
+            <p>This enables us to synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials, in deep partnerships with real-world stakeholders such as large health systems and life sciences companies.</p>
           </div>
-          <aside class="event-note-card">
-            <div class="event-section">
-              <h4>Session Snapshot</h4>
-              <ul>
-                <li>Focuses on virtual patient models built from multimodal longitudinal data.</li>
-                <li>Brings together EHR, imaging, and multi-omics perspectives in one keynote.</li>
-                <li>Explores how digital twins may accelerate discovery through virtual trials.</li>
-              </ul>
-            </div>
-          </aside>
         </div>
         <div class="event-people">
-          <article class="person-card">
+          <article class="person-card keynote-speaker-card">
             <div class="person-photo"><img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD"></div>
             <div class="person-body">
               <span class="person-role">Speaker</span>
@@ -1082,25 +1086,16 @@
           <h3>From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring</h3>
           <p class="event-subtitle">A practical keynote on what it takes to move from a strong model to a trusted operational AI capability in healthcare.</p>
         </div>
-        <div class="event-copy">
+        <div class="event-copy is-simple">
           <div class="event-section">
             <h4>Abstract</h4>
-            <p>Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. Using BeatLogic as a case study, this keynote examines the transition from an impressive algorithm to a trusted operational AI capability in ambulatory cardiac monitoring.</p>
-            <p>The talk highlights dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and responsible model evolution after deployment.</p>
+            <p>Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.</p>
+            <p>In this keynote, Ben Teplitzky will trace the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring. But that technical milestone was only the beginning. Translating AI into practice required confronting the harder informatics problems: dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration as the system encountered new conditions in the field.</p>
+            <p>Using lessons from cardiac rhythm management and broader experience across healthcare AI, this talk will examine what it takes to move from an impressive algorithm to a trusted operational capability. The session will highlight practical strategies for developing clinically meaningful real-world evidence, managing model evolution responsibly, balancing automation with expert judgment, and building systems that are robust not only in development but also in deployment. The goal is to offer a pragmatic roadmap for organizations seeking to create human-centered AI that is safe, scalable, and genuinely useful in healthcare.</p>
           </div>
-          <aside class="event-note-card">
-            <div class="event-section">
-              <h4>Session Snapshot</h4>
-              <ul>
-                <li>Uses BeatLogic as a case study for translating AI into operational practice.</li>
-                <li>Centers on validation, workflow fit, human oversight, and post-deployment evolution.</li>
-                <li>Frames adoption as an informatics and trust challenge, not only a modeling challenge.</li>
-              </ul>
-            </div>
-          </aside>
         </div>
         <div class="event-people">
-          <article class="person-card">
+          <article class="person-card keynote-speaker-card">
             <div class="person-photo"><img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD"></div>
             <div class="person-body">
               <span class="person-role">Speaker</span>
