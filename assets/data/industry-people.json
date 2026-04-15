@@ -1,0 +1,90 @@
+{
+  "ikram-khan": {
+    "name": "Ikram Khan",
+    "role": "Managing Director",
+    "organization": "Health AI Institute",
+    "image": "assets/images/ikram_khan.jpg",
+    "bio": [
+      "Ikram Khan is a healthcare leader and innovator with more than a decade of experience driving healthcare solutions across corporate, government, nonprofit, and startup sectors.",
+      "As Co-Founder of the Health AI Institute, he focuses on harnessing artificial intelligence to improve healthcare delivery, with an emphasis on equitable, accessible, and patient-centered systems. His work has impacted rural and tribal communities worldwide through inclusive and affordable care models.",
+      "He is also the Co-Founder of the Phaedon Institute and has previously founded or led organizations including Medaxis Healthcare and the Rural Health Care Foundation. He holds an MPH from BITS Pilani, an MBA from the Carlson School of Management at the University of Minnesota, and is pursuing a PhD in Health AI at the University of Minnesota."
+    ]
+  },
+  "ram-sriram": {
+    "name": "Ram D. Sriram, PhD",
+    "role": "Senior Science Advisor, Information Technology Laboratory",
+    "organization": "National Institute of Standards and Technology (NIST)",
+    "image": "assets/images/sriram.jpg",
+    "bio": [
+      "Ram D. Sriram is currently a Senior Science Advisor in the Information Technology Laboratory at the National Institute of Standards and Technology.",
+      "Before joining NIST, he served on the engineering faculty at the Massachusetts Institute of Technology, where he helped establish the Intelligent Engineering Systems Laboratory. He has authored or co-authored more than 300 publications, including several books, and was a founding co-editor of the International Journal for AI in Engineering.",
+      "Sriram has received multiple lifetime achievement and pioneer awards, a distinguished alumnus award from IIT Madras, and fellowship status from major engineering, computing, medical, and scientific societies including ACM, IEEE, AIMBE, and AAAS."
+    ]
+  },
+  "eric-lucero": {
+    "name": "Senator Eric Lucero",
+    "role": "Minnesota Senate Representative",
+    "organization": "Minnesota Senate",
+    "image": "assets/images/senator_eric_lucero.jpg",
+    "bio": [
+      "Senator Eric Lucero serves in the Minnesota Senate representing District 30, after previously serving four terms in the Minnesota House of Representatives.",
+      "Outside public office, Lucero owns a consulting firm supporting information security projects and has more than two decades of experience in information technology and cybersecurity. He also previously taught college courses in computer security, computer forensics, and voice and data communications.",
+      "He holds an MBA from the Carlson School of Management at the University of Minnesota, along with degrees in computer forensics, law enforcement, and networking design and development."
+    ]
+  },
+  "jesse-isaacman-beck": {
+    "name": "Jesse Isaacman-Beck, PhD",
+    "role": "Director, Division of Artificial Intelligence Policy and Strategy",
+    "organization": "U.S. Department of Health and Human Services",
+    "image": "assets/images/jesse_isaacman_beck.jpg",
+    "bio": [
+      "Jesse Isaacman-Beck is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services, where he works to maximize departmental effectiveness through emerging technology and to catalyze innovation that advances the health and well-being of all Americans.",
+      "Working closely with HHS chief information, AI, and data leaders, he has helped establish the department's AI governance framework, develop cross-administration AI strategy, and execute federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping AI use case oversight, modernizing HHS IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
+      "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science and Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
+    ]
+  },
+  "tyler-winkelman": {
+    "name": "Tyler Winkelman, MD, MSc",
+    "role": "Director, Research and Evaluation Data Analytics Core; Division Director of General Internal Medicine",
+    "organization": "Hennepin Healthcare Research Institute and Hennepin Healthcare",
+    "image": "assets/images/tyler_winkelman.jpg",
+    "bio": [
+      "Tyler Winkelman is Director of the Research and Evaluation Data Analytics Core at the Hennepin Healthcare Research Institute and Division Director of General Internal Medicine. He is also a practicing general internist at Hennepin Healthcare.",
+      "Dr. Winkelman studies issues at the intersection of criminal justice and health, with particular interest in Medicaid, substance use disorders, and healthcare utilization. He uses large datasets to understand health needs, cross-sector service use, and the effects of Medicaid expansion for people impacted by the criminal justice system.",
+      "He co-founded and served as inaugural President of the Minnesota Electronic Health Record Consortium and continues to lead several consortium projects. He completed medical school and internal medicine/pediatrics residency at the University of Minnesota and earned a master's degree in health and healthcare research at the University of Michigan."
+    ]
+  },
+  "hoifung-poon": {
+    "name": "Hoifung Poon, PhD",
+    "role": "General Manager",
+    "organization": "Microsoft Research, USA",
+    "image": "assets/images/hoifung_poon.png",
+    "bio": [
+      "Hoifung Poon is the General Manager of Real-World Evidence at Microsoft Research and an affiliated faculty member at the University of Washington Medical School.",
+      "He leads biomedical AI research and incubation focused on structuring medical data to optimize healthcare delivery and accelerate discovery for precision health. His team and collaborators were among the earliest groups to advance large language models and multimodal generative AI for health applications, producing widely used foundation models such as PubMedBERT, BioGPT, BiomedCLIP, LLaVA-Med, and BiomedParse.",
+      "He has led research partnerships with major health providers and life sciences organizations to deploy AI systems for applications including molecular tumor boards and clinical trial matching. He received his PhD in Computer Science and Engineering from the University of Washington, specializing in machine learning and natural language processing."
+    ]
+  },
+  "julie-thompson": {
+    "name": "Julie Thompson, PhD",
+    "role": "Senior Director, R&D, Cardiac Rhythm Management and Diagnostics Division",
+    "organization": "Boston Scientific Corporation",
+    "image": "assets/images/julie_thompson.jpg",
+    "bio": [
+      "Julie Thompson is a Senior R&D Director in the Cardiac Rhythm Management and Diagnostics division of Boston Scientific.",
+      "She joined Boston Scientific in 2001 after completing her PhD in electrical engineering at the University of Michigan. Over the years, her teams have developed multiple commercialized product features, including HeartLogic, a multisensor monitoring technology designed to detect early signs of worsening heart failure.",
+      "She is passionate about digital health and device technologies that improve care for cardiac patients and is particularly interested in the transformative opportunities AI brings to medical technology."
+    ]
+  },
+  "ben-teplitzky": {
+    "name": "Ben Teplitzky, PhD",
+    "role": "AI/ML Research Fellow, Patient Management",
+    "organization": "Boston Scientific, USA",
+    "image": "assets/images/teplitzky.jpg",
+    "bio": [
+      "Ben Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support.",
+      "Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis.",
+      "His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. He earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota."
+    ]
+  }
+}
