@@ -9,99 +9,143 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    /* 移除原来的网格布局，改为列表布局 */
     .keynote-list {
       display: flex;
       flex-direction: column;
-      gap: 3rem; /* 每个演讲者之间的间距 */
+      gap: 2rem;
       margin-top: 2rem;
     }
 
     .keynote-item {
-      display: flex;
+      display: grid;
+      grid-template-columns: minmax(220px, 250px) minmax(0, 1fr);
       gap: 2rem;
-      border-bottom: 1px solid #eee; /* 每人下面加一条分割线 */
-      padding-bottom: 3rem;
-    }
-    
-    /* 最后一个元素去掉分割线 */
-    .keynote-item:last-child {
-      border-bottom: none;
+      padding: 1.8rem;
+      border: 1px solid #e5dad0;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #fffdfb 0%, #ffffff 100%);
+      box-shadow: 0 16px 34px rgba(77, 45, 32, 0.08);
     }
 
-    /* 左侧照片区域 */
     .keynote-photo {
-      flex: 0 0 200px; /* 固定宽度 */
-      text-align: center;
+      position: relative;
+      align-self: start;
+      padding: 0.95rem;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #fbf3ec 0%, #f3e5d9 100%);
+      border: 1px solid #eadbcf;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    }
+
+    .keynote-photo::before {
+      content: "Speaker";
+      position: absolute;
+      top: 0.95rem;
+      left: 0.95rem;
+      z-index: 1;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.9);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .keynote-photo img {
       width: 100%;
-      height: auto;
-      border-radius: 4px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      aspect-ratio: 4 / 4.8;
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(48, 33, 24, 0.14);
       object-fit: cover;
     }
 
-    /* 右侧文字区域 */
     .keynote-info {
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      align-self: center;
       min-width: 0;
     }
 
     .keynote-track {
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: var(--umn-gold); /* 使用主题色 */
+      display: inline-flex;
+      width: fit-content;
+      padding: 0.36rem 0.82rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      border: 1px solid rgba(122, 0, 25, 0.14);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--umn-maroon);
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.5rem;
+      letter-spacing: 0.08em;
+      margin-bottom: -0.1rem;
     }
 
     .keynote-name {
-      font-size: 1.8rem;
+      font-size: clamp(2rem, 4vw, 2.45rem);
       font-weight: 700;
       color: var(--umn-maroon);
-      margin-bottom: 0.2rem;
+      margin: 0;
+      line-height: 1.06;
     }
 
     .keynote-affil {
+      padding: 0.95rem 1rem;
+      border-radius: 18px;
+      background: #faf6f1;
+      border: 1px solid #eadfd6;
       font-size: 1rem;
-      color: #666;
-      font-style: italic;
-      margin-bottom: 1rem;
+      color: #5a4e48;
+      font-style: normal;
+      margin: 0;
+      line-height: 1.65;
     }
 
     .keynote-title {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 1rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--umn-gold);
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: #2f2724;
+      margin: 0.15rem 0 0;
+      line-height: 1.45;
     }
 
     .keynote-text {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 0.8rem;
-      color: #444;
-      text-align: justify;
+      margin: 0;
+      padding: 0.95rem 1rem;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid #eee2d8;
+      font-size: 0.98rem;
+      line-height: 1.72;
+      color: #433833;
+      text-align: left;
     }
 
     .label {
-      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 0.28rem;
+      font-weight: 700;
       color: var(--umn-maroon);
     }
 
-    /* 移动端适配：手机上变回上下结构 */
     @media (max-width: 768px) {
       .keynote-item {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+        padding: 1.2rem;
       }
+
       .keynote-photo {
-        width: 180px;
-        margin-bottom: 1rem;
+        max-width: 280px;
+        width: 100%;
+        margin: 0 auto;
       }
+
       .keynote-info {
         text-align: left;
       }
@@ -141,7 +185,7 @@
         <img src="assets/images/anita_burgun.jpg" alt="Dr. Burgun">
       </div>
       <div class="keynote-info">
-        <!-- <div class="keynote-track">Research Track Keynote</div> -->
+        <div class="keynote-track">Conference Keynote</div>
         <div class="keynote-name">Anita Burgun, MD, PhD, FIAHSI</div>
         <div class="keynote-affil">Professor of Medical Informatics, Université Paris Cité<br>
           Director of Department of Medical Informatics<br>
@@ -166,7 +210,7 @@
         <img src="assets/images/hoifung_poon.png" alt="Dr. Poon">
       </div>
       <div class="keynote-info">
-        <!-- <div class="keynote-track">XX Track Keynote</div> -->
+        <div class="keynote-track">Conference Keynote</div>
         <div class="keynote-name">Hoifung Poon, PhD</div>
         <div class="keynote-affil">General Manager, Microsoft Research, USA</div>
         
@@ -189,7 +233,7 @@
         <img src="assets/images/shen_li.jpeg" alt="Dr. Shen">
       </div>
       <div class="keynote-info">
-        <!-- <div class="keynote-track">XX Track Keynote</div> -->
+        <div class="keynote-track">Conference Keynote</div>
         <div class="keynote-name">Li Shen, Ph.D., FAIMBE, FACMI, FAMIA</div>
         <div class="keynote-affil">Professor of Informatics, Radiology and CIS, University of Pennsylvania, USA<br>
           Interim Director of the Informatics Division, Associate Director of Institute for Biomedical Informatics<br>
@@ -243,7 +287,7 @@ Distinguished Member, and a Distinguished Contributor of the IEEE Computer Socie
       <div class="keynote-info">
         <div class="keynote-track">Policy Keynote (Industry Track)</div>
         <div class="keynote-name">Ram D. Sriram, PhD</div>
-        <div class="keynote-affil">Senior Science Advisor, Information Technology Laboratory, National Institute of Standards and Technology (NIST), USA</div>
+        <div class="keynote-affil">Senior Scientific Advisor, Information Technology Laboratory, National Institute of Standards and Technology (NIST), USA</div>
 
         <div class="keynote-title">Talk Title: Evaluating Large Language Models for Clinical Decision Support</div>
 
@@ -264,7 +308,7 @@ Distinguished Member, and a Distinguished Contributor of the IEEE Computer Socie
         <img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD">
       </div>
       <div class="keynote-info">
-        <div class="keynote-track">Keynote (Industry Track)</div>
+        <div class="keynote-track">Closing Keynote (Industry Track)</div>
         <div class="keynote-name">Ben Teplitzky, PhD</div>
         <div class="keynote-affil">AI/ML Research Fellow, Patient Management, Boston Scientific, USA</div>
 

@@ -386,31 +386,101 @@
       margin-top: 0.2rem;
     }
 
+    .event-keynote {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .event-keynote .event-people {
+      order: 2;
+      margin-bottom: 1.1rem;
+      gap: 1rem;
+    }
+
+    .event-keynote .event-copy {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    .event-keynote .event-copy.is-simple .event-section {
+      padding: 1.15rem 1.2rem 1.2rem;
+      border-radius: 20px;
+      border: 1px solid rgba(221, 178, 74, 0.22);
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    }
+
+    .event-keynote .event-copy.is-simple .event-section h4 {
+      font-size: 1.02rem;
+    }
+
     .event-keynote .person-card {
-      flex-direction: row;
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .event-keynote .person-card.keynote-speaker-card {
+      display: grid;
+      grid-template-columns: 162px minmax(0, 1fr);
+      gap: 1.1rem;
       align-items: center;
-      gap: 0.95rem;
-      flex-basis: 360px;
-      max-width: 430px;
+      flex: 1 1 100%;
+      max-width: none;
+      padding: 1.15rem;
+      border: 1px solid rgba(221, 178, 74, 0.28);
+      background: linear-gradient(135deg, rgba(255, 250, 236, 0.98) 0%, rgba(255, 255, 255, 0.98) 72%);
+      box-shadow: 0 14px 28px rgba(77, 45, 32, 0.08);
     }
 
     .event-keynote .person-card.keynote-speaker-card .person-role {
-      display: none;
+      display: inline-flex;
+      width: fit-content;
+      padding: 0.32rem 0.78rem;
+      border-radius: 999px;
+      background: rgba(221, 178, 74, 0.18);
+      color: #7b4b00;
+      font-size: 0.73rem;
+      letter-spacing: 0.1em;
     }
 
-    .event-keynote .person-photo {
-      flex: 0 0 110px;
-      width: 110px;
-      aspect-ratio: 1 / 1.12;
-      border-radius: 18px;
+    .event-keynote .person-card.keynote-speaker-card .person-photo {
+      flex: initial;
+      width: 162px;
+      aspect-ratio: 1 / 1.08;
+      border-radius: 20px;
+      box-shadow: 0 10px 22px rgba(77, 45, 32, 0.14);
     }
 
-    .event-keynote .person-body {
-      gap: 0.35rem;
+    .event-keynote .person-card.keynote-speaker-card .person-body {
+      gap: 0.42rem;
+      justify-content: center;
     }
 
-    .event-keynote .person-actions {
-      margin-top: 0.5rem;
+    .event-keynote .person-card.keynote-speaker-card .person-name {
+      font-size: clamp(1.36rem, 2.2vw, 1.7rem);
+      line-height: 1.18;
+    }
+
+    .event-keynote .person-card.keynote-speaker-card .person-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #463831;
+    }
+
+    .event-keynote .person-card.keynote-speaker-card .person-org {
+      font-size: 0.98rem;
+    }
+
+    .event-keynote .person-card.keynote-speaker-card .person-actions {
+      margin-top: 0.35rem;
+    }
+
+    .event-keynote .person-card:not(.keynote-speaker-card) {
+      flex: 0 1 235px;
+      max-width: 260px;
+    }
+
+    .event-keynote .person-card:not(.keynote-speaker-card) .person-photo {
+      aspect-ratio: 1 / 1.06;
     }
 
     .bio-button {
@@ -643,15 +713,16 @@
       }
 
       .event-keynote .person-card {
-        flex-direction: column;
-        align-items: stretch;
         gap: 0.8rem;
       }
 
-      .event-keynote .person-photo {
-        flex: initial;
+      .event-keynote .person-card.keynote-speaker-card {
+        grid-template-columns: 1fr;
+      }
+
+      .event-keynote .person-card.keynote-speaker-card .person-photo {
         width: 100%;
-        aspect-ratio: 4 / 4.8;
+        aspect-ratio: 4 / 4.2;
         border-radius: 16px;
       }
     }
@@ -686,14 +757,14 @@
       <p class="industry-kicker">Tuesday, June 2, 2026 | Coffman Theater</p>
       <h2>Industry Track Agenda</h2>
       <p class="industry-lead">
-        This page follows the agenda flow on the ICHI 2026 Program page while expanding each event with speaker cards, moderator and panelist information, and longer bios available on demand. The goal is to make the Industry Track easier to browse without overwhelming the page with long blocks of biography text.
+        The finalized Industry Track agenda brings together policy leaders, researchers, health system innovators, and medtech voices for a full day focused on how healthcare AI moves from promising models to safe, scalable, and clinically meaningful impact in practice.
       </p>
     </div>
     <aside class="industry-theme-card">
       <span class="theme-label">Theme</span>
       <h3>Healthcare AI Enablement Using Real-World Data</h3>
-      <p>Practical perspectives on adoption, governance, validation, scalability, and deployment in real-world healthcare environments.</p>
-      <p class="theme-note">Use the <strong>Read Bio</strong> buttons to open speaker and panelist bios in a modal window.</p>
+      <p>Practical perspectives from industry on data quality, governance, evaluation, collaboration, and real-world deployment.</p>
+      <p class="theme-note">Speaker and panelist bios can be opened on demand using the <strong>Read Bio</strong> links shown in each session.</p>
     </aside>
   </section>
 
@@ -731,21 +802,13 @@
           <h3>Evaluating Large Language Models for Clinical Decision Support</h3>
           <p class="event-subtitle">A policy-focused keynote on AI metrology, trustworthiness, and rigorous evaluation standards for clinical LLMs.</p>
         </div>
-        <div class="event-copy is-simple">
-          <div class="event-section">
-            <h4>Abstract</h4>
-            <p>Large Language Models, (LLMs) are extensively being used by the healthcare profession. These systems are aiding the clinician in decision making by analyzing unstructured text, medical literature, and various guidelines to provide precise and personalized treatment in line with the P9 concept that we outlined in our earlier work. However, there is a need for rigorous measurement and evaluation of these systems.</p>
-            <p>This talk delves into the emerging field of AI metrology, which seeks to establish standardized methods for assessing the accuracy, reliability, and trustworthiness of AI models in general, LLMs in particular. After providing a brief overview of LLMs use in health care, we explore state-of-the-art evaluation metrics designed to assess health care chatbots from an end-user perspective. These metrics encompass an evaluation of language processing abilities, impact on real-world clinical tasks, and effectiveness in user-interactive conversations.</p>
-            <p>Finally, we discuss ongoing work in Agentic AI and the specific metrics required to evaluate these architectures.</p>
-          </div>
-        </div>
         <div class="event-people">
           <article class="person-card keynote-speaker-card">
             <div class="person-photo"><img src="assets/images/sriram.jpg" alt="Ram D. Sriram, PhD"></div>
             <div class="person-body">
               <span class="person-role">Speaker</span>
               <h4 class="person-name">Ram D. Sriram, PhD</h4>
-              <p class="person-title">Senior Science Advisor, Information Technology Laboratory</p>
+              <p class="person-title">Senior Scientific Advisor, Information Technology Laboratory</p>
               <p class="person-org">National Institute of Standards and Technology</p>
               <div class="person-actions">
                 <button type="button" class="bio-button" data-person-key="ram-sriram">Read Bio</button>
@@ -764,6 +827,14 @@
               </div>
             </div>
           </article>
+        </div>
+        <div class="event-copy is-simple">
+          <div class="event-section">
+            <h4>Abstract</h4>
+            <p>Large language models (LLMs) are increasingly being used by the healthcare profession to support clinical decision-making through analysis of unstructured text, medical literature, and clinical guidance. As these systems move closer to real-world deployment, the need for rigorous measurement and evaluation becomes unavoidable.</p>
+            <p>This keynote introduces the emerging field of AI metrology and outlines why standardized methods are needed to assess the accuracy, reliability, and trustworthiness of healthcare LLMs. It reviews evaluation approaches for healthcare chatbots from an end-user perspective, including language understanding, clinical task performance, and conversational effectiveness.</p>
+            <p>The session also looks ahead to agentic AI and the additional metrics that will be required to evaluate these more autonomous healthcare architectures responsibly.</p>
+          </div>
         </div>
       </div>
     </article>
@@ -785,8 +856,8 @@
         <div class="event-copy">
           <div class="event-section">
             <h4>Overview</h4>
-            <p>The rapid integration of AI, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them.</p>
-            <p>This panel brings together leaders from government, standards, clinical research, and health policy to examine where innovation meets regulation, including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and governance of real-world data for drug and device evaluation.</p>
+            <p>The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them.</p>
+            <p>This panel convenes leaders from industry, government, and standards bodies to examine where innovation meets regulation, including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and governance of real-world data for drug and device evaluation.</p>
           </div>
           <aside class="event-note-card">
             <div class="event-section">
@@ -825,19 +896,18 @@
             <div class="person-body">
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Ram D. Sriram, PhD</h4>
-              <p class="person-title">Senior Science Advisor, Information Technology Laboratory</p>
+              <p class="person-title">Senior Scientific Advisor, Information Technology Laboratory</p>
               <p class="person-org">National Institute of Standards and Technology</p>
               <div class="person-actions"><button type="button" class="bio-button" data-person-key="ram-sriram">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
-            <div class="person-photo"><img src="assets/images/jesse_isaacman_beck.jpg" alt="Jesse Isaacman-Beck, PhD"></div>
+            <div class="person-photo placeholder" aria-hidden="true"><span>SK</span></div>
             <div class="person-body">
               <span class="person-role">Panelist</span>
-              <h4 class="person-name">Jesse Isaacman-Beck, PhD</h4>
-              <p class="person-title">Director, Division of Artificial Intelligence Policy and Strategy</p>
+              <h4 class="person-name">Stephen Konya</h4>
+              <p class="person-title">Chief Innovation and Strategic Partnerships, Assistant Secretary for Technology Policy</p>
               <p class="person-org">U.S. Department of Health and Human Services</p>
-              <div class="person-actions"><button type="button" class="bio-button" data-person-key="jesse-isaacman-beck">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -856,7 +926,7 @@
 
     <article class="industry-event">
       <div class="industry-event-time">
-        <strong>9:45 AM - 10:15 AM</strong>
+        <strong>9:45 AM - 10:00 AM</strong>
         <span>Break</span>
       </div>
       <div class="industry-event-card event-shared">
@@ -875,7 +945,7 @@
 
     <article class="industry-event">
       <div class="industry-event-time">
-        <strong>10:15 AM - 11:45 AM</strong>
+        <strong>10:00 AM - 11:30 AM</strong>
         <span>Panel Discussion</span>
       </div>
       <div class="industry-event-card event-panel">
@@ -884,22 +954,23 @@
             <span class="event-badge">Panel Discussion</span>
             <span class="event-location">Theater</span>
           </div>
-          <h3>The GenAI Data Chasm: Are We Building a Human-Aligned Unified Data Ecosystem or Just Deeper, More Intelligent Silos?</h3>
-          <p class="event-subtitle">Success stories, technical realities, and the infrastructure gaps that shape whether healthcare AI scales safely.</p>
+          <h3>The GenAI Data Chasm: Are We Optimizing Models for Patients, Providers, or Businesses, or Are We Truly Optimizing Care?</h3>
+          <p class="event-subtitle">A practical discussion on whether healthcare AI is being built around clinically meaningful, human-aligned data ecosystems or around deeper, more intelligent silos.</p>
         </div>
         <div class="event-copy">
           <div class="event-section">
             <h4>Overview</h4>
-            <p>This panel focuses on one of the biggest barriers to successful AI adoption in healthcare: the gap between simply having data and having data that is trustworthy, representative, and fit for purpose in a medical-grade AI ecosystem.</p>
-            <p>Panelists will examine whether the field is moving toward safer, more unified, human-aligned data ecosystems or creating deeper and more intelligent silos that trap value, amplify bias, and weaken real-world impact for patients, providers, and innovators.</p>
+            <p>The GenAI data chasm highlights a critical barrier to healthcare AI adoption: the gap between simply having data and having data that is trustworthy, representative, and fit for medical-grade systems. While generative AI promises to transform diagnostics, drug discovery, and patient care, that progress depends on building a robust and integrated data ecosystem.</p>
+            <p>Patient journeys are segmented across conditions, care settings, modalities, and time. This panel examines how healthcare organizations can move beyond generalized datasets toward segment-aware strategies that capture clinically meaningful variation and connect multimodal data to longitudinal outcomes.</p>
+            <p>The discussion also looks at how experts increasingly contribute structured rationale and uncertainty, and how emerging evaluation approaches can better support reinforcement learning and agentic AI in healthcare workflows.</p>
           </div>
           <aside class="event-note-card">
             <div class="event-section">
               <h4>Discussion Focus</h4>
               <ul>
-                <li>Trustworthy, representative, and fit-for-purpose real-world data</li>
-                <li>Unified infrastructure versus fragmented AI silos</li>
-                <li>Bias, safety, interoperability, and long-term scalability</li>
+                <li>Trustworthy, representative, and fit-for-purpose healthcare data</li>
+                <li>Human-aligned data ecosystems versus deeper AI silos</li>
+                <li>Evaluation strategies for reinforcement learning and agentic AI</li>
               </ul>
             </div>
           </aside>
@@ -914,11 +985,41 @@
               <p class="person-org">Centific</p>
             </div>
           </article>
+          <article class="person-card">
+            <div class="person-photo placeholder" aria-hidden="true"><span>JS</span></div>
+            <div class="person-body">
+              <span class="person-role">Panelist</span>
+              <h4 class="person-name">Jaideep Srivastava, PhD</h4>
+              <p class="person-title">Professor of Computer Science</p>
+              <p class="person-org">University of Minnesota</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="jaideep-srivastava">Read Bio</button></div>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-photo"><img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD"></div>
+            <div class="person-body">
+              <span class="person-role">Panelist</span>
+              <h4 class="person-name">Hoifung Poon, PhD</h4>
+              <p class="person-title">General Manager</p>
+              <p class="person-org">Microsoft Research, USA</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="hoifung-poon">Read Bio</button></div>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-photo placeholder" aria-hidden="true"><span>SP</span></div>
+            <div class="person-body">
+              <span class="person-role">Panelist</span>
+              <h4 class="person-name">Sravanthi Parasa, MD</h4>
+              <p class="person-title">Vice Chair, ASGE AI Institute</p>
+              <p class="person-org">Swedish Medical Center, USA</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="sravanthi-parasa">Read Bio</button></div>
+            </div>
+          </article>
           <article class="person-card note-card">
             <div class="person-body">
-              <span class="person-role">Panelists</span>
-              <h4 class="person-name">Additional Panelists</h4>
-              <p class="person-note">We can add the remaining confirmed panelists here as soon as their final names, bios, and headshots are available.</p>
+              <span class="person-role">Discussion Lens</span>
+              <h4 class="person-name">Data Quality, Alignment, and Evaluation</h4>
+              <p class="person-note">This panel centers on whether generative AI in healthcare is being optimized for meaningful care outcomes or for narrower business and infrastructure objectives.</p>
             </div>
           </article>
         </div>
@@ -939,14 +1040,6 @@
           <h3>Towards Virtual Patient: AI for Accelerating Medical Discovery</h3>
           <p class="event-subtitle">A conference keynote on multimodal generative AI, digital twins, and virtual patient models for real-world evidence.</p>
         </div>
-        <div class="event-copy is-simple">
-          <div class="event-section">
-            <h4>Abstract</h4>
-            <p>Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health in which we recognize that “one size doesn't fit all” and thus try to tailor treatments for each individual, continuing on today's discovery processes is clearly not sustainable.</p>
-            <p>The confluence of technological advances and social policies has led to rapid digitization of multimodal, longitudinal patient journeys, such as electronic health records (EHRs), imaging, and multiomics. Our overarching research agenda lies in advancing multimodal generative AI to learn the language of patients and create a virtual patient world model as digital twin for forecasting disease progression and treatment response.</p>
-            <p>This enables us to synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials, in deep partnerships with real-world stakeholders such as large health systems and life sciences companies.</p>
-          </div>
-        </div>
         <div class="event-people">
           <article class="person-card keynote-speaker-card">
             <div class="person-photo"><img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD"></div>
@@ -958,6 +1051,14 @@
               <div class="person-actions"><button type="button" class="bio-button" data-person-key="hoifung-poon">Read Bio</button></div>
             </div>
           </article>
+        </div>
+        <div class="event-copy is-simple">
+          <div class="event-section">
+            <h4>Abstract</h4>
+            <p>Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health, where treatments are increasingly tailored to individuals, continuing with current discovery processes is not sustainable.</p>
+            <p>The rapid digitization of multimodal longitudinal patient journeys, including electronic health records, imaging, and multiomics, opens the door to a new research agenda: advancing multimodal generative AI that can learn the language of patients and create virtual patient world models as digital twins for forecasting disease progression and treatment response.</p>
+            <p>This approach enables synthesis of population-scale real-world evidence from hundreds of millions of patients and has the potential to accelerate medical discovery through AI-powered virtual clinical trials.</p>
+          </div>
         </div>
       </div>
     </article>
@@ -992,22 +1093,23 @@
             <span class="event-badge">Panel Discussion</span>
             <span class="event-location">Theater</span>
           </div>
-          <h3>AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption</h3>
-          <p class="event-subtitle">Lessons from real-world deployment across health systems, medtech, and research collaborations.</p>
+          <h3>Public-private Partnerships and Industry-academia Collaborations</h3>
+          <p class="event-subtitle">Identifying key barriers, community-driven solutions, early wins, recommendations, and emerging trends in AI adoption.</p>
         </div>
         <div class="event-copy">
           <div class="event-section">
-            <h4>Overview</h4>
-            <p>As AI matures from research prototypes to operational systems, healthcare leaders face difficult questions about workflow integration, lifecycle management, regulatory expectations, bias mitigation, and building clinician and patient trust.</p>
-            <p>This panel focuses on practical lessons learned from AI implementations across industry, academia, and care delivery organizations, with an emphasis on actionable approaches that support responsible and equitable adoption.</p>
+            <h4>Panel Abstract</h4>
+            <p><strong>AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption.</strong></p>
+            <p>As artificial intelligence matures from research to real-world clinical deployment, healthcare leaders face pressing questions about how to safely and effectively scale adoption. This panel explores strategies and lessons learned from AI implementations across industry, academia, and care delivery organizations, grounded in real-world data, operational metrics, and early evidence of impact.</p>
+            <p>Panelists will share insights on aligning AI tools with clinical workflows, managing model lifecycle and regulatory expectations, mitigating algorithmic bias, and building trust with clinicians and patients. The discussion emphasizes actionable approaches for responsible and equitable AI integration.</p>
           </div>
           <aside class="event-note-card">
             <div class="event-section">
               <h4>Discussion Themes</h4>
               <ul>
-                <li>Operational enablers for real-world deployment</li>
-                <li>Common pitfalls in scaling and governance</li>
-                <li>Balancing technical performance with trust and usability</li>
+                <li>Community-driven collaboration models across industry and academia</li>
+                <li>Practical barriers to AI adoption inside real healthcare workflows</li>
+                <li>Early wins, recommendations, and emerging implementation trends</li>
               </ul>
             </div>
           </aside>
@@ -1044,9 +1146,16 @@
             <div class="person-body">
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Julie Thompson, PhD</h4>
-              <p class="person-title">Senior Director, R&D, Cardiac Rhythm Management and Diagnostics Division</p>
+              <p class="person-title">Senior Director, R&amp;D, Cardiac Rhythm Management and Diagnostics Division</p>
               <p class="person-org">Boston Scientific Corporation</p>
               <div class="person-actions"><button type="button" class="bio-button" data-person-key="julie-thompson">Read Bio</button></div>
+            </div>
+          </article>
+          <article class="person-card note-card">
+            <div class="person-body">
+              <span class="person-role">Additional Panelist</span>
+              <h4 class="person-name">To Be Confirmed</h4>
+              <p class="person-note">A final industry participant remains to be confirmed for this session.</p>
             </div>
           </article>
         </div>
@@ -1055,7 +1164,7 @@
 
     <article class="industry-event">
       <div class="industry-event-time">
-        <strong>3:00 PM - 3:30 PM</strong>
+        <strong>3:00 PM - 3:20 PM</strong>
         <span>Break</span>
       </div>
       <div class="industry-event-card event-shared">
@@ -1067,32 +1176,24 @@
           <h3>Afternoon Break</h3>
         </div>
         <div class="event-copy is-simple">
-          <p class="event-summary">A short break before the closing industry keynote and evening networking block.</p>
+          <p class="event-summary">A short break before the closing keynote and final networking block.</p>
         </div>
       </div>
     </article>
 
     <article class="industry-event">
       <div class="industry-event-time">
-        <strong>3:30 PM - 5:00 PM</strong>
-        <span>Industry Keynote</span>
+        <strong>3:20 PM - 4:20 PM</strong>
+        <span>Closing Keynote</span>
       </div>
       <div class="industry-event-card event-keynote">
         <div class="event-header">
           <div class="event-topline">
-            <span class="event-badge">Industry Keynote</span>
+            <span class="event-badge">Closing Keynote</span>
             <span class="event-location">Theater</span>
           </div>
           <h3>From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring</h3>
-          <p class="event-subtitle">A practical keynote on what it takes to move from a strong model to a trusted operational AI capability in healthcare.</p>
-        </div>
-        <div class="event-copy is-simple">
-          <div class="event-section">
-            <h4>Abstract</h4>
-            <p>Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.</p>
-            <p>In this keynote, Ben Teplitzky will trace the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring. But that technical milestone was only the beginning. Translating AI into practice required confronting the harder informatics problems: dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration as the system encountered new conditions in the field.</p>
-            <p>Using lessons from cardiac rhythm management and broader experience across healthcare AI, this talk will examine what it takes to move from an impressive algorithm to a trusted operational capability. The session will highlight practical strategies for developing clinically meaningful real-world evidence, managing model evolution responsibly, balancing automation with expert judgment, and building systems that are robust not only in development but also in deployment. The goal is to offer a pragmatic roadmap for organizations seeking to create human-centered AI that is safe, scalable, and genuinely useful in healthcare.</p>
-          </div>
+          <p class="event-subtitle">A closing keynote and Q&amp;A on what it takes to move from a strong model to a trusted operational AI capability in healthcare.</p>
         </div>
         <div class="event-people">
           <article class="person-card keynote-speaker-card">
@@ -1106,12 +1207,20 @@
             </div>
           </article>
         </div>
+        <div class="event-copy is-simple">
+          <div class="event-section">
+            <h4>Abstract</h4>
+            <p>Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.</p>
+            <p>In this keynote, Ben Teplitzky traces the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring, but translating AI into practice required confronting the harder informatics problems of dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration.</p>
+            <p>The session offers a pragmatic roadmap for creating human-centered AI that is safe, scalable, and genuinely useful in healthcare, supported by a closing Q&amp;A discussion.</p>
+          </div>
+        </div>
       </div>
     </article>
 
     <article class="industry-event">
       <div class="industry-event-time">
-        <strong>5:00 PM - 6:00 PM</strong>
+        <strong>4:30 PM - 6:00 PM</strong>
         <span>Networking</span>
       </div>
       <div class="industry-event-card event-social">
@@ -1120,29 +1229,10 @@
             <span class="event-badge">Networking</span>
             <span class="event-location">Theater Lobby</span>
           </div>
-          <h3>Professional Networking and Social Hour</h3>
+          <h3>Professional Networking, Speed Dating, and Social Hour</h3>
         </div>
         <div class="event-copy is-simple">
-          <p class="event-summary">An extended networking block for follow-up conversations, peer exchange, and informal community building across the Industry Track.</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="industry-event">
-      <div class="industry-event-time">
-        <strong>6:00 PM - 8:00 PM</strong>
-        <span>Reception</span>
-      </div>
-      <div class="industry-event-card event-social">
-        <div class="event-header">
-          <div class="event-topline">
-            <span class="event-badge">Reception</span>
-            <span class="event-location">Campus Club</span>
-          </div>
-          <h3>ICHI Reception</h3>
-        </div>
-        <div class="event-copy is-simple">
-          <p class="event-summary">Join the broader ICHI 2026 community for the evening reception and continue the day's conversations beyond the Industry Track program.</p>
+          <p class="event-summary">An extended closing block for networking, informal mentoring, and follow-up conversations across the Industry Track community.</p>
         </div>
       </div>
     </article>
@@ -1153,7 +1243,7 @@
     <div class="committee-grid">
       <div class="committee-card">
         <img src="assets/images/xinxin_zhu.png" alt="Xinxin Zhu">
-        <h4>Xinxin Zhu, PhD</h4>
+        <h4>Katie Zhu, PhD</h4>
         <p>Boston Scientific, USA</p>
         <p><a href="mailto:katie.zhu@bsci.com">katie.zhu@bsci.com</a></p>
       </div>
