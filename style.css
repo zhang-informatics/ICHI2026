@@ -416,6 +416,222 @@ del {
   }
 }
 
+/* =========================================
+   Sponsors Page Redesign
+   ========================================= */
+
+.sponsor-page {
+  padding: 2.25rem 0 4rem;
+}
+
+.sponsor-page-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sponsor-page-heading-left {
+  text-align: left;
+}
+
+.sponsor-page-heading h2 {
+  margin-bottom: 0.65rem;
+  color: var(--umn-maroon);
+  font-size: clamp(1.95rem, 3.8vw, 2.45rem);
+}
+
+.sponsor-page-heading p {
+  max-width: 780px;
+  margin: 0 auto;
+  color: #4d4a47;
+  line-height: 1.7;
+}
+
+.sponsor-page-heading-left p {
+  margin: 0;
+  max-width: 880px;
+}
+
+.sponsor-showcase {
+  padding: 2rem 0 1rem;
+}
+
+.sponsor-tier-block {
+  padding: 1.4rem 0 1.65rem;
+  border-top: 1px solid rgba(122, 0, 25, 0.12);
+}
+
+.sponsor-tier-block:first-of-type {
+  border-top: none;
+  padding-top: 0.35rem;
+}
+
+.sponsor-tier-label {
+  margin: 0 0 1rem;
+  text-align: center;
+  color: var(--umn-maroon);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sponsor-logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92px;
+  padding: 0.2rem 0;
+}
+
+.sponsor-logo-row img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.sponsor-logo-row-platinum img {
+  max-width: min(520px, 100%);
+  max-height: 88px;
+}
+
+.sponsor-logo-row-gold img {
+  max-width: min(210px, 100%);
+  max-height: 118px;
+}
+
+.sponsor-logo-row-silver img {
+  max-width: min(350px, 100%);
+  max-height: 78px;
+}
+
+.sponsor-opportunities {
+  margin-top: 1.25rem;
+  padding: 2rem 0 0.5rem;
+  border-top: 1px solid rgba(122, 0, 25, 0.12);
+}
+
+.sponsor-deadline {
+  margin: 0 0 1.75rem;
+  color: var(--umn-maroon);
+  font-weight: 600;
+}
+
+.sponsor-opportunities h3 {
+  margin: 1.8rem 0 1rem;
+  color: var(--umn-maroon);
+  font-size: 1.15rem;
+}
+
+.sponsor-package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.sponsor-package-card {
+  padding: 1.15rem 1.2rem 1.2rem;
+  background: #fcfaf8;
+  border: 1px solid rgba(122, 0, 25, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(53, 39, 28, 0.05);
+}
+
+.sponsor-package-card-secondary {
+  background: #fff;
+}
+
+.sponsor-package-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.sponsor-package-header h4 {
+  margin: 0;
+  color: #2f2a26;
+  font-size: 1.08rem;
+}
+
+.sponsor-package-price {
+  margin: 0;
+  color: var(--umn-maroon);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sponsor-package-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #4b4946;
+  line-height: 1.6;
+}
+
+.sponsor-package-list li + li {
+  margin-top: 0.45rem;
+}
+
+.sponsor-contact {
+  margin-top: 1.6rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(122, 0, 25, 0.12);
+}
+
+.sponsor-contact .committee-section h2,
+.sponsor-contact .committee-section h3 {
+  margin-bottom: 0.35rem;
+}
+
+.sponsor-contact .committee-grid {
+  margin-top: 1rem;
+  gap: 1.25rem;
+}
+
+.sponsor-contact .committee-card {
+  padding: 1.35rem 1.2rem;
+  border: 1px solid rgba(122, 0, 25, 0.1);
+  box-shadow: 0 10px 24px rgba(53, 39, 28, 0.05);
+}
+
+.sponsor-contact .committee-card img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .sponsor-page {
+    padding-top: 1.75rem;
+  }
+
+  .sponsor-logo-row {
+    min-height: 72px;
+  }
+
+  .sponsor-logo-row-platinum img {
+    max-height: 68px;
+  }
+
+  .sponsor-logo-row-gold img {
+    max-height: 94px;
+    max-width: 175px;
+  }
+
+  .sponsor-logo-row-silver img {
+    max-height: 62px;
+    max-width: 280px;
+  }
+
+  .sponsor-package-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
 /* Footer */
 /* Footer container layout */
 .footer {
