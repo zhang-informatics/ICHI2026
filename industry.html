@@ -380,6 +380,42 @@
       text-wrap: pretty;
     }
 
+    .person-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .bio-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      width: fit-content;
+      padding: 0;
+      border: none;
+      background: none;
+      color: var(--umn-maroon);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.3;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.16em;
+      cursor: pointer;
+    }
+
+    .bio-button::after {
+      content: "→";
+      font-size: 0.92em;
+      line-height: 1;
+    }
+
+    .bio-button:hover,
+    .bio-button:focus-visible {
+      color: #5f0016;
+      outline: none;
+    }
+
     .event-keynote {
       display: flex;
       flex-direction: column;
@@ -486,13 +522,143 @@
       color: #3f2e27;
     }
 
+    .industry-bio-modal[hidden] {
+      display: none;
+    }
+
+    .industry-bio-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1100;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+    }
+
+    .bio-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(31, 22, 20, 0.62);
+      backdrop-filter: blur(3px);
+    }
+
+    .bio-dialog {
+      position: relative;
+      width: min(920px, calc(100vw - 2rem));
+      max-height: calc(100vh - 2rem);
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid #e5d9cf;
+      background: #fff;
+      box-shadow: 0 24px 60px rgba(25, 18, 16, 0.24);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bio-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #e3d8cf;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.92);
+      color: var(--umn-maroon);
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .bio-close:hover,
+    .bio-close:focus-visible {
+      background: #f8f1eb;
+      outline: none;
+    }
+
+    .bio-header {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 1.25rem;
+      padding: 1.4rem 1.5rem 1rem;
+      border-bottom: 1px solid #eee3da;
+      background: linear-gradient(180deg, #faf4ee 0%, #ffffff 100%);
+    }
+
+    .bio-header-photo {
+      overflow: hidden;
+      border-radius: 18px;
+      aspect-ratio: 4 / 4.8;
+      background: linear-gradient(180deg, #f2e7dd 0%, #e4d3c4 100%);
+    }
+
+    .bio-header-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bio-header-photo.placeholder {
+      display: grid;
+      place-items: center;
+      color: var(--umn-maroon);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .bio-header-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.65rem;
+      min-width: 0;
+    }
+
+    .bio-title {
+      margin: 0;
+      color: #2f2724;
+      font-size: clamp(1.48rem, 2.6vw, 2rem);
+      line-height: 1.18;
+      text-wrap: pretty;
+      max-width: calc(100% - 3rem);
+    }
+
+    .bio-subtitle,
+    .bio-org {
+      margin: 0;
+      color: #5d514b;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .bio-body {
+      padding: 1.2rem 1.5rem 1.45rem;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+    }
+
+    .bio-body p {
+      margin: 0;
+      color: #433934;
+      font-size: 0.98rem;
+      line-height: 1.74;
+      text-wrap: pretty;
+    }
+
     .industry-track-page .committee-section {
       margin-top: 3rem;
     }
 
     @media (max-width: 1024px) {
       .industry-intro,
-      .event-copy {
+      .event-copy,
+      .bio-header {
         grid-template-columns: 1fr;
       }
 
@@ -654,6 +820,7 @@
                 <p class="person-title">Senior Scientific Advisor, Information Technology Laboratory</p>
                 <p class="person-org">National Institute of Standards and Technology</p>
                 <p class="person-note">Gaithersburg, MD, 20899</p>
+                <div class="person-actions"><button type="button" class="bio-button" data-person-key="ram-sriram">Read Bio</button></div>
               </div>
             </article>
             <article class="person-card">
@@ -662,15 +829,15 @@
                 <span class="person-role">Chair/Moderator</span>
                 <h4 class="person-name">Ikram Khan</h4>
                 <p class="person-org">Health AI Institute</p>
+                <div class="person-actions"><button type="button" class="bio-button" data-person-key="ikram-khan">Read Bio</button></div>
               </div>
             </article>
           </div>
           <div class="event-copy is-simple keynote-copy">
             <div class="event-section">
               <p><strong>Date &amp; Time:</strong> June 2, 2026, 8:15–8:35 AM CT</p>
-              <p><strong>Speaker:</strong> Ram D. Sriram, Senior Scientific Advisor, Information Technology Laboratory, National Institute of Standards and Technology, Gaithersburg, MD, 20899</p>
-              <p><strong>Chair/Moderator:</strong> Ikram Khan, Health AI Institute</p>
-              <p><strong>Abstract:</strong> Large Language Models, (LLMs) are extensively being used by the healthcare profession. These systems are aiding the clinician in decision making by analyzing unstructured text, medical literature, and various guidelines to provide precise and personalized treatment in line with the P9 concept that we outlined in our earlier work. However, there is a need for rigorous measurement and evaluation of these systems. This talk delves into the emerging field of AI metrology, which seeks to establish standardized methods for assessing the accuracy, reliability, and trustworthiness of AI models in general, LLMs in particular. After providing a brief overview of LLMs use in health care, we explore state-of-the-art evaluation metrics designed to assess health care chatbots from an end-user perspective These metrics encompass an evaluation of language processing abilities, impact on real-world clinical tasks, and effectiveness in user-interactive conversations. Finally, we discuss ongoing work in Agentic AI and the specific metrics required to evaluate these architectures.</p>
+              <h4>Abstract</h4>
+              <p>Large Language Models, (LLMs) are extensively being used by the healthcare profession. These systems are aiding the clinician in decision making by analyzing unstructured text, medical literature, and various guidelines to provide precise and personalized treatment in line with the P9 concept that we outlined in our earlier work. However, there is a need for rigorous measurement and evaluation of these systems. This talk delves into the emerging field of AI metrology, which seeks to establish standardized methods for assessing the accuracy, reliability, and trustworthiness of AI models in general, LLMs in particular. After providing a brief overview of LLMs use in health care, we explore state-of-the-art evaluation metrics designed to assess health care chatbots from an end-user perspective These metrics encompass an evaluation of language processing abilities, impact on real-world clinical tasks, and effectiveness in user-interactive conversations. Finally, we discuss ongoing work in Agentic AI and the specific metrics required to evaluate these architectures.</p>
             </div>
           </div>
         </div>
@@ -705,6 +872,7 @@
               <span class="person-role">Chair/Moderator</span>
               <h4 class="person-name">Ikram Khan</h4>
               <p class="person-org">Health AI Institute</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="ikram-khan">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -713,6 +881,7 @@
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Senator Eric Lucero</h4>
               <p class="person-title">Minnesota Senate Representative</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="eric-lucero">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -722,6 +891,7 @@
               <h4 class="person-name">Dr Ram Sriram, PhD</h4>
               <p class="person-title">Chief Scientific Advisor</p>
               <p class="person-org">National Institute of Standards and Technology (NIST)</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="ram-sriram">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -740,6 +910,7 @@
               <h4 class="person-name">Dr Tyler Winkelman, MD, MSc</h4>
               <p class="person-title">Director, Research &amp; Evaluation Data Analytics</p>
               <p class="person-org">HHRI (MN HER Consortium)</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="tyler-winkelman">Read Bio</button></div>
             </div>
           </article>
         </div>
@@ -795,6 +966,7 @@
             <div class="person-body">
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Prof Jaideep Srivastava</h4>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="jaideep-srivastava">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -802,6 +974,7 @@
             <div class="person-body">
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Dr Hoifung Poon</h4>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="hoifung-poon">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -809,6 +982,7 @@
             <div class="person-body">
               <span class="person-role">Panelist</span>
               <h4 class="person-name">Dr. Sravanthi Parasa</h4>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="sravanthi-parasa">Read Bio</button></div>
             </div>
           </article>
         </div>
@@ -837,14 +1011,14 @@
                 <h4 class="person-name">Hoifung Poon, PhD</h4>
                 <p class="person-title">General Manager</p>
                 <p class="person-org">Microsoft Research, USA</p>
+                <div class="person-actions"><button type="button" class="bio-button" data-person-key="hoifung-poon">Read Bio</button></div>
               </div>
             </article>
           </div>
           <div class="event-copy is-simple keynote-copy">
             <div class="event-section">
-              <p><strong>Speaker:</strong> Hoifung Poon, PhD</p>
-              <p>General Manager, Microsoft Research, USA</p>
-              <p><strong>Talk Title:</strong> Towards Virtual Patient: AI for Accelerating Medical Discovery</p>
+              <h4>Abstract</h4>
+              <p>Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health in which we recognize that “one size doesn't fit all” and thus try to tailor treatments for each individual, continuing on today's discovery processes is clearly not sustainable. The confluence of technological advances and social policies has led to rapid digitization of multimodal, longitudinal patient journeys, such as electronic health records (EHRs), imaging, and multiomics. Our overarching research agenda lies in advancing multimodal generative AI to learn the language of patients and create a virtual patient world model as digital twin for forecasting disease progression and treatment response. This enables us to synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials, in deep partnerships with real-world stakeholders such as large health systems and life sciences companies.</p>
             </div>
           </div>
         </div>
@@ -895,6 +1069,7 @@
             <div class="person-body">
               <span class="person-role">Chair/Moderator</span>
               <h4 class="person-name">Jim Southwick</h4>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="jim-southwick">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card">
@@ -920,6 +1095,7 @@
               <p class="person-title">Sr. Director, R&amp;D</p>
               <p class="person-title">Cardiac Rhythm Management &amp; Diagnostics Division</p>
               <p class="person-org">Boston Scientific Corporation</p>
+              <div class="person-actions"><button type="button" class="bio-button" data-person-key="julie-thompson">Read Bio</button></div>
             </div>
           </article>
           <article class="person-card note-card">
@@ -970,15 +1146,14 @@
                 <h4 class="person-name">Ben Teplitzky, PhD</h4>
                 <p class="person-title">AI/ML Research Fellow, Patient Management</p>
                 <p class="person-org">Boston Scientific</p>
+                <div class="person-actions"><button type="button" class="bio-button" data-person-key="ben-teplitzky">Read Bio</button></div>
               </div>
             </article>
           </div>
           <div class="event-copy is-simple keynote-copy">
             <div class="event-section">
-              <p><strong>Speaker:</strong> Ben Teplitzky, PhD, AI/ML Research Fellow, Patient Management, Boston Scientific</p>
-              <p><strong>Bio:</strong> Dr. Teplitzky, is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support. Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis. His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. Across industry and academia, his work has included algorithm development, computational modeling, data and validation strategy, and AI-enabled product innovation. He is an inventor on multiple patents and an author of peer-reviewed publications in biomedical engineering and medical AI. Dr. Teplitzky earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota, where he was an NSF Graduate Research Fellow.</p>
-              <p><strong>Title:</strong> From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring</p>
-              <p><strong>Abstract:</strong> Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.</p>
+              <h4>Abstract</h4>
+              <p>Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.</p>
               <p>In this keynote, Ben Teplitzky will trace the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring. But that technical milestone was only the beginning. Translating AI into practice required confronting the harder informatics problems: dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration as the system encountered new conditions in the field.</p>
               <p>Using lessons from cardiac rhythm management and broader experience across healthcare AI, this talk will examine what it takes to move from an impressive algorithm to a trusted operational capability. The session will highlight practical strategies for developing clinically meaningful real-world evidence, managing model evolution responsibly, balancing automation with expert judgment, and building systems that are robust not only in development but also in deployment. The goal is to offer a pragmatic roadmap for organizations seeking to create human-centered AI that is safe, scalable, and genuinely useful in healthcare.</p>
             </div>
@@ -1035,6 +1210,23 @@
   </section>
 </main>
 
+<div class="industry-bio-modal" id="industry-bio-modal" hidden>
+  <div class="bio-backdrop" data-bio-close="true"></div>
+  <div class="bio-dialog" role="dialog" aria-modal="true" aria-labelledby="industry-bio-title">
+    <button type="button" class="bio-close" id="industry-bio-close" aria-label="Close bio dialog">×</button>
+    <div class="bio-header">
+      <div class="bio-header-photo" id="industry-bio-photo"></div>
+      <div class="bio-header-copy">
+        <div class="modal-role" id="industry-bio-role">Biography</div>
+        <h3 class="bio-title" id="industry-bio-title"></h3>
+        <p class="bio-subtitle" id="industry-bio-subtitle"></p>
+        <p class="bio-org" id="industry-bio-org"></p>
+      </div>
+    </div>
+    <div class="bio-body" id="industry-bio-body"></div>
+  </div>
+</div>
+
 <div id="footer"></div>
 <script>
   fetch('nav.html')
@@ -1044,6 +1236,115 @@
   fetch('footer.html')
     .then(res => res.text())
     .then(html => { document.getElementById('footer').innerHTML = html; });
+
+  const bioModal = document.getElementById('industry-bio-modal');
+  const bioClose = document.getElementById('industry-bio-close');
+  const bioPhoto = document.getElementById('industry-bio-photo');
+  const bioRole = document.getElementById('industry-bio-role');
+  const bioTitle = document.getElementById('industry-bio-title');
+  const bioSubtitle = document.getElementById('industry-bio-subtitle');
+  const bioOrg = document.getElementById('industry-bio-org');
+  const bioBody = document.getElementById('industry-bio-body');
+  let peopleData = {};
+  let lastBioTrigger = null;
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function personInitials(name) {
+    return String(name || '')
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map(part => part[0])
+      .join('')
+      .toUpperCase();
+  }
+
+  function renderBio(person) {
+    bioRole.textContent = 'Biography';
+    bioTitle.textContent = person.name || '';
+    bioSubtitle.textContent = person.role || '';
+    bioOrg.textContent = person.organization || '';
+
+    if (person.image) {
+      bioPhoto.className = 'bio-header-photo';
+      bioPhoto.innerHTML = '<img src="' + escapeHtml(person.image) + '" alt="' + escapeHtml(person.name || 'Speaker') + '">';
+    } else {
+      bioPhoto.className = 'bio-header-photo placeholder';
+      bioPhoto.textContent = personInitials(person.name);
+    }
+
+    const paragraphs = Array.isArray(person.bio) ? person.bio : [person.bio];
+    bioBody.innerHTML = paragraphs.filter(Boolean).map(item => '<p>' + escapeHtml(item) + '</p>').join('');
+  }
+
+  function openBio(key, trigger) {
+    const person = peopleData[key];
+    if (!person) {
+      return;
+    }
+
+    lastBioTrigger = trigger || null;
+    renderBio(person);
+    bioModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    bioClose.focus();
+  }
+
+  function closeBio() {
+    bioModal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastBioTrigger) {
+      lastBioTrigger.focus();
+    }
+  }
+
+  bioClose.addEventListener('click', closeBio);
+
+  document.addEventListener('click', (event) => {
+    const trigger = event.target.closest('[data-person-key]');
+    if (trigger) {
+      openBio(trigger.dataset.personKey, trigger);
+      return;
+    }
+
+    if (event.target.closest('[data-bio-close="true"]')) {
+      closeBio();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !bioModal.hidden) {
+      closeBio();
+      return;
+    }
+
+    const trigger = event.target.closest('[data-person-key]');
+    if (!trigger) {
+      return;
+    }
+
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openBio(trigger.dataset.personKey, trigger);
+    }
+  });
+
+  fetch('assets/data/industry-people.json')
+    .then(res => res.ok ? res.json() : {})
+    .then(data => {
+      peopleData = data || {};
+    })
+    .catch(() => {
+      peopleData = {};
+    });
 </script>
 
 </body>

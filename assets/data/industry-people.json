@@ -12,8 +12,8 @@
   },
   "ram-sriram": {
     "name": "Ram D. Sriram, PhD",
-    "role": "Senior Science Advisor, Information Technology Laboratory",
-    "organization": "National Institute of Standards and Technology (NIST)",
+    "role": "Senior Scientific Advisor, Information Technology Laboratory",
+    "organization": "National Institute of Standards and Technology (NIST), USA",
     "image": "assets/images/sriram.jpg",
     "bio": [
       "Ram D. Sriram is currently a Senior Science Advisor in the Information Technology Laboratory at the National Institute of Standards and Technology.",
@@ -60,9 +60,9 @@
     "organization": "Microsoft Research, USA",
     "image": "assets/images/hoifung_poon.png",
     "bio": [
-      "Hoifung Poon is the General Manager of Real-World Evidence at Microsoft Research and an affiliated faculty member at the University of Washington Medical School.",
-      "He leads biomedical AI research and incubation focused on structuring medical data to optimize healthcare delivery and accelerate discovery for precision health. His team and collaborators were among the earliest groups to advance large language models and multimodal generative AI for health applications, producing widely used foundation models such as PubMedBERT, BioGPT, BiomedCLIP, LLaVA-Med, and BiomedParse.",
-      "He has led research partnerships with major health providers and life sciences organizations to deploy AI systems for applications including molecular tumor boards and clinical trial matching. He received his PhD in Computer Science and Engineering from the University of Washington, specializing in machine learning and natural language processing."
+      "Hoifung Poon is the General Manager of Real-World Evidence at Microsoft Research and an affiliated faculty at the University of Washington Medical School.",
+      "He leads biomedical AI research and incubation, with the overarching goal of structuring medical data to optimize delivery and accelerate discovery for precision health. His team and collaborators are among the first to explore large language models (LLMs) and multimodal generative AI in health applications, producing popular open-source foundation models such as PubMedBERT, BioGPT, BiomedCLIP, LLaVA-Med, BiomedParse, with tens of millions of downloads.",
+      "His latest publications in Nature and Cell features groundbreaking digital pathology and spatial proteomics foundation models such as GigaPath and GigaTIME. He has led successful research partnerships with large health providers and life science companies, creating AI systems in daily use for applications such as molecular tumor board and clinical trial matching. His prior work has been recognized with Best Paper Awards from premier AI venues such as NAACL, EMNLP, and UAI, and he was named the \"Technology Champion\" by the Puget Sound Business Journal in the 2024 Health Care Leadership Awards. He received his PhD in Computer Science and Engineering from the University of Washington, specializing in machine learning and NLP."
     ]
   },
   "jaideep-srivastava": {
@@ -113,9 +113,9 @@
     "organization": "Boston Scientific, USA",
     "image": "assets/images/teplitzky.jpg",
     "bio": [
-      "Ben Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support.",
+      "Dr. Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support.",
       "Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis.",
-      "His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. He earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota."
+      "His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. Across industry and academia, his work has included algorithm development, computational modeling, data and validation strategy, and AI-enabled product innovation. He is an inventor on multiple patents and an author of peer-reviewed publications in biomedical engineering and medical AI. Dr. Teplitzky earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota, where he was an NSF Graduate Research Fellow."
     ]
   }
 }
