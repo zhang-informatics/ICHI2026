@@ -825,10 +825,15 @@
     "title": "From Data to Decisions: Building Learning Health Systems in Hospitals",
     "speaker": "Anita Burgun, MD, PhD, FIAHSI",
     "affiliation": "Professor of Medical Informatics, Université Paris Cité; Director of Department of Medical Informatics, Georges Pompidou European Hospital and Necker Children’s Hospital",
+    "image": "assets/images/anita_burgun.jpg",
+    "speakerLines": [
+      "Professor of Medical Informatics, Université Paris Cité",
+      "Georges Pompidou European Hospital and Necker Children’s Hospital"
+    ],
     "date": "Monday, June 1",
     "time": "11:45 AM - 12:45 PM",
     "room": "Theater",
-    "bio": "Prof. Anita Burgun is a full professor of biomedical informatics and statistics at Université Paris Cité. She leads the Departments of Medical Informatics at Georges Pompidou European Hospital and Necker Children’s Hospital. Her research focuses on clinical and translational biomedical informatics, large-scale health data integration, and data-driven approaches for precision medicine.",
+    "bio": "Prof. Anita Burgun is a full professor of biomedical informatics and statistics at Université Paris Cité. She leads the Departments of Medical Informatics at Georges Pompidou European Hospital and Necker Children's Hospital. She holds a Chair at the Institut 3IA Prairie and is a senior researcher in the Clinical Bioinformatics team at the Imagine Institute of Genetic Diseases. Her research focuses on clinical and translational biomedical informatics, large-scale health data integration, and data-driven approaches for precision medicine. Prof. Burgun is an internationally recognized expert in biomedical informatics, serving as a reviewer for the European Research Council and as an expert evaluator for the Canada Foundation for Innovation. She has represented France at the International Medical Informatics Association since 2011 and has been a Fellow of the International Academy of Health Sciences Informatics since 2023.",
     "externalLink": {
       "href": "keynotes.html",
       "label": "View keynote page"
@@ -840,10 +845,16 @@
     "title": "Towards Virtual Patient: AI for Accelerating Medical Discovery",
     "speaker": "Hoifung Poon, PhD",
     "affiliation": "General Manager, Microsoft Research, USA",
+    "image": "assets/images/hoifung_poon.png",
+    "speakerLines": [
+      "General Manager",
+      "Microsoft Research, USA"
+    ],
     "date": "Tuesday, June 2",
     "time": "11:45 AM - 12:45 PM",
     "room": "Theater",
-    "abstract": "This keynote explores how multimodal generative AI can learn the language of patients from longitudinal clinical, imaging, and multi-omics data to create virtual patient world models. These digital twins can synthesize population-scale real-world evidence and help accelerate medical discovery through AI-powered virtual clinical trials.",
+    "abstract": "Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health in which we recognize that “one size doesn't fit all” and thus try to tailor treatments for each individual, continuing on today's discovery processes is clearly not sustainable. The confluence of technological advances and social policies has led to rapid digitization of multimodal, longitudinal patient journeys, such as electronic health records (EHRs), imaging, and multiomics. Our overarching research agenda lies in advancing multimodal generative AI to learn the language of patients and create a virtual patient world model as digital twin for forecasting disease progression and treatment response. This enables us to synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials, in deep partnerships with real-world stakeholders such as large health systems and life sciences companies.",
+    "bio": "Hoifung Poon is the General Manager of Real-World Evidence at Microsoft Research and an affiliated faculty at the University of Washington Medical School. He leads biomedical AI research and incubation, with the overarching goal of structuring medical data to optimize delivery and accelerate discovery for precision health. His team and collaborators are among the first to explore large language models (LLMs) and multimodal generative AI in health applications, producing popular open-source foundation models such as PubMedBERT, BioGPT, BiomedCLIP, LLaVA-Med, BiomedParse, with tens of millions of downloads. His latest publications in Nature and Cell features groundbreaking digital pathology and spatial proteomics foundation models such as GigaPath and GigaTIME. He has led successful research partnerships with large health providers and life science companies, creating AI systems in daily use for applications such as molecular tumor board and clinical trial matching. His prior work has been recognized with Best Paper Awards from premier AI venues such as NAACL, EMNLP, and UAI, and he was named the \"Technology Champion\" by the Puget Sound Business Journal in the 2024 Health Care Leadership Awards. He received his PhD in Computer Science and Engineering from the University of Washington, specializing in machine learning and NLP.",
     "externalLink": {
       "href": "keynotes.html#hoifung-poon",
       "label": "View keynote page"
@@ -855,10 +866,16 @@
     "title": "Harnessing AI and Informatics to Advance Dementia Research and Aging Care",
     "speaker": "Li Shen, PhD, FAIMBE, FACMI, FAMIA",
     "affiliation": "Professor of Informatics, Radiology and CIS, University of Pennsylvania, USA",
+    "image": "assets/images/shen_li.jpeg",
+    "speakerLines": [
+      "Professor of Informatics, Radiology and CIS",
+      "University of Pennsylvania, USA"
+    ],
     "date": "Wednesday, June 3",
     "time": "3:45 PM - 4:45 PM",
     "room": "Theater",
-    "abstract": "This keynote highlights recent progress in integrating genetics, multi-omics, imaging, and clinical data to support dementia research and aging care. It also examines the role of trustworthy multimodal and generative AI in diagnosis, risk stratification, disease staging, and support for patients and caregivers.",
+    "abstract": "Alzheimer’s disease and related dementias (ADRD) remain a critical public health challenge, demanding new strategies to elucidate disease mechanisms, identify biomarkers, and improve support for patients and caregivers. Advances in AI and informatics now enable the integration of large-scale genetics, multi-omics, brain imaging, and clinical data, providing unprecedented opportunities to uncover genetic factors, mechanistic pathways, and multimodal endophenotypes underlying ADRD. This talk will highlight recent progress in brain imaging omics and the development of AI methods that support reliable diagnosis, individualized risk stratification, and data-driven disease staging. We will also explore the growing role of trustworthy multimodal and generative AI, including interpretable and responsible models and large language models augmented with domain knowledge, in accelerating discovery. Finally, emerging work that analyzes conversational data and social media offers new opportunities to understand caregiver needs and to build intelligent, scalable support tools. Together, these advances illustrate how AI-driven informatics can deepen understanding of ADRD while strengthening care for aging adults and their caregivers.",
+    "bio": "Dr. Li Shen is a Professor of Informatics, Radiology, and Computer and Information Science at the University of Pennsylvania. He serves as Interim Director of the Informatics Division in the Department of Biostatistics, Epidemiology and Informatics, Associate Director for Bioinformatics at the Penn Institute for Biomedical Informatics, and Co-Director of the Penn Center for AI and Data Science for Integrated Diagnostics. Dr. Shen is a pioneer in brain-wide genome-wide association studies for Alzheimer’s disease. His research spans artificial intelligence and machine learning, biomedical and health informatics, NLP and large language models, medical image computing, network science, and multi-omics and systems biology, with broad applications to complex diseases. His work focuses on developing and applying trustworthy AI and informatics methods to analyze large-scale biobank and healthcare datasets, with the goal of improving disease understanding, early detection, prevention, and care. Dr. Shen has served on numerous journal editorial boards, grant review panels, and conference organizing committees. He is a Fellow of AIMBE, ACMI, and AMIA, an ACM Distinguished Member, and a Distinguished Contributor of the IEEE Computer Society.",
     "externalLink": {
       "href": "keynotes.html",
       "label": "View keynote page"
@@ -932,10 +949,16 @@
     "title": "From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring",
     "speaker": "Ben Teplitzky, PhD",
     "affiliation": "AI/ML Research Fellow, Patient Management, Boston Scientific, USA",
+    "image": "assets/images/teplitzky.jpg",
+    "speakerLines": [
+      "AI/ML Research Fellow, Patient Management",
+      "Boston Scientific, USA"
+    ],
     "date": "Tuesday, June 2",
     "time": "3:30 PM - 5:00 PM",
     "room": "Theater",
-    "abstract": "Using BeatLogic as a case study, this keynote examines what it takes to move from an impressive algorithm to a trusted operational AI capability in ambulatory cardiac monitoring, including dataset design, annotation quality, validation strategy, workflow integration, and human oversight.",
+    "abstract": "Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. This keynote traces the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation into a broader case study in healthcare AI enablement. The talk highlights the harder informatics problems behind adoption, including dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous model evolution in the field.",
+    "bio": "Dr. Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support. Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis. His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. Across industry and academia, his work has included algorithm development, computational modeling, data and validation strategy, and AI-enabled product innovation. He is an inventor on multiple patents and an author of peer-reviewed publications in biomedical engineering and medical AI. Dr. Teplitzky earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota, where he was an NSF Graduate Research Fellow.",
     "externalLink": {
       "href": "industry.html",
       "label": "View full Industry Track page"
