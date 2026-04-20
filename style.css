@@ -513,6 +513,21 @@ del {
   max-height: 78px;
 }
 
+.sponsor-logo-row-silver {
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-logo-row-silver .sponsor-logo-silver-wide {
+  max-width: min(320px, 100%);
+  max-height: 68px;
+}
+
+.sponsor-logo-row-silver .sponsor-logo-silver-standard {
+  max-width: min(165px, 100%);
+  max-height: 70px;
+}
+
 .sponsor-logo-row-award img {
   max-width: min(110px, 100%);
   max-height: 96px;
@@ -642,6 +657,16 @@ del {
   .sponsor-logo-row-silver img {
     max-height: 62px;
     max-width: 280px;
+  }
+
+  .sponsor-logo-row-silver .sponsor-logo-silver-wide {
+    max-height: 56px;
+    max-width: 240px;
+  }
+
+  .sponsor-logo-row-silver .sponsor-logo-silver-standard {
+    max-height: 58px;
+    max-width: 138px;
   }
 
   .sponsor-logo-row-award img {
