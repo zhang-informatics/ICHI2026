@@ -69,6 +69,7 @@
     "name": "Jaideep Srivastava, PhD",
     "role": "Professor of Computer Science",
     "organization": "University of Minnesota",
+    "image": "assets/images/jaideep_srivastava.webp",
     "bio": [
       "Jaideep Srivastava is a Professor of Computer Science at the University of Minnesota, with joint appointments in Journalism and Mass Communication, and a Distinguished Visiting Professor at IIT Kanpur. An IEEE Fellow and recipient of the PAKDD Distinguished Research Contributions Award, he is a globally recognized leader in machine learning, data mining, and digital health.",
       "His work focuses on advancing AI-driven healthcare, with deep collaboration across leading healthcare systems including Allina Health, where he has served as a Distinguished Fellow at the Center for Healthcare Innovation, as well as advisory and research engagements with multiple healthcare organizations. His research integrates longitudinal lifestyle and clinical data to enable early detection, diagnosis, and continuous monitoring of health conditions, helping shift healthcare from episodic and reactive to proactive, personalized, and continuous care systems.",
@@ -79,6 +80,7 @@
     "name": "Sravanthi Parasa, MD",
     "role": "Vice Chair, ASGE AI Institute",
     "organization": "Swedish Medical Center, USA",
+    "image": "assets/images/sravanthi_parasa.jpeg",
     "bio": [
       "Sravanthi Parasa is a gastroenterologist, clinical researcher, and internationally recognized leader in artificial intelligence for healthcare. With more than 20 years of clinical experience, she practices at Swedish Medical Center in Seattle, where her work sits at the intersection of clinical gastroenterology, digital therapeutics, and advanced AI-driven systems.",
       "A pioneer in AI-augmented colonoscopy, Dr. Parasa designed the clinical trial that led to the FDA approval of CADeye for improved detection of precancerous lesions. She currently serves as Vice Chair of the ASGE AI Institute, represents gastroenterology in the AMA AI Caucus, and sits on the advisory board of AI2 in Seattle.",
