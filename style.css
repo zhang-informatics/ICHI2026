@@ -491,6 +491,13 @@ del {
   object-fit: contain;
 }
 
+.sponsor-logo-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+
 .sponsor-logo-row-platinum img {
   max-width: min(520px, 100%);
   max-height: 88px;
@@ -504,6 +511,18 @@ del {
 .sponsor-logo-row-silver img {
   max-width: min(350px, 100%);
   max-height: 78px;
+}
+
+.sponsor-logo-row-award img {
+  max-width: min(110px, 100%);
+  max-height: 96px;
+}
+
+.sponsor-logo-caption {
+  margin: 0;
+  color: #4d4a47;
+  font-size: 0.96rem;
+  font-weight: 500;
 }
 
 .sponsor-opportunities {
@@ -623,6 +642,11 @@ del {
   .sponsor-logo-row-silver img {
     max-height: 62px;
     max-width: 280px;
+  }
+
+  .sponsor-logo-row-award img {
+    max-height: 82px;
+    max-width: 96px;
   }
 
   .sponsor-package-header {
