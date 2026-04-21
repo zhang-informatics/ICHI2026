@@ -890,13 +890,15 @@
     "room": "Theater",
     "summary": [
       "8:15 AM - 8:35 AM: Policy Keynote. Evaluating Large Language Models for Clinical Decision Support.",
-      "8:35 AM - 9:45 AM: From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care."
+      "8:35 AM - 9:45 AM: From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care.",
+      "The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them. This panel convenes leaders from industry, government, and standards bodies to examine the critical fault lines where innovation meets regulation — including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and the governance of real-world data for drug and device evaluation. Panelists will debate practical pathways for policy that is both enabling of innovation and protective of patients and will engage the ICHI community on how researchers and technologists can actively shape — rather than simply react to — the regulatory landscape."
     ],
     "moderator": "Ikram Khan, Health AI Institute",
     "participants": [
       "Policy Keynote: Ram D. Sriram, PhD — Evaluating Large Language Models for Clinical Decision Support",
       "Senator Eric Lucero, Minnesota Senate Representative",
-      "Stephen Konya, Chief Innovation and Strategic Partnerships, Assistant Secretary for Technology Policy (ASTP), HHS",
+      "Dr Ram Sriram, PhD, Chief Scientific Advisor, National Institute of Standards and Technology (NIST)",
+      "Jesse Isaacman-Beck, PhD, Director, Division of Artificial Intelligence Policy and Strategy, U.S. Department of Health and Human Services (HHS)",
       "Tyler Winkelman, MD, MSc, HHRI (MN HER Consortium)"
     ],
     "externalLink": {
