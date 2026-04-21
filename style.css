@@ -529,13 +529,13 @@ del {
 }
 
 .sponsor-logo-row-platinum .sponsor-logo-platinum-wide {
-  max-width: min(380px, 100%);
-  max-height: 66px;
+  max-width: min(410px, 100%);
+  max-height: 72px;
 }
 
 .sponsor-logo-row-platinum .sponsor-logo-platinum-standard {
-  max-width: min(320px, 100%);
-  max-height: 148px;
+  max-width: min(350px, 100%);
+  max-height: 160px;
 }
 
 .sponsor-logo-row-gold img {
@@ -694,13 +694,13 @@ del {
   }
 
   .sponsor-logo-row-platinum .sponsor-logo-platinum-wide {
-    max-width: min(290px, 100%);
-    max-height: 52px;
+    max-width: min(310px, 100%);
+    max-height: 56px;
   }
 
   .sponsor-logo-row-platinum .sponsor-logo-platinum-standard {
-    max-width: min(235px, 100%);
-    max-height: 108px;
+    max-width: min(250px, 100%);
+    max-height: 116px;
   }
 
   .sponsor-logo-row-gold img {
