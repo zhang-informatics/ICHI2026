@@ -483,6 +483,28 @@ del {
   padding: 0.2rem 0;
 }
 
+.sponsor-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.sponsor-logo-link:hover,
+.sponsor-logo-link:focus-visible,
+.sponsor-wordmark-link:hover,
+.sponsor-wordmark-link:focus-visible {
+  transform: translateY(-1px);
+  opacity: 0.9;
+  outline: none;
+}
+
+.sponsor-logo-link-stack {
+  flex-direction: column;
+}
+
 .sponsor-logo-row img {
   display: block;
   height: auto;
@@ -531,6 +553,34 @@ del {
 .sponsor-logo-row-award img {
   max-width: min(110px, 100%);
   max-height: 96px;
+}
+
+.sponsor-logo-row-bronze {
+  min-height: 72px;
+}
+
+.sponsor-wordmark-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.38rem;
+  text-decoration: none;
+  color: #2f2724;
+  transition: transform 0.18s ease, opacity 0.18s ease, color 0.18s ease;
+}
+
+.sponsor-wordmark-prefix {
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: var(--umn-maroon);
+}
+
+.sponsor-wordmark-name {
+  font-size: 1.52rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #332c28;
 }
 
 .sponsor-logo-caption {
@@ -672,6 +722,14 @@ del {
   .sponsor-logo-row-award img {
     max-height: 82px;
     max-width: 96px;
+  }
+
+  .sponsor-wordmark-prefix {
+    font-size: 1.04rem;
+  }
+
+  .sponsor-wordmark-name {
+    font-size: 1.28rem;
   }
 
   .sponsor-package-header {
