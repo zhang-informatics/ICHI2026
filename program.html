@@ -273,8 +273,15 @@
     }
 
     .agenda-keynote-mini {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      min-width: 0;
+    }
+
+    .agenda-keynote-top {
       display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
+      grid-template-columns: 54px minmax(0, 1fr);
       gap: 0.62rem;
       align-items: start;
       min-width: 0;
@@ -282,9 +289,9 @@
 
     .agenda-keynote-photo {
       overflow: hidden;
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
+      width: 54px;
+      height: 54px;
+      border-radius: 15px;
       background: linear-gradient(180deg, #f3e8df 0%, #e5d5c8 100%);
       box-shadow: 0 6px 14px rgba(77, 45, 32, 0.1);
     }
@@ -296,32 +303,49 @@
       object-fit: cover;
     }
 
-    .agenda-keynote-copy {
+    .agenda-keynote-info {
       display: flex;
       flex-direction: column;
-      gap: 0.2rem;
+      gap: 0.14rem;
       min-width: 0;
     }
 
     .agenda-keynote-name {
       margin: 0;
       color: #2f2724;
-      font-size: 0.9rem;
-      font-weight: 700;
-      line-height: 1.24;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.18;
       text-wrap: pretty;
-      overflow-wrap: anywhere;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
     }
 
-    .agenda-keynote-role,
+    .agenda-keynote-role {
+      margin: 0;
+      color: #50443f;
+      font-size: 0.73rem;
+      font-weight: 700;
+      line-height: 1.28;
+      text-wrap: pretty;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
     .agenda-keynote-org {
       margin: 0;
-      color: #5a4f49;
-      font-size: 0.76rem;
+      padding-top: 0.34rem;
+      border-top: 1px solid rgba(122, 0, 25, 0.12);
+      color: #655952;
+      font-size: 0.73rem;
       font-weight: 600;
-      line-height: 1.36;
+      line-height: 1.28;
       text-wrap: pretty;
-      overflow-wrap: anywhere;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
     }
 
     .agenda-slot-link {
@@ -796,7 +820,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-anita"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-photo"><img src="assets/images/anita_burgun.jpg" alt="Anita Burgun, MD, PhD, FIAHSI"></div><div class="agenda-keynote-copy"><div class="agenda-keynote-name">Anita Burgun, MD, PhD, FIAHSI</div><div class="agenda-keynote-role">Professor of Medical Informatics</div><div class="agenda-keynote-org">Université Paris Cité</div></div></div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-anita"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/anita_burgun.jpg" alt="Anita Burgun, MD, PhD"></div><div class="agenda-keynote-info"><div class="agenda-keynote-name">Anita Burgun, MD, PhD</div><div class="agenda-keynote-role">Professor of Medical Informatics</div></div></div><div class="agenda-keynote-org">Universit&#233; Paris Cit&#233;</div></div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -923,7 +947,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-hoifung"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-photo"><img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD"></div><div class="agenda-keynote-copy"><div class="agenda-keynote-name">Hoifung Poon, PhD</div><div class="agenda-keynote-role">General Manager</div><div class="agenda-keynote-org">Microsoft Research, USA</div></div></div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-hoifung"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/hoifung_poon.png" alt="Hoifung Poon, PhD"></div><div class="agenda-keynote-info"><div class="agenda-keynote-name">Hoifung Poon, PhD</div><div class="agenda-keynote-role">General Manager</div></div></div><div class="agenda-keynote-org">Microsoft Research, USA</div></div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -967,7 +991,7 @@
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-5"><span class="agenda-badge">Scientific Session 5</span><div class="agenda-slot-text">Systems Track<br>Population Health Platforms, Data Infrastructure, and Knowledge Systems</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><a class="agenda-slot-link" href="assets/docs/Women-in-Health.pdf" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Special Event</span><div class="agenda-slot-text">Women in Health: From mentorship to sponsorship: advancing women into health informatics leadership</div></a></div></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-keynote-ben"><span class="agenda-badge">Industry Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-photo"><img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD"></div><div class="agenda-keynote-copy"><div class="agenda-keynote-name">Ben Teplitzky, PhD</div><div class="agenda-keynote-role">AI/ML Research Fellow, Patient Management</div><div class="agenda-keynote-org">Boston Scientific, USA</div></div></div></a></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-keynote-ben"><span class="agenda-badge">Industry Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/teplitzky.jpg" alt="Ben Teplitzky, PhD"></div><div class="agenda-keynote-info"><div class="agenda-keynote-name">Ben Teplitzky, PhD</div><div class="agenda-keynote-role">AI/ML Research Fellow, Patient Management</div></div></div><div class="agenda-keynote-org">Boston Scientific, USA</div></div></a></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
@@ -1116,7 +1140,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-li"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-photo"><img src="assets/images/shen_li.jpeg" alt="Li Shen, PhD, FAIMBE, FACMI, FAMIA"></div><div class="agenda-keynote-copy"><div class="agenda-keynote-name">Li Shen, PhD, FAIMBE, FACMI, FAMIA</div><div class="agenda-keynote-role">Professor of Informatics, Radiology and CIS</div><div class="agenda-keynote-org">University of Pennsylvania, USA</div></div></div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="keynote-li"><span class="agenda-badge">Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/shen_li.jpeg" alt="Li Shen, PhD"></div><div class="agenda-keynote-info"><div class="agenda-keynote-name">Li Shen, PhD</div><div class="agenda-keynote-role">Professor of Informatics, Radiology and CIS</div></div></div><div class="agenda-keynote-org">University of Pennsylvania, USA</div></div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
