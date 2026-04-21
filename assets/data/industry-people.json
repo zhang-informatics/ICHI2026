@@ -10,6 +10,17 @@
       "He is also the Co-Founder of the Phaedon Institute and has previously founded or led organizations including Medaxis Healthcare and the Rural Health Care Foundation. He holds an MPH from BITS Pilani, an MBA from the Carlson School of Management at the University of Minnesota, and is pursuing a PhD in Health AI at the University of Minnesota."
     ]
   },
+  "prasanna-desikan": {
+    "name": "Prasanna Desikan",
+    "role": "Head of Healthcare AI Research",
+    "organization": "Centific",
+    "image": "assets/images/prasanna_desikan.jpg",
+    "bio": [
+      "Prasanna Desikan is a distinguished healthcare AI leader and researcher currently serving as the Head of Healthcare AI Research at Centific. In this role, he directs strategies for building next-generation foundation models and developing robust mechanisms to evaluate and improve them, while navigating the unique challenges inherent to the healthcare domain.",
+      "Throughout his career, he has successfully steered innovation within large-scale organizations and agile startups with successful exits, bringing a unique perspective on scaling technology across medical devices, labs, and provider and payer systems. His long-standing service to the research community includes serving on organizing committees for top healthcare and machine learning conferences, as well as acting as a panel reviewer for the National Science Foundation and an editorial board member for the Journal of Healthcare Informatics.",
+      "Prasanna has contributed significantly to the academic field through numerous peer-reviewed publications and has led impactful workshops and tutorials on healthcare data mining at global conferences such as PAKDD and SDM. An accomplished speaker who has shared his expertise at top industry and research conferences, he has consistently focused on research-driven leadership roles that bridge the gap between advanced theoretical models and operationally useful clinical tools. He holds a PhD in Computer Science and a Master of Healthcare Administration from the University of Minnesota."
+    ]
+  },
   "ram-sriram": {
     "name": "Ram D. Sriram, PhD",
     "role": "Senior Scientific Advisor, Information Technology Laboratory",
