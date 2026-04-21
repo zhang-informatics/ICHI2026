@@ -534,8 +534,8 @@ del {
 }
 
 .sponsor-logo-row-platinum .sponsor-logo-platinum-standard {
-  max-width: min(240px, 100%);
-  max-height: 118px;
+  max-width: min(280px, 100%);
+  max-height: 132px;
 }
 
 .sponsor-logo-row-gold img {
@@ -699,8 +699,8 @@ del {
   }
 
   .sponsor-logo-row-platinum .sponsor-logo-platinum-standard {
-    max-width: min(180px, 100%);
-    max-height: 88px;
+    max-width: min(210px, 100%);
+    max-height: 98px;
   }
 
   .sponsor-logo-row-gold img {
