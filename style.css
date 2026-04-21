@@ -493,9 +493,7 @@ del {
 }
 
 .sponsor-logo-link:hover,
-.sponsor-logo-link:focus-visible,
-.sponsor-wordmark-link:hover,
-.sponsor-wordmark-link:focus-visible {
+.sponsor-logo-link:focus-visible {
   transform: translateY(-1px);
   opacity: 0.9;
   outline: none;
@@ -559,28 +557,9 @@ del {
   min-height: 72px;
 }
 
-.sponsor-wordmark-link {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.38rem;
-  text-decoration: none;
-  color: #2f2724;
-  transition: transform 0.18s ease, opacity 0.18s ease, color 0.18s ease;
-}
-
-.sponsor-wordmark-prefix {
-  font-size: 1.18rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-transform: lowercase;
-  color: var(--umn-maroon);
-}
-
-.sponsor-wordmark-name {
-  font-size: 1.52rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: #332c28;
+.sponsor-logo-row-bronze img {
+  max-width: min(270px, 100%);
+  max-height: 34px;
 }
 
 .sponsor-logo-caption {
@@ -724,12 +703,9 @@ del {
     max-width: 96px;
   }
 
-  .sponsor-wordmark-prefix {
-    font-size: 1.04rem;
-  }
-
-  .sponsor-wordmark-name {
-    font-size: 1.28rem;
+  .sponsor-logo-row-bronze img {
+    max-width: min(220px, 100%);
+    max-height: 28px;
   }
 
   .sponsor-package-header {
