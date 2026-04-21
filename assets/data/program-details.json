@@ -884,19 +884,19 @@
   "industry-panel-1": {
     "kind": "industry",
     "badge": "Industry Track",
-    "title": "Panel 1: Policy Session",
+    "title": "Policy Keynote and Policy Panel",
     "date": "Tuesday, June 2",
     "time": "8:15 AM - 9:45 AM",
     "room": "Theater",
     "summary": [
-      "This block combines the Industry Track policy keynote and the policy panel on governing AI and health informatics in the age of intelligent care.",
-      "It covers AI accountability in clinical decision support, data privacy, health equity, and the governance of real-world data in healthcare and regulation."
+      "8:15 AM - 8:35 AM: Policy Keynote. Evaluating Large Language Models for Clinical Decision Support.",
+      "8:35 AM - 9:45 AM: From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care."
     ],
     "moderator": "Ikram Khan, Health AI Institute",
     "participants": [
-      "Keynote: Ram D. Sriram, PhD — Evaluating Large Language Models for Clinical Decision Support",
+      "Policy Keynote: Ram D. Sriram, PhD — Evaluating Large Language Models for Clinical Decision Support",
       "Senator Eric Lucero, Minnesota Senate Representative",
-      "Jesse Isaacman-Beck, PhD, U.S. Department of Health & Human Services",
+      "Stephen Konya, Chief Innovation and Strategic Partnerships, Assistant Secretary for Technology Policy (ASTP), HHS",
       "Tyler Winkelman, MD, MSc, HHRI (MN HER Consortium)"
     ],
     "externalLink": {
@@ -907,15 +907,20 @@
   "industry-panel-2": {
     "kind": "industry",
     "badge": "Industry Track",
-    "title": "Panel 2: The GenAI Data Chasm",
+    "title": "The GenAI Data Chasm: Are we optimizing models for patients, providers, or businesses, or are we truly optimizing care?",
     "date": "Tuesday, June 2",
-    "time": "10:15 AM - 11:45 AM",
+    "time": "10:00 AM - 11:30 AM",
     "room": "Theater",
     "summary": [
-      "This panel examines the gap between having healthcare data and having data that is trustworthy, representative, and fit for a medical-grade AI ecosystem.",
-      "The discussion focuses on whether the field is building a human-aligned unified data ecosystem or creating deeper and more intelligent silos."
+      "The GenAI Data Chasm highlights a critical barrier to healthcare AI adoption the gap between having data and having data that is trustworthy representative and fit for medical grade systems. While generative AI promises to transform diagnostics drug discovery and patient care this progress depends on building a robust and integrated data ecosystem.",
+      "Patient journeys are segmented across conditions care settings and modalities and unfold over time. This panel will examine how to build systems that learn improve and act within healthcare workflows, and whether the field is designing a unified human aligned data and evaluation ecosystem or creating more advanced silos that fail to deliver real clinical impact."
     ],
     "moderator": "Prasanna Desikan, Centific",
+    "participants": [
+      "Prof Jaideep Srivastava",
+      "Dr Hoifung Poon",
+      "Dr. Sravanthi Parasa"
+    ],
     "externalLink": {
       "href": "industry.html",
       "label": "View full Industry Track page"
@@ -924,18 +929,18 @@
   "industry-panel-3": {
     "kind": "industry",
     "badge": "Industry Track",
-    "title": "Panel 3: AI Enablement in Practice",
+    "title": "Public-private partnerships and industry-academia collaborations - identifying key barriers, community-driven solutions, early wins, recommendations, and emerging trends",
     "date": "Tuesday, June 2",
     "time": "1:30 PM - 3:00 PM",
     "room": "Theater",
     "summary": [
-      "This panel explores practical strategies, enablers, and pitfalls in moving AI from research to real-world clinical deployment.",
-      "Topics include workflow integration, lifecycle management, regulation, bias mitigation, and building trust with clinicians and patients."
+      "AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption.",
+      "As artificial intelligence matures from research to real-world clinical deployment, healthcare leaders face pressing questions on how to safely and effectively scale its adoption. This panel explores strategies and lessons learned from AI implementations across industry, academia, and care delivery organizations, with a focus on practical enablers, pitfalls, and responsible AI integration."
     ],
-    "moderator": "James D. Southwick",
+    "moderator": "Jim Southwick",
     "participants": [
-      "Matt Loth, University of Minnesota",
-      "Deepika (Deepa) Appana, HealthPartners",
+      "Matt Loth (UMN)",
+      "Deepika (Deepa) Appana (HealthPartners)",
       "Julie Thompson, PhD, Boston Scientific"
     ],
     "externalLink": {
@@ -945,7 +950,7 @@
   },
   "industry-keynote-ben": {
     "kind": "industry",
-    "badge": "Industry Keynote",
+    "badge": "Closing Keynote",
     "title": "From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring",
     "speaker": "Ben Teplitzky, PhD",
     "affiliation": "AI/ML Research Fellow, Patient Management, Boston Scientific, USA",
@@ -955,9 +960,13 @@
       "Boston Scientific, USA"
     ],
     "date": "Tuesday, June 2",
-    "time": "3:30 PM - 5:00 PM",
+    "time": "3:20 PM - 4:20 PM",
     "room": "Theater",
-    "abstract": "Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. This keynote traces the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation into a broader case study in healthcare AI enablement. The talk highlights the harder informatics problems behind adoption, including dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous model evolution in the field.",
+    "abstract": [
+      "Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.",
+      "In this keynote, Ben Teplitzky will trace the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring. But that technical milestone was only the beginning. Translating AI into practice required confronting the harder informatics problems: dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration as the system encountered new conditions in the field.",
+      "Using lessons from cardiac rhythm management and broader experience across healthcare AI, this talk will examine what it takes to move from an impressive algorithm to a trusted operational capability. The session will highlight practical strategies for developing clinically meaningful real-world evidence, managing model evolution responsibly, balancing automation with expert judgment, and building systems that are robust not only in development but also in deployment. The goal is to offer a pragmatic roadmap for organizations seeking to create human-centered AI that is safe, scalable, and genuinely useful in healthcare."
+    ],
     "bio": "Dr. Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support. Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis. His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. Across industry and academia, his work has included algorithm development, computational modeling, data and validation strategy, and AI-enabled product innovation. He is an inventor on multiple patents and an author of peer-reviewed publications in biomedical engineering and medical AI. Dr. Teplitzky earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota, where he was an NSF Graduate Research Fellow.",
     "externalLink": {
       "href": "industry.html",
@@ -966,14 +975,14 @@
   },
   "industry-networking": {
     "kind": "industry",
-    "badge": "Industry Track",
-    "title": "Professional Networking and Social Hour",
+    "badge": "Networking",
+    "title": "Professional Networking, Speed Dating, and Social Hour",
     "date": "Tuesday, June 2",
-    "time": "5:00 PM - 6:00 PM",
-    "room": "Theater / Industry Track community space",
+    "time": "4:30 PM - 6:00 PM",
+    "room": "Theater Lobby",
     "summary": [
-      "A networking-focused session for follow-up conversations across industry, academia, and healthcare delivery.",
-      "The current planning notes also include a speed-networking component in this block."
+      "Professional Networking, Speed Dating, and Social Hour.",
+      "A networking-focused session for follow-up conversations across industry, academia, and healthcare delivery."
     ],
     "externalLink": {
       "href": "industry.html",
