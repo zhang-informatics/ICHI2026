@@ -822,7 +822,7 @@
   "keynote-anita": {
     "kind": "keynote",
     "badge": "Keynote",
-    "title": "From Data to Decisions: Building Learning Health Systems in Hospitals",
+    "title": "From Data to Decisions: Building Learning Health Systems in a Rare Disease Oriented Hospital",
     "speaker": "Anita Burgun, MD, PhD, FIAHSI",
     "affiliation": "Professor of Medical Informatics, Université Paris Cité; Director of Department of Medical Informatics, Georges Pompidou European Hospital and Necker Children’s Hospital",
     "image": "assets/images/anita_burgun.jpg",
@@ -833,6 +833,7 @@
     "date": "Monday, June 1",
     "time": "11:45 AM - 12:45 PM",
     "room": "Theater",
+    "abstract": "Hundreds of millions of people around the world live with rare diseases; more than 7000 types of rare diseases have been identified but most of these conditions still do not have treatments. To trigger the establishment of a more effective health system for rare diseases, learning health systems integrating multimodal clinical information and genomic data, and providing adequate models to test hypotheses in rare complex situations have to be designed. Challenges associated with very low disease prevalence, complex disease mechanisms and pleiotropy have to be addressed. This talk will highlight the roles of routine care data, \"maximum\" patient-centric data sets, foundation models, and federated infrastructures. It will provide examples of digital technologies that can help accelerate research, and foster equitable access to timely, accurate diagnosis, and adequate disease management.",
     "bio": "Prof. Anita Burgun is a full professor of biomedical informatics and statistics at Université Paris Cité. She leads the Departments of Medical Informatics at Georges Pompidou European Hospital and Necker Children's Hospital. She holds a Chair at the Institut 3IA Prairie and is a senior researcher in the Clinical Bioinformatics team at the Imagine Institute of Genetic Diseases. Her research focuses on clinical and translational biomedical informatics, large-scale health data integration, and data-driven approaches for precision medicine. Prof. Burgun is an internationally recognized expert in biomedical informatics, serving as a reviewer for the European Research Council and as an expert evaluator for the Canada Foundation for Innovation. She has represented France at the International Medical Informatics Association since 2011 and has been a Fellow of the International Academy of Health Sciences Informatics since 2023.",
     "externalLink": {
       "href": "keynotes.html",
