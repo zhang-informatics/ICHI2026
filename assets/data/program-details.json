@@ -863,7 +863,7 @@
   },
   "keynote-li": {
     "kind": "keynote",
-    "badge": "Keynote",
+    "badge": "Closing Keynote",
     "title": "Harnessing AI and Informatics to Advance Dementia Research and Aging Care",
     "speaker": "Li Shen, PhD, FAIMBE, FACMI, FAMIA",
     "affiliation": "Professor of Informatics, Radiology and CIS, University of Pennsylvania, USA",
@@ -953,7 +953,7 @@
   },
   "industry-keynote-ben": {
     "kind": "industry",
-    "badge": "Closing Keynote",
+    "badge": "Industry Closing Keynote",
     "title": "From Algorithm to Adoption: Evolving BeatLogic into Trusted Real-World AI for Cardiac Monitoring",
     "speaker": "Ben Teplitzky, PhD",
     "affiliation": "AI/ML Research Fellow, Patient Management, Boston Scientific, USA",
