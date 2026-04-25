@@ -105,7 +105,7 @@
     }
 
     .agenda-col-room {
-      width: calc((100% - 156px) / 8);
+      width: calc((100% - 156px) / 7);
     }
 
     .agenda-table thead th {
@@ -124,6 +124,19 @@
 
     .agenda-table thead th:not(.agenda-time-col) {
       min-width: 0;
+    }
+
+    .agenda-room-name,
+    .agenda-room-floor {
+      display: block;
+    }
+
+    .agenda-room-floor {
+      margin-top: 0.18rem;
+      color: #7a6c64;
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.2;
     }
 
     .agenda-time-col {
@@ -794,19 +807,18 @@
     <table class="agenda-table">
       <colgroup>
         <col class="agenda-col-time">
-        <col span="8" class="agenda-col-room">
+        <col span="7" class="agenda-col-room">
       </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
-          <th scope="col">Lobby</th>
-          <th scope="col">CR 301/302</th>
-          <th scope="col">Mississippi</th>
-          <th scope="col">CR 303</th>
-          <th scope="col">CR 324</th>
-          <th scope="col">CR 325</th>
-          <th scope="col">Theater</th>
-          <th scope="col">Campus Club</th>
+          <th scope="col"><span class="agenda-room-name">Lobby</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Mississippi</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 303</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 324</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 325</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Theater</span><span class="agenda-room-floor">First Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Campus Club</span><span class="agenda-room-floor">Fourth Floor</span></th>
         </tr>
       </thead>
       <tbody>
@@ -819,11 +831,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-workshop"><a class="agenda-slot-link" href="https://cnlp4qol.github.io/ICHI-cnlp4qol-2026/" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Workshop 1</span><div class="agenda-slot-text">Clinical Natural Language Processing for Quality of Life</div></a></div></td>
           <td><div class="agenda-slot agenda-slot-workshop"><a class="agenda-slot-link" href="https://sites.pitt.edu/~lzhou1/HIEDU/HIEDU2026.html#top" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Workshop 2</span><div class="agenda-slot-text">Hi-Edu 2026</div></a></div></td>
@@ -841,11 +851,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-workshop"><a class="agenda-slot-link" href="https://cnlp4qol.github.io/ICHI-cnlp4qol-2026/" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Workshop 1</span><div class="agenda-slot-text">Clinical Natural Language Processing for Quality of Life</div></a></div></td>
           <td><div class="agenda-slot agenda-slot-workshop"><a class="agenda-slot-link" href="https://sites.pitt.edu/~lzhou1/HIEDU/HIEDU2026.html#top" target="_blank" rel="noopener noreferrer"><span class="agenda-badge">Workshop 2</span><div class="agenda-slot-text">Hi-Edu 2026</div></a></div></td>
@@ -856,7 +864,6 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -874,11 +881,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-consortium"><span class="agenda-badge">Doctoral Consortium</span><div class="agenda-slot-text">Doctoral Consortium</div></div></td>
@@ -896,11 +901,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:30 PM - 5:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Special Session</span><div class="agenda-slot-text">NPJ Health Systems Special Section</div></div></td>
           <td><div class="agenda-slot agenda-slot-consortium"><span class="agenda-badge">Doctoral Consortium</span><div class="agenda-slot-text">Doctoral Consortium</div></div></td>
@@ -921,19 +924,18 @@
     <table class="agenda-table">
       <colgroup>
         <col class="agenda-col-time">
-        <col span="8" class="agenda-col-room">
+        <col span="7" class="agenda-col-room">
       </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
-          <th scope="col">Lobby</th>
-          <th scope="col">CR 301/302</th>
-          <th scope="col">Mississippi</th>
-          <th scope="col">CR 303</th>
-          <th scope="col">CR 324</th>
-          <th scope="col">CR 325</th>
-          <th scope="col">Theater</th>
-          <th scope="col">Campus Club</th>
+          <th scope="col"><span class="agenda-room-name">Lobby</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Mississippi</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 303</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 324</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 325</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Theater</span><span class="agenda-room-floor">First Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Campus Club</span><span class="agenda-room-floor">Fourth Floor</span></th>
         </tr>
       </thead>
       <tbody>
@@ -946,11 +948,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
@@ -968,11 +968,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
@@ -983,7 +981,6 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">11:45 AM - 12:45 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1001,11 +998,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">1:30 PM - 3:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</div></div></td>
@@ -1023,11 +1018,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:30 PM - 5:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</div></div></td>
@@ -1039,7 +1032,6 @@
         <tr>
           <th scope="row" class="agenda-time">5:00 PM - 6:00 PM</th>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-social"><span class="agenda-badge">Poster Session</span><div class="agenda-slot-text">Poster Session</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1049,7 +1041,6 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">6:00 PM - 8:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1070,19 +1061,18 @@
     <table class="agenda-table">
       <colgroup>
         <col class="agenda-col-time">
-        <col span="8" class="agenda-col-room">
+        <col span="7" class="agenda-col-room">
       </colgroup>
       <thead>
         <tr>
           <th scope="col" class="agenda-time-col">Time</th>
-          <th scope="col">Lobby</th>
-          <th scope="col">CR 301/302</th>
-          <th scope="col">Mississippi</th>
-          <th scope="col">CR 303</th>
-          <th scope="col">CR 324</th>
-          <th scope="col">CR 325</th>
-          <th scope="col">Theater</th>
-          <th scope="col">Campus Club</th>
+          <th scope="col"><span class="agenda-room-name">Lobby</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Mississippi</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 303</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 324</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">CR 325</span><span class="agenda-room-floor">Third Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Theater</span><span class="agenda-room-floor">First Floor</span></th>
+          <th scope="col"><span class="agenda-room-name">Campus Club</span><span class="agenda-room-floor">Fourth Floor</span></th>
         </tr>
       </thead>
       <tbody>
@@ -1095,11 +1085,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-6"><span class="agenda-badge">Scientific Session 6</span><div class="agenda-slot-text">Human Factors Track<br>Patient Experience, Portals, and Digital Engagement</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-7"><span class="agenda-badge">Scientific Session 7</span><div class="agenda-slot-text">Systems Track<br>Engagement, Coaching, and Conversational Health Systems</div></div></td>
@@ -1117,11 +1105,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-11"><span class="agenda-badge">Scientific Session 11</span><div class="agenda-slot-text">Human Factors Track<br>Ambient, Wearable, and Assessment Technologies in Care Delivery</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-12"><span class="agenda-badge">Scientific Session 12</span><div class="agenda-slot-text">Analytics Track<br>Physiological Signal Learning from EEG, ECG, and Sleep Data</div></div></td>
@@ -1139,11 +1125,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">12:30 PM - 2:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-16"><span class="agenda-badge">Scientific Session 16</span><div class="agenda-slot-text">Systems Track<br>Clinical Trajectories and Early Warning Systems</div></div></td>
@@ -1154,7 +1138,6 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">2:00 PM - 3:30 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-20"><span class="agenda-badge">Scientific Session 20</span><div class="agenda-slot-text">Systems Track<br>Imaging, Surgery, and Visual Analytics Platforms</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-21"><span class="agenda-badge">Scientific Session 21</span><div class="agenda-slot-text">Analytics Track<br>Medical Imaging, Segmentation, and Cancer Analytics</div></div></td>
@@ -1172,11 +1155,9 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td class="agenda-empty"></td>
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:45 PM - 4:45 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1187,7 +1168,6 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">4:45 PM - 5:00 PM</th>
-          <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
