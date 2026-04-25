@@ -38,6 +38,20 @@
       text-underline-offset: 0.14em;
     }
 
+    .program-resource-list {
+      display: grid;
+      gap: 0.4rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .program-resource-list li {
+      color: #4b413c;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     .agenda-day {
       margin-top: 2rem;
     }
@@ -767,7 +781,10 @@
 <!-- Main Content -->
 <main class="container program-page">
   <section class="program-notice-wrap" aria-label="Program notices">
-    <p>For poster session, please follow the <a href="assets/docs/Poster%20Session%20Criteria.pdf" target="_blank" rel="noopener noreferrer">Poster Guidelines</a>.</p>
+    <ul class="program-resource-list">
+      <li>For poster session, please follow the <a href="assets/docs/Poster%20Session%20Criteria.pdf" target="_blank" rel="noopener noreferrer">Poster Guidelines</a>.</li>
+      <li>For oral presentations, please follow the <a href="assets/docs/Oral%20Presentation%20Guidelines%20.pdf" target="_blank" rel="noopener noreferrer">Oral Presentation Guidelines</a> and use the <a href="assets/docs/ICHI%202026%20Side%20Presentation%20Template.pptx" target="_blank" rel="noopener noreferrer">ICHI 2026 Slide Presentation Template</a>.</li>
+    </ul>
   </section>
   <section class="agenda-day" id="monday-june-1">
   <div class="agenda-day-header">
