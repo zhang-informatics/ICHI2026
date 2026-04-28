@@ -79,7 +79,7 @@
     "date": "Tuesday, June 2",
     "time": "1:30 PM - 3:00 PM",
     "room": "CR 324",
-    "paperCount": 6,
+    "paperCount": 5,
     "papers": [
       {
         "title": "Promise and Caution: Mapping Opportunities for AI Decision Support in Emergency Medical Services",
@@ -92,10 +92,6 @@
       {
         "title": "Patient-Centered Design Recommendations for AI-Generated Discharge Summaries",
         "authors": "Pantea Habibi, Haleh Vatani, Paul Landes, Barbara Di Eugenio, Richard Cameron, Andrew Boyd, Pamela Martyn-Nemeth, Carolyn Dickens, Karen Dunn Lopez and Debaleena Chattopadhyay"
-      },
-      {
-        "title": "Designing with Commitment: Lessons Learned from Multimodal Data Collection to Improve Patient-Physician Communication",
-        "authors": "Jonathan Singer, Hiu Ching Hung, Tobias Pertlwieser, Philipp Kreis, Carolin Müller, Meike Schmitt, Hanna Huebner, Katharina Seitz, Julia Gocke, Irem Karaman, Miriam Saatze, Annika Krückel, Chloë Goossens, Peter Uhrig, Andreas Maier, Peter Fasching and Manuel Hörner"
       },
       {
         "title": "RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs",
@@ -327,7 +323,7 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Theater",
-    "paperCount": 6,
+    "paperCount": 5,
     "papers": [
       {
         "title": "Guided Clinical Reasoning with LLMs: Reconstructing the PHQ-9 from Multimodal Inputs",
@@ -344,10 +340,6 @@
       {
         "title": "PTM-LLM: Matching Eligible Patients to Trials Based on Large Language Models and Retrieval-Augmented Generation",
         "authors": "Xiaodi Li, Shaika Chowdhury, Chung-Il Wi, Maria Vassilaki, Xiaoke Liu, Terence T. Sio, Owen Garrick, Young J. Juhn, James R. Cerhan, Cui Tao and Nansu Zong"
-      },
-      {
-        "title": "PRISM-Consult: A Panel-of-Experts Architecture for Clinician-Aligned Diagnosis",
-        "authors": "Lionel Levine, John Santerre, Alexander Young, T. Barry Levine, Francis Campion and Majid Sarrafzadeh"
       },
       {
         "title": "Large Language Models for Radiology QA: Benchmarking and Error Taxonomy on RadQA",
@@ -435,15 +427,11 @@
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
     "room": "CR 324",
-    "paperCount": 6,
+    "paperCount": 5,
     "papers": [
       {
         "title": "One Week of Pre‑Program Actigraphy Identifies Dropout Risk in Home‑Based Pulmonary Rehabilitation for COPD",
         "authors": "Louis Faust, Stephanie Zawada, Michelle Grady, Stacey J. Winham, Roberto P. Benzo and Emma Fortune"
-      },
-      {
-        "title": "Within-Subject Speech Variability as a Reliable Indicator of Concussion",
-        "authors": "Rahmina Rubaiat and Christian Poellabauer"
       },
       {
         "title": "Apnea Events Detection using Low-Fidelity Proxy Signals",
@@ -651,7 +639,7 @@
     "date": "Wednesday, June 3",
     "time": "12:30 PM - 2:00 PM",
     "room": "Theater",
-    "paperCount": 6,
+    "paperCount": 5,
     "papers": [
       {
         "title": "Mining Electronic Health Records to Investigate Effectiveness of Ensemble Deep Clustering",
@@ -668,10 +656,6 @@
       {
         "title": "A Resuable Shapelet Library for Temporal Exposure Pattern Discovery",
         "authors": "Sukrut Shishupal, Katherine Sward, Mollie Cummins, Amanda Bakian, Rob Smart, Randy Madsen, Urvi Varma, Julio Facelli and Ramkiran Gouripeddi"
-      },
-      {
-        "title": "Beyond Single-Score Matching: A Two-Dimensional Propensity Score Method for Mixed Covariate Types",
-        "authors": "Kostiantyn Botnar, Justin T. Nguyen, Kamil Khanipov and George Golovko"
       },
       {
         "title": "Transfer Learning for Meta-analysis Under Covariate Shift",
