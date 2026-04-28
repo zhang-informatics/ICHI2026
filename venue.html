@@ -71,6 +71,42 @@
 
   <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
 
+  <section class="parking-info-section" aria-labelledby="parking-info-title">
+    <h2 id="parking-info-title">Parking Information</h2>
+    <p>Parking is available near Coffman Memorial Union. The map below highlights three convenient parking garages around the conference venue.</p>
+
+    <div class="parking-info-layout">
+      <figure class="parking-map-card">
+        <img src="assets/images/parking_info.png" alt="Parking garages near Coffman Memorial Union">
+        <figcaption>Parking garages near Coffman Memorial Union.</figcaption>
+      </figure>
+
+      <div class="parking-card-grid" aria-label="Parking garage links">
+        <article class="parking-card">
+          <h3>Washington Ave Ramp Parking</h3>
+          <p>501 Washington Ave SE, Minneapolis, MN 55455</p>
+          <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/washington-avenue-ramp" target="_blank" rel="noopener noreferrer">View parking details</a>
+        </article>
+
+        <article class="parking-card">
+          <h3>East River Road Garage Parking</h3>
+          <p>385 East River Parkway, Minneapolis, MN 55455</p>
+          <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/east-river-road-garage" target="_blank" rel="noopener noreferrer">View parking details</a>
+        </article>
+
+        <article class="parking-card">
+          <h3>Weisman Art Museum Ramp Parking</h3>
+          <p>333 East River Parkway, Minneapolis, MN 55455</p>
+          <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/art-museum-garage" target="_blank" rel="noopener noreferrer">View parking details</a>
+        </article>
+      </div>
+    </div>
+
+    <p class="parking-note">Please check the linked University of Minnesota Parking and Transportation Services pages for current rates, access hours, and availability before arrival.</p>
+  </section>
+
+  <p style="border-bottom: 2px solid #e0e0e0;"></p><br>
+
   <h2 style="color: var(--umn-maroon); margin-top: 2rem;">About Twin Cities (Minneapolis and Saint Paul)</h2>
   <p>Minneapolis–Saint Paul International Airport (MSP) is located approximately 10 miles from the University of Minnesota Twin Cities campus. The drive typically takes about 20 minutes, depending on traffic conditions. Public transportation is also convenient and reliable. Visitors can take the METRO Blue Line light rail from the airport to downtown Minneapolis. From there, the METRO Green Line provides direct service to the University of Minnesota campus, with stops at East Bank and Stadium Village, both within walking distance of the conference venues.</p><br>
   <p>Downtown Minneapolis sits just across the Mississippi River from campus. It is approximately 5–10 minutes away by car or light rail. The Green Line provides a direct connection between the University district and downtown, making it easy for visitors to explore without needing a car. Rideshare services such as Uber and Lyft are readily available, and parking ramps are located near Coffman Memorial Union for those who prefer to drive.</p><br>
@@ -199,15 +235,21 @@
 
     bounds.extend(loc.position);
 
+    const labelStyle = {
+      hotel: { background: "#f8f4ec", color: "#5b4a1f" },
+      parking: { background: "#f3f7ed", color: "#2f5d32" },
+      venue: { background: "#fff", color: "#7a0019" },
+    }[loc.kind] || { background: "#fff", color: "#7a0019" };
+
     const labelDiv = document.createElement("div");
     labelDiv.style.position = "absolute";
-    labelDiv.style.backgroundColor = loc.kind === "hotel" ? "#f8f4ec" : "#fff";
+    labelDiv.style.backgroundColor = labelStyle.background;
     labelDiv.style.padding = "3px 6px";
     labelDiv.style.border = "1px solid #ccc";
     labelDiv.style.borderRadius = "4px";
     labelDiv.style.fontSize = "13px";
     labelDiv.style.fontWeight = "bold";
-    labelDiv.style.color = loc.kind === "hotel" ? "#5b4a1f" : "#7a0019";
+    labelDiv.style.color = labelStyle.color;
     labelDiv.style.boxShadow = "0 1px 4px rgba(0,0,0,0.2)";
     labelDiv.style.whiteSpace = "nowrap";
     labelDiv.innerText = loc.label;
@@ -258,6 +300,27 @@
         label: "Courtyard",
         kind: "hotel",
         labelOffsetY: 76,
+      },
+      {
+        address: "501 Washington Ave SE, Minneapolis, MN 55455",
+        title: "Washington Ave Ramp Parking",
+        label: "Washington Ave Ramp",
+        kind: "parking",
+        labelOffsetY: 42,
+      },
+      {
+        address: "385 East River Parkway, Minneapolis, MN 55455",
+        title: "East River Road Garage Parking",
+        label: "East River Rd Garage",
+        kind: "parking",
+        labelOffsetY: 42,
+      },
+      {
+        address: "333 East River Parkway, Minneapolis, MN 55455",
+        title: "Weisman Art Museum Ramp Parking",
+        label: "Weisman Garage",
+        kind: "parking",
+        labelOffsetY: 42,
       }
     ];
 
