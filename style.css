@@ -190,6 +190,33 @@ ul {
     padding-left: 1.5rem;
 }
 
+.conference-status-alert {
+    margin: 1.4rem 0;
+    padding: 1rem 1.2rem;
+    background: #fff6db;
+    border: 1px solid rgba(122, 0, 25, 0.22);
+    border-left: 5px solid var(--umn-maroon);
+    border-radius: 12px;
+    color: var(--umn-maroon);
+    font-size: 1.1rem;
+    line-height: 1.45;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.registration-link-status {
+    display: inline-block;
+    margin-left: 0.45rem;
+    padding: 0.15rem 0.55rem;
+    color: #fff;
+    background: var(--umn-maroon);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
 del {
   text-decoration: line-through;
   text-decoration-color: red;
