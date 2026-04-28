@@ -190,6 +190,18 @@ ul {
     padding-left: 1.5rem;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .conference-status-alert {
     margin: 1.4rem 0;
     padding: 1rem 1.2rem;
@@ -1172,12 +1184,75 @@ del {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
 }
 
-.parking-map-card img {
-  display: block;
-  width: 100%;
+.parking-map-visual {
+  position: relative;
   height: 360px;
   min-height: 360px;
+  background: #f8f5ef;
+  overflow: hidden;
+}
+
+.parking-map-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.parking-hotspot {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  border: 3px solid rgba(122, 0, 25, 0);
+  border-radius: 16px;
+  background: rgba(255, 204, 51, 0);
+  box-shadow: 0 0 0 rgba(122, 0, 25, 0);
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.18s ease, transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  pointer-events: none;
+}
+
+.parking-hotspot::after {
+  content: "";
+  position: absolute;
+  inset: -9px;
+  border: 2px solid rgba(122, 0, 25, 0.25);
+  border-radius: 22px;
+  opacity: 0;
+}
+
+.parking-hotspot.is-active {
+  opacity: 1;
+  transform: scale(1);
+  border-color: var(--umn-maroon);
+  background: rgba(255, 204, 51, 0.32);
+  box-shadow: 0 0 0 5px rgba(122, 0, 25, 0.13), 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.parking-hotspot.is-active::after {
+  opacity: 1;
+}
+
+.parking-hotspot-washington {
+  left: 71.5%;
+  top: 9.5%;
+  width: 14.5%;
+  height: 15.5%;
+}
+
+.parking-hotspot-east-river {
+  left: 22.5%;
+  top: 54%;
+  width: 13%;
+  height: 21%;
+}
+
+.parking-hotspot-weisman {
+  left: 3%;
+  top: 30.5%;
+  width: 14.5%;
+  height: 18%;
 }
 
 .parking-map-card figcaption {
@@ -1200,6 +1275,16 @@ del {
   border-radius: 14px;
   padding: 1rem 1.05rem;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.055);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.parking-card:hover,
+.parking-card:focus-within,
+.parking-card.is-active {
+  background: #fffaf0;
+  border-color: rgba(122, 0, 25, 0.32);
+  box-shadow: 0 14px 28px rgba(122, 0, 25, 0.13);
+  transform: translateY(-2px);
 }
 
 .parking-card h3 {
@@ -1238,7 +1323,7 @@ del {
     grid-template-columns: 1fr;
   }
 
-  .parking-map-card img {
+  .parking-map-visual {
     height: 260px;
     min-height: 260px;
   }

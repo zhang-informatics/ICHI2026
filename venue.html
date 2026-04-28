@@ -77,24 +77,30 @@
 
     <div class="parking-info-layout">
       <figure class="parking-map-card">
-        <img src="assets/images/parking_info.png" alt="Parking garages near Coffman Memorial Union">
+        <div class="parking-map-visual" aria-hidden="true">
+          <img src="assets/images/parking_info.png" alt="">
+          <span class="parking-hotspot parking-hotspot-washington" data-parking-hotspot="washington"></span>
+          <span class="parking-hotspot parking-hotspot-east-river" data-parking-hotspot="east-river"></span>
+          <span class="parking-hotspot parking-hotspot-weisman" data-parking-hotspot="weisman"></span>
+        </div>
+        <span class="sr-only">Parking garages near Coffman Memorial Union.</span>
         <figcaption>Parking garages near Coffman Memorial Union.</figcaption>
       </figure>
 
       <div class="parking-card-grid" aria-label="Parking garage links">
-        <article class="parking-card">
+        <article class="parking-card" data-parking-card="washington">
           <h3>Washington Ave Ramp Parking</h3>
           <p>501 Washington Ave SE, Minneapolis, MN 55455</p>
           <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/washington-avenue-ramp" target="_blank" rel="noopener noreferrer">View parking details</a>
         </article>
 
-        <article class="parking-card">
+        <article class="parking-card" data-parking-card="east-river">
           <h3>East River Road Garage Parking</h3>
           <p>385 East River Parkway, Minneapolis, MN 55455</p>
           <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/east-river-road-garage" target="_blank" rel="noopener noreferrer">View parking details</a>
         </article>
 
-        <article class="parking-card">
+        <article class="parking-card" data-parking-card="weisman">
           <h3>Weisman Art Museum Ramp Parking</h3>
           <p>333 East River Parkway, Minneapolis, MN 55455</p>
           <a href="https://pts.umn.edu/park-and-drive/general-information/facilities/art-museum-garage" target="_blank" rel="noopener noreferrer">View parking details</a>
@@ -361,6 +367,30 @@
   fetch('footer.html')
           .then(res => res.text())
           .then(html => { document.getElementById('footer').innerHTML = html; });
+
+  const parkingCards = document.querySelectorAll('[data-parking-card]');
+  const parkingHotspots = document.querySelectorAll('[data-parking-hotspot]');
+
+  function setActiveParkingSpot(parkingKey) {
+    parkingCards.forEach((card) => {
+      card.classList.toggle('is-active', card.dataset.parkingCard === parkingKey);
+    });
+    parkingHotspots.forEach((hotspot) => {
+      hotspot.classList.toggle('is-active', hotspot.dataset.parkingHotspot === parkingKey);
+    });
+  }
+
+  function clearActiveParkingSpot() {
+    parkingCards.forEach((card) => card.classList.remove('is-active'));
+    parkingHotspots.forEach((hotspot) => hotspot.classList.remove('is-active'));
+  }
+
+  parkingCards.forEach((card) => {
+    card.addEventListener('mouseenter', () => setActiveParkingSpot(card.dataset.parkingCard));
+    card.addEventListener('mouseleave', clearActiveParkingSpot);
+    card.addEventListener('focusin', () => setActiveParkingSpot(card.dataset.parkingCard));
+    card.addEventListener('focusout', clearActiveParkingSpot);
+  });
 </script>
 
 </body>
