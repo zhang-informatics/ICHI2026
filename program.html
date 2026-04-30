@@ -722,6 +722,26 @@
       font-weight: 600;
     }
 
+    .program-meal-raw {
+      padding: 1rem 1.05rem;
+      border-radius: 18px;
+      border: 1px solid #e7d9cd;
+      background: linear-gradient(180deg, #fffaf2 0%, #fff 100%);
+      box-shadow: 0 10px 22px rgba(77, 45, 32, 0.055);
+    }
+
+    .program-meal-raw p {
+      margin: 0;
+      color: #433934;
+      font-size: 0.98rem;
+      line-height: 1.72;
+      text-wrap: pretty;
+    }
+
+    .program-meal-raw p + p {
+      margin-top: 0.85rem;
+    }
+
     .program-detail-papers {
       display: grid;
       gap: 0.78rem;
@@ -1276,6 +1296,14 @@
     return Array.isArray(value) ? value.filter(Boolean) : [value];
   }
 
+  function formatPlainText(value) {
+    return String(value || '')
+      .split(/\n{2,}/)
+      .filter(Boolean)
+      .map(paragraph => `<p>${paragraph.split('\n').map(line => escapeHtml(line)).join('<br>')}</p>`)
+      .join('');
+  }
+
   function personInitials(name) {
     return String(name || '')
       .split(/\s+/)
@@ -1355,6 +1383,16 @@
         <section class="program-detail-section">
           <h4>Bio</h4>
           ${toParagraphs(detail.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+        </section>
+      `);
+    }
+
+    if (detail.menuText) {
+      sections.push(`
+        <section class="program-detail-section">
+          <div class="program-meal-raw">
+            ${formatPlainText(detail.menuText)}
+          </div>
         </section>
       `);
     }

@@ -983,27 +983,12 @@
     "date": "Monday, June 1",
     "time": "7:30 AM - 8:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Continental Breakfast",
-        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
-        "items": [
-          "Freshly baked pastries",
-          "Fruit",
-          "Choice of breakfast parfait",
-          "Vegan cinnamon overnight oats parfait (VG)",
-          "Regular coffee",
-          "Hot tea",
-          "Iced water",
-          "Cucumber mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Light and tasty morning spread, featuring freshly baked pastries, fruits, and choice of breakfast parfait.\nIncluded in the choice of one parfait, Hot Coffee, Hot Teal, Iced Water, Cucumber mint infused water\nVegan Cinnamon overnight oats parfait (VG)"
   },
   "meal-jun1-coffee-am": {
     "kind": "meal",
@@ -1012,22 +997,12 @@
     "date": "Monday, June 1",
     "time": "9:45 AM - 10:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "meal-jun1-lunch": {
     "kind": "meal",
@@ -1036,27 +1011,12 @@
     "date": "Monday, June 1",
     "time": "12:45 PM - 1:30 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Taste of Italiano Buffet",
-        "items": [
-          "Penne marinara (VG)",
-          "Rosemary white balsamic grilled chicken served with tomato basil bruschetta",
-          "Caesar salad with Parmesan cheese, house-made croutons, and Caesar dressing",
-          "Parmesan herbed garlic bread",
-          "Tiramisu shooters",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water",
-          "Cucumber and mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Italian dish: Penne Mariana (VG), Rosemary white balsamic grilled chicken served with tomato basil bruschetta with an assortment of Caesar Salad, Parmesan Cheese, House made croutons, Caesar dressing, Parmesan herbed garlic bread, and tiramisu shooters.\nRegular Coffee, Hot Water with assorted Teas, Ice Water, Cucumber and Mint infused water"
   },
   "meal-jun1-coffee-pm": {
     "kind": "meal",
@@ -1065,22 +1025,12 @@
     "date": "Monday, June 1",
     "time": "3:00 PM - 3:30 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "meal-jun2-breakfast": {
     "kind": "meal",
@@ -1089,27 +1039,12 @@
     "date": "Tuesday, June 2",
     "time": "7:30 AM - 8:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Continental Breakfast",
-        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
-        "items": [
-          "Freshly baked pastries",
-          "Fruit",
-          "Choice of breakfast parfait",
-          "Vegan cinnamon overnight oats parfait (VG)",
-          "Regular coffee",
-          "Hot tea",
-          "Iced water",
-          "Cucumber mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Light and tasty morning spread, featuring freshly baked pastries, fruits, and choice of breakfast parfait.\nIncluded in the choice of one parfait, Hot Coffee, Hot Teal, Iced Water, Cucumber mint infused water\nVegan Cinnamon overnight oats parfait (VG)"
   },
   "meal-jun2-coffee-am": {
     "kind": "meal",
@@ -1118,22 +1053,12 @@
     "date": "Tuesday, June 2",
     "time": "9:45 AM - 10:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "meal-jun2-lunch": {
     "kind": "meal",
@@ -1142,28 +1067,12 @@
     "date": "Tuesday, June 2",
     "time": "12:45 PM - 1:30 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Traditional Asian Buffet",
-        "items": [
-          "Teriyaki chicken",
-          "Spicy Szechuan eggplant",
-          "Ginger garlic green beans",
-          "Fortune cookies",
-          "Mini vegetable egg rolls served with sweet and sour sauce",
-          "Vegan vegetable fried rice (VG)",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water",
-          "Cucumber and mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Traditional Asian Buffet: Assortment of Teriyaki Chicken, Spicy Szechuan Eggplant, Ginger Garlic Green Beans and Fortune cookies. With Mini vegetable egg rolls served with sweet and sour sauce and vegan vegetable fried rice (VG) Regular coffee, hote water with assorted teas, ice water, cucumber & mint infused water."
   },
   "meal-jun2-coffee-pm": {
     "kind": "meal",
@@ -1172,22 +1081,12 @@
     "date": "Tuesday, June 2",
     "time": "3:00 PM - 3:30 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "meal-jun2-reception": {
     "kind": "meal",
@@ -1196,32 +1095,12 @@
     "date": "Tuesday, June 2",
     "time": "6:00 PM - 8:00 PM",
     "room": "Campus Club, Fourth Floor",
-    "menuSections": [
-      {
-        "heading": "Reception Menu",
-        "items": [
-          "Fresh fruit array of seasonal fresh fruit (GF, DF, V)",
-          "Cheese tray with an assortment of cheeses, grapes, and crackers",
-          "Mascarpone pear crostini with roasted pear, maple mascarpone, and crispy basil",
-          "Caprese platter with local tomatoes, mozzarella, basil, olive oil, sea salt, balsamic reduction, and grilled ciabatta",
-          "Steak platter with local grass-fed beef, horseradish sauce, and grilled bread",
-          "Smoked wild Alaskan salmon platter with capers, red onions, cream cheese, crackers, and flatbread",
-          "Mini potato and zucchini latkes with apple chutney and sour cream (GF)",
-          "Asian chicken skewers with sesame, ginger, and tamari (GF, DF)",
-          "MN BBQ beef meatballs (DF, GF)",
-          "Vegan mini chocolate cakes (DF, V)",
-          "Mini cheesecake platter",
-          "Mushroom risotto cakes with mushroom caviar (GF, DF, V) or brie (GF)",
-          "Cucumber rounds with beet hummus (GF, V)"
-        ]
-      }
-    ],
-    "menuNote": "Dietary labels: DF = Dairy Free, V = Vegan, GF = Gluten Free.",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Fresh Fruit\nArray of seasonal fresh fruit (GF, DF, V)\n\nCheese Tray\nAn assortment of cheeses made on the St. Paul Campus, served with grapes and crackers.\n\nMascarpone Pear crostini\nRoasted pear and maple mascarpone crostini topped with crispy basil\n\nCaprese Platter\nFresh local tomatoes layered with fresh mozzarella, basil, olive oil, sea salt, and balsamic reduction. Served with grilled ciabatta.\n\nSteak Platter\nLocal, grass-fed beef cooked to medium rare, and served cold, with horseradish sauce and grilled bread.\n\nSmoked Salmon Platter\nSmoked Wild Alaskan Salmon with capers, red onions, cream cheese, and an assortment of crackers and flatbread.\n\nPotato/Zucchini Latkes\nMini house-made potato and zucchini savory pancakes with apple chutney and sour cream (GF)\n\nAsian Chicken Skewers\nWith Sesame, Ginger and Tamari. (GF, DF)\n\nMN BBQ Beef Meatballs\nMN barbeque beef meatballs. (DF, GF)\n\nVegan Mini Choc Cakes\nBite sized chocolate cakes topped with vegan chocolate buttercream frosting (DF, V)\n\nMini Cheesecake Platter\nAn assortment of traditional vanilla and dark chocolate salted caramel mini cheesecakes\n\nMushroom Riscotto Cakes\nMushroom risotto rounds with assorted toppings. Vegan topped with Mushroom Caviar (GF, DF, V) Vegetarian topped with Brie (GF)\n\nCucumber Rounds with Beet Hummus (GF, V, D)\nEnglish cucumbers topped with beet hummus and tomatoes\n\nDF-Dairy Free  V-Vegan  GF- Gluten Free"
   },
   "meal-jun3-breakfast": {
     "kind": "meal",
@@ -1230,27 +1109,12 @@
     "date": "Wednesday, June 3",
     "time": "7:30 AM - 8:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Continental Breakfast",
-        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
-        "items": [
-          "Freshly baked pastries",
-          "Fruit",
-          "Choice of breakfast parfait",
-          "Vegan cinnamon overnight oats parfait (VG)",
-          "Regular coffee",
-          "Hot tea",
-          "Iced water",
-          "Cucumber mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Light and tasty morning spread, featuring freshly baked pastries, fruits, and choice of breakfast parfait.\nIncluded in the choice of one parfait, Hot Coffee, Hot Teal, Iced Water, Cucumber mint infused water\nVegan Cinnamon overnight oats parfait (VG)"
   },
   "meal-jun3-coffee-am": {
     "kind": "meal",
@@ -1259,22 +1123,12 @@
     "date": "Wednesday, June 3",
     "time": "9:45 AM - 10:15 AM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "meal-jun3-lunch": {
     "kind": "meal",
@@ -1283,31 +1137,12 @@
     "date": "Wednesday, June 3",
     "time": "11:45 AM - 12:30 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Taste of the Mediterranean",
-        "items": [
-          "Chermoula spiced chicken skewers with tzatziki sauce (GF)",
-          "Kofta meatballs with tabbouleh and red chili tomato sauce",
-          "Tabbouleh salad (VG)",
-          "Mini falafel with tahini sauce (V)",
-          "Grilled pita chips (VG)",
-          "Cucumber tomato salad (VG, GF)",
-          "Mezze grilled and marinated vegetables with hummus (VG, GF)",
-          "Marinated olives (VG, GF)",
-          "Lemon bars (V)",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Iced water",
-          "Cucumber and mint infused water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Savor the flavor with a variety of Mediterranean mainstays. Chermoula spiced chicken skewers with tzatziki sauce (gf), Kofta meatballs with tabbouleh with red chili tomato sauce, Tabbouleh salad (vg), Mini falafel with tahini sauce (v), Grilled Pita Chips (vg), Cucumber tomato salad (vg, gf), Mezze grilled and marinated vegetables with hummus (vg,gf), Marinated olives (vg,gf) Lemon Bars (v) Regular coffee, Hot Water with assorted teas, iced water, Cucumber & Mint infused water."
   },
   "meal-jun3-coffee-pm": {
     "kind": "meal",
@@ -1316,21 +1151,11 @@
     "date": "Wednesday, June 3",
     "time": "3:30 PM - 3:45 PM",
     "room": "Lobby, Third Floor",
-    "menuSections": [
-      {
-        "heading": "Coffee Break",
-        "items": [
-          "Cucumber mint infused water",
-          "Regular coffee",
-          "Hot water with assorted teas",
-          "Ice water"
-        ]
-      }
-    ],
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
       "newTab": true
-    }
+    },
+    "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   }
 }
