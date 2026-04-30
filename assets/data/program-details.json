@@ -975,5 +975,362 @@
       "href": "industry.html",
       "label": "View full Industry Track page"
     }
+  },
+  "meal-jun1-breakfast": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Registration and Breakfast",
+    "date": "Monday, June 1",
+    "time": "7:30 AM - 8:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Continental Breakfast",
+        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
+        "items": [
+          "Freshly baked pastries",
+          "Fruit",
+          "Choice of breakfast parfait",
+          "Vegan cinnamon overnight oats parfait (VG)",
+          "Regular coffee",
+          "Hot tea",
+          "Iced water",
+          "Cucumber mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun1-coffee-am": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Monday, June 1",
+    "time": "9:45 AM - 10:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun1-lunch": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Lunch: Taste of Italiano Buffet",
+    "date": "Monday, June 1",
+    "time": "12:45 PM - 1:30 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Taste of Italiano Buffet",
+        "items": [
+          "Penne marinara (VG)",
+          "Rosemary white balsamic grilled chicken served with tomato basil bruschetta",
+          "Caesar salad with Parmesan cheese, house-made croutons, and Caesar dressing",
+          "Parmesan herbed garlic bread",
+          "Tiramisu shooters",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water",
+          "Cucumber and mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun1-coffee-pm": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Monday, June 1",
+    "time": "3:00 PM - 3:30 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun2-breakfast": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Registration and Breakfast",
+    "date": "Tuesday, June 2",
+    "time": "7:30 AM - 8:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Continental Breakfast",
+        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
+        "items": [
+          "Freshly baked pastries",
+          "Fruit",
+          "Choice of breakfast parfait",
+          "Vegan cinnamon overnight oats parfait (VG)",
+          "Regular coffee",
+          "Hot tea",
+          "Iced water",
+          "Cucumber mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun2-coffee-am": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Tuesday, June 2",
+    "time": "9:45 AM - 10:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun2-lunch": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Lunch: Traditional Asian Buffet",
+    "date": "Tuesday, June 2",
+    "time": "12:45 PM - 1:30 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Traditional Asian Buffet",
+        "items": [
+          "Teriyaki chicken",
+          "Spicy Szechuan eggplant",
+          "Ginger garlic green beans",
+          "Fortune cookies",
+          "Mini vegetable egg rolls served with sweet and sour sauce",
+          "Vegan vegetable fried rice (VG)",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water",
+          "Cucumber and mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun2-coffee-pm": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Tuesday, June 2",
+    "time": "3:00 PM - 3:30 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun2-reception": {
+    "kind": "meal",
+    "badge": "Reception Menu",
+    "title": "ICHI Reception Menu",
+    "date": "Tuesday, June 2",
+    "time": "6:00 PM - 8:00 PM",
+    "room": "Campus Club, Fourth Floor",
+    "menuSections": [
+      {
+        "heading": "Reception Menu",
+        "items": [
+          "Fresh fruit array of seasonal fresh fruit (GF, DF, V)",
+          "Cheese tray with an assortment of cheeses, grapes, and crackers",
+          "Mascarpone pear crostini with roasted pear, maple mascarpone, and crispy basil",
+          "Caprese platter with local tomatoes, mozzarella, basil, olive oil, sea salt, balsamic reduction, and grilled ciabatta",
+          "Steak platter with local grass-fed beef, horseradish sauce, and grilled bread",
+          "Smoked wild Alaskan salmon platter with capers, red onions, cream cheese, crackers, and flatbread",
+          "Mini potato and zucchini latkes with apple chutney and sour cream (GF)",
+          "Asian chicken skewers with sesame, ginger, and tamari (GF, DF)",
+          "MN BBQ beef meatballs (DF, GF)",
+          "Vegan mini chocolate cakes (DF, V)",
+          "Mini cheesecake platter",
+          "Mushroom risotto cakes with mushroom caviar (GF, DF, V) or brie (GF)",
+          "Cucumber rounds with beet hummus (GF, V)"
+        ]
+      }
+    ],
+    "menuNote": "Dietary labels: DF = Dairy Free, V = Vegan, GF = Gluten Free.",
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun3-breakfast": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Registration and Breakfast",
+    "date": "Wednesday, June 3",
+    "time": "7:30 AM - 8:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Continental Breakfast",
+        "description": "A light morning spread featuring freshly baked pastries, fruit, and a choice of breakfast parfait.",
+        "items": [
+          "Freshly baked pastries",
+          "Fruit",
+          "Choice of breakfast parfait",
+          "Vegan cinnamon overnight oats parfait (VG)",
+          "Regular coffee",
+          "Hot tea",
+          "Iced water",
+          "Cucumber mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun3-coffee-am": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Wednesday, June 3",
+    "time": "9:45 AM - 10:15 AM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun3-lunch": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Lunch: Taste of the Mediterranean",
+    "date": "Wednesday, June 3",
+    "time": "11:45 AM - 12:30 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Taste of the Mediterranean",
+        "items": [
+          "Chermoula spiced chicken skewers with tzatziki sauce (GF)",
+          "Kofta meatballs with tabbouleh and red chili tomato sauce",
+          "Tabbouleh salad (VG)",
+          "Mini falafel with tahini sauce (V)",
+          "Grilled pita chips (VG)",
+          "Cucumber tomato salad (VG, GF)",
+          "Mezze grilled and marinated vegetables with hummus (VG, GF)",
+          "Marinated olives (VG, GF)",
+          "Lemon bars (V)",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Iced water",
+          "Cucumber and mint infused water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
+  },
+  "meal-jun3-coffee-pm": {
+    "kind": "meal",
+    "badge": "Meal",
+    "title": "Coffee Break",
+    "date": "Wednesday, June 3",
+    "time": "3:30 PM - 3:45 PM",
+    "room": "Lobby, Third Floor",
+    "menuSections": [
+      {
+        "heading": "Coffee Break",
+        "items": [
+          "Cucumber mint infused water",
+          "Regular coffee",
+          "Hot water with assorted teas",
+          "Ice water"
+        ]
+      }
+    ],
+    "externalLink": {
+      "href": "assets/docs/Meal%20Agenda.pdf",
+      "label": "View full Meal Agenda",
+      "newTab": true
+    }
   }
 }

@@ -679,6 +679,49 @@
       padding-left: 1.1rem;
     }
 
+    .program-meal-grid {
+      display: grid;
+      gap: 0.82rem;
+    }
+
+    .program-meal-card {
+      padding: 1rem 1.05rem;
+      border-radius: 18px;
+      border: 1px solid #e7d9cd;
+      background: linear-gradient(180deg, #fffaf2 0%, #fff 100%);
+      box-shadow: 0 10px 22px rgba(77, 45, 32, 0.055);
+    }
+
+    .program-meal-card h5 {
+      margin: 0 0 0.5rem;
+      color: var(--umn-maroon);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .program-meal-description {
+      margin: 0 0 0.72rem !important;
+      color: #5d504a !important;
+      font-weight: 600;
+    }
+
+    .program-meal-card ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.38rem 1.1rem;
+      padding-left: 1.05rem;
+    }
+
+    .program-meal-note {
+      margin-top: 0.15rem !important;
+      padding: 0.72rem 0.88rem;
+      border-radius: 12px;
+      background: #f7f1eb;
+      color: #5b504a !important;
+      font-size: 0.9rem !important;
+      font-weight: 600;
+    }
+
     .program-detail-papers {
       display: grid;
       gap: 0.78rem;
@@ -825,7 +868,7 @@
       <tbody>
         <tr>
           <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun1-breakfast"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -845,7 +888,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun1-coffee-am"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -875,7 +918,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun1-lunch"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -895,7 +938,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:00 PM - 3:30 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun1-coffee-pm"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -942,7 +985,7 @@
       <tbody>
         <tr>
           <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-breakfast"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -962,7 +1005,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-coffee-am"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -992,7 +1035,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">12:45 PM - 1:30 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-lunch"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1012,7 +1055,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:00 PM - 3:30 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-coffee-pm"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1048,7 +1091,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-social"><span class="agenda-badge">Social</span><div class="agenda-slot-text">Reception</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-social" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-reception"><span class="agenda-badge">Social</span><div class="agenda-slot-text">Reception</div></div></td>
         </tr>
       </tbody>
     </table>
@@ -1079,7 +1122,7 @@
       <tbody>
         <tr>
           <th scope="row" class="agenda-time">7:30 AM - 8:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun3-breakfast"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Registration and Breakfast</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1099,7 +1142,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun3-coffee-am"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1119,7 +1162,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">11:45 AM - 12:30 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun3-lunch"><span class="agenda-badge">Conference</span><div class="agenda-slot-text">Lunch</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1149,7 +1192,7 @@
         </tr>
         <tr>
           <th scope="row" class="agenda-time">3:30 PM - 3:45 PM</th>
-          <td><div class="agenda-slot agenda-slot-shared"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
+          <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun3-coffee-pm"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1316,6 +1359,24 @@
       `);
     }
 
+    if (detail.menuSections && detail.menuSections.length) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Menu</h4>
+          <div class="program-meal-grid">
+            ${detail.menuSections.map(section => `
+              <article class="program-meal-card">
+                <h5>${escapeHtml(section.heading || 'Menu')}</h5>
+                ${section.description ? `<p class="program-meal-description">${escapeHtml(section.description)}</p>` : ''}
+                ${section.items && section.items.length ? `<ul>${section.items.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
+              </article>
+            `).join('')}
+          </div>
+          ${detail.menuNote ? `<p class="program-meal-note">${escapeHtml(detail.menuNote)}</p>` : ''}
+        </section>
+      `);
+    }
+
     if (detail.moderator || (detail.participants && detail.participants.length)) {
       sections.push(`
         <section class="program-detail-section">
@@ -1343,9 +1404,10 @@
     }
 
     if (detail.externalLink && detail.externalLink.href) {
+      const externalLinkAttrs = detail.externalLink.newTab ? ' target="_blank" rel="noopener noreferrer"' : '';
       sections.push(`
         <div class="program-detail-footer">
-          <a class="program-detail-link" href="${escapeHtml(detail.externalLink.href)}">${escapeHtml(detail.externalLink.label || 'Learn more')}</a>
+          <a class="program-detail-link" href="${escapeHtml(detail.externalLink.href)}"${externalLinkAttrs}>${escapeHtml(detail.externalLink.label || 'Learn more')}</a>
         </div>
       `);
     }
