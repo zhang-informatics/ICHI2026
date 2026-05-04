@@ -1177,5 +1177,316 @@
       "Working closely with HHS chief information, AI, and data leaders, he has helped establish the department's AI governance framework, develop cross-administration AI strategy, and execute federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping AI use case oversight, modernizing HHS IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
       "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science and Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
     ]
+  },
+  "young-scholar-lightning": {
+    "kind": "young-scholar",
+    "badge": "Young Scholar",
+    "date": "Tuesday, June 2",
+    "room": "Mississippi, Third Floor",
+    "externalLink": {
+      "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
+      "label": "View Young Scholar Presentation Guidelines",
+      "newTab": true
+    },
+    "title": "Young Scholar Symposium: Lightning Talks",
+    "time": "8:15 AM - 9:45 AM",
+    "summary": "Lightning talk session for Young Scholar Symposium presenters.",
+    "agendaItems": [
+      {
+        "time": "8:15 AM - 8:20 AM",
+        "program": "Introduction"
+      },
+      {
+        "time": "8:20 AM - 8:25 AM",
+        "program": "Lightning Talk 1",
+        "title": "DrugOT-Rank: Optimal Transport-Guided Ranking for Interpretable Drug Repurposing",
+        "presenter": "Rishik Kondadadi",
+        "coAuthors": "Dan McCreary"
+      },
+      {
+        "time": "8:25 AM - 8:30 AM",
+        "program": "Lightning Talk 2",
+        "title": "PhysioGuardian: Design, Implementation, and Performance Evaluation of an AI-Driven Intelligent Physiotherapy System with Real-Time Pose Estimation, Cost Prediction, and Geospatial Expert Search",
+        "presenter": "Ujjwal Patil",
+        "coAuthors": "Aditya Acharya, Shruti Mary, Vineet Iyer, Vrushali Bahurupi"
+      },
+      {
+        "time": "8:30 AM - 8:35 AM",
+        "program": "Lightning Talk 3",
+        "title": "Entropy-Profiled Diagnostic Boundary for Disease Pairs",
+        "presenter": "Nathan Zhuang",
+        "coAuthors": "Jacqueline Howells"
+      },
+      {
+        "time": "8:35 AM - 8:40 AM",
+        "program": "Lightning Talk 4",
+        "title": "BystAId: Real-Time Panic-Adaptive First Aid Guidance for Untrained Bystanders via Dual-Graph Retrieval and mLSTM Context Encoding",
+        "presenter": "S L Richris",
+        "coAuthors": "Aleena Sebastian"
+      },
+      {
+        "time": "8:40 AM - 8:45 AM",
+        "program": "Lightning Talk 5",
+        "title": "Predicting Alzheimer’s Neuropathology from Single-Nucleus RNA-seq: A SEA-AD Community Challenge Benchmark",
+        "presenter": "Long Nguyen",
+        "coAuthors": "Huixin Zhan"
+      },
+      {
+        "time": "8:45 AM - 8:50 AM",
+        "program": "Lightning Talk 6",
+        "title": "Emotion-Preserving Music Recommendation from Autobiographical Narratives for Older Adults",
+        "presenter": "Newton Niu"
+      },
+      {
+        "time": "8:50 AM - 8:55 AM",
+        "program": "Lightning Talk 7",
+        "title": "DNA Origami-Based Aptamers Targeting the Beta-secretase 1 (BACE1) Protein in Alzheimer’s Disease",
+        "presenter": "Yashasvi Kompella",
+        "coAuthors": "Gaurav Sharma"
+      },
+      {
+        "time": "8:55 AM - 9:00 AM",
+        "program": "Lightning Talk 8",
+        "title": "AI Voice-Based Multilingual Emergency Assessment",
+        "presenter": "Eren Yigidim"
+      },
+      {
+        "time": "9:00 AM - 9:05 AM",
+        "program": "Lightning Talk 9",
+        "title": "Bloom Health: Designing a Compassionate AI Nutrition App to Study Health Habit Adherence and Emotional Safety",
+        "presenter": "Claire Chen"
+      },
+      {
+        "time": "9:05 AM - 9:10 AM",
+        "program": "Lightning Talk 10",
+        "title": "MOPbot: A Harm-Reduction Chatbot for Opioid Overdose Prevention and Local Resource Navigation",
+        "presenter": "Raymond Cui",
+        "coAuthors": "Ashish Kalaga, Srikar Velichety"
+      },
+      {
+        "time": "9:10 AM - 9:15 AM",
+        "program": "Lightning Talk 11",
+        "title": "CASPER: A Data-Driven Computational Framework for Integrated Design of RPA-CRISPR-Cas12a Diagnostic Assays",
+        "presenter": "Harsha Poonepalle",
+        "coAuthors": "Nish Chawla"
+      },
+      {
+        "time": "9:15 AM - 9:20 AM",
+        "program": "Lightning Talk 12",
+        "title": "Can a Vision-Language Model Predict Recurrence Risk in Breast Cancer Patients?",
+        "presenter": "Eden Wu"
+      },
+      {
+        "time": "9:20 AM - 9:25 AM",
+        "program": "Lightning Talk 13",
+        "title": "TEENSAVE: Teen Organ Donation Support via AI and Virtual Engagement",
+        "presenter": "Isabel Yang",
+        "coAuthors": "Fang Li, Jianfu Li, Cui Tao"
+      },
+      {
+        "time": "9:25 AM - 9:30 AM",
+        "program": "Lightning Talk 14",
+        "title": "Finding the Best Doctors: What Signals Help Patients Identify High-Quality Physicians?",
+        "presenter": "Alethea Liu"
+      },
+      {
+        "time": "9:30 AM - 9:35 AM",
+        "program": "Lightning Talk 15",
+        "title": "Can LLMs Predict Cognitive Health from Daily Signals? Evidence from Real-World EMA Data",
+        "presenter": "Anthony Fu"
+      },
+      {
+        "time": "9:35 AM - 9:40 AM",
+        "program": "Lightning Talk 16",
+        "title": "Development and Evaluation of Multi-Modal Universal CPR AI Assistance Response Engine (U-CARE)",
+        "presenter": "Aarit Atreja",
+        "coAuthors": "Morish Shah, Piyush Mathur, Dharan Jaisankar"
+      },
+      {
+        "time": "9:40 AM - 9:45 AM",
+        "program": "Lightning Talk 17",
+        "title": "Identifying mental health conditions from social media posts using transformer models",
+        "presenter": "Logan Wu",
+        "coAuthors": "Yanshan Wang"
+      }
+    ]
+  },
+  "young-scholar-poster": {
+    "kind": "young-scholar",
+    "badge": "Young Scholar",
+    "date": "Tuesday, June 2",
+    "room": "Mississippi, Third Floor",
+    "externalLink": {
+      "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
+      "label": "View Young Scholar Presentation Guidelines",
+      "newTab": true
+    },
+    "title": "Young Scholar Symposium: Poster Session",
+    "time": "9:45 AM - 10:15 AM",
+    "summary": "Poster session for Young Scholar Symposium presenters.",
+    "agendaItems": [
+      {
+        "time": "9:45 AM - 10:15 AM",
+        "program": "Poster Session"
+      },
+      {
+        "program": "Poster 1",
+        "title": "VoicePD: A Mobile Android Application for Non-Invasive Parkinson’s Disease Screening via Acoustic Voice Analysis",
+        "presenter": "Ilana Luo",
+        "coAuthors": "Charles Luo"
+      },
+      {
+        "program": "Poster 2",
+        "title": "NeuroVoice-Py: Python Toolkit for Speech-Based Biomarkers in Machine Learning Applications",
+        "presenter": "Alice Zhang",
+        "coAuthors": "Yi Lin"
+      },
+      {
+        "program": "Poster 3",
+        "title": "HerHealth: Designing a Trustworthy AI Assistant for Women’s Health",
+        "presenter": "Muskan Singh",
+        "coAuthors": "Jaideep Srivastava"
+      },
+      {
+        "program": "Poster 4",
+        "title": "Unveiling Electrophysiological Dynamics in CMVD: A Slow Feature Analysis of Multi-Stage ECG Signals",
+        "presenter": "Gao Zihan"
+      },
+      {
+        "program": "Poster 5",
+        "title": "Personalized Depression Risk Prediction via App-Based Passive Sensing: A Longitudinal, Deployment-Oriented Evaluation on the GLOBEM Benchmark",
+        "presenter": "Iris Yu"
+      },
+      {
+        "program": "Poster 6",
+        "title": "Distilled Bidirectional Encoder Representations from Transformers (DistilBERT) for Multi-Class Mental Health Detection from Web-Scraped Reddit Posts",
+        "presenter": "Weedguet Mildort",
+        "coAuthors": "Kamorudeen Amuda"
+      },
+      {
+        "program": "Poster 7",
+        "title": "Baseline Predictors of Dementia in the OASIS Dataset: Evaluating Age, Sex, and MMSE Signals",
+        "presenter": "Medha Prasanna",
+        "coAuthors": "Tamara Jafar"
+      },
+      {
+        "program": "Poster 8",
+        "title": "Classifying High-Dimensional Transcriptional Gene Groups Using Machine Learning",
+        "presenter": "Annie Wu",
+        "coAuthors": "Julia Wu"
+      },
+      {
+        "program": "Poster 9",
+        "title": "Analyzing Disparities in Kidney Care Among Immigrants: An Ongoing Systematic Review and Meta-analysis in Public Health Informatics",
+        "presenter": "Jathin Bande",
+        "coAuthors": "Sai Chandana, Grace Pansegrau, Aaraw Bande, Nakshatra Nallacharu, Jayan Byrapuram, Dani Douri, Dinesh Bande"
+      },
+      {
+        "program": "Poster 10",
+        "title": "Evaluating Large Language Model Representations for Differentiating Parkinson’s Disease Dementia and Dementia with Lewy Bodies from Clinical Notes",
+        "presenter": "Sophia Yang"
+      },
+      {
+        "program": "Poster 11",
+        "title": "A Chatbot Powered by Large Language Models for Home-Based ADRD Support",
+        "presenter": "Ansh Khurana",
+        "coAuthors": "Xiao Luo"
+      },
+      {
+        "program": "Poster 12",
+        "title": "Designed to Fail: A Systematic Gap analysis of Personal Safety Technology for Individuals with Intellectual and Developmental Disabilities and a framework for Inclusive Architectural Design",
+        "presenter": "Priya Desai"
+      },
+      {
+        "program": "Poster 13",
+        "title": "Filtering Electroencephalogram Data Using R: A Study on Patients with Seizures",
+        "presenter": "Sarayu Pasumarthi",
+        "coAuthors": "Antonios Marsellos"
+      },
+      {
+        "program": "Poster 14",
+        "title": "Computational Genomic & Transcriptomic Analysis Reveals Evolutionary Constraints of Ribosomal Biogenesis GTPase CgtA Enabling Design of Novel Allosteric Anti-Resistance Polytherapy to Eradicate Pseudomonas aeruginosa",
+        "presenter": "Arnav Vishwakarma"
+      },
+      {
+        "program": "Poster 15",
+        "title": "Novel Design of a Population-Optimized Neoantigen Panel to Increase Accessibility to mRNA-Based Immunotherapy Vaccines for Triple Negative Breast Cancer",
+        "presenter": "Akshara Guddeti"
+      },
+      {
+        "program": "Poster 16",
+        "title": "Speech as a Biomarker: A Unified, Scalable, and Hierarchical Framework for the Early Detection & Classification of ALS, Parkinson's, and Alzheimer's Diseases",
+        "presenter": "Ilina Rao"
+      },
+      {
+        "program": "Poster 17",
+        "title": "Phenotype Reliability Weighting for Knowledge Graph-Based Drug Repurposing",
+        "presenter": "Aryan Kumar"
+      }
+    ]
+  },
+  "young-scholar-oral": {
+    "kind": "young-scholar",
+    "badge": "Young Scholar",
+    "date": "Tuesday, June 2",
+    "room": "Mississippi, Third Floor",
+    "externalLink": {
+      "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
+      "label": "View Young Scholar Presentation Guidelines",
+      "newTab": true
+    },
+    "title": "Young Scholar Symposium: Oral Presentations, Award, and Panel",
+    "time": "10:15 AM - 11:45 AM",
+    "summary": "Oral presentations, the Outstanding Young Scholar Award, and a panel discussion.",
+    "agendaItems": [
+      {
+        "time": "10:15 AM - 10:20 AM",
+        "program": "Introduction"
+      },
+      {
+        "time": "10:20 AM - 10:30 AM",
+        "program": "Oral presentation 1",
+        "title": "Brain Meets Machine: EEG and Generative AI Signatures of Neurocognitive Creativity",
+        "presenter": "Heather Zhang",
+        "coAuthors": "Sandeep Reddivari"
+      },
+      {
+        "time": "10:30 AM - 10:40 AM",
+        "program": "Oral presentation 2",
+        "title": "Diet, Microbiome, and Health from Adolescence to Aging: Knowledge Discovery Using Evidence‑Weighted Knowledge Graphs and an AI Chatbot Pilot",
+        "presenter": "Ellen Bu",
+        "coAuthors": "Jianfu Li, Cui Tao"
+      },
+      {
+        "time": "10:40 AM - 10:50 AM",
+        "program": "Oral presentation 3",
+        "title": "Identification of Problematic Internet Use with Machine Learning",
+        "presenter": "Sophia Wang",
+        "coAuthors": "Weishen Pan, Chang Su"
+      },
+      {
+        "time": "10:50 AM - 11:00 AM",
+        "program": "Oral presentation 4",
+        "title": "Agent-Based Clinical AI System for Personalized Survival Risk Prediction",
+        "presenter": "Chenyu Zhu",
+        "coAuthors": "Kai Yu, An Luo"
+      },
+      {
+        "time": "11:00 AM - 11:10 AM",
+        "program": "Oral presentation 5",
+        "title": "PreventAndProtect: An AI-Powered Platform for Adolescent Figure Skating Injury Prevention",
+        "presenter": "Joyce Wu",
+        "coAuthors": "Shucheng Yu"
+      },
+      {
+        "time": "11:10 AM - 11:15 AM",
+        "program": "Outstanding Young Scholar Award"
+      },
+      {
+        "time": "11:15 AM - 11:45 AM",
+        "program": "Panel Discussion",
+        "title": "Next Step in Research for Young Scholars"
+      }
+    ]
   }
 }

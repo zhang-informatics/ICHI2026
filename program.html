@@ -679,6 +679,69 @@
       padding-left: 1.1rem;
     }
 
+    .program-young-scholar-agenda {
+      display: grid;
+      gap: 0.78rem;
+    }
+
+    .program-young-scholar-item {
+      display: grid;
+      grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+      gap: 0.85rem;
+      padding: 0.9rem 1rem;
+      border-radius: 16px;
+      border: 1px solid #e7d9cd;
+      background: linear-gradient(180deg, #fffaf4 0%, #fff 100%);
+      box-shadow: 0 8px 18px rgba(77, 45, 32, 0.045);
+    }
+
+    .program-young-scholar-time {
+      color: var(--umn-maroon);
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .program-young-scholar-time:empty {
+      display: none;
+    }
+
+    .program-young-scholar-time:empty + .program-young-scholar-main {
+      grid-column: 1 / -1;
+    }
+
+    .program-young-scholar-main {
+      min-width: 0;
+    }
+
+    .program-young-scholar-program {
+      display: inline-flex;
+      margin-bottom: 0.34rem;
+      padding: 0.22rem 0.52rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .program-young-scholar-title {
+      margin: 0;
+      color: #2f2724;
+      font-size: 0.98rem;
+      font-weight: 750;
+      line-height: 1.48;
+      text-wrap: pretty;
+    }
+
+    .program-young-scholar-meta {
+      margin: 0.36rem 0 0;
+      color: #615551;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
     .program-meal-grid {
       display: grid;
       gap: 0.82rem;
@@ -832,6 +895,10 @@
       .program-keynote-photo {
         max-width: 220px;
       }
+
+      .program-young-scholar-item {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -860,6 +927,7 @@
     <ul class="program-resource-list">
       <li>For poster session, please follow the <a href="assets/docs/Poster%20Session%20Criteria.pdf" target="_blank" rel="noopener noreferrer">Poster Guidelines</a>.</li>
       <li>For oral presentations, please follow the <a href="assets/docs/Oral%20Presentation%20Guidelines%20.pdf" target="_blank" rel="noopener noreferrer">Oral Presentation Guidelines</a> and use the <a href="assets/docs/ICHI%202026%20Side%20Presentation%20Template.pptx" target="_blank" rel="noopener noreferrer">ICHI 2026 Slide Presentation Template</a>.</li>
+      <li>For young scholar presentations, please follow the <a href="assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf" target="_blank" rel="noopener noreferrer">Young Scholar Presentation Guidelines</a>.</li>
       <li>For meal information, please view the <a href="assets/docs/Meal%20Agenda.pdf" target="_blank" rel="noopener noreferrer">Meal Agenda</a>.</li>
     </ul>
   </section>
@@ -1016,7 +1084,7 @@
         <tr>
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-lightning"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Lightning Talks</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-1"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
@@ -1026,7 +1094,7 @@
         <tr>
           <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
           <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-coffee-am"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
-          <td class="agenda-empty"></td>
+          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-poster"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Poster Session</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1036,7 +1104,7 @@
         <tr>
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar</div></div></td>
+          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-oral"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Oral Presentations, Award, and Panel</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-2"><span class="agenda-badge">Scientific Session 2</span><div class="agenda-slot-text">Systems Track<br>Trustworthy LLM Systems, Privacy, and Security</div></div></td>
@@ -1383,6 +1451,27 @@
         <section class="program-detail-section">
           <h4>Bio</h4>
           ${toParagraphs(detail.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+        </section>
+      `);
+    }
+
+    if (detail.agendaItems && detail.agendaItems.length) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Agenda</h4>
+          <div class="program-young-scholar-agenda">
+            ${detail.agendaItems.map(item => `
+              <article class="program-young-scholar-item">
+                ${item.time ? `<div class="program-young-scholar-time">${escapeHtml(item.time)}</div>` : '<div class="program-young-scholar-time"></div>'}
+                <div class="program-young-scholar-main">
+                  ${item.program ? `<div class="program-young-scholar-program">${escapeHtml(item.program)}</div>` : ''}
+                  ${item.title ? `<p class="program-young-scholar-title">${escapeHtml(item.title)}</p>` : ''}
+                  ${item.presenter ? `<p class="program-young-scholar-meta"><strong>Presenter:</strong> ${escapeHtml(item.presenter)}</p>` : ''}
+                  ${item.coAuthors ? `<p class="program-young-scholar-meta"><strong>Co-authors:</strong> ${escapeHtml(item.coAuthors)}</p>` : ''}
+                </div>
+              </article>
+            `).join('')}
+          </div>
         </section>
       `);
     }
