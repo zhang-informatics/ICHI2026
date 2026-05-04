@@ -1159,14 +1159,23 @@
     "menuText": "Cucumber mint infused water\nRegular Coffee\nHot Water with assorted teas\nIce Water"
   },
   "fireside-jesse-isaacman-beck": {
-    "kind": "special",
+    "kind": "keynote",
     "badge": "Fireside Talk",
     "title": "Fireside Talk with Jesse Isaacman-Beck, PhD",
     "speaker": "Jesse Isaacman-Beck, PhD",
     "affiliation": "Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS)",
+    "speakerLines": [
+      "Director, Division of Artificial Intelligence Policy and Strategy",
+      "U.S. Department of Health and Human Services (HHS)"
+    ],
+    "image": "assets/images/jesse_isaacman_beck.jpg",
     "date": "Monday, June 1",
     "time": "3:30 PM - 5:00 PM",
     "room": "Mississippi, Third Floor",
-    "summary": "Jesse Isaacman-Beck, PhD, Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS)."
+    "bio": [
+      "Jesse Isaacman-Beck is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services, where he works to maximize departmental effectiveness through emerging technology and to catalyze innovation that advances the health and well-being of all Americans.",
+      "Working closely with HHS chief information, AI, and data leaders, he has helped establish the department's AI governance framework, develop cross-administration AI strategy, and execute federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping AI use case oversight, modernizing HHS IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
+      "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science and Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
+    ]
   }
 }
