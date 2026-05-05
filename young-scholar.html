@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young Scholar Symposium | ICHI 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .young-scholar-page {
+      padding: 2rem 0 3.4rem;
+    }
+
+    .ys-hero-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.42fr) minmax(280px, 0.72fr);
+      gap: 1.5rem;
+      margin-bottom: 1.7rem;
+      padding: 2rem;
+      border: 1px solid #e2d6ca;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 8% 10%, rgba(255, 204, 51, 0.26), transparent 34%),
+        linear-gradient(145deg, #fff8e6 0%, #fff 58%, #fbf5ee 100%);
+      box-shadow: 0 18px 34px rgba(77, 45, 32, 0.08);
+    }
+
+    .ys-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0 0 0.72rem;
+      color: var(--umn-maroon);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .ys-kicker::before {
+      content: "";
+      width: 0.74rem;
+      height: 0.74rem;
+      border-radius: 50%;
+      background: var(--umn-gold);
+      box-shadow: 0 0 0 5px rgba(255, 204, 51, 0.2);
+    }
+
+    .ys-hero-panel h2 {
+      margin: 0 0 0.8rem;
+      color: var(--umn-maroon);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+    }
+
+    .ys-lead {
+      max-width: 72ch;
+      margin: 0;
+      color: #443934;
+      font-size: 1.03rem;
+      line-height: 1.75;
+      text-wrap: pretty;
+    }
+
+    .ys-spotlight-card {
+      align-self: stretch;
+      padding: 1.35rem;
+      border-radius: 24px;
+      border: 1px solid rgba(122, 0, 25, 0.14);
+      background: rgba(255, 255, 255, 0.72);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .ys-spotlight-card strong {
+      color: var(--umn-maroon);
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .ys-spotlight-card span {
+      color: #62554f;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .ys-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.15rem;
+    }
+
+    .ys-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.72rem 1rem;
+      border-radius: 999px;
+      background: var(--umn-maroon);
+      color: #fff;
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(122, 0, 25, 0.16);
+    }
+
+    .ys-button.secondary {
+      background: #fff;
+      color: var(--umn-maroon);
+      border: 1px solid rgba(122, 0, 25, 0.2);
+      box-shadow: none;
+    }
+
+    .ys-button:hover,
+    .ys-button:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .ys-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .ys-stat {
+      padding: 1rem;
+      border-radius: 20px;
+      border: 1px solid #e5d9cf;
+      background: #fff;
+      box-shadow: 0 12px 24px rgba(77, 45, 32, 0.055);
+    }
+
+    .ys-stat b {
+      display: block;
+      color: var(--umn-maroon);
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .ys-stat span {
+      display: block;
+      margin-top: 0.4rem;
+      color: #5f534d;
+      font-size: 0.88rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .ys-section-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 0.9rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .ys-section-title h2 {
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.1;
+    }
+
+    .ys-section-title p {
+      margin: 0;
+      color: #63564f;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .ys-agenda-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .ys-session {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 1.1rem;
+      align-items: start;
+    }
+
+    .ys-session-time {
+      position: sticky;
+      top: 92px;
+      padding: 1rem;
+      border-radius: 18px;
+      border: 1px solid #e2d5c8;
+      border-top: 4px solid var(--umn-maroon);
+      background: linear-gradient(180deg, #fff 0%, #f8f2ec 100%);
+      box-shadow: 0 10px 20px rgba(77, 45, 32, 0.05);
+    }
+
+    .ys-session-time strong {
+      display: block;
+      color: var(--umn-maroon);
+      font-size: 1rem;
+      line-height: 1.32;
+    }
+
+    .ys-session-time span {
+      display: block;
+      margin-top: 0.36rem;
+      color: #6b5d57;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .ys-session-card {
+      overflow: hidden;
+      border: 1px solid #e3d9cf;
+      border-radius: 26px;
+      background: #fff;
+      box-shadow: 0 14px 30px rgba(77, 45, 32, 0.07);
+    }
+
+    .ys-session-header {
+      padding: 1.25rem 1.35rem;
+      border-bottom: 1px solid #ece2d9;
+      background: linear-gradient(135deg, #fff9e7 0%, #fff 76%);
+    }
+
+    .ys-badge {
+      display: inline-flex;
+      margin-bottom: 0.65rem;
+      padding: 0.3rem 0.72rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .ys-session-header h3 {
+      margin: 0;
+      color: #2f2724;
+      font-size: clamp(1.28rem, 2.3vw, 1.75rem);
+      line-height: 1.18;
+    }
+
+    .ys-session-header p {
+      margin: 0.55rem 0 0;
+      color: #675a54;
+      font-size: 0.95rem;
+      line-height: 1.62;
+    }
+
+    .ys-items {
+      display: grid;
+      gap: 0.72rem;
+      padding: 1.15rem;
+    }
+
+    .ys-item {
+      display: grid;
+      grid-template-columns: minmax(112px, 0.25fr) minmax(0, 1fr);
+      gap: 0.8rem;
+      padding: 0.9rem 0.95rem;
+      border-radius: 18px;
+      border: 1px solid #eaded4;
+      background: #fffdf9;
+    }
+
+    .ys-item-time {
+      color: var(--umn-maroon);
+      font-size: 0.82rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .ys-item-time:empty {
+      display: none;
+    }
+
+    .ys-item-time:empty + .ys-item-main {
+      grid-column: 1 / -1;
+    }
+
+    .ys-item-program {
+      display: inline-flex;
+      margin-bottom: 0.32rem;
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .ys-item-title {
+      margin: 0;
+      color: #2f2724;
+      font-size: 0.98rem;
+      font-weight: 800;
+      line-height: 1.46;
+      text-wrap: pretty;
+    }
+
+    .ys-item-meta {
+      margin: 0.36rem 0 0;
+      color: #62554e;
+      font-size: 0.9rem;
+      line-height: 1.52;
+    }
+
+    .ys-chair-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .ys-chair-card {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 22px;
+      border: 1px solid #e3d9cf;
+      background: #fff;
+      box-shadow: 0 12px 24px rgba(77, 45, 32, 0.055);
+    }
+
+    .ys-chair-card img {
+      width: 92px;
+      height: 92px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .ys-chair-card h3 {
+      margin: 0;
+      color: #2f2724;
+      font-size: 1.08rem;
+    }
+
+    .ys-chair-card p {
+      margin: 0.24rem 0 0;
+      color: #63564f;
+      font-size: 0.92rem;
+      line-height: 1.42;
+    }
+
+    .ys-chair-card a {
+      color: var(--umn-maroon);
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .ys-hero-panel,
+      .ys-session {
+        grid-template-columns: 1fr;
+      }
+
+      .ys-session-time {
+        position: static;
+      }
+
+      .ys-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .ys-hero-panel {
+        padding: 1.35rem;
+      }
+
+      .ys-stats,
+      .ys-chair-grid,
+      .ys-item,
+      .ys-chair-card {
+        grid-template-columns: 1fr;
+      }
+
+      .ys-chair-card img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo_v2.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <div id="top-nav"></div>
+  </div>
+</header>
+
+<section class="hero" style="background-image: url('assets/images/call-for-young-scholar-symposium.jpg');">
+  <div class="hero-text">
+    <h1>Young Scholar Symposium</h1>
+    <p>IEEE ICHI 2026 Featured Program</p>
+  </div>
+</section>
+
+<main class="container young-scholar-page">
+  <section class="ys-hero-panel" aria-labelledby="young-scholar-title">
+    <div>
+      <p class="ys-kicker">ICHI 2026 Highlight</p>
+      <h2 id="young-scholar-title">A dedicated stage for emerging health informatics researchers.</h2>
+      <p class="ys-lead">
+        The Young Scholar Symposium supports high school and undergraduate students pursuing research in biomedical informatics, health informatics, and AI for health. The program brings together lightning talks, posters, oral presentations, awards, and a panel discussion designed to help young researchers share work and connect with the ICHI community.
+      </p>
+      <div class="ys-actions">
+        <a class="ys-button" href="#young-scholar-agenda">View Agenda</a>
+        <a class="ys-button secondary" href="assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf" target="_blank" rel="noopener noreferrer">Presentation Guidelines</a>
+        <a class="ys-button secondary" href="program.html">Full Program</a>
+      </div>
+    </div>
+    <aside class="ys-spotlight-card">
+      <strong>Tuesday, June 2, 2026</strong>
+      <span>Mississippi Room, Third Floor</span>
+      <span>Lightning talks, poster presentations, oral presentations, awards, and a panel discussion.</span>
+    </aside>
+  </section>
+
+  <section class="ys-stats" aria-label="Young Scholar program highlights">
+    <div class="ys-stat"><b>17</b><span>Lightning talks</span></div>
+    <div class="ys-stat"><b>17</b><span>Poster presentations</span></div>
+    <div class="ys-stat"><b>5</b><span>Oral presentations</span></div>
+    <div class="ys-stat"><b>1</b><span>Panel discussion</span></div>
+  </section>
+
+  <section id="young-scholar-agenda" aria-labelledby="young-scholar-agenda-title">
+    <div class="ys-section-title">
+      <h2 id="young-scholar-agenda-title">Young Scholar Agenda</h2>
+      <p>Click the Program page cards for compact popups, or review the full agenda below.</p>
+    </div>
+    <div id="ys-agenda-list" class="ys-agenda-list" aria-live="polite">
+      <p>Loading Young Scholar agenda...</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="young-scholar-chairs-title">
+    <div class="ys-section-title">
+      <h2 id="young-scholar-chairs-title">Young Scholar Symposium Chairs</h2>
+    </div>
+    <div class="ys-chair-grid">
+      <article class="ys-chair-card">
+        <img src="assets/images/jue_hou.jpg" alt="Jue Hou, PhD">
+        <div>
+          <h3>Jue Hou, PhD</h3>
+          <p>University of Minnesota, USA</p>
+          <p><a href="mailto:hou00123@umn.edu">hou00123@umn.edu</a></p>
+        </div>
+      </article>
+      <article class="ys-chair-card">
+        <img src="assets/images/shuteng_niu.jpg" alt="Shuteng Niu, PhD">
+        <div>
+          <h3>Shuteng Niu, PhD</h3>
+          <p>Mayo Clinic, USA</p>
+          <p><a href="mailto:niu.shuteng@mayo.edu">niu.shuteng@mayo.edu</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+
+<script>
+  fetch('nav.html')
+    .then(res => res.text())
+    .then(html => { document.getElementById('top-nav').innerHTML = html; });
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => { document.getElementById('footer').innerHTML = html; });
+
+  const agendaKeys = [
+    'young-scholar-lightning',
+    'young-scholar-poster',
+    'young-scholar-oral'
+  ];
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function renderAgendaItem(item) {
+    return `
+      <article class="ys-item">
+        ${item.time ? `<div class="ys-item-time">${escapeHtml(item.time)}</div>` : '<div class="ys-item-time"></div>'}
+        <div class="ys-item-main">
+          ${item.program ? `<div class="ys-item-program">${escapeHtml(item.program)}</div>` : ''}
+          ${item.title ? `<p class="ys-item-title">${escapeHtml(item.title)}</p>` : ''}
+          ${item.presenter ? `<p class="ys-item-meta"><strong>Presenter:</strong> ${escapeHtml(item.presenter)}</p>` : ''}
+          ${item.coAuthors ? `<p class="ys-item-meta"><strong>Co-authors:</strong> ${escapeHtml(item.coAuthors)}</p>` : ''}
+        </div>
+      </article>
+    `;
+  }
+
+  function renderAgenda(data) {
+    const agendaList = document.getElementById('ys-agenda-list');
+    const sections = agendaKeys.map(key => data[key]).filter(Boolean);
+    if (!sections.length) {
+      agendaList.innerHTML = '<p>Young Scholar agenda details are not available yet.</p>';
+      return;
+    }
+
+    agendaList.innerHTML = sections.map(section => `
+      <article class="ys-session">
+        <div class="ys-session-time">
+          <strong>${escapeHtml(section.time || '')}</strong>
+          <span>${escapeHtml(section.room || 'Mississippi Room')}</span>
+        </div>
+        <div class="ys-session-card">
+          <div class="ys-session-header">
+            <span class="ys-badge">${escapeHtml(section.badge || 'Young Scholar')}</span>
+            <h3>${escapeHtml(section.title || '')}</h3>
+            ${section.summary ? `<p>${escapeHtml(section.summary)}</p>` : ''}
+          </div>
+          <div class="ys-items">
+            ${(section.agendaItems || []).map(renderAgendaItem).join('')}
+          </div>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  fetch('assets/data/program-details.json')
+    .then(res => res.ok ? res.json() : {})
+    .then(renderAgenda)
+    .catch(() => {
+      document.getElementById('ys-agenda-list').innerHTML = '<p>Young Scholar agenda details could not be loaded.</p>';
+    });
+</script>
+
+</body>
+</html>
