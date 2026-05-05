@@ -338,23 +338,25 @@
     .agenda-keynote-mini {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.48rem;
       min-width: 0;
     }
 
     .agenda-keynote-top {
       display: grid;
-      grid-template-columns: 56px minmax(0, 1fr);
-      gap: 0.68rem;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 0.42rem;
       align-items: center;
+      text-align: center;
       min-width: 0;
     }
 
     .agenda-keynote-photo {
       overflow: hidden;
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
       background: linear-gradient(180deg, #f3e8df 0%, #e5d5c8 100%);
       box-shadow: 0 6px 14px rgba(77, 45, 32, 0.1);
     }
@@ -369,10 +371,10 @@
     .agenda-keynote-name {
       margin: 0;
       color: #2f2724;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-weight: 800;
-      line-height: 1.14;
-      text-wrap: pretty;
+      line-height: 1.16;
+      text-wrap: balance;
       overflow-wrap: anywhere;
       word-break: normal;
       hyphens: none;
@@ -380,7 +382,7 @@
 
     .agenda-keynote-bottom {
       display: grid;
-      gap: 0.34rem;
+      gap: 0.3rem;
       min-width: 0;
     }
 
@@ -388,7 +390,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.08rem;
-      padding: 0.38rem 0.46rem 0.4rem;
+      padding: 0.34rem 0.42rem 0.36rem;
       border-radius: 12px;
       background: rgba(255, 255, 255, 0.55);
       border: 1px solid rgba(122, 0, 25, 0.08);
@@ -407,9 +409,9 @@
     .agenda-keynote-role {
       margin: 0;
       color: #50443f;
-      font-size: 0.71rem;
+      font-size: 0.67rem;
       font-weight: 700;
-      line-height: 1.24;
+      line-height: 1.22;
       text-wrap: pretty;
       overflow-wrap: anywhere;
       word-break: normal;
@@ -419,9 +421,9 @@
     .agenda-keynote-org {
       margin: 0;
       color: #655952;
-      font-size: 0.71rem;
+      font-size: 0.67rem;
       font-weight: 600;
-      line-height: 1.24;
+      line-height: 1.22;
       text-wrap: pretty;
       overflow-wrap: anywhere;
       word-break: normal;
@@ -429,20 +431,13 @@
     }
 
     @container (max-width: 150px) {
-      .agenda-keynote-top {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 0.42rem;
-        text-align: center;
-      }
-
       .agenda-keynote-photo {
-        width: 52px;
-        height: 52px;
+        width: 56px;
+        height: 56px;
       }
 
       .agenda-keynote-name {
-        font-size: 0.78rem;
+        font-size: 0.76rem;
         line-height: 1.16;
       }
 
@@ -474,18 +469,20 @@
     }
 
     .agenda-slot-stack .agenda-keynote-top {
-      grid-template-columns: 48px minmax(0, 1fr);
-      gap: 0.55rem;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 0.34rem;
+      text-align: center;
     }
 
     .agenda-slot-stack .agenda-keynote-photo {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
     }
 
     .agenda-slot-stack .agenda-keynote-name {
-      font-size: 0.82rem;
+      font-size: 0.76rem;
     }
 
     .agenda-slot-stack .agenda-keynote-bottom {
