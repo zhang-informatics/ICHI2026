@@ -406,6 +406,46 @@
       text-decoration: none;
     }
 
+    .agenda-slot-stack {
+      display: grid;
+      gap: 0.58rem;
+      min-width: 0;
+    }
+
+    .agenda-slot-stack .agenda-slot {
+      min-height: 0;
+    }
+
+    .agenda-slot-stack .agenda-keynote-top {
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 0.55rem;
+    }
+
+    .agenda-slot-stack .agenda-keynote-photo {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+    }
+
+    .agenda-slot-stack .agenda-keynote-name {
+      font-size: 0.82rem;
+    }
+
+    .agenda-slot-stack .agenda-keynote-bottom {
+      gap: 0.28rem;
+    }
+
+    .agenda-slot-stack .agenda-keynote-meta {
+      padding: 0.32rem 0.42rem;
+      border-radius: 10px;
+    }
+
+    .agenda-slot-stack .agenda-keynote-role,
+    .agenda-slot-stack .agenda-keynote-org {
+      font-size: 0.66rem;
+      line-height: 1.22;
+    }
+
     .agenda-slot-link:hover .agenda-slot-text {
       color: var(--umn-maroon);
       text-decoration: underline;
@@ -1088,7 +1128,7 @@
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-1"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
-          <td><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-panel-1"><span class="agenda-badge">Policy Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/sriram.jpg" alt="Ram D. Sriram, PhD"></div><div class="agenda-keynote-name">Ram D. Sriram, PhD</div></div><div class="agenda-keynote-bottom"><div class="agenda-keynote-meta"><div class="agenda-keynote-role">Senior Scientific Advisor, Information Technology Laboratory</div></div><div class="agenda-keynote-meta"><div class="agenda-keynote-org">National Institute of Standards and Technology</div></div></div></div></a></div></td>
+          <td><div class="agenda-slot-stack"><div class="agenda-slot agenda-slot-keynote"><a class="agenda-slot-link program-detail-trigger" href="keynotes.html#ram-sriram" aria-haspopup="dialog" data-detail-key="industry-policy-keynote"><span class="agenda-badge">Policy Keynote</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/sriram.jpg" alt="Ram D. Sriram, PhD"></div><div class="agenda-keynote-name">Ram D. Sriram, PhD</div></div><div class="agenda-keynote-bottom"><div class="agenda-keynote-meta"><div class="agenda-keynote-role">8:15 AM - 8:35 AM</div></div><div class="agenda-keynote-meta"><div class="agenda-keynote-org">Evaluating Large Language Models for Clinical Decision Support</div></div></div></div></a></div><div class="agenda-slot agenda-slot-industry"><a class="agenda-slot-link program-detail-trigger" href="industry.html" aria-haspopup="dialog" data-detail-key="industry-panel-1"><span class="agenda-badge">Policy Panel</span><div class="agenda-slot-text">8:35 AM - 9:45 AM<br>From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care</div></a></div></div></td>
           <td class="agenda-empty"></td>
         </tr>
         <tr>
