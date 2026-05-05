@@ -85,16 +85,18 @@
     }
 
     .agenda-table-wrap {
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
       border: 1px solid #e6ddd5;
       border-radius: 20px;
       background: #fff;
       box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+      -webkit-overflow-scrolling: touch;
     }
 
     .agenda-table {
       width: 100%;
-      min-width: 0;
+      min-width: 1540px;
       border-collapse: separate;
       border-spacing: 0;
       table-layout: fixed;
@@ -267,6 +269,7 @@
     .agenda-slot-keynote {
       background: #fff5d8;
       border-color: #edcf7b;
+      container-type: inline-size;
     }
 
     .agenda-slot-industry {
@@ -370,7 +373,7 @@
       font-weight: 800;
       line-height: 1.14;
       text-wrap: pretty;
-      overflow-wrap: normal;
+      overflow-wrap: anywhere;
       word-break: normal;
       hyphens: none;
     }
@@ -408,7 +411,7 @@
       font-weight: 700;
       line-height: 1.24;
       text-wrap: pretty;
-      overflow-wrap: normal;
+      overflow-wrap: anywhere;
       word-break: normal;
       hyphens: none;
     }
@@ -420,9 +423,38 @@
       font-weight: 600;
       line-height: 1.24;
       text-wrap: pretty;
-      overflow-wrap: normal;
+      overflow-wrap: anywhere;
       word-break: normal;
       hyphens: none;
+    }
+
+    @container (max-width: 150px) {
+      .agenda-keynote-top {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.42rem;
+        text-align: center;
+      }
+
+      .agenda-keynote-photo {
+        width: 52px;
+        height: 52px;
+      }
+
+      .agenda-keynote-name {
+        font-size: 0.78rem;
+        line-height: 1.16;
+      }
+
+      .agenda-keynote-meta {
+        padding: 0.34rem 0.38rem;
+      }
+
+      .agenda-keynote-role,
+      .agenda-keynote-org {
+        font-size: 0.64rem;
+        line-height: 1.2;
+      }
     }
 
     .agenda-slot-link {
@@ -943,7 +975,6 @@
       }
 
       .agenda-table {
-        min-width: 1540px;
         table-layout: auto;
       }
 
