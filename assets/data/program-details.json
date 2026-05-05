@@ -6,7 +6,7 @@
     "track": "Analytics Track",
     "date": "Tuesday, June 2",
     "time": "8:15 AM - 9:45 AM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -42,7 +42,7 @@
     "track": "Systems Track",
     "date": "Tuesday, June 2",
     "time": "10:15 AM - 11:45 AM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -78,7 +78,7 @@
     "track": "Human Factors Track",
     "date": "Tuesday, June 2",
     "time": "1:30 PM - 3:00 PM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 5,
     "papers": [
       {
@@ -110,7 +110,7 @@
     "track": "Systems Track",
     "date": "Tuesday, June 2",
     "time": "1:30 PM - 3:00 PM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -146,7 +146,7 @@
     "track": "Systems Track",
     "date": "Tuesday, June 2",
     "time": "3:30 PM - 5:00 PM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -182,7 +182,7 @@
     "track": "Human Factors Track",
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
-    "room": "Mississippi",
+    "room": "Floor 3- Mississippi Room",
     "paperCount": 6,
     "papers": [
       {
@@ -218,7 +218,7 @@
     "track": "Systems Track",
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
-    "room": "CR 303",
+    "room": "Floor 3- Conf. Room 303",
     "paperCount": 5,
     "papers": [
       {
@@ -250,7 +250,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -286,7 +286,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -322,7 +322,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "paperCount": 5,
     "papers": [
       {
@@ -354,7 +354,7 @@
     "track": "Human Factors Track",
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
-    "room": "Mississippi",
+    "room": "Floor 3- Mississippi Room",
     "paperCount": 6,
     "papers": [
       {
@@ -390,7 +390,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
-    "room": "CR 303",
+    "room": "Floor 3- Conf. Room 303",
     "paperCount": 6,
     "papers": [
       {
@@ -426,7 +426,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 5,
     "papers": [
       {
@@ -458,7 +458,7 @@
     "track": "Systems Track",
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -494,7 +494,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "10:15 AM - 11:45 AM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "paperCount": 6,
     "papers": [
       {
@@ -530,7 +530,7 @@
     "track": "Systems Track",
     "date": "Wednesday, June 3",
     "time": "12:30 PM - 2:00 PM",
-    "room": "CR 303",
+    "room": "Floor 3- Conf. Room 303",
     "paperCount": 6,
     "papers": [
       {
@@ -566,7 +566,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "12:30 PM - 2:00 PM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -602,7 +602,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "12:30 PM - 2:00 PM",
-    "room": "CR 325",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -638,7 +638,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "12:30 PM - 2:00 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "paperCount": 5,
     "papers": [
       {
@@ -670,7 +670,7 @@
     "track": "Systems Track",
     "date": "Wednesday, June 3",
     "time": "2:00 PM - 3:30 PM",
-    "room": "Mississippi",
+    "room": "Floor 3- Mississippi Room",
     "paperCount": 5,
     "papers": [
       {
@@ -702,7 +702,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "2:00 PM - 3:30 PM",
-    "room": "CR 303",
+    "room": "Floor 3- Conf. Room 303",
     "paperCount": 6,
     "papers": [
       {
@@ -738,7 +738,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "2:00 PM - 3:30 PM",
-    "room": "CR 324",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -774,7 +774,7 @@
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "2:00 PM - 3:30 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "paperCount": 6,
     "papers": [
       {
@@ -816,7 +816,7 @@
     ],
     "date": "Monday, June 1",
     "time": "11:45 AM - 12:45 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "abstract": "Hundreds of millions of people around the world live with rare diseases; more than 7000 types of rare diseases have been identified but most of these conditions still do not have treatments. To trigger the establishment of a more effective health system for rare diseases, learning health systems integrating multimodal clinical information and genomic data, and providing adequate models to test hypotheses in rare complex situations have to be designed. Challenges associated with very low disease prevalence, complex disease mechanisms and pleiotropy have to be addressed. This talk will highlight the roles of routine care data, \"maximum\" patient-centric data sets, foundation models, and federated infrastructures. It will provide examples of digital technologies that can help accelerate research, and foster equitable access to timely, accurate diagnosis, and adequate disease management.",
     "bio": "Prof. Anita Burgun is a full professor of biomedical informatics and statistics at Université Paris Cité. She leads the Departments of Medical Informatics at Georges Pompidou European Hospital and Necker Children's Hospital. She holds a Chair at the Institut 3IA Prairie and is a senior researcher in the Clinical Bioinformatics team at the Imagine Institute of Genetic Diseases. Her research focuses on clinical and translational biomedical informatics, large-scale health data integration, and data-driven approaches for precision medicine. Prof. Burgun is an internationally recognized expert in biomedical informatics, serving as a reviewer for the European Research Council and as an expert evaluator for the Canada Foundation for Innovation. She has represented France at the International Medical Informatics Association since 2011 and has been a Fellow of the International Academy of Health Sciences Informatics since 2023.",
     "externalLink": {
@@ -837,7 +837,7 @@
     ],
     "date": "Tuesday, June 2",
     "time": "11:45 AM - 12:45 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "abstract": "Today, medical discovery advances one clinical trial at a time, each taking years to execute and often costing $100 million or more. As we enter the era of precision health in which we recognize that “one size doesn't fit all” and thus try to tailor treatments for each individual, continuing on today's discovery processes is clearly not sustainable. The confluence of technological advances and social policies has led to rapid digitization of multimodal, longitudinal patient journeys, such as electronic health records (EHRs), imaging, and multiomics. Our overarching research agenda lies in advancing multimodal generative AI to learn the language of patients and create a virtual patient world model as digital twin for forecasting disease progression and treatment response. This enables us to synthesize population-scale real-world evidence from hundreds of millions of patients and accelerate medical discovery through AI-powered virtual clinical trials, in deep partnerships with real-world stakeholders such as large health systems and life sciences companies.",
     "bio": "Hoifung Poon is the General Manager of Real-World Evidence at Microsoft Research and an affiliated faculty at the University of Washington Medical School. He leads biomedical AI research and incubation, with the overarching goal of structuring medical data to optimize delivery and accelerate discovery for precision health. His team and collaborators are among the first to explore large language models (LLMs) and multimodal generative AI in health applications, producing popular open-source foundation models such as PubMedBERT, BioGPT, BiomedCLIP, LLaVA-Med, BiomedParse, with tens of millions of downloads. His latest publications in Nature and Cell features groundbreaking digital pathology and spatial proteomics foundation models such as GigaPath and GigaTIME. He has led successful research partnerships with large health providers and life science companies, creating AI systems in daily use for applications such as molecular tumor board and clinical trial matching. His prior work has been recognized with Best Paper Awards from premier AI venues such as NAACL, EMNLP, and UAI, and he was named the \"Technology Champion\" by the Puget Sound Business Journal in the 2024 Health Care Leadership Awards. He received his PhD in Computer Science and Engineering from the University of Washington, specializing in machine learning and NLP.",
     "externalLink": {
@@ -858,7 +858,7 @@
     ],
     "date": "Wednesday, June 3",
     "time": "3:45 PM - 4:45 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "abstract": "Alzheimer’s disease and related dementias (ADRD) remain a critical public health challenge, demanding new strategies to elucidate disease mechanisms, identify biomarkers, and improve support for patients and caregivers. Advances in AI and informatics now enable the integration of large-scale genetics, multi-omics, brain imaging, and clinical data, providing unprecedented opportunities to uncover genetic factors, mechanistic pathways, and multimodal endophenotypes underlying ADRD. This talk will highlight recent progress in brain imaging omics and the development of AI methods that support reliable diagnosis, individualized risk stratification, and data-driven disease staging. We will also explore the growing role of trustworthy multimodal and generative AI, including interpretable and responsible models and large language models augmented with domain knowledge, in accelerating discovery. Finally, emerging work that analyzes conversational data and social media offers new opportunities to understand caregiver needs and to build intelligent, scalable support tools. Together, these advances illustrate how AI-driven informatics can deepen understanding of ADRD while strengthening care for aging adults and their caregivers.",
     "bio": "Dr. Li Shen is a Professor of Informatics, Radiology, and Computer and Information Science at the University of Pennsylvania. He serves as Interim Director of the Informatics Division in the Department of Biostatistics, Epidemiology and Informatics, Associate Director for Bioinformatics at the Penn Institute for Biomedical Informatics, and Co-Director of the Penn Center for AI and Data Science for Integrated Diagnostics. Dr. Shen is a pioneer in brain-wide genome-wide association studies for Alzheimer’s disease. His research spans artificial intelligence and machine learning, biomedical and health informatics, NLP and large language models, medical image computing, network science, and multi-omics and systems biology, with broad applications to complex diseases. His work focuses on developing and applying trustworthy AI and informatics methods to analyze large-scale biobank and healthcare datasets, with the goal of improving disease understanding, early detection, prevention, and care. Dr. Shen has served on numerous journal editorial boards, grant review panels, and conference organizing committees. He is a Fellow of AIMBE, ACMI, and AMIA, an ACM Distinguished Member, and a Distinguished Contributor of the IEEE Computer Society.",
     "externalLink": {
@@ -872,7 +872,7 @@
     "title": "From Data to Policy: Governing AI and Health Informatics in the Age of Intelligent Care",
     "date": "Tuesday, June 2",
     "time": "8:35 AM - 9:45 AM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "summary": "The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them. This panel convenes leaders from industry, government, and standards bodies to examine the critical fault lines where innovation meets regulation — including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and the governance of real-world data for drug and device evaluation. Panelists will debate practical pathways for policy that is both enabling of innovation and protective of patients and will engage the ICHI community on how researchers and technologists can actively shape — rather than simply react to — the regulatory landscape.",
     "moderator": "Ikram Khan, Health AI Institute",
     "participants": [
@@ -892,7 +892,7 @@
     "title": "The GenAI Data Chasm: Are we optimizing models for patients, providers, or businesses, or are we truly optimizing care?",
     "date": "Tuesday, June 2",
     "time": "10:00 AM - 11:30 AM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "summary": [
       "The GenAI Data Chasm highlights a critical barrier to healthcare AI adoption the gap between having data and having data that is trustworthy representative and fit for medical grade systems. While generative AI promises to transform diagnostics drug discovery and patient care this progress depends on building a robust and integrated data ecosystem.",
       "Patient journeys are segmented across conditions care settings and modalities and unfold over time. This panel will examine how to build systems that learn improve and act within healthcare workflows, and whether the field is designing a unified human aligned data and evaluation ecosystem or creating more advanced silos that fail to deliver real clinical impact."
@@ -914,7 +914,7 @@
     "title": "Public-private partnerships and industry-academia collaborations - identifying key barriers, community-driven solutions, early wins, recommendations, and emerging trends",
     "date": "Tuesday, June 2",
     "time": "1:30 PM - 3:00 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "summary": [
       "AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption.",
       "As artificial intelligence matures from research to real-world clinical deployment, healthcare leaders face pressing questions on how to safely and effectively scale its adoption. This panel explores strategies and lessons learned from AI implementations across industry, academia, and care delivery organizations, with a focus on practical enablers, pitfalls, and responsible AI integration."
@@ -943,7 +943,7 @@
     ],
     "date": "Tuesday, June 2",
     "time": "3:20 PM - 4:20 PM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "abstract": [
       "Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.",
       "In this keynote, Ben Teplitzky will trace the evolution of BeatLogic from an early deep-learning platform for comprehensive ECG annotation to a broader case study in healthcare AI enablement. Early work showed that combining deep learning with high-quality expert-adjudicated data could substantially improve beat and rhythm interpretation in ambulatory monitoring. But that technical milestone was only the beginning. Translating AI into practice required confronting the harder informatics problems: dataset design, annotation quality, edge-case discovery, validation strategy, workflow integration, human oversight, and continuous iteration as the system encountered new conditions in the field.",
@@ -961,7 +961,7 @@
     "title": "Professional Networking, Speed Dating, and Social Hour",
     "date": "Tuesday, June 2",
     "time": "4:30 PM - 6:00 PM",
-    "room": "Theater Lobby",
+    "room": "Floor 2- Theater Lobby",
     "summary": [
       "Professional Networking, Speed Dating, and Social Hour.",
       "A networking-focused session for follow-up conversations across industry, academia, and healthcare delivery."
@@ -977,7 +977,7 @@
     "title": "Registration and Breakfast",
     "date": "Monday, June 1",
     "time": "7:30 AM - 8:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -991,7 +991,7 @@
     "title": "Coffee Break",
     "date": "Monday, June 1",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1005,7 +1005,7 @@
     "title": "Lunch: Taste of Italiano Buffet",
     "date": "Monday, June 1",
     "time": "12:45 PM - 1:30 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1019,7 +1019,7 @@
     "title": "Coffee Break",
     "date": "Monday, June 1",
     "time": "3:00 PM - 3:30 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1033,7 +1033,7 @@
     "title": "Registration and Breakfast",
     "date": "Tuesday, June 2",
     "time": "7:30 AM - 8:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1047,7 +1047,7 @@
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1061,7 +1061,7 @@
     "title": "Lunch: Traditional Asian Buffet",
     "date": "Tuesday, June 2",
     "time": "12:45 PM - 1:30 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1075,7 +1075,7 @@
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
     "time": "3:00 PM - 3:30 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1089,7 +1089,7 @@
     "title": "ICHI Reception Menu",
     "date": "Tuesday, June 2",
     "time": "6:00 PM - 8:00 PM",
-    "room": "Campus Club, Fourth Floor",
+    "room": "Floor 4- Campus Club",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1103,7 +1103,7 @@
     "title": "Registration and Breakfast",
     "date": "Wednesday, June 3",
     "time": "7:30 AM - 8:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1117,7 +1117,7 @@
     "title": "Coffee Break",
     "date": "Wednesday, June 3",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1131,7 +1131,7 @@
     "title": "Lunch: Taste of the Mediterranean",
     "date": "Wednesday, June 3",
     "time": "11:45 AM - 12:30 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1145,7 +1145,7 @@
     "title": "Coffee Break",
     "date": "Wednesday, June 3",
     "time": "3:30 PM - 3:45 PM",
-    "room": "Lobby, Third Floor",
+    "room": "Floor 3- Lobby",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1166,7 +1166,7 @@
     "image": "assets/images/jesse_isaacman_beck.jpg",
     "date": "Monday, June 1",
     "time": "3:30 PM - 5:00 PM",
-    "room": "Mississippi, Third Floor",
+    "room": "Floor 3- Mississippi Room",
     "bio": [
       "Jesse Isaacman-Beck is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services, where he works to maximize departmental effectiveness through emerging technology and to catalyze innovation that advances the health and well-being of all Americans.",
       "Working closely with HHS chief information, AI, and data leaders, he has helped establish the department's AI governance framework, develop cross-administration AI strategy, and execute federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping AI use case oversight, modernizing HHS IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
@@ -1177,7 +1177,7 @@
     "kind": "young-scholar",
     "badge": "Young Scholar",
     "date": "Tuesday, June 2",
-    "room": "Mississippi, Third Floor",
+    "room": "Floor 3- Mississippi Room",
     "externalLink": {
       "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
       "label": "View Young Scholar Presentation Guidelines",
@@ -1306,11 +1306,121 @@
       }
     ]
   },
+  "young-scholar-poster-early": {
+    "kind": "young-scholar",
+    "badge": "Young Scholar",
+    "date": "Tuesday, June 2",
+    "room": "Floor 3- Conf. Room 301/302",
+    "externalLink": {
+      "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
+      "label": "View Young Scholar Presentation Guidelines",
+      "newTab": true
+    },
+    "title": "Young Scholar Symposium: Poster Session",
+    "time": "8:15 AM - 9:45 AM",
+    "summary": "Poster session for Young Scholar Symposium presenters in Conference Room 301/302.",
+    "agendaItems": [
+      {
+        "program": "Poster 1",
+        "title": "VoicePD: A Mobile Android Application for Non-Invasive Parkinson’s Disease Screening via Acoustic Voice Analysis",
+        "presenter": "Ilana Luo",
+        "coAuthors": "Charles Luo"
+      },
+      {
+        "program": "Poster 2",
+        "title": "NeuroVoice-Py: Python Toolkit for Speech-Based Biomarkers in Machine Learning Applications",
+        "presenter": "Alice Zhang",
+        "coAuthors": "Yi Lin"
+      },
+      {
+        "program": "Poster 3",
+        "title": "HerHealth: Designing a Trustworthy AI Assistant for Women’s Health",
+        "presenter": "Muskan Singh",
+        "coAuthors": "Jaideep Srivastava"
+      },
+      {
+        "program": "Poster 4",
+        "title": "Unveiling Electrophysiological Dynamics in CMVD: A Slow Feature Analysis of Multi-Stage ECG Signals",
+        "presenter": "Gao Zihan"
+      },
+      {
+        "program": "Poster 5",
+        "title": "Personalized Depression Risk Prediction via App-Based Passive Sensing: A Longitudinal, Deployment-Oriented Evaluation on the GLOBEM Benchmark",
+        "presenter": "Iris Yu"
+      },
+      {
+        "program": "Poster 6",
+        "title": "Distilled Bidirectional Encoder Representations from Transformers (DistilBERT) for Multi-Class Mental Health Detection from Web-Scraped Reddit Posts",
+        "presenter": "Weedguet Mildort",
+        "coAuthors": "Kamorudeen Amuda"
+      },
+      {
+        "program": "Poster 7",
+        "title": "Baseline Predictors of Dementia in the OASIS Dataset: Evaluating Age, Sex, and MMSE Signals",
+        "presenter": "Medha Prasanna",
+        "coAuthors": "Tamara Jafar"
+      },
+      {
+        "program": "Poster 8",
+        "title": "Classifying High-Dimensional Transcriptional Gene Groups Using Machine Learning",
+        "presenter": "Annie Wu",
+        "coAuthors": "Julia Wu"
+      },
+      {
+        "program": "Poster 9",
+        "title": "Analyzing Disparities in Kidney Care Among Immigrants: An Ongoing Systematic Review and Meta-analysis in Public Health Informatics",
+        "presenter": "Jathin Bande",
+        "coAuthors": "Sai Chandana, Grace Pansegrau, Aaraw Bande, Nakshatra Nallacharu, Jayan Byrapuram, Dani Douri, Dinesh Bande"
+      },
+      {
+        "program": "Poster 10",
+        "title": "Evaluating Large Language Model Representations for Differentiating Parkinson’s Disease Dementia and Dementia with Lewy Bodies from Clinical Notes",
+        "presenter": "Sophia Yang"
+      },
+      {
+        "program": "Poster 11",
+        "title": "A Chatbot Powered by Large Language Models for Home-Based ADRD Support",
+        "presenter": "Ansh Khurana",
+        "coAuthors": "Xiao Luo"
+      },
+      {
+        "program": "Poster 12",
+        "title": "Designed to Fail: A Systematic Gap analysis of Personal Safety Technology for Individuals with Intellectual and Developmental Disabilities and a framework for Inclusive Architectural Design",
+        "presenter": "Priya Desai"
+      },
+      {
+        "program": "Poster 13",
+        "title": "Filtering Electroencephalogram Data Using R: A Study on Patients with Seizures",
+        "presenter": "Sarayu Pasumarthi",
+        "coAuthors": "Antonios Marsellos"
+      },
+      {
+        "program": "Poster 14",
+        "title": "Computational Genomic & Transcriptomic Analysis Reveals Evolutionary Constraints of Ribosomal Biogenesis GTPase CgtA Enabling Design of Novel Allosteric Anti-Resistance Polytherapy to Eradicate Pseudomonas aeruginosa",
+        "presenter": "Arnav Vishwakarma"
+      },
+      {
+        "program": "Poster 15",
+        "title": "Novel Design of a Population-Optimized Neoantigen Panel to Increase Accessibility to mRNA-Based Immunotherapy Vaccines for Triple Negative Breast Cancer",
+        "presenter": "Akshara Guddeti"
+      },
+      {
+        "program": "Poster 16",
+        "title": "Speech as a Biomarker: A Unified, Scalable, and Hierarchical Framework for the Early Detection & Classification of ALS, Parkinson's, and Alzheimer's Diseases",
+        "presenter": "Ilina Rao"
+      },
+      {
+        "program": "Poster 17",
+        "title": "Phenotype Reliability Weighting for Knowledge Graph-Based Drug Repurposing",
+        "presenter": "Aryan Kumar"
+      }
+    ]
+  },
   "young-scholar-poster": {
     "kind": "young-scholar",
     "badge": "Young Scholar",
     "date": "Tuesday, June 2",
-    "room": "Mississippi, Third Floor",
+    "room": "Floor 3- Mississippi Room",
     "externalLink": {
       "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
       "label": "View Young Scholar Presentation Guidelines",
@@ -1420,11 +1530,121 @@
       }
     ]
   },
+  "young-scholar-poster-late": {
+    "kind": "young-scholar",
+    "badge": "Young Scholar",
+    "date": "Tuesday, June 2",
+    "room": "Floor 3- Conf. Room 301/302",
+    "externalLink": {
+      "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
+      "label": "View Young Scholar Presentation Guidelines",
+      "newTab": true
+    },
+    "title": "Young Scholar Symposium: Poster Session",
+    "time": "10:15 AM - 11:45 AM",
+    "summary": "Poster session for Young Scholar Symposium presenters in Conference Room 301/302.",
+    "agendaItems": [
+      {
+        "program": "Poster 1",
+        "title": "VoicePD: A Mobile Android Application for Non-Invasive Parkinson’s Disease Screening via Acoustic Voice Analysis",
+        "presenter": "Ilana Luo",
+        "coAuthors": "Charles Luo"
+      },
+      {
+        "program": "Poster 2",
+        "title": "NeuroVoice-Py: Python Toolkit for Speech-Based Biomarkers in Machine Learning Applications",
+        "presenter": "Alice Zhang",
+        "coAuthors": "Yi Lin"
+      },
+      {
+        "program": "Poster 3",
+        "title": "HerHealth: Designing a Trustworthy AI Assistant for Women’s Health",
+        "presenter": "Muskan Singh",
+        "coAuthors": "Jaideep Srivastava"
+      },
+      {
+        "program": "Poster 4",
+        "title": "Unveiling Electrophysiological Dynamics in CMVD: A Slow Feature Analysis of Multi-Stage ECG Signals",
+        "presenter": "Gao Zihan"
+      },
+      {
+        "program": "Poster 5",
+        "title": "Personalized Depression Risk Prediction via App-Based Passive Sensing: A Longitudinal, Deployment-Oriented Evaluation on the GLOBEM Benchmark",
+        "presenter": "Iris Yu"
+      },
+      {
+        "program": "Poster 6",
+        "title": "Distilled Bidirectional Encoder Representations from Transformers (DistilBERT) for Multi-Class Mental Health Detection from Web-Scraped Reddit Posts",
+        "presenter": "Weedguet Mildort",
+        "coAuthors": "Kamorudeen Amuda"
+      },
+      {
+        "program": "Poster 7",
+        "title": "Baseline Predictors of Dementia in the OASIS Dataset: Evaluating Age, Sex, and MMSE Signals",
+        "presenter": "Medha Prasanna",
+        "coAuthors": "Tamara Jafar"
+      },
+      {
+        "program": "Poster 8",
+        "title": "Classifying High-Dimensional Transcriptional Gene Groups Using Machine Learning",
+        "presenter": "Annie Wu",
+        "coAuthors": "Julia Wu"
+      },
+      {
+        "program": "Poster 9",
+        "title": "Analyzing Disparities in Kidney Care Among Immigrants: An Ongoing Systematic Review and Meta-analysis in Public Health Informatics",
+        "presenter": "Jathin Bande",
+        "coAuthors": "Sai Chandana, Grace Pansegrau, Aaraw Bande, Nakshatra Nallacharu, Jayan Byrapuram, Dani Douri, Dinesh Bande"
+      },
+      {
+        "program": "Poster 10",
+        "title": "Evaluating Large Language Model Representations for Differentiating Parkinson’s Disease Dementia and Dementia with Lewy Bodies from Clinical Notes",
+        "presenter": "Sophia Yang"
+      },
+      {
+        "program": "Poster 11",
+        "title": "A Chatbot Powered by Large Language Models for Home-Based ADRD Support",
+        "presenter": "Ansh Khurana",
+        "coAuthors": "Xiao Luo"
+      },
+      {
+        "program": "Poster 12",
+        "title": "Designed to Fail: A Systematic Gap analysis of Personal Safety Technology for Individuals with Intellectual and Developmental Disabilities and a framework for Inclusive Architectural Design",
+        "presenter": "Priya Desai"
+      },
+      {
+        "program": "Poster 13",
+        "title": "Filtering Electroencephalogram Data Using R: A Study on Patients with Seizures",
+        "presenter": "Sarayu Pasumarthi",
+        "coAuthors": "Antonios Marsellos"
+      },
+      {
+        "program": "Poster 14",
+        "title": "Computational Genomic & Transcriptomic Analysis Reveals Evolutionary Constraints of Ribosomal Biogenesis GTPase CgtA Enabling Design of Novel Allosteric Anti-Resistance Polytherapy to Eradicate Pseudomonas aeruginosa",
+        "presenter": "Arnav Vishwakarma"
+      },
+      {
+        "program": "Poster 15",
+        "title": "Novel Design of a Population-Optimized Neoantigen Panel to Increase Accessibility to mRNA-Based Immunotherapy Vaccines for Triple Negative Breast Cancer",
+        "presenter": "Akshara Guddeti"
+      },
+      {
+        "program": "Poster 16",
+        "title": "Speech as a Biomarker: A Unified, Scalable, and Hierarchical Framework for the Early Detection & Classification of ALS, Parkinson's, and Alzheimer's Diseases",
+        "presenter": "Ilina Rao"
+      },
+      {
+        "program": "Poster 17",
+        "title": "Phenotype Reliability Weighting for Knowledge Graph-Based Drug Repurposing",
+        "presenter": "Aryan Kumar"
+      }
+    ]
+  },
   "young-scholar-oral": {
     "kind": "young-scholar",
     "badge": "Young Scholar",
     "date": "Tuesday, June 2",
-    "room": "Mississippi, Third Floor",
+    "room": "Floor 3- Mississippi Room",
     "externalLink": {
       "href": "assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf",
       "label": "View Young Scholar Presentation Guidelines",
@@ -1497,7 +1717,7 @@
     ],
     "date": "Tuesday, June 2",
     "time": "8:15 AM - 8:35 AM",
-    "room": "Theater",
+    "room": "Floor 2- Theater",
     "abstract": "Large language models (LLMs) are increasingly being used to support clinicians by analyzing unstructured text, medical literature, and clinical guidance. This keynote examines the growing need for rigorous AI metrology in healthcare, focusing on standardized methods to assess the accuracy, reliability, and trustworthiness of LLMs. The talk reviews emerging evaluation metrics for healthcare chatbots from an end-user perspective, including language understanding, performance on real-world clinical tasks, conversational effectiveness, and the specific measurement needs introduced by agentic AI architectures.",
     "bio": "Ram D. Sriram is currently a Senior Science Advisor in the Information Technology Laboratory at the National Institute of Standards and Technology. Before joining NIST, he served on the engineering faculty at the Massachusetts Institute of Technology, where he helped establish the Intelligent Engineering Systems Laboratory. He has authored or co-authored more than 300 publications, including several books, and was a founding co-editor of the International Journal for AI in Engineering. Sriram has received multiple lifetime achievement and pioneer awards, a distinguished alumnus award from IIT Madras, and fellowship status from major engineering, computing, medical, and scientific societies including ACM, IEEE, AIMBE, and AAAS.",
     "externalLink": {
