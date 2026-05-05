@@ -974,7 +974,7 @@
   "meal-jun1-breakfast": {
     "kind": "meal",
     "badge": "Meal",
-    "title": "Registration and Breakfast",
+    "title": "Breakfast",
     "date": "Monday, June 1",
     "time": "7:30 AM - 8:15 AM",
     "room": "Floor 3- Mississippi Room Annex",
@@ -991,7 +991,7 @@
     "title": "Coffee Break",
     "date": "Monday, June 1",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1019,7 +1019,7 @@
     "title": "Coffee Break",
     "date": "Monday, June 1",
     "time": "3:00 PM - 3:30 PM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1030,7 +1030,7 @@
   "meal-jun2-breakfast": {
     "kind": "meal",
     "badge": "Meal",
-    "title": "Registration and Breakfast",
+    "title": "Breakfast",
     "date": "Tuesday, June 2",
     "time": "7:30 AM - 8:15 AM",
     "room": "Floor 3- Mississippi Room Annex",
@@ -1047,7 +1047,7 @@
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1075,7 +1075,7 @@
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
     "time": "3:00 PM - 3:30 PM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1100,7 +1100,7 @@
   "meal-jun3-breakfast": {
     "kind": "meal",
     "badge": "Meal",
-    "title": "Registration and Breakfast",
+    "title": "Breakfast",
     "date": "Wednesday, June 3",
     "time": "7:30 AM - 8:15 AM",
     "room": "Floor 3- Mississippi Room Annex",
@@ -1117,7 +1117,7 @@
     "title": "Coffee Break",
     "date": "Wednesday, June 3",
     "time": "9:45 AM - 10:15 AM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
@@ -1145,7 +1145,7 @@
     "title": "Coffee Break",
     "date": "Wednesday, June 3",
     "time": "3:30 PM - 3:45 PM",
-    "room": "Floor 3- Lobby",
+    "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
       "label": "View full Meal Agenda",
