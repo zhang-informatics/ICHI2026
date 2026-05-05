@@ -225,6 +225,16 @@
       background: rgba(207, 221, 187, 0.55);
     }
 
+    .agenda-slot-young-scholar .agenda-badge {
+      background: rgba(255, 204, 51, 0.62);
+      color: var(--umn-maroon);
+    }
+
+    .agenda-slot-data-challenge .agenda-badge {
+      background: rgba(87, 176, 169, 0.24);
+      color: #00645f;
+    }
+
     .agenda-slot-special .agenda-badge,
     .agenda-slot-shared .agenda-badge {
       background: rgba(220, 209, 198, 0.52);
@@ -236,6 +246,8 @@
     .agenda-slot-industry,
     .agenda-slot-consortium,
     .agenda-slot-social,
+    .agenda-slot-young-scholar,
+    .agenda-slot-data-challenge,
     .agenda-slot-special,
     .agenda-slot-shared {
       box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -269,6 +281,18 @@
     .agenda-slot-social {
       background: #f3f7ec;
       border-color: #cfddbb;
+    }
+
+    .agenda-slot-young-scholar {
+      background: linear-gradient(180deg, #fff2bd 0%, #fffaf0 100%);
+      border-color: #f0c63f;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.82) inset, 0 8px 18px rgba(122, 0, 25, 0.06);
+    }
+
+    .agenda-slot-data-challenge {
+      background: linear-gradient(180deg, #e8fbf7 0%, #f8fffd 100%);
+      border-color: #86d1c8;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.82) inset, 0 8px 18px rgba(0, 100, 95, 0.07);
     }
 
     .agenda-slot-special {
@@ -1124,7 +1148,7 @@
         <tr>
           <th scope="row" class="agenda-time">8:15 AM - 9:45 AM</th>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-lightning"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Lightning Talks</div></div></td>
+          <td><div class="agenda-slot agenda-slot-young-scholar program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-lightning"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Lightning Talks</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-1"><span class="agenda-badge">Scientific Session 1</span><div class="agenda-slot-text">Analytics Track<br>Responsible, Fair, and Privacy-Preserving Health AI</div></div></td>
@@ -1134,7 +1158,7 @@
         <tr>
           <th scope="row" class="agenda-time">9:45 AM - 10:15 AM</th>
           <td><div class="agenda-slot program-detail-trigger agenda-slot-shared" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="meal-jun2-coffee-am"><span class="agenda-badge">Break</span><div class="agenda-slot-text">Coffee Break</div></div></td>
-          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-poster"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Poster Session</div></div></td>
+          <td><div class="agenda-slot agenda-slot-young-scholar program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-poster"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Poster Session</div></div></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
@@ -1144,7 +1168,7 @@
         <tr>
           <th scope="row" class="agenda-time">10:15 AM - 11:45 AM</th>
           <td class="agenda-empty"></td>
-          <td><div class="agenda-slot agenda-slot-special program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-oral"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Oral Presentations, Award, and Panel</div></div></td>
+          <td><div class="agenda-slot agenda-slot-young-scholar program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="young-scholar-oral"><span class="agenda-badge">Young Scholar</span><div class="agenda-slot-text">Young Scholar Oral Presentations, Award, and Panel</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Tutorial</span><div class="agenda-slot-text">Synthetic Biomedical Data Generation Across Modalities</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-2"><span class="agenda-badge">Scientific Session 2</span><div class="agenda-slot-text">Systems Track<br>Trustworthy LLM Systems, Privacy, and Security</div></div></td>
@@ -1314,7 +1338,7 @@
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-20"><span class="agenda-badge">Scientific Session 20</span><div class="agenda-slot-text">Systems Track<br>Imaging, Surgery, and Visual Analytics Platforms</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-21"><span class="agenda-badge">Scientific Session 21</span><div class="agenda-slot-text">Analytics Track<br>Medical Imaging, Segmentation, and Cancer Analytics</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-22"><span class="agenda-badge">Scientific Session 22</span><div class="agenda-slot-text">Analytics Track<br>Genomics, Microbiome, and Precision Medicine</div></div></td>
-          <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Competition</span><div class="agenda-slot-text">Data Challenge</div></div></td>
+          <td><div class="agenda-slot agenda-slot-data-challenge"><span class="agenda-badge">Competition</span><div class="agenda-slot-text">Data Challenge</div></div></td>
           <td><div class="agenda-slot agenda-slot-scientific program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="scientific-23"><span class="agenda-badge">Scientific Session 23</span><div class="agenda-slot-text">Analytics Track<br>Advanced Learning Architectures for Disease and Therapy Modeling</div></div></td>
           <td class="agenda-empty"></td>
         </tr>
