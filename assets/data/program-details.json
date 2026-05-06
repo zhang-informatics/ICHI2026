@@ -916,8 +916,7 @@
     "time": "1:30 PM - 3:00 PM",
     "room": "Floor 2- Theater",
     "summary": [
-      "AI Enablement in Practice: Exploring Strategies, Enablers, and Pitfalls of AI Adoption.",
-      "As artificial intelligence matures from research to real-world clinical deployment, healthcare leaders face pressing questions on how to safely and effectively scale its adoption. This panel explores strategies and lessons learned from AI implementations across industry, academia, and care delivery organizations, with a focus on practical enablers, pitfalls, and responsible AI integration."
+      "While many discussions of AI in healthcare focus on tools to improve clinical workflows and efficiency or for patient interactions, AI has a powerful capability to improve early diagnosis and hence prevention or mitigation of disease progression, and to improve treatment. Currently, nearly 1/3 of new medical devices include an AI/ML functionality. This panel will discuss the application of AI to medtech, the potential benefit to patients, the issues for healthcare systems regarding AI-enabled medtech, and the partnership needed between health systems and medtech companies to develop and deploy solutions to meet the needs for better outcomes as well as access and affordability."
     ],
     "moderator": "Jim Southwick",
     "participants": [
