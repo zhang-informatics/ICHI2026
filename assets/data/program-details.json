@@ -109,8 +109,8 @@
     "title": "Clinical Decision Support Systems and Medical Agents",
     "track": "Systems Track",
     "date": "Tuesday, June 2",
-    "time": "1:30 PM - 3:00 PM",
-    "room": "Floor 3- Conf. Room 325",
+    "time": "3:30 PM - 5:00 PM",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -145,8 +145,8 @@
     "title": "Population Health Platforms, Data Infrastructure, and Knowledge Systems",
     "track": "Systems Track",
     "date": "Tuesday, June 2",
-    "time": "3:30 PM - 5:00 PM",
-    "room": "Floor 3- Conf. Room 324",
+    "time": "1:30 PM - 3:00 PM",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 6,
     "papers": [
       {
@@ -285,8 +285,8 @@
     "title": "Biomedical Knowledge Representation and Text Mining",
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
-    "time": "8:15 AM - 9:45 AM",
-    "room": "Floor 3- Conf. Room 325",
+    "time": "10:15 AM - 11:45 AM",
+    "room": "Floor 3- Conf. Room 324",
     "paperCount": 6,
     "papers": [
       {
@@ -425,8 +425,8 @@
     "title": "Speech, Wearable, and Functional Assessment",
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
-    "time": "10:15 AM - 11:45 AM",
-    "room": "Floor 3- Conf. Room 324",
+    "time": "8:15 AM - 9:45 AM",
+    "room": "Floor 3- Conf. Room 325",
     "paperCount": 5,
     "papers": [
       {
@@ -637,7 +637,7 @@
     "title": "Statistical, Temporal, and Causal Methods",
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
-    "time": "12:30 PM - 2:00 PM",
+    "time": "2:00 PM - 3:30 PM",
     "room": "Floor 2- Theater",
     "paperCount": 5,
     "papers": [
@@ -773,7 +773,7 @@
     "title": "Advanced Learning Architectures for Disease and Therapy Modeling",
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
-    "time": "2:00 PM - 3:30 PM",
+    "time": "12:30 PM - 2:00 PM",
     "room": "Floor 2- Theater",
     "paperCount": 6,
     "papers": [
