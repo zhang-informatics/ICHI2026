@@ -121,6 +121,17 @@
       "In each role, Matt has consistently focused on building adaptive systems that combine processes, people, and data to enable continual learning and improvement aligned with a community's values and priorities. Pragmatically, Matt is interested in how we can evolve regulations to balance protecting patients' privacy and individual data sovereignty with the societal desire for powerful new AI products that require more and more data."
     ]
   },
+  "deepika-appana": {
+    "name": "Deepika Appana",
+    "role": "Director of Technology, Research, and Education",
+    "organization": "HealthPartners Institute",
+    "image": "assets/images/deepika_appana.png",
+    "bio": [
+      "Deepika Appana is Director of Technology, Research, and Education at HealthPartners Institute, where she leads the strategy and delivery of technology that supports clinical research, education, and evaluation.",
+      "With more than two decades of experience in healthcare technology, she specializes in building secure, scalable platforms that enable multi-site collaboration, learning health systems, and responsible adoption of artificial intelligence.",
+      "She works closely with researchers, clinicians, and health system IT leaders to integrate advanced analytics and decision support into real-world workflows, and contributes nationally through initiatives such as AIM-AHEAD and VSD to advance federated data infrastructure, governance-driven AI methods, and sustainable research ecosystems."
+    ]
+  },
   "julie-thompson": {
     "name": "Julie Thompson, PhD",
     "role": "Senior Director, R&D, Cardiac Rhythm Management and Diagnostics Division",
