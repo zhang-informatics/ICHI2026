@@ -873,13 +873,13 @@
     "date": "Tuesday, June 2",
     "time": "8:35 AM - 9:45 AM",
     "room": "Floor 2- Theater",
-    "summary": "The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them. This panel convenes leaders from industry, government, and standards bodies to examine the critical fault lines where innovation meets regulation — including AI accountability in clinical decision support, data privacy under evolving federal and state frameworks, health equity in algorithmic systems, and the governance of real-world data for drug and device evaluation. Panelists will debate practical pathways for policy that is both enabling of innovation and protective of patients and will engage the ICHI community on how researchers and technologists can actively shape — rather than simply react to — the regulatory landscape.",
+    "summary": "The rapid integration of artificial intelligence, large-scale health data systems, and interoperable informatics platforms into clinical and public health settings has outpaced the policy frameworks designed to govern them. This panel convenes leaders from federal agencies, national standards bodies, state government, and health data networks to examine the critical fault lines where innovation meets regulation — including AI accountability in clinical decision support, technical standards for responsible AI deployment, data privacy and interoperability under evolving federal frameworks such as the 21st Century Cures Act, health equity in algorithmic systems, and state-level legislative experimentation as a governance laboratory. Panelists will debate practical pathways for policy that is both enabling of innovation and protective of patients, and will engage the ICHI community on how researchers and technologists can actively shape — rather than simply react to — the regulatory landscape.",
     "moderator": "Ikram Khan, Health AI Institute",
     "participants": [
       "Senator Eric Lucero, Minnesota Senate Representative",
       "Dr Ram Sriram, PhD, Chief Scientific Advisor, National Institute of Standards and Technology (NIST)",
-      "Jesse Isaacman-Beck, PhD, Director, Division of Artificial Intelligence Policy and Strategy, U.S. Department of Health and Human Services (HHS)",
-      "Tyler Winkelman, MD, MSc, HHRI (MN HER Consortium)"
+      "Jesse Isaacman-Beck, PhD, Director, Division of Artificial Intelligence Policy and Strategy, U.S. Department of Health & Human Services (HHS)",
+      "Dr Tyler Winkelman, MD, MSc, Director, Research & Evaluation Data Analytics, HHRI (MN HER Consortium)"
     ],
     "externalLink": {
       "href": "industry.html",
@@ -1154,22 +1154,32 @@
   },
   "fireside-jesse-isaacman-beck": {
     "kind": "keynote",
-    "badge": "Fireside Talk",
-    "title": "Fireside Talk with Jesse Isaacman-Beck, PhD",
+    "badge": "Fireside Chat",
+    "title": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
     "speaker": "Jesse Isaacman-Beck, PhD",
-    "affiliation": "Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS)",
+    "affiliation": "Director of AI Policy and Strategy, U.S. Department of Health and Human Services (HHS) / ONC",
     "speakerLines": [
-      "Director, Division of Artificial Intelligence Policy and Strategy",
-      "U.S. Department of Health and Human Services (HHS)"
+      "Director of AI Policy and Strategy",
+      "U.S. Department of Health and Human Services (HHS) / ONC"
     ],
     "image": "assets/images/jesse_isaacman_beck.jpg",
     "date": "Monday, June 1",
     "time": "3:30 PM - 5:00 PM",
     "room": "Floor 3- Mississippi Room",
     "bio": [
-      "Jesse Isaacman-Beck is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services, where he works to maximize departmental effectiveness through emerging technology and to catalyze innovation that advances the health and well-being of all Americans.",
-      "Working closely with HHS chief information, AI, and data leaders, he has helped establish the department's AI governance framework, develop cross-administration AI strategy, and execute federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping AI use case oversight, modernizing HHS IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
-      "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science and Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
+      "Jesse Isaacman-Beck, PhD, is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS). In this role, he works to maximize Departmental effectiveness through emerging technology and to catalyze innovation to advance the health and well-being of all Americans.",
+      "Working closely with HHS's Chief Information, AI, and Data Officers, he has played a central role in establishing HHS's AI governance framework, developing AI strategy across administrations, and executing federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping HHS AI use case oversight, modernizing HHS's IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
+      "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science & Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
+    ],
+    "summary": [
+      "Format: Fireside Chat + Audience Q&A",
+      "Duration: ~60 min conversation · ~30 min Q&A",
+      "Moderator: Ikram Khan, Health AI Institute"
+    ],
+    "abstract": [
+      "As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.",
+      "Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.",
+      "The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients."
     ]
   },
   "young-scholar-lightning": {
