@@ -1173,9 +1173,20 @@
     ],
     "summary": [
       "Format: Fireside Chat + Audience Q&A",
-      "Duration: ~60 min conversation · ~30 min Q&A",
-      "Moderator: Ikram Khan, Health AI Institute"
+      "Duration: ~60 min conversation · ~30 min Q&A"
     ],
+    "moderatorDetails": {
+      "name": "Ikram Khan",
+      "role": "Managing Director",
+      "organization": "Health AI Institute",
+      "image": "assets/images/ikram_khan.jpg",
+      "bio": [
+        "Ikram Khan is a visionary healthcare leader and innovator with over a decade of experience driving transformative healthcare solutions across corporate, government, non-profit, and startup sectors. As Co-Founder of the Health AI Institute, Ikram is dedicated to harnessing artificial intelligence to revolutionize healthcare delivery, with a focus on creating equitable, accessible, and patient-centered systems. His work has impacted over 20 million individuals in rural and tribal communities worldwide, advancing inclusive and affordable healthcare models.",
+        "Ikram is also the Co-Founder of the Phaedon Institute, a scientific society advancing longevity science through sustainable growth and innovation. His entrepreneurial leadership includes founding Medaxis Healthcare, a Y-Combinator-incubated rural integrated healthcare delivery system, and serving as CEO of the Rural Health Care Foundation, India's largest rural healthcare network, which has provided essential services to over three million patients. His expertise has been recognized by global organizations, including the United Nations, the Rockefeller Foundation, and the Bill and Melinda Gates Foundation, where he has advised on healthcare innovation and policy.",
+        "A globally sought-after speaker, Ikram has shared his insights at leading universities and international conferences, advocating for technology-driven healthcare equity. He holds an MPH from the Birla Institute of Technology & Science (BITS), Pilani, and specialized training in Public-Private Partnerships from The World Bank Institute and Chulalongkorn University. Recently, Ikram earned an MBA from the Carlson School of Management at the University of Minnesota (UMN) and is pursuing a PhD in Health AI at the UMN, focusing on precision and personalized medicine.",
+        "As an advisor to multiple healthcare startups and non-profits, Ikram continues to champion AI-driven solutions to enhance health outcomes and equity, making him a pivotal leader driving force in shaping the future of healthcare and life sciences."
+      ]
+    },
     "abstract": [
       "As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.",
       "Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.",
