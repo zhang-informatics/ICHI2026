@@ -1154,6 +1154,7 @@
   },
   "fireside-jesse-isaacman-beck": {
     "kind": "keynote",
+    "detailOrder": "abstract-speaker-moderator",
     "badge": "Fireside Chat",
     "title": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
     "speaker": "Jesse Isaacman-Beck, PhD",

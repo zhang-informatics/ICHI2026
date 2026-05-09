@@ -1572,6 +1572,65 @@
 
     const sections = [];
 
+    if (detail.detailOrder === 'abstract-speaker-moderator') {
+      if (detail.abstract) {
+        sections.push(`
+          <section class="program-detail-section">
+            <h4>Abstract</h4>
+            ${toParagraphs(detail.abstract).map(item => `<p>${escapeHtml(item)}</p>`).join('')}
+          </section>
+        `);
+      }
+
+      if (isKeynote && detail.speaker) {
+        const speakerLines = Array.isArray(detail.speakerLines) ? detail.speakerLines.filter(Boolean) : [];
+        const speakerPhoto = detail.image
+          ? `<div class="program-keynote-photo"><img src="${escapeHtml(detail.image)}" alt="${escapeHtml(detail.speaker)}"></div>`
+          : `<div class="program-keynote-photo placeholder">${escapeHtml(personInitials(detail.speaker))}</div>`;
+
+        sections.push(`
+          <section class="program-detail-section">
+            <h4>Speaker</h4>
+            <div class="program-keynote-card">
+              ${speakerPhoto}
+              <div class="program-keynote-copy">
+                <span class="program-keynote-role">Speaker</span>
+                <h4 class="program-keynote-name">${escapeHtml(detail.speaker)}</h4>
+                ${speakerLines.map(item => `<p class="program-keynote-line">${escapeHtml(item)}</p>`).join('')}
+              </div>
+            </div>
+            ${detail.bio ? toParagraphs(detail.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('') : ''}
+          </section>
+        `);
+      }
+
+      if (detail.moderatorDetails) {
+        const moderator = detail.moderatorDetails;
+        const moderatorLines = [moderator.role, moderator.organization].filter(Boolean);
+        const moderatorPhoto = moderator.image
+          ? `<div class="program-keynote-photo"><img src="${escapeHtml(moderator.image)}" alt="${escapeHtml(moderator.name || 'Moderator')}"></div>`
+          : `<div class="program-keynote-photo placeholder">${escapeHtml(personInitials(moderator.name || 'Moderator'))}</div>`;
+
+        sections.push(`
+          <section class="program-detail-section">
+            <h4>Moderator</h4>
+            <div class="program-keynote-card">
+              ${moderatorPhoto}
+              <div class="program-keynote-copy">
+                <span class="program-keynote-role">Moderator</span>
+                <h4 class="program-keynote-name">${escapeHtml(moderator.name || '')}</h4>
+                ${moderatorLines.map(item => `<p class="program-keynote-line">${escapeHtml(item)}</p>`).join('')}
+              </div>
+            </div>
+            ${moderator.bio ? toParagraphs(moderator.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('') : ''}
+          </section>
+        `);
+      }
+
+      programDetailBody.innerHTML = sections.join('');
+      return;
+    }
+
     if (isKeynote && detail.speaker) {
       const speakerLines = Array.isArray(detail.speakerLines) ? detail.speakerLines.filter(Boolean) : [];
       const speakerPhoto = detail.image
