@@ -1505,6 +1505,105 @@
       }
     ]
   },
+  "tutorial-1": {
+    "kind": "tutorial",
+    "badge": "Tutorial 1",
+    "title": "Knowledge Graph–Guided Domain Generalization for Robust Computational Phenotyping Across Heterogeneous Biomedical Data Regimes",
+    "date": "Tuesday, June 2",
+    "time": "8:15 AM - 11:45 AM",
+    "room": "Floor 3- Conf. Room 303",
+    "authors": [
+      {
+        "name": "Zuoyu Yan",
+        "affiliation": "Weill Cornell Medicine"
+      },
+      {
+        "name": "Zhe Huang",
+        "affiliation": "Weill Cornell Medicine"
+      },
+      {
+        "name": "Fei Wang",
+        "affiliation": "Weill Cornell Medicine"
+      },
+      {
+        "name": "Chang Su",
+        "affiliation": "Weill Cornell Medicine"
+      }
+    ],
+    "abstract": [
+      "Computational phenotyping seeks to distill clinically meaningful disease representations from high-dimensional, multi-modal biomedical data. However, phenotype models trained in one data regime (e.g., a curated research cohort) often fail to generalize to others (e.g., heterogeneous real-world clinical systems) due to feature misalignment, modality incompleteness, and population-level distribution shift. Achieving robust generalization without outcome relabeling or large-scale retraining remains a central challenge in health data science.",
+      "This tutorial presents a knowledge graph (KG)--guided framework for cross-regime generalization of phenotype representations. We introduce a hybrid patient--knowledge graph architecture that anchors learned embeddings to structured biomedical relationships spanning genes, pathways, and clinical concepts, stabilizing representations beyond dataset-specific correlations.",
+      "Using a multimodal disease progression case study, we illustrate how phenotype models trained in one context can generalize to heterogeneous environments while preserving discrimination and interpretability. We further discuss practical considerations for graph construction, multimodal integration, evaluation under distribution shift, and responsible deployment across biomedical data ecosystems. The tutorial provides a methodological roadmap for building generalizable computational phenotyping systems that are interpretable, scalable, and robust across diverse real-world settings."
+    ]
+  },
+  "tutorial-2": {
+    "kind": "tutorial",
+    "badge": "Tutorial 2",
+    "title": "Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare",
+    "date": "Tuesday, June 2",
+    "time": "1:30 PM - 5:00 PM",
+    "room": "Floor 3- Conf. Room 303",
+    "authors": [
+      {
+        "name": "Prasanna Desikan",
+        "affiliation": "Centific AI Research"
+      },
+      {
+        "name": "Harshit Rajgarhia",
+        "affiliation": "Centific AI Research"
+      },
+      {
+        "name": "Shivali Dalmia",
+        "affiliation": "Centific AI Research"
+      },
+      {
+        "name": "Ananya Mantravadi",
+        "affiliation": "Centific AI Research"
+      }
+    ],
+    "abstract": [
+      "AI models are increasingly deployed in live clinical environments where they must perform reliably across complex, high-stakes workflows that standard training and validation datasets were never designed to capture. Evaluating these systems requires benchmarks: structured combinations of tasks, datasets, and metrics that enable reproducible, comparable measurement of what a model can do. The central challenge in healthcare AI is not performance alone, but the absence of systematic methods to measure reliability, safety, and clinical relevance under real-world conditions. Most existing benchmarks test what a model knows; too few test whether it can perform reliably and without failing across the full complexity of real clinical tasks. Current benchmarks have accumulated through ad hoc dataset construction optimized for narrow task performance: frontier models achieve near-perfect scores on medical licensing examinations, but when evaluated across real clinical tasks, performance degrades sharply, scoring 0.74-0.85 on documentation, 0.61-0.76 on clinical decision support, and only 0.53-0.63 on administrative and workflow tasks. High benchmark scores give a false sense of deployment readiness, and the gap between performance and utility widens precisely as AI systems take on more consequential clinical roles. Without a principled framework for benchmark design, the field cannot determine whether poor clinical performance reflects model limitations or failures in how performance is being measured.",
+      "Such degradation is a measurement problem, not purely a model problem, and healthcare AI benchmarking lacks a formal design theory. A systematic meta-evaluation of 53 medical AI benchmarks found that 94% include no mechanism to test model robustness, 96% do not evaluate a model’s ability to handle uncertainty, and 92% do not address data contamination — the condition in which evaluation data was present in a model's training corpus, causing scores to reflect memorization rather than genuine capability. Structured clinician involvement in benchmark construction is essential to ensuring that the capabilities being measured reflect actual clinical reasoning, workflow priorities, and the judgment required in practice. Tasks designed without domain expert input risk optimizing for what is convenient and measurable rather than what is clinically meaningful, producing benchmarks that cannot credibly assess deployment readiness regardless of how well a model scores.",
+      "This tutorial addresses that gap directly. We present a structured framework grounded in maturity-aware task design, multi-metric evaluation principles, and a rigorous benchmark engineering lifecycle, intended to guide the development of next-generation healthcare AI benchmarks across care delivery, digital health, and clinical AI environments. It also addresses how clinical subjectivity, particularly in higher-acuity tasks where expert disagreement is inherent, is handled through annotation methodology and metric design rather than treated as noise to be eliminated. The scope of this tutorial is limited to clinical and operational AI evaluation. It does not cover claims-based benchmarking, payer actuarial modeling, pharmaceutical trial evaluation, drug discovery, or molecular modeling frameworks, which require distinct validation and regulatory approaches.",
+      "Central to the tutorial is a maturity-based taxonomy reflecting the level of responsibility a system assumes within clinical operations. Level 1 (L1): systems that document and communicate, capturing and summarizing clinical information. Level 2 (L2): systems that detect and interpret, identifying clinically relevant signals from structured and unstructured data including imaging, audio, and physiological sensors. Level 3 (L3): systems that act and coordinate, guiding triage, referrals, and care decisions, and in some contexts interacting with device-driven or closed-loop processes. Evidence from recent holistic evaluations of medical language models reveals a consistent gradient: performance is strongest at L1 and weakest at L3, precisely where the stakes are highest. This inverse relationship between task risk and model reliability makes maturity-aware evaluation not merely a best practice but a clinical necessity.",
+      "The tutorial maps evaluation requirements across healthcare AI applications of increasing complexity, spanning clinical information extraction, multimodal medical reasoning, sequential decision-making under uncertainty, and agent-based clinical workflow simulation. Rather than prescribing a fixed taxonomy, the framework identifies the distinct requirements each application class introduces for dataset construction, metric design, annotation, and domain expert validation. Two empirical case studies from the authors' research, a large-scale medical audio reasoning benchmark and an action-based reasoning benchmark for medical AI agents operating within live EHR environments, ground the framework."
+    ]
+  },
+  "tutorial-3": {
+    "kind": "tutorial",
+    "badge": "Tutorial 3",
+    "title": "Synthetic Biomedical Data Generation Across Modalities",
+    "date": "Tuesday, June 2",
+    "time": "8:15 AM - 11:45 AM",
+    "room": "Floor 3- Conf. Room 324",
+    "authors": [
+      {
+        "name": "Saghir Alfasly",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Haohan Wang",
+        "affiliation": "University of Illinois Urbana-Champaign"
+      },
+      {
+        "name": "Xiaolei Huang",
+        "affiliation": "University of Memphis"
+      },
+      {
+        "name": "Qiqi Xie",
+        "affiliation": "University of Illinois Urbana-Champaign"
+      },
+      {
+        "name": "Hanshu Rao",
+        "affiliation": "University of Memphis"
+      }
+    ],
+    "abstract": [
+      "The scarcity of high-quality, privacy-compliant biomedical data remains one of the most persistent barriers to progress in health informatics and clinical AI. As machine learning models for clinical decision support, diagnostic imaging, and genomic medicine demand ever-larger training corpora, the gap between data availability and model requirements continues to widen. Synthetic data generation has emerged as a principled response to this challenge, offering the ability to augment datasets, simulate rare conditions, enable cross-institutional sharing, and satisfy privacy regulations without sacrificing analytical utility.",
+      "This half-day tutorial delivers a comprehensive educational overview of synthetic biomedical data generation across four fundamental modalities: medical imaging and histopathology (visual), clinical notes and free-text records (textual), electronic health records and clinical measurements (tabular), and genomic sequences and molecular expression profiles (genetic). Each modality presents distinct generative challenges and has given rise to specialized methodologies, yet all share common concerns around realism, diversity, and the fidelity-privacy-utility tradeoff. By treating all four modalities within a single coherent tutorial, we offer attendees a rare cross-domain perspective reflecting the increasingly multimodal nature of modern health data.",
+      "Attendees will gain conceptual grounding in the dominant generative architectures applied in each domain --- including generative adversarial networks, score-based diffusion models, large language models, and variational autoencoders --- along with the modality-specific adaptations that make each effective in biomedical contexts. The tutorial also addresses evaluation frameworks for synthetic data quality and privacy risk, and situates the field within the broader regulatory landscape, including HIPAA compliance and emerging best practices for responsible deployment. The three instructors bring directly complementary expertise: Dr. Alfasly in generative AI for computational pathology at Mayo Clinic; Drs. Xie and Wang in trustworthy machine learning and synthetic genomics at UIUC; and Dr. Huang and Rao in clinical NLP and synthetic EHR generation at the University of Memphis."
+    ]
+  },
   "industry-policy-keynote": {
     "kind": "keynote",
     "badge": "Policy Keynote",
