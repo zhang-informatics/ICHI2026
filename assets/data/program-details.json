@@ -1505,6 +1505,94 @@
       }
     ]
   },
+  "doctoral-consortium": {
+    "kind": "consortium",
+    "badge": "Doctoral Consortium",
+    "title": "ICHI 2026 Doctoral Consortium Program",
+    "date": "Monday, June 1",
+    "time": "1:30 PM - 5:00 PM",
+    "room": "Floor 3- Conf. Room 303",
+    "summary": [
+      "Part I: 1:30-3:00 PM",
+      "Each student will have approximately 5 minutes talk and 2 minutes for feedback.",
+      "Part II: 3:30-5:00 PM"
+    ],
+    "agendaItems": [
+      {
+        "time": "1:00-1:15 PM",
+        "program": "Welcome",
+        "title": "Welcome by Dr. Dezhi Wu & Dr. Gondy Leroy"
+      },
+      {
+        "time": "1:15-3:00 PM",
+        "program": "Student Lightning Talks and Feedback Session"
+      },
+      {
+        "program": "Talk 1",
+        "presenter": "Ha Na Cho",
+        "title": "Towards Trustworthy and Deployable Multimodal Artificial Intelligence for Discharge Planning"
+      },
+      {
+        "program": "Talk 2",
+        "presenter": "Sai Vuruma",
+        "title": "Towards Robust Clinical Reasoning in LLM-aided Clinical Decision Support"
+      },
+      {
+        "program": "Talk 3",
+        "presenter": "Rachel Stephens",
+        "title": "Preliminary Benchmarking for Semantic Clinical Artificial Intelligence (SCAI)"
+      },
+      {
+        "program": "Talk 4",
+        "presenter": "Sukrut Shishupal",
+        "title": "A Reusable Shapelet Library for Temporal Exposure Pattern Discovery"
+      },
+      {
+        "program": "Talk 5",
+        "presenter": "Timoteo Kelly",
+        "title": "Hierarchy of Distrust: Modeling Privacy, Application, and Provider Trust in mHealth"
+      },
+      {
+        "program": "Talk 6",
+        "presenter": "Bharat Sowrya Yaddanapalli",
+        "title": "CARE: A Multi-Agent Framework for Real-Time Adaptive Vocal Interaction in Dementia Care"
+      },
+      {
+        "program": "Talk 7",
+        "presenter": "Md Jobair Hossain Faruk",
+        "title": "Reinforcement-Guided Adaptive Multimodal Classical-Quantum Learning with Generative Reasoning for Clinical Decision Support"
+      },
+      {
+        "program": "Talk 8",
+        "presenter": "Kinjal Bhatt",
+        "title": "Exploring the Impact of Smart Water Bottles on Hydration and Productivity in Corporate Environments"
+      },
+      {
+        "program": "Talk 9",
+        "presenter": "Iyinoluwa Tugbobo",
+        "title": "Understanding Patient Portal Enrollment and Forecasting Messaging Volume for Practive Clinician Burnout Intervention"
+      },
+      {
+        "program": "Talk 10",
+        "presenter": "Almonzer Salah Nooraldaim Mohamed",
+        "title": "Expert-Driven and Subgroup-Adaptive Multi-Task Survival Modeling for Dental Implant Outcomes"
+      },
+      {
+        "time": "3:00-3:30 PM",
+        "program": "Coffee Break"
+      },
+      {
+        "time": "3:30-4:00 PM",
+        "program": "Elevator Pitch Exercises",
+        "title": "Elevator Pitch Exercises Led by Dr. Gondy Leroy"
+      },
+      {
+        "time": "4:00-5:00 PM",
+        "program": "Career Development Panel",
+        "title": "Panel on Career Development with Well-established Scholars from Academia and Industry (Moderator: Dr. Dezhi Wu)"
+      }
+    ]
+  },
   "tutorial-1": {
     "kind": "tutorial",
     "badge": "Tutorial 1",
