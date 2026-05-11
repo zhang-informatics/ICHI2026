@@ -105,6 +105,15 @@ img {
     border-color: rgba(255, 204, 51, 0.88);
     background: linear-gradient(135deg, rgba(255, 204, 51, 0.34), rgba(255, 255, 255, 0.13));
 }
+.nav-menu li.nav-feature-industry a {
+    border-color: rgba(255, 255, 255, 0.48);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 204, 51, 0.12));
+    color: #fff;
+}
+.nav-menu li.nav-feature-industry a:hover {
+    border-color: rgba(255, 255, 255, 0.86);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 204, 51, 0.2));
+}
 .nav-new-badge {
     display: inline-flex;
     align-items: center;
@@ -117,6 +126,23 @@ img {
     line-height: 1;
     letter-spacing: 0.06em;
 }
+.nav-track-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.12rem 0.34rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--umn-maroon);
+    font-size: 0.58rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.07em;
+}
+@media (max-width: 1500px) {
+    .nav-track-badge {
+        display: none;
+    }
+}
 @media (max-width: 1280px) {
     .nav-menu {
         gap: 0.58rem;
@@ -127,7 +153,8 @@ img {
     .nav-menu li.nav-feature a {
         padding: 0.32rem 0.46rem;
     }
-    .nav-new-badge {
+    .nav-new-badge,
+    .nav-track-badge {
         display: none;
     }
 }
