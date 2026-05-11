@@ -114,6 +114,19 @@ img {
     border-color: rgba(255, 255, 255, 0.86);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 204, 51, 0.2));
 }
+.nav-menu li.nav-feature-data a {
+    border-color: rgba(180, 225, 222, 0.62);
+    background: linear-gradient(135deg, rgba(180, 225, 222, 0.22), rgba(255, 255, 255, 0.09));
+    color: #efffff;
+}
+.nav-menu li.nav-feature-data a:hover {
+    border-color: rgba(204, 245, 241, 0.9);
+    background: linear-gradient(135deg, rgba(180, 225, 222, 0.3), rgba(255, 255, 255, 0.14));
+}
+.nav-menu li.nav-feature-data .nav-new-badge {
+    background: #dff7ef;
+    color: var(--umn-maroon);
+}
 .nav-new-badge {
     display: inline-flex;
     align-items: center;
@@ -139,7 +152,8 @@ img {
     letter-spacing: 0.07em;
 }
 @media (max-width: 1500px) {
-    .nav-track-badge {
+    .nav-track-badge,
+    .nav-menu li.nav-feature-data .nav-new-badge {
         display: none;
     }
 }

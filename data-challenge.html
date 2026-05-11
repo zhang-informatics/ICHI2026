@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Challenge | ICHI 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .data-challenge-page {
+      padding: 2rem 0 3.4rem;
+    }
+
+    .dc-hero-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.78fr);
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+      padding: 2rem;
+      border: 1px solid #d7e6e2;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 8% 10%, rgba(180, 225, 222, 0.35), transparent 34%),
+        linear-gradient(145deg, #f1fbf9 0%, #fff 58%, #fbf5ee 100%);
+      box-shadow: 0 18px 34px rgba(32, 77, 72, 0.08);
+    }
+
+    .dc-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0 0 0.72rem;
+      color: var(--umn-maroon);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .dc-kicker::before {
+      content: "";
+      width: 0.74rem;
+      height: 0.74rem;
+      border-radius: 50%;
+      background: #6cc6bd;
+      box-shadow: 0 0 0 5px rgba(108, 198, 189, 0.2);
+    }
+
+    .dc-hero-panel h2 {
+      margin: 0 0 0.8rem;
+      color: var(--umn-maroon);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+    }
+
+    .dc-lead {
+      max-width: 72ch;
+      margin: 0;
+      color: #443934;
+      font-size: 1.03rem;
+      line-height: 1.75;
+      text-wrap: pretty;
+    }
+
+    .dc-spotlight-card {
+      align-self: stretch;
+      padding: 1.35rem;
+      border-radius: 24px;
+      border: 1px solid rgba(122, 0, 25, 0.14);
+      background: rgba(255, 255, 255, 0.78);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .dc-spotlight-card strong {
+      color: var(--umn-maroon);
+      font-size: 1.12rem;
+      line-height: 1.35;
+    }
+
+    .dc-spotlight-card span {
+      color: #62554f;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .dc-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.15rem;
+    }
+
+    .dc-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.72rem 1rem;
+      border-radius: 999px;
+      background: var(--umn-maroon);
+      color: #fff;
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(122, 0, 25, 0.16);
+    }
+
+    .dc-button.secondary {
+      background: #fff;
+      color: var(--umn-maroon);
+      border: 1px solid rgba(122, 0, 25, 0.2);
+      box-shadow: none;
+    }
+
+    .dc-button:hover,
+    .dc-button:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .dc-section {
+      margin-top: 2rem;
+      padding: 1.55rem;
+      border: 1px solid #e3d9cf;
+      border-radius: 26px;
+      background: #fff;
+      box-shadow: 0 14px 30px rgba(77, 45, 32, 0.055);
+    }
+
+    .dc-section h2 {
+      margin: 0 0 0.8rem;
+      color: var(--umn-maroon);
+      font-size: clamp(1.55rem, 3vw, 2.15rem);
+      line-height: 1.1;
+    }
+
+    .dc-section h3 {
+      margin: 0;
+      color: #2f2724;
+      font-size: 1.12rem;
+      line-height: 1.35;
+      text-wrap: pretty;
+    }
+
+    .dc-section p,
+    .dc-section li {
+      color: #4d413c;
+      font-size: 0.98rem;
+      line-height: 1.72;
+      text-wrap: pretty;
+    }
+
+    .dc-section p {
+      margin: 0;
+    }
+
+    .dc-section p + p,
+    .dc-section ul + p {
+      margin-top: 0.75rem;
+    }
+
+    .dc-section ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.2rem;
+    }
+
+    .dc-theme-grid,
+    .dc-resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .dc-theme-card,
+    .dc-resource-card {
+      padding: 1rem;
+      border-radius: 20px;
+      border: 1px solid #dce8e5;
+      background: linear-gradient(180deg, #f7fdfc 0%, #fff 100%);
+    }
+
+    .dc-theme-card strong,
+    .dc-resource-card strong {
+      display: block;
+      color: var(--umn-maroon);
+      font-size: 1rem;
+      line-height: 1.35;
+      margin-bottom: 0.35rem;
+    }
+
+    .dc-resource-card {
+      text-decoration: none;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .dc-resource-card span {
+      color: #5f534d;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .dc-resource-card:hover,
+    .dc-resource-card:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(122, 0, 25, 0.24);
+      box-shadow: 0 12px 24px rgba(77, 45, 32, 0.08);
+      outline: none;
+    }
+
+    .dc-program-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0.9rem 0 1.2rem;
+    }
+
+    .dc-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.36rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid #d9e7e3;
+      background: #f4fbfa;
+      color: #4b4f4e;
+      font-size: 0.84rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .dc-paper-list {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .dc-paper-card {
+      padding: 1rem 1.1rem;
+      border-radius: 20px;
+      border: 1px solid #e5d9cf;
+      background: linear-gradient(180deg, #fffaf4 0%, #fff 100%);
+    }
+
+    .dc-paper-badge {
+      display: inline-flex;
+      margin-bottom: 0.55rem;
+      padding: 0.26rem 0.62rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .dc-paper-card p {
+      margin-top: 0.45rem;
+      color: #62554f;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .dc-committee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .dc-person-card {
+      padding: 1rem;
+      border-radius: 20px;
+      border: 1px solid #e4d8ce;
+      background: #fff;
+      text-align: center;
+    }
+
+    .dc-person-card img {
+      width: 132px;
+      height: 132px;
+      margin: 0 auto 0.85rem;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 10px 22px rgba(77, 45, 32, 0.12);
+    }
+
+    .dc-person-card h3 {
+      color: var(--umn-maroon);
+      font-size: 1.05rem;
+    }
+
+    .dc-person-card p {
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .dc-person-card a {
+      color: var(--umn-maroon);
+      font-weight: 700;
+    }
+
+    .dc-program-committee {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .dc-program-committee article {
+      padding: 1rem;
+      border-radius: 18px;
+      border: 1px solid #e5d9cf;
+      background: #fffdfb;
+    }
+
+    @media (max-width: 900px) {
+      .dc-hero-panel,
+      .dc-theme-grid,
+      .dc-resource-grid,
+      .dc-committee-grid,
+      .dc-program-committee {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .data-challenge-page {
+        padding-top: 1rem;
+      }
+
+      .dc-hero-panel,
+      .dc-section {
+        padding: 1.2rem;
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/ieee-logo_v2.png" alt="IEEE ICHI 2026 Logo" />
+    </a>
+    <div id="top-nav"></div>
+  </div>
+</header>
+
+<section class="hero" style="background-image: url('assets/images/call-for-health-data-challenge.png');">
+  <div class="hero-text">
+    <h1>Data Challenge</h1>
+  </div>
+</section>
+
+<main class="container data-challenge-page">
+  <section class="dc-hero-panel">
+    <div>
+      <p class="dc-kicker">New Program</p>
+      <h2>Data Challenge Program @ IEEE ICHI 2026 - AgentDS Healthcare</h2>
+      <p class="dc-lead">Human-AI collaboration in healthcare data science.</p>
+      <div class="dc-actions">
+        <a class="dc-button" href="#program">View Accepted Papers</a>
+        <a class="dc-button secondary" href="program.html">Back to Program</a>
+      </div>
+    </div>
+    <aside class="dc-spotlight-card">
+      <strong>2:00 PM - 3:30 PM, June 3, 2026</strong>
+      <span>IEEE ICHI 2026, Minneapolis, MN</span>
+      <span>Paper presentations from the accepted Data Challenge track.</span>
+    </aside>
+  </section>
+
+  <section class="dc-section" aria-labelledby="overview-title">
+    <h2 id="overview-title">Overview</h2>
+    <p>The Data Challenge Program at IEEE ICHI 2026 focuses on advancing human-AI collaboration in healthcare data science. This program showcases results from the AgentDS Healthcare benchmark, where participants developed reproducible solutions for realistic healthcare prediction tasks using collaborative human-AI workflows.</p>
+    <p>The session brings together researchers and practitioners to:</p>
+    <ul>
+      <li>Present accepted papers from the Data Challenge track</li>
+      <li>Share insights into human-AI collaboration in real-world healthcare settings</li>
+      <li>Discuss design principles for reliable, reproducible, and high-impact healthcare data science systems</li>
+    </ul>
+  </section>
+
+  <section class="dc-section" aria-labelledby="theme-title">
+    <h2 id="theme-title">Theme</h2>
+    <h3>Human-AI Collaboration in Healthcare Data Science</h3>
+    <div class="dc-theme-grid">
+      <article class="dc-theme-card">
+        <strong>Healthcare Prediction</strong>
+        <p>Realistic healthcare prediction tasks using AgentDS datasets.</p>
+      </article>
+      <article class="dc-theme-card">
+        <strong>Reproducibility</strong>
+        <p>Reproducible pipelines and transparent evaluation.</p>
+      </article>
+      <article class="dc-theme-card">
+        <strong>Human-AI Workflows</strong>
+        <p>Practical insights into human-AI collaboration workflows.</p>
+      </article>
+    </div>
+    <p>Across the program, speakers will share lessons for designing next-generation AI-assisted data science systems.</p>
+  </section>
+
+  <section class="dc-section" id="program" aria-labelledby="program-title">
+    <h2 id="program-title">Program</h2>
+    <div class="dc-program-meta">
+      <span class="dc-chip">2:00 PM - 3:30 PM</span>
+      <span class="dc-chip">June 3, 2026</span>
+      <span class="dc-chip">IEEE ICHI 2026, Minneapolis, MN</span>
+      <span class="dc-chip">Paper Presentations (Oral)</span>
+    </div>
+    <div class="dc-paper-list">
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 1</span>
+        <h3>From Clinical Concepts to Multimodal Features: Human-AI Collaborative Feature Engineering for Healthcare Prediction</h3>
+        <p>Hai Li, Rui Guo and Chenglu Li</p>
+      </article>
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 2</span>
+        <h3>Human-Guided Agentic AI for Multimodal Clinical Prediction: Lessons from the AgentDS Healthcare Benchmark</h3>
+        <p>Lalitha Pranathi Pulavarthy, Raajitha Muthyala, Aravind Kuruvikkattil, Zhenan Yin, Rashmita Kudamala and Saptarshi Purkayastha</p>
+      </article>
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 3</span>
+        <h3>HMITL: Manager-Governed LLM Iteration with Guardrails and Rollback for Reproducible Healthcare Machine Learning Pipelines</h3>
+        <p>Jialuo Chen, Haijing Wang and Siyu Shao</p>
+      </article>
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 4</span>
+        <h3>Designing and Auditing Healthcare Tabular Models for Human Oversight: An Empirical Study from the AgentDS-Benchmark Healthcare Domain</h3>
+        <p>James Sargsyan</p>
+      </article>
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 5</span>
+        <h3>Healthcare Data Analysis in Low-Data Environments: A Multi-Task Benchmark Study</h3>
+        <p>Aaron Zou</p>
+      </article>
+      <article class="dc-paper-card">
+        <span class="dc-paper-badge">Paper 6</span>
+        <h3>Human-AI Collaborative Modeling for Healthcare Prediction Tasks in AgentDS</h3>
+        <p>Vedangi Deepak Deshpande and Prathmesh Santosh Choudhari</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="dc-section" aria-labelledby="about-title">
+    <h2 id="about-title">About AgentDS Healthcare</h2>
+    <p>The program is based on the AgentDS Healthcare benchmark, which provides:</p>
+    <ul>
+      <li>Realistic, domain-specific healthcare datasets</li>
+      <li>Multimodal and structured prediction tasks</li>
+      <li>Standardized evaluation protocols</li>
+    </ul>
+    <div class="dc-resource-grid">
+      <a class="dc-resource-card" href="https://huggingface.co/datasets/lainmn/AgentDS-Healthcare" target="_blank" rel="noopener noreferrer">
+        <strong>Dataset</strong>
+        <span>AgentDS Healthcare dataset on Hugging Face.</span>
+      </a>
+      <a class="dc-resource-card" href="https://agentds.org/domains/healthcare" target="_blank" rel="noopener noreferrer">
+        <strong>Domain Page</strong>
+        <span>Healthcare task details and AgentDS domain information.</span>
+      </a>
+      <a class="dc-resource-card" href="https://arxiv.org/abs/2603.19005" target="_blank" rel="noopener noreferrer">
+        <strong>Technical Report</strong>
+        <span>AgentDS technical report on arXiv.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="dc-section" aria-labelledby="chairs-title">
+    <h2 id="chairs-title">Program Chairs</h2>
+    <div class="dc-committee-grid">
+      <article class="dc-person-card">
+        <img src="assets/images/jie_ding.png" alt="Jie Ding, PhD">
+        <h3>Jie Ding, PhD</h3>
+        <p>University of Minnesota, USA</p>
+        <p><a href="mailto:dingj@umn.edu">dingj@umn.edu</a></p>
+      </article>
+      <article class="dc-person-card">
+        <img src="assets/images/an_luo.jpg" alt="An Luo">
+        <h3>An Luo</h3>
+        <p>University of Minnesota, USA</p>
+        <p><a href="mailto:luo00318@umn.edu">luo00318@umn.edu</a></p>
+      </article>
+      <article class="dc-person-card">
+        <img src="assets/images/yu_huang.jpg" alt="Yu Huang, PhD">
+        <h3>Yu Huang, PhD</h3>
+        <p>Indiana University, USA</p>
+        <p><a href="mailto:yh60@iu.edu">yh60@iu.edu</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="dc-section" aria-labelledby="committee-title">
+    <h2 id="committee-title">Program Committee</h2>
+    <div class="dc-program-committee">
+      <article>
+        <h3>Yunling Ge</h3>
+        <p>University of Minnesota, USA</p>
+        <p><a href="mailto:ge006256@umn.edu">ge006256@umn.edu</a></p>
+      </article>
+      <article>
+        <h3>Zhenghan Li</h3>
+        <p>University of Minnesota, USA</p>
+        <p><a href="mailto:li004431@umn.edu">li004431@umn.edu</a></p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch('nav.html')
+    .then(res => res.text())
+    .then(html => { document.getElementById('top-nav').innerHTML = html; });
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>
