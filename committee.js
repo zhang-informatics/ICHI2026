@@ -58,6 +58,7 @@ const committeeData = {
     "Data Challenge Chairs": [
         { name: "Jie Ding, PhD", title: "Data Challenge Chair", affiliation: "University of Minnesota, USA", image: "assets/images/jie_ding.png", email: "dingj@umn.edu" },
         { name: "Yu Huang, PhD", title: "Data Challenge Chair", affiliation: "Indiana University, USA", image: "assets/images/yu_huang.jpg", email: "yh60@iu.edu" },
+        { name: "An Luo", title: "Data Challenge Co-Chair", affiliation: "University of Minnesota, USA", image: "assets/images/an_luo.jpg", email: "luo00318@umn.edu" },
     ],
     "Women in Healthcare Informatics Chairs": [
         { name: "Robin Austin, PhD", title: "Women in HI Event Chair", affiliation: "University of Minnesota, USA", image: "assets/images/robin_austin.png", email: "quis0026@umn.edu" },
