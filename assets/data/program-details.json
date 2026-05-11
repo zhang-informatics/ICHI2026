@@ -1593,6 +1593,61 @@
       }
     ]
   },
+  "npj-health-systems-special-session": {
+    "kind": "special",
+    "badge": "Special Session",
+    "title": "NPJ Health Systems Special Session",
+    "date": "Monday, June 1",
+    "time": "1:30 PM - 3:00 PM",
+    "room": "Floor 3- Conf. Room 325",
+    "agendaItems": [
+      {
+        "time": "1",
+        "program": "Introduction",
+        "title": "Introduction of NPJ Health Systems"
+      },
+      {
+        "time": "2",
+        "program": "Presentation",
+        "title": "Explainable differential diagnosis with dual-inference large language models",
+        "presenter": "Kai Yu / Rui Zhang (UMN)",
+        "url": "https://www.nature.com/articles/s44401-025-00015-6"
+      },
+      {
+        "time": "3",
+        "program": "Presentation",
+        "title": "Feasibility assessment of an EHR-integrated research platform for prospective data collection in community oncology practice",
+        "presenter": "Daniel Sanchez (J&J) and Abhi Dabral (Paradigm Health)",
+        "url": "https://www.nature.com/articles/s44401-025-00066-9"
+      },
+      {
+        "time": "4",
+        "program": "Presentation",
+        "title": "Care coordination and patient safety outcome: a graph-based approach",
+        "presenter": "Yu Huang / Jiang Bian (Indiana/Regenstrief)",
+        "url": "https://www.nature.com/articles/s44401-025-00020-9"
+      },
+      {
+        "time": "5",
+        "program": "Presentation",
+        "title": "Closing the Gap in Women's Cancer and Preventive Screening Access Through Discrete-Event Simulation Modeling (future invited article, accepted at HDT 2026)",
+        "presenter": "Yaren Bilge Kaya (Columbia)",
+        "url": "https://yuvisu.github.io/health-digitaltwin/"
+      },
+      {
+        "time": "6",
+        "program": "Presentation",
+        "title": "Accelerating AI innovation in healthcare: real-world clinical research applications on the Mayo Clinic Platform",
+        "presenter": "Yue Yu / Cui Tao (Mayo)",
+        "url": "https://www.nature.com/articles/s44401-026-00068-1"
+      },
+      {
+        "time": "7",
+        "program": "Panel",
+        "title": "Panel (more information to come)"
+      }
+    ]
+  },
   "tutorial-1": {
     "kind": "tutorial",
     "badge": "Tutorial 1",
