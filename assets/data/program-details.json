@@ -1510,21 +1510,21 @@
     "badge": "Doctoral Consortium",
     "title": "ICHI 2026 Doctoral Consortium Program",
     "date": "Monday, June 1",
-    "time": "1:30 PM - 5:00 PM",
+    "time": "2:00 PM - 5:15 PM",
     "room": "Floor 3- Conf. Room 303",
     "summary": [
-      "Part I: 1:30-3:00 PM",
+      "Part I: 2:00-3:30 PM",
       "Each student will have approximately 5 minutes talk and 2 minutes for feedback.",
-      "Part II: 3:30-5:00 PM"
+      "Part II: 3:45-5:15 PM"
     ],
     "agendaItems": [
       {
-        "time": "1:00-1:15 PM",
+        "time": "2:00-2:15 PM",
         "program": "Welcome",
         "title": "Welcome by Dr. Dezhi Wu & Dr. Gondy Leroy"
       },
       {
-        "time": "1:15-3:00 PM",
+        "time": "2:15-3:30 PM",
         "program": "Student Lightning Talks and Feedback Session"
       },
       {
@@ -1578,16 +1578,16 @@
         "title": "Expert-Driven and Subgroup-Adaptive Multi-Task Survival Modeling for Dental Implant Outcomes"
       },
       {
-        "time": "3:00-3:30 PM",
+        "time": "3:30-3:45 PM",
         "program": "Coffee Break"
       },
       {
-        "time": "3:30-4:00 PM",
+        "time": "3:45-4:15 PM",
         "program": "Elevator Pitch Exercises",
         "title": "Elevator Pitch Exercises Led by Dr. Gondy Leroy"
       },
       {
-        "time": "4:00-5:00 PM",
+        "time": "4:15-5:15 PM",
         "program": "Career Development Panel",
         "title": "Panel on Career Development with Well-established Scholars from Academia and Industry (Moderator: Dr. Dezhi Wu)"
       }
