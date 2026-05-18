@@ -734,7 +734,7 @@
   "scientific-22": {
     "kind": "scientific",
     "badge": "Scientific Session 22",
-    "title": "Genomics, Microbiome, and Precision Medicine",
+    "title": "Microbiome, Precision Medicine, Privacy and Security",
     "track": "Analytics Track",
     "date": "Wednesday, June 3",
     "time": "2:30 PM - 4:00 PM",
@@ -1205,121 +1205,121 @@
       "newTab": true
     },
     "title": "Young Scholar Symposium: Lightning Talks",
-    "time": "8:15 AM - 9:45 AM",
+    "time": "8:00 AM - 9:30 AM",
     "summary": "Lightning talk session for Young Scholar Symposium presenters.",
     "agendaItems": [
       {
-        "time": "8:15 AM - 8:20 AM",
+        "time": "8:00 AM - 8:05 AM",
         "program": "Introduction"
       },
       {
-        "time": "8:20 AM - 8:25 AM",
+        "time": "8:05 AM - 8:10 AM",
         "program": "Lightning Talk 1",
         "title": "DrugOT-Rank: Optimal Transport-Guided Ranking for Interpretable Drug Repurposing",
         "presenter": "Rishik Kondadadi",
         "coAuthors": "Dan McCreary"
       },
       {
-        "time": "8:25 AM - 8:30 AM",
+        "time": "8:10 AM - 8:15 AM",
         "program": "Lightning Talk 2",
         "title": "PhysioGuardian: Design, Implementation, and Performance Evaluation of an AI-Driven Intelligent Physiotherapy System with Real-Time Pose Estimation, Cost Prediction, and Geospatial Expert Search",
         "presenter": "Ujjwal Patil",
         "coAuthors": "Aditya Acharya, Shruti Mary, Vineet Iyer, Vrushali Bahurupi"
       },
       {
-        "time": "8:30 AM - 8:35 AM",
+        "time": "8:15 AM - 8:20 AM",
         "program": "Lightning Talk 3",
         "title": "Entropy-Profiled Diagnostic Boundary for Disease Pairs",
         "presenter": "Nathan Zhuang",
         "coAuthors": "Jacqueline Howells"
       },
       {
-        "time": "8:35 AM - 8:40 AM",
+        "time": "8:20 AM - 8:25 AM",
         "program": "Lightning Talk 4",
         "title": "BystAId: Real-Time Panic-Adaptive First Aid Guidance for Untrained Bystanders via Dual-Graph Retrieval and mLSTM Context Encoding",
         "presenter": "S L Richris",
         "coAuthors": "Aleena Sebastian"
       },
       {
-        "time": "8:40 AM - 8:45 AM",
+        "time": "8:25 AM - 8:30 AM",
         "program": "Lightning Talk 5",
         "title": "Predicting Alzheimer’s Neuropathology from Single-Nucleus RNA-seq: A SEA-AD Community Challenge Benchmark",
         "presenter": "Long Nguyen",
         "coAuthors": "Huixin Zhan"
       },
       {
-        "time": "8:45 AM - 8:50 AM",
+        "time": "8:30 AM - 8:35 AM",
         "program": "Lightning Talk 6",
         "title": "Emotion-Preserving Music Recommendation from Autobiographical Narratives for Older Adults",
         "presenter": "Newton Niu"
       },
       {
-        "time": "8:50 AM - 8:55 AM",
+        "time": "8:35 AM - 8:40 AM",
         "program": "Lightning Talk 7",
         "title": "DNA Origami-Based Aptamers Targeting the Beta-secretase 1 (BACE1) Protein in Alzheimer’s Disease",
         "presenter": "Yashasvi Kompella",
         "coAuthors": "Gaurav Sharma"
       },
       {
-        "time": "8:55 AM - 9:00 AM",
+        "time": "8:40 AM - 8:45 AM",
         "program": "Lightning Talk 8",
         "title": "AI Voice-Based Multilingual Emergency Assessment",
         "presenter": "Eren Yigidim"
       },
       {
-        "time": "9:00 AM - 9:05 AM",
+        "time": "8:45 AM - 8:50 AM",
         "program": "Lightning Talk 9",
         "title": "Bloom Health: Designing a Compassionate AI Nutrition App to Study Health Habit Adherence and Emotional Safety",
         "presenter": "Claire Chen"
       },
       {
-        "time": "9:05 AM - 9:10 AM",
+        "time": "8:50 AM - 8:55 AM",
         "program": "Lightning Talk 10",
         "title": "MOPbot: A Harm-Reduction Chatbot for Opioid Overdose Prevention and Local Resource Navigation",
         "presenter": "Raymond Cui",
         "coAuthors": "Ashish Kalaga, Srikar Velichety"
       },
       {
-        "time": "9:10 AM - 9:15 AM",
+        "time": "8:55 AM - 9:00 AM",
         "program": "Lightning Talk 11",
         "title": "CASPER: A Data-Driven Computational Framework for Integrated Design of RPA-CRISPR-Cas12a Diagnostic Assays",
         "presenter": "Harsha Poonepalle",
         "coAuthors": "Nish Chawla"
       },
       {
-        "time": "9:15 AM - 9:20 AM",
+        "time": "9:00 AM - 9:05 AM",
         "program": "Lightning Talk 12",
-        "title": "Can a Vision-Language Model Predict Recurrence Risk in Breast Cancer Patients?",
+        "title": "Can Large Language Models Predict Breast Cancer Distant Recurrence Risk?",
         "presenter": "Eden Wu"
       },
       {
-        "time": "9:20 AM - 9:25 AM",
+        "time": "9:05 AM - 9:10 AM",
         "program": "Lightning Talk 13",
         "title": "TEENSAVE: Teen Organ Donation Support via AI and Virtual Engagement",
         "presenter": "Isabel Yang",
         "coAuthors": "Fang Li, Jianfu Li, Cui Tao"
       },
       {
-        "time": "9:25 AM - 9:30 AM",
+        "time": "9:10 AM - 9:15 AM",
         "program": "Lightning Talk 14",
         "title": "Finding the Best Doctors: What Signals Help Patients Identify High-Quality Physicians?",
         "presenter": "Alethea Liu"
       },
       {
-        "time": "9:30 AM - 9:35 AM",
+        "time": "9:15 AM - 9:20 AM",
         "program": "Lightning Talk 15",
         "title": "Can LLMs Predict Cognitive Health from Daily Signals? Evidence from Real-World EMA Data",
         "presenter": "Anthony Fu"
       },
       {
-        "time": "9:35 AM - 9:40 AM",
+        "time": "9:20 AM - 9:25 AM",
         "program": "Lightning Talk 16",
         "title": "Development and Evaluation of Multi-Modal Universal CPR AI Assistance Response Engine (U-CARE)",
         "presenter": "Aarit Atreja",
         "coAuthors": "Morish Shah, Piyush Mathur, Dharan Jaisankar"
       },
       {
-        "time": "9:40 AM - 9:45 AM",
+        "time": "9:25 AM - 9:30 AM",
         "program": "Lightning Talk 17",
         "title": "Identifying mental health conditions from social media posts using transformer models",
         "presenter": "Logan Wu",
@@ -1338,11 +1338,11 @@
       "newTab": true
     },
     "title": "Young Scholar Symposium: Poster Session",
-    "time": "9:45 AM - 10:15 AM",
+    "time": "9:30 AM - 10:00 AM",
     "summary": "Poster session for Young Scholar Symposium presenters.",
     "agendaItems": [
       {
-        "time": "9:45 AM - 10:15 AM",
+        "time": "9:30 AM - 10:00 AM",
         "program": "Poster Session"
       },
       {
@@ -1452,54 +1452,54 @@
       "newTab": true
     },
     "title": "Young Scholar Symposium: Oral Presentations, Award, and Panel",
-    "time": "10:15 AM - 11:45 AM",
+    "time": "10:00 AM - 11:30 AM",
     "summary": "Oral presentations, the Outstanding Young Scholar Award, and a panel discussion.",
     "agendaItems": [
       {
-        "time": "10:15 AM - 10:20 AM",
+        "time": "10:00 AM - 10:05 AM",
         "program": "Introduction"
       },
       {
-        "time": "10:20 AM - 10:30 AM",
+        "time": "10:05 AM - 10:15 AM",
         "program": "Oral presentation 1",
         "title": "Brain Meets Machine: EEG and Generative AI Signatures of Neurocognitive Creativity",
         "presenter": "Heather Zhang",
         "coAuthors": "Sandeep Reddivari"
       },
       {
-        "time": "10:30 AM - 10:40 AM",
+        "time": "10:15 AM - 10:25 AM",
         "program": "Oral presentation 2",
         "title": "Diet, Microbiome, and Health from Adolescence to Aging: Knowledge Discovery Using Evidence‑Weighted Knowledge Graphs and an AI Chatbot Pilot",
         "presenter": "Ellen Bu",
         "coAuthors": "Jianfu Li, Cui Tao"
       },
       {
-        "time": "10:40 AM - 10:50 AM",
+        "time": "10:25 AM - 10:35 AM",
         "program": "Oral presentation 3",
         "title": "Identification of Problematic Internet Use with Machine Learning",
         "presenter": "Sophia Wang",
         "coAuthors": "Weishen Pan, Chang Su"
       },
       {
-        "time": "10:50 AM - 11:00 AM",
+        "time": "10:35 AM - 10:45 AM",
         "program": "Oral presentation 4",
         "title": "Agent-Based Clinical AI System for Personalized Survival Risk Prediction",
         "presenter": "Chenyu Zhu",
         "coAuthors": "Kai Yu, An Luo"
       },
       {
-        "time": "11:00 AM - 11:10 AM",
+        "time": "10:45 AM - 10:55 AM",
         "program": "Oral presentation 5",
         "title": "PreventAndProtect: An AI-Powered Platform for Adolescent Figure Skating Injury Prevention",
         "presenter": "Joyce Wu",
         "coAuthors": "Shucheng Yu"
       },
       {
-        "time": "11:10 AM - 11:15 AM",
+        "time": "10:55 AM - 11:00 AM",
         "program": "Outstanding Young Scholar Award"
       },
       {
-        "time": "11:15 AM - 11:45 AM",
+        "time": "11:00 AM - 11:30 AM",
         "program": "Panel Discussion",
         "title": "Next Step in Research for Young Scholars"
       }
