@@ -1767,5 +1767,469 @@
       "href": "keynotes.html#ram-sriram",
       "label": "View keynote page"
     }
+  },
+  "workshop-1": {
+    "kind": "workshop",
+    "badge": "Workshop 1",
+    "title": "Clinical Natural Language Processing for Quality of Life",
+    "date": "Monday, June 1",
+    "time": "8:15 AM - 11:45 AM",
+    "room": "Floor 3- Mississippi Room",
+    "externalLink": {
+      "href": "https://cnlp4qol.github.io/ICHI-cnlp4qol-2026/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "8:15 AM - 8:25 AM",
+        "program": "Welcome Remarks",
+        "title": "Welcome Remarks & Foundational Aspects of Clinical NLP for Quality of Life",
+        "presenter": "Eunji Jeon, Mayo Clinic",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "8:25 AM - 8:50 AM",
+        "program": "Keynote #1",
+        "title": "Mobility Functional Status Ascertainment in EHRs",
+        "presenter": "Sunghwan Sohn, Mayo Clinic",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "8:50 AM - 9:15 AM",
+        "program": "Keynote #2",
+        "title": "Leveraging NLP to Detect Delirium Hidden in the Electronic Health Record- Opportunity and Value",
+        "presenter": "Sandeep Pagali, Mayo Clinic",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:15 AM - 9:45 AM",
+        "program": "Oral Presentations",
+        "title": "Repetition-Aware Reinforcement Learning from AI feedback for Empathetic Dialogue; From Protocol to Practice: Graded Sepsis Bundle Compliance and Actionable Insights from Real-World ICU Data",
+        "presenter": "Roopika Ganesh and Heena Rathore; Himanshu Tripathi, Kaushik Roy, Shahram Rahimi, Subash Neupane and Sean Bozorgzad",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:45 AM - 10:15 AM",
+        "program": "Coffee Break and Poster Session",
+        "title": "Poster presentations",
+        "presenter": "The EHRsupport score, an electronic health record-based social support measure (Candyce Kroenke, Rhonda Aoki, Jane Liang, David Cronkite, Salene Jones, Jessica Mogk, Larry Kushi, Lauren Mammini, Shaila Strayhorn-Carter, David Mosen and Stacey Alexeeff); Explainable AI for Mental Health Detection from Social Media: A Comparative Study of Traditional Machine Learning and a Large Language Model (Chen Xie, Di Zhu, Ziwei Wang, Haoyun Zhang and Zihan Wei); Multi-Agent AI Frameworks for Clinical Diagnosis Support: Benchmarking LLM Reasoning with Sleep Disorders as a Testbed (Aarushi Jaitly, Helom Berhane, Deepa Burman, Anand Rao, Ramayya Krishnan and Rema Padman); NLP Guided by Qualitative Methodology: Computational Analysis and Qualitative Approaches to Quality of Life (Esther Lázaro, Vanessa Moscardó, Salvador Herrera-Pérez, Patricia López-Mases and María-Victoria Fux); Eating Disorders Among Individuals with Suicidal Distress: A Cross-Sectional Analysis of Reddit Data on Prevalence, Demographics, and Psychiatric Comorbidity (Salim Sazzed, Farhan Noor Dehan and Md Ehashan Rabbi Pial)",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "10:15 AM - 10:35 AM",
+        "program": "Keynote #3",
+        "title": "Complementary and Integrative Health for Whole Person health: from Knowledge Graph to Discovery to Real-World Evidence",
+        "presenter": "Rui Zhang, University of Minnesota",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "10:35 AM - 11:05 AM",
+        "program": "Oral Presentations",
+        "title": "Compliance-Aware Discharge Agent for Auditable ICU Discharge Planning: A Pilot Feasibility Study using Structured eICU Records; Beyond Risk Detection: Functional Roles of Substance Use in Suicidal Discourse Among Individuals with Autism Spectrum Disorder and Eating Disorders",
+        "presenter": "Chen Xie, Di Zhu, Ziwei Wang, Haoyun Zhang, and Zihan Wei; Salim Sazzed, Farthan Noor Dehan, Pronoy Sarker, and Md Ehashan Rabbi Pial",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:05 AM - 11:35 AM",
+        "program": "Hands-on Tutorial",
+        "title": "Large Language Models for Extracting Wellness Dimensions",
+        "presenter": "Pushkala Jayaraman, Humayera Islam, UIC Chicago",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:35 AM - 11:45 AM",
+        "program": "Closing Remarks and Future Directions",
+        "title": "Open Research Directions for Applied Clinical NLP in Quality of Life",
+        "presenter": "Muskan Garg, Mayo Clinic",
+        "presenterLabel": "Presentations/Authors"
+      }
+    ]
+  },
+  "workshop-2": {
+    "kind": "workshop",
+    "badge": "Workshop 2",
+    "title": "Hi-Edu 2026",
+    "date": "Monday, June 1",
+    "time": "8:00 AM - 11:51 AM",
+    "room": "Floor 3- Conf. Room 303",
+    "externalLink": {
+      "href": "https://sites.pitt.edu/~lzhou1/HIEDU/HIEDU2026.html#top",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "8:00 AM - 9:00 AM",
+        "program": "Invited Talk",
+        "presenter": "Hooman Rashidi",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:00 AM - 9:12 AM",
+        "program": "Presentation",
+        "title": "Early Design of a Case-Based Platform for Training Responsible AI Practice in Clinical Care",
+        "presenter": "Yingbo Ma and Yukyeong Song",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:12 AM - 9:24 AM",
+        "program": "Presentation",
+        "title": "Applied Informatics Learning Experiences: Case Study on Partnership to Support Student Learning",
+        "presenter": "Sripriya Rajamani, Eric Maurer, and Roli Dwivedi",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:24 AM - 9:36 AM",
+        "program": "Presentation",
+        "title": "An Integrated Platform for Health Analytics AI Orchestration Education",
+        "presenter": "Andi Saptono, Made Dhanar Indhira Yoga, I Made Agus Setiawan and Bambang Parmanto",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:36 AM - 9:48 AM",
+        "program": "Presentation",
+        "title": "TRACE-Med: Policy-based Abstention to Mitigate Hallucinations in LLM-Generated Clinical Case Analysis",
+        "presenter": "Sagnik Dakshit, Bhavani Suryadevara and Lindsey Stockton. T",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:48 AM - 10:15 AM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "10:15 AM - 10:35 AM",
+        "program": "Invited Speaker",
+        "presenter": "Chris Yang",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "10:35 AM - 10:55 AM",
+        "program": "Invited Speaker",
+        "presenter": "Stephen Huo",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "10:55 AM - 11:07 AM",
+        "program": "Presentation",
+        "title": "Developing a Digital Twin for Privacy and Security Training for Healthcare Professionals",
+        "presenter": "Chiu C Tan and Huanmei Wu",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:07 AM - 11:15 AM",
+        "program": "Presentation",
+        "title": "Preparing the Healthcare Workforce for AI: A Flexible and Student-Centered Graduate Education Model",
+        "presenter": "Leming Zhou, Dilhari DeAlmeida and Bambang Parmanto",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:15 AM - 11:27 AM",
+        "program": "Presentation",
+        "title": "Characterizing Education, Experience, Technical and Informatics-related Skills Needed from a National Survey on Governmental Public Health Leadership",
+        "presenter": "Sripriya Rajamani, Divya Rupini Gunashekar, umesh Ghimire, Jonathan Leider and Brian Dixon",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:27 AM - 11:39 AM",
+        "program": "Presentation",
+        "title": "WSI-InteractBench: Network-Aware and Privacy-Conscious WSI Access for Remote Pathology Education",
+        "presenter": "Tianrui Wang, Liuyi Chen and Shirong Zheng",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:39 AM - 11:51 AM",
+        "program": "Presentation",
+        "title": "Natural Language Processing in Health Professions Education: A Scoping Review with Implications for Public Health",
+        "presenter": "Javad Mohammad Alizadeh, Pegah Saebi, Mikesh Kumar Patel and Huanmei Wu",
+        "presenterLabel": "Presentations/Authors"
+      }
+    ]
+  },
+  "workshop-3": {
+    "kind": "workshop",
+    "badge": "Workshop 3",
+    "title": "Food and Health Knowledge Graphs Using Large Language Models (LLMs)",
+    "date": "Monday, June 1",
+    "time": "8:30 AM - 11:45 AM",
+    "room": "Floor 3- Conf. Room 324",
+    "summary": "Detailed workshop agenda will be posted once available.",
+    "externalLink": {
+      "href": "https://koncordantlab.github.io/ichi2026-food-health-workshop/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": []
+  },
+  "workshop-4": {
+    "kind": "workshop",
+    "badge": "Workshop 4",
+    "title": "The 3rd workshop on Data Privacy and Data Analysis in Healthcare Systems (DPDAHS)",
+    "date": "Monday, June 1",
+    "time": "8:30 AM - 11:45 AM",
+    "room": "Floor 3- Conf. Room 325",
+    "externalLink": {
+      "href": "https://dpdahs.github.io/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "8:30 AM - 8:40 AM",
+        "program": "Welcome"
+      },
+      {
+        "time": "8:40 AM - 8:55 AM",
+        "program": "Presentation",
+        "title": "Hardware-Accelerated AES for Privacy-Preserving Healthcare Data Pipelines in Remote Patient Monitoring",
+        "presenter": "Sai Manasa Alamuri and Zahra Najafi",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "8:55 AM - 9:10 AM",
+        "program": "Presentation",
+        "title": "Willingness to Share: What Data are Participants Willing to Share for Mental Health Screening",
+        "presenter": "Avantika Shrestha, Kevin Hickey and Elke Rundensteiner",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:10 AM - 9:25 AM",
+        "program": "Presentation",
+        "title": "FedHemo: A Federated CTAB-GAN+ Framework for Privacy-Preserving Non-Invasive Hemoglobin Prediction using Smartphone-based PPG Signals",
+        "presenter": "Nafi Us Sabbir Sabith, Nathaniel Parise, Sachin Shrestha, Tasnia Zaman, Iysa Iqbal, Anushka Kolli, Masud Rabbani and Sheikh Iqbal Ahamed",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:25 AM - 9:40 AM",
+        "program": "Presentation",
+        "title": "A Lightweight Patch-Based Transformer for Subject-Independent Automated Seizure Detection",
+        "presenter": "Adithya Rajnarayanan",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:40 AM - 9:50 AM",
+        "program": "Presentation",
+        "title": "Differentially Private RAG for Clinical Decision Support from Electronic Health Records",
+        "presenter": "Arun Ramaswamy, Vishnu Vinod, Sivakumar Krishnamoorthy, Ramayya Krishnan, Krishna Pillutla and Rema Padman",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:50 AM - 10:00 AM",
+        "program": "Presentation",
+        "title": "Machine Learning for Medical Student Learning: Can LLMs Evaluate Sample Clinical Encounters and Provide Trustworthy Decision Support to Expert Faculty?",
+        "presenter": "Vijay Koduri, Aarav Purohit, Noah Jacob, Aayush Visaria, Jay Naik, Sarang Kim, Siobhan Corbett, Advaith Bongu, Archana Pradhan, Carol Terregino and Naveena Yanamala",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "10:00 AM - 10:15 AM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "10:15 AM - 11:15 AM",
+        "program": "Keynote",
+        "presenter": "Prof. Yonghui Wu, PhD",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:15 AM - 11:30 AM",
+        "program": "Presentation",
+        "title": "One Round Is All You Need: Analytic Federated Learning for Task-Heterogeneous Multi-Label Medical Image Classification",
+        "presenter": "Afsaneh Mahanipour and Hana Khamfroush",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:30 AM - 11:45 AM",
+        "program": "Final Discussion - Closing Remarks"
+      }
+    ]
+  },
+  "workshop-5": {
+    "kind": "workshop",
+    "badge": "Workshop 5",
+    "title": "AI for Rare Diseases",
+    "date": "Monday, June 1",
+    "time": "8:30 AM - 11:45 AM",
+    "room": "Floor 2- Theater",
+    "externalLink": {
+      "href": "https://dsp-ai-for-rd.institutimagine.org/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "8:30 AM - 8:35 AM",
+        "program": "Opening",
+        "title": "Goal, agenda"
+      },
+      {
+        "time": "8:35 AM - 9:25 AM",
+        "program": "Invited Talks",
+        "title": "Invited talk 1: AI for Ciliopathy Diagnosis and Stratification: Phenotyping, Longitudinal Extraction, and Clinical Evaluation; Invited talk 2: From Promise to Practice: EHR-Based AI for Rare Genetic Disease Identification and Referral",
+        "presenter": "Carole Faviez; Yao Xiao",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:25 AM - 10:00 AM",
+        "program": "Author Contributed Talks",
+        "title": "Author contributed talk 1: Early Detection of Rare Disease Using Hierarchical Set-to-Sequence Modeling of Structured Electronic Health Records; Author contributed talk 2: From clinical texts to phenotypic profiles: ontology-aware extraction and clustering of HPO terms to facilitate rare disease diagnosis",
+        "presenter": "Yingbo Ma; Paul Rollier",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "10:00 AM - 10:15 AM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "10:15 AM - 11:15 AM",
+        "program": "Invited Talks",
+        "title": "Invited talk 3: Deep Phenotyping of Rare Diseases Using Electronic Health Records Data; Invited talk 4: Translational AI for Rare Diseases: Text and Image Similarity in Clinical Practice",
+        "presenter": "Chunhua Wang; Nicolas Garcelon",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:15 AM - 11:30 AM",
+        "program": "Author Contributed Talk",
+        "title": "Author contributed talk 3: An Underexplored Frontier: Large Language Models for Rare Disease Patient Education and Communication",
+        "presenter": "Yu Hou",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:30 AM - 11:45 AM",
+        "program": "Panel + Wrap-up"
+      }
+    ]
+  },
+  "workshop-6": {
+    "kind": "workshop",
+    "badge": "Workshop 6",
+    "title": "Trust-AI 2026: Trustworthy AI for IoMT",
+    "date": "Monday, June 1",
+    "time": "2:00 PM - 5:15 PM",
+    "room": "Floor 3- Conf. Room 324",
+    "externalLink": {
+      "href": "https://trustai2026.web.illinois.edu/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "2:00 PM - 2:10 PM",
+        "program": "Welcome and Workshop Introductions",
+        "presenter": "Organizers: Goals of Trust-AI 2026 context (Trustworthy AI for IoMT), overview of sessions",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:10 PM - 2:35 PM",
+        "program": "Keynote Take",
+        "presenter": "Keynote Speaker (20 min talk + 5 min Q&A)",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:35 PM - 2:55 PM",
+        "program": "Presentation",
+        "title": "Safety-Oriented Evaluation of Large Language Models in Healthcare: A Guideline-Informed Systematic Review",
+        "presenter": "Author (=17 min + 3 min Q&A)",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:55 PM - 3:15 PM",
+        "program": "Moderated Paper Spotlight and Roundtable Discussion",
+        "title": "AI-Driven Digital Twin System Auditor for Secure and Trustworthy EHR Operations",
+        "presenter": "Organizer-facilitated discussion; brief framing + guided discussion; no formal presentation",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:15 PM - 3:30 PM",
+        "program": "Discussion and Transition",
+        "title": "Short moderated discussion"
+      },
+      {
+        "time": "3:30 PM - 3:45 PM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "3:45 PM - 4:05 PM",
+        "program": "Presentation",
+        "title": "A Trustworthy AI Hardware Architecture for Real-Time Seizure Detection and Resilient IoMT Intervention",
+        "presenter": "Author (=17 min + 3 min Q&A)",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:05 PM - 4:25 PM",
+        "program": "Pre-recorded Presentation",
+        "title": "IoMT-Driven Multi-View Visual Aberrant Event Detection for Trustworthy Senior Assistive Living",
+        "presenter": "Organizers will request a video recording from the authors; play recording if received, followed by brief moderated discussion/Q&A",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:25 PM - 5:00 PM",
+        "program": "Interactive Activity",
+        "title": "Structured activity with participants"
+      },
+      {
+        "time": "5:00 PM - 5:05 PM",
+        "program": "Synthesis and Closing",
+        "title": "Organizers: Summarize insights from talks + activity"
+      },
+      {
+        "time": "5:05 PM - 5:15 PM",
+        "program": "Buffer / Overrun"
+      }
+    ]
+  },
+  "workshop-7": {
+    "kind": "workshop",
+    "badge": "Workshop 7",
+    "title": "Health Digital Twins for Clinical Development and Clinical Practice: Multi-Scale Data, Models, and Trustworthy Translation",
+    "date": "Monday, June 1",
+    "time": "2:00 PM - 5:15 PM",
+    "room": "Floor 2- Theater",
+    "summary": "Detailed workshop agenda will be posted once available.",
+    "externalLink": {
+      "href": "https://yuvisu.github.io/health-digitaltwin/",
+      "label": "Visit workshop website",
+      "newTab": true
+    },
+    "agendaItems": []
   }
 }
