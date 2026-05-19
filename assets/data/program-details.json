@@ -111,15 +111,11 @@
     "date": "Tuesday, June 2",
     "time": "3:45 PM - 5:15 PM",
     "room": "Floor 3- Conf. Room 324",
-    "paperCount": 6,
+    "paperCount": 5,
     "papers": [
       {
         "title": "EXAIM: Explainable AI Middleware for Real-Time Multi-Agent Clinical Decision Support",
         "authors": "Abem Woldesenbet and Andy Behrens"
-      },
-      {
-        "title": "Systematic Evaluation of Large Language Models for Post-Discharge Clinical Action Extraction",
-        "authors": "Shivali Dalmia, Ananya Mantravadi and Prasanna Desikan"
       },
       {
         "title": "Enhancing Clinical Trial Patient Matching through Knowledge Augmentation and Reasoning with Multi-Agent",
@@ -219,7 +215,7 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Conf. Room 303",
-    "paperCount": 5,
+    "paperCount": 6,
     "papers": [
       {
         "title": "EngageTriBoost: Predictive Modeling of User Engagement in Digital Mental Health Intervention Using Explainable Machine Learning",
@@ -240,6 +236,10 @@
       {
         "title": "Persona-Guided LLM Adaptation for Culturally Personalized Diabetes Prevention MCQs",
         "authors": "Jason Fan, Chase Fensore, Jacob Shtulman, Rima Pai, Dewan Shoaib, Megha Shah and Joyce Ho"
+      },
+      {
+        "title": "Systematic Evaluation of Large Language Models for Post-Discharge Clinical Action Extraction",
+        "authors": "Shivali Dalmia, Ananya Mantravadi and Prasanna Desikan"
       }
     ]
   },
