@@ -733,6 +733,12 @@ del {
   max-height: 84px;
 }
 
+.sponsor-logo-row-silver .sponsor-logo-silver-jhir {
+  width: 420px;
+  max-width: min(420px, 100%);
+  max-height: 88px;
+}
+
 .sponsor-logo-row-award img {
   max-width: min(110px, 100%);
   max-height: 96px;
@@ -919,6 +925,12 @@ del {
     width: 150px;
     max-width: min(150px, 100%);
     max-height: 66px;
+  }
+
+  .sponsor-logo-row-silver .sponsor-logo-silver-jhir {
+    width: 300px;
+    max-width: min(300px, 100%);
+    max-height: 60px;
   }
 
   .sponsor-logo-row-silver .sponsor-logo-silver-compact {
