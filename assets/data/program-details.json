@@ -954,6 +954,21 @@
       "label": "View full Industry Track page"
     }
   },
+  "industry-networking": {
+    "kind": "industry",
+    "badge": "Networking",
+    "title": "Professional Networking, Speed Dating, and Social Hour",
+    "date": "Tuesday, June 2",
+    "time": "5:15 PM - 6:15 PM",
+    "room": "Floor 2- Theater Lobby",
+    "summary": [
+      "Professional Networking, Speed Dating, and Social Hour."
+    ],
+    "externalLink": {
+      "href": "industry.html",
+      "label": "View full Industry Track page"
+    }
+  },
   "meal-jun1-breakfast": {
     "kind": "meal",
     "badge": "Meal",
