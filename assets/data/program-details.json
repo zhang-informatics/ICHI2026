@@ -913,7 +913,7 @@
     "badge": "Industry Track",
     "title": "Public-private partnerships and industry-academia collaborations - identifying key barriers, community-driven solutions, early wins, recommendations, and emerging trends",
     "date": "Tuesday, June 2",
-    "time": "1:30 PM - 3:00 PM",
+    "time": "2:00 PM - 3:30 PM",
     "room": "Floor 2- Theater",
     "summary": [
       "While many discussions of AI in healthcare focus on tools to improve clinical workflows and efficiency or for patient interactions, AI has a powerful capability to improve early diagnosis and hence prevention or mitigation of disease progression, and to improve treatment. Currently, nearly 1/3 of new medical devices include an AI/ML functionality. This panel will discuss the application of AI to medtech, the potential benefit to patients, the issues for healthcare systems regarding AI-enabled medtech, and the partnership needed between health systems and medtech companies to develop and deploy solutions to meet the needs for better outcomes as well as access and affordability."
@@ -941,7 +941,7 @@
       "Boston Scientific, USA"
     ],
     "date": "Tuesday, June 2",
-    "time": "3:20 PM - 4:20 PM",
+    "time": "3:45 PM - 5:15 PM",
     "room": "Floor 2- Theater",
     "abstract": [
       "Artificial intelligence in healthcare is often presented through model performance, but real-world impact depends on much more than accuracy alone. In ambulatory cardiac monitoring, the challenge is not simply detecting arrhythmias from ECG signals; it is building AI that can operate reliably across noisy, heterogeneous, real-world data, fit into clinical workflows, support expert review, and earn trust from clinicians, patients, and health systems.",
@@ -949,22 +949,6 @@
       "Using lessons from cardiac rhythm management and broader experience across healthcare AI, this talk will examine what it takes to move from an impressive algorithm to a trusted operational capability. The session will highlight practical strategies for developing clinically meaningful real-world evidence, managing model evolution responsibly, balancing automation with expert judgment, and building systems that are robust not only in development but also in deployment. The goal is to offer a pragmatic roadmap for organizations seeking to create human-centered AI that is safe, scalable, and genuinely useful in healthcare."
     ],
     "bio": "Dr. Teplitzky is an AI Research Fellow within the Cardiac Rhythm Management division at Boston Scientific and a leader in the development of AI for physiological signal interpretation and clinical decision support. Over the past decade, his work has focused on biomedical signal processing, machine learning, and translating emerging AI methods into clinically relevant, real-world systems. He was among the early innovators applying deep learning to ambulatory ECG interpretation and led development of BeatLogic, an AI platform for automated ECG analysis. His experience spans startups, growth-stage companies, and global medical technology organizations, giving him a distinctive perspective on how AI is conceived, validated, and deployed in regulated healthcare environments. Across industry and academia, his work has included algorithm development, computational modeling, data and validation strategy, and AI-enabled product innovation. He is an inventor on multiple patents and an author of peer-reviewed publications in biomedical engineering and medical AI. Dr. Teplitzky earned his BS in Biomedical Engineering from Arizona State University and his PhD in Biomedical Engineering from the University of Minnesota, where he was an NSF Graduate Research Fellow.",
-    "externalLink": {
-      "href": "industry.html",
-      "label": "View full Industry Track page"
-    }
-  },
-  "industry-networking": {
-    "kind": "industry",
-    "badge": "Networking",
-    "title": "Professional Networking, Speed Dating, and Social Hour",
-    "date": "Tuesday, June 2",
-    "time": "4:30 PM - 6:00 PM",
-    "room": "Floor 2- Theater Lobby",
-    "summary": [
-      "Professional Networking, Speed Dating, and Social Hour.",
-      "A networking-focused session for follow-up conversations across industry, academia, and healthcare delivery."
-    ],
     "externalLink": {
       "href": "industry.html",
       "label": "View full Industry Track page"
@@ -1031,7 +1015,7 @@
     "badge": "Meal",
     "title": "Breakfast",
     "date": "Tuesday, June 2",
-    "time": "7:30 AM - 8:15 AM",
+    "time": "7:45 AM - 8:15 AM",
     "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
@@ -1045,7 +1029,7 @@
     "badge": "Meal",
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
-    "time": "9:45 AM - 10:15 AM",
+    "time": "9:45 AM - 10:00 AM",
     "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
@@ -1059,7 +1043,7 @@
     "badge": "Meal",
     "title": "Lunch: Traditional Asian Buffet",
     "date": "Tuesday, June 2",
-    "time": "12:45 PM - 1:30 PM",
+    "time": "12:30 PM - 2:00 PM",
     "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
@@ -1073,7 +1057,7 @@
     "badge": "Meal",
     "title": "Coffee Break",
     "date": "Tuesday, June 2",
-    "time": "3:00 PM - 3:30 PM",
+    "time": "3:30 PM - 3:45 PM",
     "room": "Floor 3- Mississippi Room Annex",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
@@ -1087,7 +1071,7 @@
     "badge": "Reception Menu",
     "title": "ICHI Reception Menu",
     "date": "Tuesday, June 2",
-    "time": "6:00 PM - 8:00 PM",
+    "time": "6:15 PM - 8:00 PM",
     "room": "Floor 4- Campus Club",
     "externalLink": {
       "href": "assets/docs/Meal%20Agenda.pdf",
@@ -1165,7 +1149,7 @@
     ],
     "image": "assets/images/jesse_isaacman_beck.jpg",
     "date": "Monday, June 1",
-    "time": "3:30 PM - 5:00 PM",
+    "time": "3:45 PM - 5:15 PM",
     "room": "Floor 3- Mississippi Room",
     "bio": [
       "Jesse Isaacman-Beck, PhD, is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS). In this role, he works to maximize Departmental effectiveness through emerging technology and to catalyze innovation to advance the health and well-being of all Americans.",
