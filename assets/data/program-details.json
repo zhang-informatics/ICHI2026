@@ -2223,12 +2223,151 @@
     "date": "Monday, June 1",
     "time": "2:00 PM - 5:15 PM",
     "room": "Floor 2- Theater",
-    "summary": "Detailed workshop agenda will be posted once available.",
     "externalLink": {
       "href": "https://yuvisu.github.io/health-digitaltwin/",
       "label": "Visit workshop website",
       "newTab": true
     },
-    "agendaItems": []
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1 - Clinical Application"
+      },
+      {
+        "time": "2:00 PM - 2:10 PM",
+        "program": "Opening Remarks",
+        "presenter": "Stephen Huo, Yu Huang, Jiang Bian, Huanmei Wu, Yi Qian",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:10 PM - 2:20 PM",
+        "program": "Presentation",
+        "title": "Closing the Gap in Women's Cancer and Preventive Screening Access Through Discrete-Event Simulation Modeling",
+        "presenter": "Alexandra Paiz Delgado, Luciana Salvatierra, Sophia Tu, Jakub Williams, Yutong Wang, Rochelle Joly, Yiye Zhang, Yaren Bilge Kaya",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:20 PM - 2:30 PM",
+        "program": "Presentation",
+        "title": "OmniBioTwin: A System of Twinned Systems Framework for Health Digital Twins",
+        "presenter": "Zhaohui Wang, Yu Huang, Jiang Bian",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:30 PM - 2:40 PM",
+        "program": "Presentation",
+        "title": "T2D Med DT: A Medication Focused Digital Twin Framework for Cardiovascular Risk Reduction in Type 2 Diabetes",
+        "presenter": "Huanmei Wu, Feifan Liu",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:40 PM - 2:50 PM",
+        "program": "Presentation",
+        "title": "Digital Twin classifier for T2 High vs T2 Low Asthma and Parsimonious Subgroup Discovery",
+        "presenter": "Yifan Wu, Yuliya Halchenko, Raymond Harvey",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "2:50 PM - 3:00 PM",
+        "program": "Presentation",
+        "title": "NephroTwin: A Digital Twin Framework for Proactive and Personalized Management of Chronic Kidney Disease",
+        "presenter": "Sayed Chhattan Shah, Taqi Raza",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:00 PM - 3:15 PM",
+        "program": "Presentation",
+        "title": "A Scalable Architecture and Implementation Framework for Disease Focused Health Digital Twins: The DT4ALS Case Study",
+        "presenter": "Huanmei Wu",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:15 PM - 3:20 PM",
+        "program": "Presentation",
+        "title": "A Real World Evidence Framework for Building Prognostic Digital Twins to Optimize Clinical Trials Efficiency",
+        "presenter": "Chuan Gao, Dongzhe Hong, Liker Oztop, Jenny Jiang, Stephen Huo",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:20 PM - 3:30 PM",
+        "program": "Presentation",
+        "title": "A Digital Process Twin Simulation of Breast Pathology Workflows: Evaluating the Parametric and Structural Impacts of AI Integration",
+        "presenter": "Vidhi Kothari, Devavrath Sandeep, Matthew Hanna, Rema Padman, Ramayya Krishnan",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:30 PM - 3:45 PM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2 - Methods & Technical"
+      },
+      {
+        "time": "3:45 PM - 3:55 PM",
+        "program": "Presentation",
+        "title": "Beyond Individual Prediction: A Population Level Digital Twin for Lung Cancer Survivorship Capacity Planning",
+        "presenter": "Ziwei Zhu, Yuhua Bao, Yiye Zhang",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "3:55 PM - 4:05 PM",
+        "program": "Presentation",
+        "title": "Toward Trustworthy Health Digital Twins: A Design and Validation Framework for Real-World Clinical Decision Support",
+        "presenter": "Shalina Champa",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:05 PM - 4:15 PM",
+        "program": "Presentation",
+        "title": "Bio360: A Unified Event-Driven Framework for Multimodal Health Data Integration and Monitoring",
+        "presenter": "Siddharth Karnati, Sankar Dasiga, Srijib Mukherjee",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:15 PM - 4:25 PM",
+        "program": "Presentation",
+        "title": "AI-Based Real-Time Contactless Stress and Anxiety Detection Using Camera Vision and LiDAR Simulation",
+        "presenter": "Dr. Gomathi N, Aman Kumar, Suraj Kumar",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:25 PM - 4:35 PM",
+        "program": "Presentation",
+        "title": "Robustness Evaluation of a Foundation Segmentation Model Under Simulated Domain Shifts in Abdominal CT: Implications for Health Digital Twin Deployment",
+        "presenter": "Sanghati Basu",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:35 PM - 4:45 PM",
+        "program": "Presentation",
+        "title": "Automated De-Identification of Clinical Interview Transcripts in an rTMS-Based Depression Treatment Study",
+        "presenter": "Sara Hashempour, Jayce Doose, Paul Heider, Brendan Murney, Corbin Ping, Losa McTeague, Paul Sajda, Danielle Taylor",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "4:45 PM - 4:55 PM",
+        "program": "Presentation",
+        "title": "FreqSADSeg: Enabling Real-Time Health Digital Twins through Frequency-Aware Semantic Alignment Distillation for Text-Free Medical Image Segmentation",
+        "presenter": "Hai Li, Wanli Xing, Chenglu Li",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "section": true,
+        "program": "Final"
+      },
+      {
+        "time": "4:55 PM - 5:10 PM",
+        "program": "Final Keynote",
+        "presenter": "Wei Liu",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "5:10 PM - 5:15 PM",
+        "program": "Final - Closure",
+        "presenter": "Stephen Huo, Yu Huang, Jiang Bian, Huanmei Wu, Yi Quan",
+        "presenterLabel": "Presentations/Authors"
+      }
+    ]
   }
 }
