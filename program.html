@@ -1184,7 +1184,7 @@
           <td class="agenda-empty"></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-consortium program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="doctoral-consortium"><span class="agenda-badge">Doctoral Consortium</span><div class="agenda-slot-text">Doctoral Consortium</div></div></td>
-          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="fireside-jesse-isaacman-beck"><span class="agenda-badge">Fireside Chat</span><div class="agenda-keynote-mini"><div class="agenda-keynote-top"><div class="agenda-keynote-photo"><img src="assets/images/jesse_isaacman_beck.jpg" alt="Jesse Isaacman-Beck, PhD"></div><div class="agenda-keynote-name">Jesse Isaacman-Beck, PhD</div></div><div class="agenda-keynote-bottom"><div class="agenda-keynote-meta"><div class="agenda-keynote-role">Director of AI Policy and Strategy</div></div><div class="agenda-keynote-meta"><div class="agenda-keynote-org">HHS / ONC</div></div></div></div></div></td>
+          <td><div class="agenda-slot agenda-slot-keynote program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="fireside-jesse-isaacman-beck"><span class="agenda-badge">Fireside Chat</span><div class="agenda-slot-text">Industrial Track Fireside Chat<br>Tarek Tomes first, followed by Jesse Isaacman-Beck, PhD<br>Moderator: Ikram Khan</div></div></td>
           <td class="agenda-empty"></td>
           <td><div class="agenda-slot agenda-slot-workshop program-detail-trigger" role="button" tabindex="0" aria-haspopup="dialog" data-detail-key="workshop-6"><span class="agenda-badge">Workshop 6</span><div class="agenda-slot-text">Trust-AI 2026: Trustworthy AI for IoMT</div></div></td>
           <td><div class="agenda-slot agenda-slot-special"><span class="agenda-badge">Committee</span><div class="agenda-slot-text">ICHI Steering Committee Meeting (By Invitation)</div></div></td>
@@ -1677,6 +1677,37 @@
 
       programDetailBody.innerHTML = sections.join('');
       return;
+    }
+
+    if (Array.isArray(detail.speakers) && detail.speakers.length) {
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Speakers</h4>
+          ${detail.speakers.map(speaker => {
+            const speakerLines = Array.isArray(speaker.speakerLines) ? speaker.speakerLines.filter(Boolean) : [];
+            const speakerPhoto = speaker.image
+              ? `<div class="program-keynote-photo"><img src="${escapeHtml(speaker.image)}" alt="${escapeHtml(speaker.name || 'Speaker')}"></div>`
+              : `<div class="program-keynote-photo placeholder">${escapeHtml(personInitials(speaker.name || 'Speaker'))}</div>`;
+            const speakerAbstract = speaker.abstract
+              ? `<p><strong>Abstract:</strong></p>${toParagraphs(speaker.abstract).map(item => `<p>${escapeHtml(item)}</p>`).join('')}`
+              : '';
+
+            return `
+              <div class="program-keynote-card">
+                ${speakerPhoto}
+                <div class="program-keynote-copy">
+                  <span class="program-keynote-role">${escapeHtml(speaker.role || 'Speaker')}</span>
+                  <h4 class="program-keynote-name">${escapeHtml(speaker.name || '')}</h4>
+                  ${speakerLines.map(item => `<p class="program-keynote-line">${escapeHtml(item)}</p>`).join('')}
+                </div>
+              </div>
+              ${speaker.talkTitle ? `<p><strong>Talk Title:</strong> ${escapeHtml(speaker.talkTitle)}</p>` : ''}
+              ${speaker.bio ? toParagraphs(speaker.bio).map(item => `<p>${escapeHtml(item)}</p>`).join('') : ''}
+              ${speakerAbstract}
+            `;
+          }).join('')}
+        </section>
+      `);
     }
 
     if (isKeynote && detail.speaker) {

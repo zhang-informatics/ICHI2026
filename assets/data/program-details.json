@@ -1153,27 +1153,69 @@
   },
   "fireside-jesse-isaacman-beck": {
     "kind": "keynote",
-    "detailOrder": "abstract-speaker-moderator",
     "badge": "Fireside Chat",
-    "title": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
-    "speaker": "Jesse Isaacman-Beck, PhD",
-    "affiliation": "Director of AI Policy and Strategy, U.S. Department of Health and Human Services (HHS) / ONC",
-    "speakerLines": [
-      "Director of AI Policy and Strategy",
-      "U.S. Department of Health and Human Services (HHS) / ONC"
-    ],
-    "image": "assets/images/jesse_isaacman_beck.jpg",
+    "title": "Industrial Track Fireside Chat",
+    "track": "Industry Track",
     "date": "Monday, June 1",
     "time": "3:45 PM - 5:15 PM",
     "room": "Floor 3- Mississippi Room",
-    "bio": [
-      "Jesse Isaacman-Beck, PhD, is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS). In this role, he works to maximize Departmental effectiveness through emerging technology and to catalyze innovation to advance the health and well-being of all Americans.",
-      "Working closely with HHS's Chief Information, AI, and Data Officers, he has played a central role in establishing HHS's AI governance framework, developing AI strategy across administrations, and executing federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping HHS AI use case oversight, modernizing HHS's IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
-      "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science & Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
-    ],
     "summary": [
-      "Format: Fireside Chat + Audience Q&A",
-      "Duration: ~60 min conversation · ~30 min Q&A"
+      "Tarek Tomes will speak first on \"The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment.\"",
+      "Jesse Isaacman-Beck, PhD will follow with \"Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care.\"",
+      "Ikram Khan will moderate both fireside chats."
+    ],
+    "speakers": [
+      {
+        "name": "Tarek Tomes",
+        "role": "Speaker",
+        "talkTitle": "The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment",
+        "speakerLines": [
+          "Vice President and Chief Information Officer",
+          "University of Minnesota"
+        ],
+        "image": "assets/images/tarek.png",
+        "bio": [
+          "Tarek Tomes is Vice President and Chief Information Officer at the University of Minnesota. As chief information officer, he leads the University's technology strategy across digital platforms, data, artificial intelligence, and cybersecurity, aligning technology investments with academic priorities, research innovation, and operational excellence.",
+          "His leadership focuses on building a human-centered, service-oriented, secure, and resilient technology environment that empowers faculty, students, researchers, and administrative teams across the University community.",
+          "Tomes has more than 25 years of experience across the public and private sectors. Before joining the University, he served for seven years as commissioner of Minnesota IT Services (MNIT) and chief information officer for the State of Minnesota, where he led statewide efforts to build an innovative digital government that works for Minnesotans.",
+          "As the state's top technology leader, Tomes collaborated with state agencies, local governments, and private sector partners to expand the use of technology to improve public services. His work included modernizing major statewide systems supporting driver and vehicle services, paid family and medical leave, child welfare, and payment integrity programs, as well as enabling a rapid transition to remote work for more than 45,000 executive branch employees during the COVID-19 pandemic.",
+          "Tomes has been recognized as a national leader in data-driven government and the responsible use of artificial intelligence. Earlier in his career, he served as chief innovation officer and chief information officer for the City of Saint Paul, held assistant commissioner roles at Minnesota IT Services, and spent 13 years in the private sector with Control Data Systems and British Telecom."
+        ]
+      },
+      {
+        "name": "Jesse Isaacman-Beck, PhD",
+        "role": "Speaker",
+        "talkTitle": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
+        "speakerLines": [
+          "Director of AI Policy and Strategy",
+          "U.S. Department of Health and Human Services (HHS) / ONC"
+        ],
+        "image": "assets/images/jesse_isaacman_beck.jpg",
+        "bio": [
+          "Jesse Isaacman-Beck, PhD, is the Director of the Division of Artificial Intelligence Policy and Strategy at the U.S. Department of Health and Human Services (HHS). In this role, he works to maximize Departmental effectiveness through emerging technology and to catalyze innovation to advance the health and well-being of all Americans.",
+          "Working closely with HHS's Chief Information, AI, and Data Officers, he has played a central role in establishing HHS's AI governance framework, developing AI strategy across administrations, and executing federal AI and data policy directives. His work has included launching the HHS AI Governance Board, shaping HHS AI use case oversight, modernizing HHS's IT, AI, and data policy, and leading the creation of HHS's first public Data Inventory.",
+          "Previously, Dr. Isaacman-Beck served in the NIH Office of Science Policy and as an AAAS Science & Technology Policy Fellow. He holds a PhD and trained as a neuroscientist at the University of Pennsylvania and Stanford University."
+        ],
+        "abstract": [
+          "As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.",
+          "Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.",
+          "The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients."
+        ]
+      }
+    ],
+    "agendaItems": [
+      {
+        "program": "First Fireside Chat",
+        "title": "The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment",
+        "presenterLabel": "Speaker",
+        "presenter": "Tarek Tomes, Vice President and Chief Information Officer, University of Minnesota"
+      },
+      {
+        "program": "Second Fireside Chat",
+        "title": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
+        "presenterLabel": "Speaker",
+        "presenter": "Jesse Isaacman-Beck, PhD, Director of AI Policy and Strategy, U.S. Department of Health and Human Services (HHS) / ONC"
+      }
     ],
     "moderatorDetails": {
       "name": "Ikram Khan",
@@ -1186,12 +1228,7 @@
         "A globally sought-after speaker, Ikram has shared his insights at leading universities and international conferences, advocating for technology-driven healthcare equity. He holds an MPH from the Birla Institute of Technology & Science (BITS), Pilani, and specialized training in Public-Private Partnerships from The World Bank Institute and Chulalongkorn University. Recently, Ikram earned an MBA from the Carlson School of Management at the University of Minnesota (UMN) and is pursuing a PhD in Health AI at the UMN, focusing on precision and personalized medicine.",
         "As an advisor to multiple healthcare startups and non-profits, Ikram continues to champion AI-driven solutions to enhance health outcomes and equity, making him a pivotal leader driving force in shaping the future of healthcare and life sciences."
       ]
-    },
-    "abstract": [
-      "As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.",
-      "Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.",
-      "The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients."
-    ]
+    }
   },
   "young-scholar-lightning": {
     "kind": "young-scholar",
