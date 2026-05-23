@@ -1159,11 +1159,6 @@
     "date": "Monday, June 1",
     "time": "3:45 PM - 5:15 PM",
     "room": "Floor 3- Mississippi Room",
-    "summary": [
-      "Tarek Tomes will speak first on \"The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment.\"",
-      "Jesse Isaacman-Beck, PhD will follow with \"Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care.\"",
-      "Ikram Khan will moderate both fireside chats."
-    ],
     "speakers": [
       {
         "name": "Tarek Tomes",
@@ -1201,20 +1196,6 @@
           "Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.",
           "The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients."
         ]
-      }
-    ],
-    "agendaItems": [
-      {
-        "program": "First Fireside Chat",
-        "title": "The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment",
-        "presenterLabel": "Speaker",
-        "presenter": "Tarek Tomes, Vice President and Chief Information Officer, University of Minnesota"
-      },
-      {
-        "program": "Second Fireside Chat",
-        "title": "Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care",
-        "presenterLabel": "Speaker",
-        "presenter": "Jesse Isaacman-Beck, PhD, Director of AI Policy and Strategy, U.S. Department of Health and Human Services (HHS) / ONC"
       }
     ],
     "moderatorDetails": {

@@ -558,6 +558,40 @@
       color: #3f2e27;
     }
 
+    .fireside-chat-layout {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .fireside-segment {
+      display: grid;
+      grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+      gap: 1.15rem;
+      align-items: stretch;
+    }
+
+    .fireside-segment + .fireside-segment {
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(221, 178, 74, 0.22);
+    }
+
+    .fireside-segment .event-section h4 + p {
+      margin-top: 0.45rem;
+    }
+
+    .fireside-abstract {
+      min-height: 2.4rem;
+    }
+
+    .fireside-moderator-row {
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(221, 178, 74, 0.22);
+    }
+
+    .fireside-moderator-row .person-card {
+      max-width: 320px;
+    }
+
     .industry-bio-modal[hidden] {
       display: none;
     }
@@ -701,6 +735,10 @@
       .event-keynote .event-keynote-layout {
         grid-template-columns: 1fr;
       }
+
+      .fireside-segment {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 920px) {
@@ -828,30 +866,57 @@
             <span class="event-location">Mississippi Room</span>
           </div>
           <h3>Industrial Track Fireside Chat</h3>
-          <p class="event-subtitle">Tarek Tomes will speak first, followed by Jesse Isaacman-Beck, PhD. Ikram Khan will moderate both fireside chats.</p>
         </div>
-        <div class="event-keynote-layout">
-          <div class="keynote-rail">
-            <article class="person-card keynote-speaker-card">
-              <div class="person-photo"><img src="assets/images/tarek.png" alt="Tarek Tomes"></div>
-              <div class="person-body">
-                <span class="person-role">Speaker</span>
-                <h4 class="person-name">Tarek Tomes</h4>
-                <p class="person-title">Vice President and Chief Information Officer</p>
-                <p class="person-org">University of Minnesota</p>
-                <div class="person-actions"><button type="button" class="bio-button" data-person-key="tarek-tomes">Read Bio</button></div>
+        <div class="fireside-chat-layout">
+          <section class="fireside-segment">
+            <div class="keynote-rail">
+              <article class="person-card keynote-speaker-card">
+                <div class="person-photo"><img src="assets/images/tarek.png" alt="Tarek Tomes"></div>
+                <div class="person-body">
+                  <span class="person-role">Speaker</span>
+                  <h4 class="person-name">Tarek Tomes</h4>
+                  <p class="person-title">Vice President and Chief Information Officer</p>
+                  <p class="person-org">University of Minnesota</p>
+                  <div class="person-actions"><button type="button" class="bio-button" data-person-key="tarek-tomes">Read Bio</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="event-copy is-simple keynote-copy">
+              <div class="event-section">
+                <h4>Title</h4>
+                <p>The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment</p>
+                <h4>Abstract</h4>
+                <div class="fireside-abstract"></div>
               </div>
-            </article>
-            <article class="person-card keynote-speaker-card">
-              <div class="person-photo"><img src="assets/images/jesse_isaacman_beck.jpg" alt="Jesse Isaacman-Beck, PhD"></div>
-              <div class="person-body">
-                <span class="person-role">Speaker</span>
-                <h4 class="person-name">Jesse Isaacman-Beck, PhD</h4>
-                <p class="person-title">Director, Division of Artificial Intelligence Policy and Strategy</p>
-                <p class="person-org">U.S. Department of Health &amp; Human Services (HHS) / ONC</p>
-                <div class="person-actions"><button type="button" class="bio-button" data-person-key="jesse-isaacman-beck">Read Bio</button></div>
+            </div>
+          </section>
+
+          <section class="fireside-segment">
+            <div class="keynote-rail">
+              <article class="person-card keynote-speaker-card">
+                <div class="person-photo"><img src="assets/images/jesse_isaacman_beck.jpg" alt="Jesse Isaacman-Beck, PhD"></div>
+                <div class="person-body">
+                  <span class="person-role">Speaker</span>
+                  <h4 class="person-name">Jesse Isaacman-Beck, PhD</h4>
+                  <p class="person-title">Director, Division of Artificial Intelligence Policy and Strategy</p>
+                  <p class="person-org">U.S. Department of Health &amp; Human Services (HHS) / ONC</p>
+                  <div class="person-actions"><button type="button" class="bio-button" data-person-key="jesse-isaacman-beck">Read Bio</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="event-copy is-simple keynote-copy">
+              <div class="event-section">
+                <h4>Title</h4>
+                <p>Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care</p>
+                <h4>Abstract</h4>
+                <p>As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.</p>
+                <p>Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.</p>
+                <p>The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&amp;A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients.</p>
               </div>
-            </article>
+            </div>
+          </section>
+
+          <div class="fireside-moderator-row">
             <article class="person-card moderator-card">
               <div class="person-photo"><img src="assets/images/ikram_khan.jpg" alt="Ikram Khan"></div>
               <div class="person-body">
@@ -862,18 +927,6 @@
                 <div class="person-actions"><button type="button" class="bio-button" data-person-key="ikram-khan">Read Bio</button></div>
               </div>
             </article>
-          </div>
-          <div class="event-copy is-simple keynote-copy">
-            <div class="event-section">
-              <h4>Talk Sequence</h4>
-              <p><strong>First:</strong> The University as Health AI Engine: Infrastructure, Governance, and Minnesota’s Moment.</p>
-              <p><strong>Then:</strong> Shaping the Future of Health AI: Inside the Federal Strategy on Data, Interoperability, and Intelligent Care.</p>
-              <p><strong>Moderator:</strong> Ikram Khan, Managing Director, Health AI Institute.</p>
-              <h4>Jesse Isaacman-Beck Abstract</h4>
-              <p>As artificial intelligence reshapes the delivery, administration, and governance of healthcare, the federal response has never been more consequential — or more complex. In this fireside chat, Jesse Isaacman-Beck, Director of AI Policy and Strategy at the U.S. Department of Health and Human Services (HHS) and senior leader within the Office of the National Coordinator for Health Information Technology (ONC), offers an inside look at how the federal government is navigating this pivotal moment.</p>
-              <p>Drawing on his work developing the HHS AI Strategy, leading ONC's efforts on data interoperability, and engaging the broader health informatics community through HHS's recent Request for Information, Isaacman-Beck will share the department's vision for a health system where data flows freely, technology evolves responsibly, and AI genuinely expands access and affordability of care. He will offer candid early insights from community feedback on how stakeholders — from health systems to researchers to patients — want to see federal AI priorities implemented in practice.</p>
-              <p>The conversation will explore what it means to govern AI in a rapidly shifting policy landscape, how ONC interoperability mandates intersect with the emerging demands of AI-enabled workflows, and where the federal government sees the greatest opportunities — and the most pressing risks — in the years ahead. The session will close with an open audience Q&amp;A, offering ICHI participants a rare opportunity to engage directly with federal leadership on the policies shaping their research, their institutions, and their patients.</p>
-            </div>
           </div>
         </div>
       </div>
