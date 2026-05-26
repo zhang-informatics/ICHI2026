@@ -1986,13 +1986,49 @@
     "date": "Monday, June 1",
     "time": "8:30 AM - 11:45 AM",
     "room": "Floor 3- Conf. Room 324",
-    "summary": "Detailed workshop agenda will be posted once available.",
     "externalLink": {
       "href": "https://koncordantlab.github.io/ichi2026-food-health-workshop/",
       "label": "Visit workshop website",
       "newTab": true
     },
-    "agendaItems": []
+    "agendaItems": [
+      {
+        "section": true,
+        "program": "Session 1"
+      },
+      {
+        "time": "8:30 AM - 9:00 AM",
+        "program": "Presentation",
+        "title": "Building Concordant Ontology for Food and Health",
+        "presenter": "Hande Kucuk McGinty",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "program": "Hands-On Session",
+        "title": "Knowledge Graph Building using KNARM; Collaborative Discussion to Generate a report of the session and outline community artifacts"
+      },
+      {
+        "time": "10:00 AM - 10:15 AM",
+        "program": "Coffee Break"
+      },
+      {
+        "section": true,
+        "program": "Session 2"
+      },
+      {
+        "time": "10:15 AM - 11:00 AM",
+        "program": "Keynote",
+        "title": "FoodOn and Other Food Ontologies",
+        "presenter": "Damion Dooley",
+        "presenterLabel": "Presentations/Authors"
+      },
+      {
+        "time": "11:00 AM - 11:45 AM",
+        "program": "Community Townhall & Next Steps",
+        "title": "Finalizing the session report and discussing future directions for the community"
+      }
+    ]
   },
   "workshop-4": {
     "kind": "workshop",
