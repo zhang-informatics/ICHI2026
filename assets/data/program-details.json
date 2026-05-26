@@ -1756,6 +1756,73 @@
       "The tutorial maps evaluation requirements across healthcare AI applications of increasing complexity, spanning clinical information extraction, multimodal medical reasoning, sequential decision-making under uncertainty, and agent-based clinical workflow simulation. Rather than prescribing a fixed taxonomy, the framework identifies the distinct requirements each application class introduces for dataset construction, metric design, annotation, and domain expert validation. Two empirical case studies from the authors' research, a large-scale medical audio reasoning benchmark and an action-based reasoning benchmark for medical AI agents operating within live EHR environments, ground the framework."
     ]
   },
+  "women-health-informatics": {
+    "kind": "special",
+    "badge": "Special Event",
+    "title": "Women in Health Informatics: From mentorship to sponsorship: advancing women into health informatics leadership",
+    "date": "Tuesday, June 2",
+    "time": "3:45 PM - 5:15 PM",
+    "room": "Floor 3- Conference Room 325",
+    "speakers": [
+      {
+        "role": "Moderator",
+        "name": "Suhyun Park",
+        "image": "assets/images/sunyun_park.jpg"
+      },
+      {
+        "role": "Panelist",
+        "name": "Cui Tao, PhD",
+        "image": "assets/images/cui_tao.png",
+        "speakerLines": [
+          "Mayo Clinic",
+          "Professor of Biomedical Informatics",
+          "Chair, Department of Artificial Intelligence and Informatics",
+          "Consultant, Department of Artificial Intelligence and Informatics"
+        ]
+      },
+      {
+        "role": "Panelist",
+        "name": "Jenna Marquard, PhD, FACMI",
+        "image": "assets/images/jenna_marquard.png",
+        "speakerLines": [
+          "Professor, University of Minnesota School of Nursing"
+        ]
+      },
+      {
+        "role": "Panelist",
+        "name": "Amye Tevaarwerk, MD",
+        "speakerLines": [
+          "Mayo Clinic Comprehensive Cancer Center",
+          "Associate Professor, Oncology"
+        ]
+      }
+    ],
+    "agendaItems": [
+      {
+        "time": "3:45 PM - 3:55 PM",
+        "program": "Opening Remarks",
+        "presenter": "Suhyun Park",
+        "presenterLabel": "Speaker"
+      },
+      {
+        "time": "3:55 PM - 4:35 PM",
+        "program": "Panel Discussion",
+        "title": "Mentorship vs Sponsorship; Seeking Advice Across Career Stages; Sustaining and Expanding Mentorship; Access and Equity; Navigating Emerging Leadership Spaces; Paying it Forward",
+        "presenter": "Cui Tao, PhD; Jenna Marquard, PhD, FACMI; Amye Tevaarwerk, MD",
+        "presenterLabel": "Speakers"
+      },
+      {
+        "time": "4:35 PM - 4:55 PM",
+        "program": "Discussion and Q&A",
+        "presenter": "Suhyun Park",
+        "presenterLabel": "Speaker"
+      },
+      {
+        "time": "4:55 PM - 5:15 PM",
+        "program": "Networking"
+      }
+    ]
+  },
   "industry-policy-keynote": {
     "kind": "keynote",
     "badge": "Policy Keynote",
