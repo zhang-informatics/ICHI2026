@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awards | ICHI 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .awards-page {
+      padding: 3rem 0 4rem;
+      overflow-x: hidden;
+    }
+
+    .awards-page * {
+      min-width: 0;
+    }
+
+    .awards-intro {
+      max-width: 920px;
+      padding-left: 1.2rem;
+      border-left: 6px solid var(--umn-gold);
+      margin-bottom: 2.5rem;
+    }
+
+    .awards-kicker {
+      margin: 0 0 0.35rem;
+      color: var(--umn-maroon);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .awards-intro h2 {
+      margin: 0 0 0.75rem;
+      color: var(--umn-maroon);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.08;
+      overflow-wrap: anywhere;
+    }
+
+    .awards-intro p,
+    .award-section p {
+      color: #473d38;
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .awards-intro p + p {
+      margin-top: 0.75rem;
+    }
+
+    .award-section {
+      margin-top: 2.75rem;
+    }
+
+    .award-section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 2px solid var(--umn-gold);
+    }
+
+    .award-section-header h2 {
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      line-height: 1.15;
+    }
+
+    .award-section-header span {
+      color: #655b55;
+      font-size: 0.95rem;
+      line-height: 1.35;
+      text-align: right;
+    }
+
+    .recipient-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .recipient-card,
+    .placeholder-card {
+      border: 1px solid #e5dad0;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(77, 45, 32, 0.06);
+    }
+
+    .recipient-card {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .recipient-card h3 {
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: 1.16rem;
+      line-height: 1.3;
+    }
+
+    .recipient-card .institution {
+      margin: -0.25rem 0 0;
+      color: #625850;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .recipient-card .paper-title {
+      margin: 0;
+      padding-left: 0.85rem;
+      border-left: 4px solid var(--umn-gold);
+      color: #2f2724;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.48;
+      overflow-wrap: anywhere;
+    }
+
+    .placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .placeholder-card {
+      padding: 1.1rem;
+      min-height: 128px;
+    }
+
+    .placeholder-card h3 {
+      margin: 0 0 0.55rem;
+      color: var(--umn-maroon);
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    .placeholder-card p {
+      margin: 0;
+      color: #625850;
+      font-size: 0.97rem;
+      line-height: 1.55;
+    }
+
+    .poster-placeholder {
+      max-width: 520px;
+    }
+
+    @media (max-width: 850px) {
+      main.container.awards-page {
+        width: calc(100vw - 2rem);
+        max-width: calc(100vw - 2rem);
+      }
+
+      .award-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .award-section-header span {
+        text-align: left;
+      }
+
+      .recipient-grid,
+      .placeholder-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .awards-page {
+        padding-top: 2.25rem;
+      }
+
+      .awards-intro {
+        padding-left: 0.9rem;
+      }
+
+      .awards-intro h2 {
+        font-size: 1.75rem;
+      }
+
+      .award-section-header h2 {
+        font-size: 1.55rem;
+      }
+
+      .recipient-card,
+      .placeholder-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/ieee-logo_v2.png" alt="IEEE ICHI 2026 Logo" />
+        </a>
+        <div id="top-nav"></div>
+    </div>
+</header>
+
+<section class="hero" style="background-image: url('assets/images/program-bg.jpg');">
+  <div class="hero-text">
+    <h1>Awards</h1>
+  </div>
+</section>
+
+<main class="container awards-page">
+  <section class="awards-intro" aria-labelledby="student-travel-awards">
+    <div class="awards-kicker">Student Travel Awards</div>
+    <h2 id="student-travel-awards">ICHI 2026 Student Travel Awards</h2>
+    <p>The ICHI 2026 Student Travel Awards are sponsored by the Institute for Healthcare Informatics to support student participation in the IEEE International Conference on Healthcare Informatics. These awards recognize promising student researchers whose accepted work contributes to the advancement of healthcare informatics.</p>
+    <p>The awardees were selected by the ICHI 2026 Student Travel Award Selection Committee, co-chaired by Dr. Christopher C. Yang and Dr. Zhe He.</p>
+  </section>
+
+  <section class="award-section" aria-labelledby="award-recipients">
+    <div class="award-section-header">
+      <h2 id="award-recipients">2026 Award Recipients</h2>
+    </div>
+
+    <div class="recipient-grid">
+      <article class="recipient-card">
+        <h3>Mostafa Habibi</h3>
+        <p class="institution">The University of Texas at Dallas</p>
+        <p class="paper-title">&ldquo;A Scalable Dual-Camera Platform for Behavioral Assessment in Healthcare&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Reem Al-Saidi</h3>
+        <p class="institution">University of Windsor</p>
+        <p class="paper-title">&ldquo;Vulnerabilities in the Tower: Assessing Embedding Nucleotide Inference Risks in Hybrid CNN-Transformer Genomic Large Language Models (HgLLMs)&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Shun-Ting Chang</h3>
+        <p class="institution">National Tsing Hua University</p>
+        <p class="paper-title">&ldquo;Pathology Shortcuts: Detecting and Mitigating Reliance on Non-Target Pathologies in Chest X-ray AI&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Xiaoyang Wang</h3>
+        <p class="institution">Drexel University</p>
+        <p class="paper-title">&ldquo;MediHive: A Decentralized Agent Collective for Medical Reasoning&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Baris Karacan</h3>
+        <p class="institution">University of Illinois Chicago</p>
+        <p class="paper-title">&ldquo;Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Yuanying Pang</h3>
+        <p class="institution">Florida State University</p>
+        <p class="paper-title">&ldquo;Voices from Reddit: Users&rsquo; Experiences and Opinions with Generative AI for Health Problems&rdquo;</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="award-section" aria-labelledby="best-paper-awards">
+    <div class="award-section-header">
+      <h2 id="best-paper-awards">Best Paper Awards</h2>
+      <span>Recipients will be listed after the banquet.</span>
+    </div>
+
+    <div class="placeholder-grid">
+      <article class="placeholder-card">
+        <h3>Analytics Track</h3>
+        <p>To be announced after the banquet.</p>
+      </article>
+
+      <article class="placeholder-card">
+        <h3>Human Factors Track</h3>
+        <p>To be announced after the banquet.</p>
+      </article>
+
+      <article class="placeholder-card">
+        <h3>Systems Track</h3>
+        <p>To be announced after the banquet.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="award-section" aria-labelledby="best-poster-awards">
+    <div class="award-section-header">
+      <h2 id="best-poster-awards">Best Poster Awards</h2>
+      <span>Recipients will be listed after the banquet.</span>
+    </div>
+
+    <article class="placeholder-card poster-placeholder">
+      <h3>Best Poster Awards</h3>
+      <p>To be announced after the banquet.</p>
+    </article>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch('nav.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('top-nav').innerHTML = html; });
+
+  fetch('footer.html')
+          .then(res => res.text())
+          .then(html => { document.getElementById('footer').innerHTML = html; });
+</script>
+
+</body>
+</html>
