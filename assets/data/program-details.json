@@ -784,8 +784,8 @@
     "time": "2:30 PM - 4:00 PM",
     "room": "Floor 3- Conf. Room 303",
     "sessionChair": {
-      "name": "",
-      "email": ""
+      "name": "Yifan Peng",
+      "email": "yip4002@med.cornell.edu"
     },
     "paperCount": 6,
     "papers": [
@@ -865,7 +865,7 @@
     "room": "Floor 2- Theater",
     "sessionChair": {
       "name": "Rui Zhang",
-      "email": ""
+      "email": "ruizhang@umn.edu"
     },
     "paperCount": 6,
     "papers": [
