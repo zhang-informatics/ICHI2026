@@ -1729,13 +1729,6 @@
         "url": "https://www.nature.com/articles/s44401-025-00020-9"
       },
       {
-        "time": "5",
-        "program": "Presentation",
-        "title": "Closing the Gap in Women's Cancer and Preventive Screening Access Through Discrete-Event Simulation Modeling (future invited article, accepted at HDT 2026)",
-        "presenter": "Yaren Bilge Kaya (Columbia)",
-        "url": "https://yuvisu.github.io/health-digitaltwin/"
-      },
-      {
         "time": "6",
         "program": "Presentation",
         "title": "Accelerating AI innovation in healthcare: real-world clinical research applications on the Mayo Clinic Platform",
@@ -1986,7 +1979,7 @@
         "time": "9:45 AM - 10:15 AM",
         "program": "Coffee Break and Poster Session",
         "title": "Poster presentations",
-        "presenter": "The EHRsupport score, an electronic health record-based social support measure (Candyce Kroenke, Rhonda Aoki, Jane Liang, David Cronkite, Salene Jones, Jessica Mogk, Larry Kushi, Lauren Mammini, Shaila Strayhorn-Carter, David Mosen and Stacey Alexeeff); Explainable AI for Mental Health Detection from Social Media: A Comparative Study of Traditional Machine Learning and a Large Language Model (Chen Xie, Di Zhu, Ziwei Wang, Haoyun Zhang and Zihan Wei); Multi-Agent AI Frameworks for Clinical Diagnosis Support: Benchmarking LLM Reasoning with Sleep Disorders as a Testbed (Aarushi Jaitly, Helom Berhane, Deepa Burman, Anand Rao, Ramayya Krishnan and Rema Padman); NLP Guided by Qualitative Methodology: Computational Analysis and Qualitative Approaches to Quality of Life (Esther Lázaro, Vanessa Moscardó, Salvador Herrera-Pérez, Patricia López-Mases and María-Victoria Fux); Eating Disorders Among Individuals with Suicidal Distress: A Cross-Sectional Analysis of Reddit Data on Prevalence, Demographics, and Psychiatric Comorbidity (Salim Sazzed, Farhan Noor Dehan and Md Ehashan Rabbi Pial)",
+        "presenter": "The EHRsupport score, an electronic health record-based social support measure (Candyce Kroenke, Rhonda Aoki, Jane Liang, David Cronkite, Salene Jones, Jessica Mogk, Larry Kushi, Lauren Mammini, Shaila Strayhorn-Carter, David Mosen and Stacey Alexeeff); Explainable AI for Mental Health Detection from Social Media: A Comparative Study of Traditional Machine Learning and a Large Language Model (Chen Xie, Di Zhu, Ziwei Wang, Haoyun Zhang and Zihan Wei); Eating Disorders Among Individuals with Suicidal Distress: A Cross-Sectional Analysis of Reddit Data on Prevalence, Demographics, and Psychiatric Comorbidity (Salim Sazzed, Farhan Noor Dehan and Md Ehashan Rabbi Pial)",
         "presenterLabel": "Presentations/Authors"
       },
       {
@@ -2225,13 +2218,6 @@
         "presenterLabel": "Presentations/Authors"
       },
       {
-        "time": "9:25 AM - 9:40 AM",
-        "program": "Presentation",
-        "title": "A Lightweight Patch-Based Transformer for Subject-Independent Automated Seizure Detection",
-        "presenter": "Adithya Rajnarayanan",
-        "presenterLabel": "Presentations/Authors"
-      },
-      {
         "time": "9:40 AM - 9:50 AM",
         "program": "Presentation",
         "title": "Differentially Private RAG for Clinical Decision Support from Electronic Health Records",
@@ -2304,8 +2290,8 @@
       {
         "time": "9:25 AM - 10:00 AM",
         "program": "Author Contributed Talks",
-        "title": "Author contributed talk 1: Early Detection of Rare Disease Using Hierarchical Set-to-Sequence Modeling of Structured Electronic Health Records; Author contributed talk 2: From clinical texts to phenotypic profiles: ontology-aware extraction and clustering of HPO terms to facilitate rare disease diagnosis",
-        "presenter": "Yingbo Ma; Paul Rollier",
+        "title": "Author contributed talk 1: Early Detection of Rare Disease Using Hierarchical Set-to-Sequence Modeling of Structured Electronic Health Records",
+        "presenter": "Yingbo Ma",
         "presenterLabel": "Presentations/Authors"
       },
       {
@@ -2366,13 +2352,6 @@
         "presenterLabel": "Presentations/Authors"
       },
       {
-        "time": "2:35 PM - 2:55 PM",
-        "program": "Presentation",
-        "title": "Safety-Oriented Evaluation of Large Language Models in Healthcare: A Guideline-Informed Systematic Review",
-        "presenter": "Author (=17 min + 3 min Q&A)",
-        "presenterLabel": "Presentations/Authors"
-      },
-      {
         "time": "2:55 PM - 3:15 PM",
         "program": "Moderated Paper Spotlight and Roundtable Discussion",
         "title": "AI-Driven Digital Twin System Auditor for Secure and Trustworthy EHR Operations",
@@ -2397,13 +2376,6 @@
         "program": "Presentation",
         "title": "A Trustworthy AI Hardware Architecture for Real-Time Seizure Detection and Resilient IoMT Intervention",
         "presenter": "Author (=17 min + 3 min Q&A)",
-        "presenterLabel": "Presentations/Authors"
-      },
-      {
-        "time": "4:05 PM - 4:25 PM",
-        "program": "Pre-recorded Presentation",
-        "title": "IoMT-Driven Multi-View Visual Aberrant Event Detection for Trustworthy Senior Assistive Living",
-        "presenter": "Organizers will request a video recording from the authors; play recording if received, followed by brief moderated discussion/Q&A",
         "presenterLabel": "Presentations/Authors"
       },
       {
@@ -2443,13 +2415,6 @@
         "time": "2:00 PM - 2:10 PM",
         "program": "Opening Remarks",
         "presenter": "Stephen Huo, Yu Huang, Jiang Bian, Huanmei Wu, Yi Qian",
-        "presenterLabel": "Presentations/Authors"
-      },
-      {
-        "time": "2:10 PM - 2:20 PM",
-        "program": "Presentation",
-        "title": "Closing the Gap in Women's Cancer and Preventive Screening Access Through Discrete-Event Simulation Modeling",
-        "presenter": "Alexandra Paiz Delgado, Luciana Salvatierra, Sophia Tu, Jakub Williams, Yutong Wang, Rochelle Joly, Yiye Zhang, Yaren Bilge Kaya",
         "presenterLabel": "Presentations/Authors"
       },
       {
