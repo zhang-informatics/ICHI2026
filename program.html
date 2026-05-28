@@ -1753,6 +1753,21 @@
       `);
     }
 
+    if (detail.sessionChair && (detail.sessionChair.name || detail.sessionChair.email)) {
+      const chair = detail.sessionChair;
+      const chairLines = [
+        chair.name ? `<strong>${escapeHtml(chair.name)}</strong>` : '',
+        chair.email ? `<a href="mailto:${escapeHtml(chair.email)}">${escapeHtml(chair.email)}</a>` : ''
+      ].filter(Boolean);
+
+      sections.push(`
+        <section class="program-detail-section">
+          <h4>Session Chair</h4>
+          <p>${chairLines.join('<br>')}</p>
+        </section>
+      `);
+    }
+
     if (detail.summary) {
       sections.push(`
         <section class="program-detail-section">

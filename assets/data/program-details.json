@@ -7,6 +7,10 @@
     "date": "Tuesday, June 2",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Mohamed Nafea",
+      "email": "mnafea@mst.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -43,6 +47,10 @@
     "date": "Tuesday, June 2",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Ankita Shukla",
+      "email": "ankitas@unr.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -79,6 +87,10 @@
     "date": "Tuesday, June 2",
     "time": "2:00 PM - 3:30 PM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Xiaolei Huang",
+      "email": "xiaolei.huang@memphis.edu"
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -111,6 +123,10 @@
     "date": "Tuesday, June 2",
     "time": "3:45 PM - 5:15 PM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Feng Xie",
+      "email": "xie00469@umn.edu"
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -143,6 +159,10 @@
     "date": "Tuesday, June 2",
     "time": "2:00 PM - 3:30 PM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Zhe He",
+      "email": "zhe.he@cci.fsu.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -179,6 +199,10 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Mississippi Room",
+    "sessionChair": {
+      "name": "Suhyn Park",
+      "email": "Suhyun.Park@uth.tmc.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -215,6 +239,10 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Conf. Room 303",
+    "sessionChair": {
+      "name": "Jianfu Li",
+      "email": "li.jianfu@mayo.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -251,6 +279,10 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Xiaolei Huang",
+      "email": "xiaolei.huang@memphis.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -287,6 +319,10 @@
     "date": "Wednesday, June 3",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Nansu Zong",
+      "email": "Zong.Nansu@mayo.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -323,6 +359,10 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 2- Theater",
+    "sessionChair": {
+      "name": "Amber Angell",
+      "email": "aangell@usc.edu"
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -355,6 +395,10 @@
     "date": "Wednesday, June 3",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 3- Mississippi Room",
+    "sessionChair": {
+      "name": "Ikram Khan",
+      "email": "ikram@healthai.institute"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -391,6 +435,10 @@
     "date": "Wednesday, June 3",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 3- Conf. Room 303",
+    "sessionChair": {
+      "name": "Mohamed Nafea",
+      "email": "mnafea@mst.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -427,6 +475,10 @@
     "date": "Wednesday, June 3",
     "time": "8:15 AM - 9:45 AM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Yonghui Wu",
+      "email": "yonghui.wu@ufl.edu"
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -459,6 +511,10 @@
     "date": "Wednesday, June 3",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Meghna Singh",
+      "email": "singh742@umn.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -495,6 +551,10 @@
     "date": "Wednesday, June 3",
     "time": "10:00 AM - 11:30 AM",
     "room": "Floor 2- Theater",
+    "sessionChair": {
+      "name": "Jiaxuan Zhang",
+      "email": "jiaxuanz@sc.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -531,6 +591,10 @@
     "date": "Wednesday, June 3",
     "time": "12:45 PM - 2:15 PM",
     "room": "Floor 3- Conf. Room 303",
+    "sessionChair": {
+      "name": "Shyu, Chi-Ren",
+      "email": "shyuc@missouri.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -567,6 +631,10 @@
     "date": "Wednesday, June 3",
     "time": "12:45 PM - 2:15 PM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Fang Li",
+      "email": "Li.Fang@mayo.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -603,6 +671,10 @@
     "date": "Wednesday, June 3",
     "time": "12:45 PM - 2:15 PM",
     "room": "Floor 3- Conf. Room 325",
+    "sessionChair": {
+      "name": "Feng Xie",
+      "email": "xie00469@umn.edu"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -639,6 +711,10 @@
     "date": "Wednesday, June 3",
     "time": "2:30 PM - 4:00 PM",
     "room": "Floor 2- Theater",
+    "sessionChair": {
+      "name": "Mohamed Nafea",
+      "email": "mnafea@mst.edu"
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -671,6 +747,10 @@
     "date": "Wednesday, June 3",
     "time": "2:30 PM - 4:00 PM",
     "room": "Floor 3- Mississippi Room",
+    "sessionChair": {
+      "name": "",
+      "email": ""
+    },
     "paperCount": 5,
     "papers": [
       {
@@ -703,6 +783,10 @@
     "date": "Wednesday, June 3",
     "time": "2:30 PM - 4:00 PM",
     "room": "Floor 3- Conf. Room 303",
+    "sessionChair": {
+      "name": "",
+      "email": ""
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -739,6 +823,10 @@
     "date": "Wednesday, June 3",
     "time": "2:30 PM - 4:00 PM",
     "room": "Floor 3- Conf. Room 324",
+    "sessionChair": {
+      "name": "Ikram Khan",
+      "email": "ikram@healthai.institute"
+    },
     "paperCount": 6,
     "papers": [
       {
@@ -775,6 +863,10 @@
     "date": "Wednesday, June 3",
     "time": "12:45 PM - 2:15 PM",
     "room": "Floor 2- Theater",
+    "sessionChair": {
+      "name": "Rui Zhang",
+      "email": ""
+    },
     "paperCount": 6,
     "papers": [
       {
