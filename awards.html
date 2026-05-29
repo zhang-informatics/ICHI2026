@@ -252,10 +252,19 @@
       --track-color: #5a4aa3;
     }
 
-    .poster-grid {
+    .poster-grid,
+    .service-awards-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
+    }
+
+    .poster-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .service-awards-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 760px;
     }
 
     .status-card {
@@ -387,6 +396,7 @@
     @media (max-width: 1050px) {
       .paper-awards-grid,
       .poster-grid,
+      .service-awards-grid,
       .recipient-grid,
       .student-awards-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -422,6 +432,7 @@
       .track-block,
       .paper-awards-grid,
       .poster-grid,
+      .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
       .young-scholar-grid,
@@ -444,6 +455,7 @@
       .student-awards-grid,
       .paper-awards-grid,
       .poster-grid,
+      .service-awards-grid,
       .young-scholar-grid,
       .rising-star-grid {
         grid-template-columns: 1fr;
@@ -486,6 +498,7 @@
       .track-block,
       .paper-awards-grid,
       .poster-grid,
+      .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
       .young-scholar-grid,
@@ -521,10 +534,11 @@
   <section class="award-overview" aria-labelledby="awards-overview">
     <p class="award-eyebrow">ICHI 2026 Awards</p>
     <h2 id="awards-overview">Celebrating ICHI 2026 award recipients</h2>
-    <p>ICHI 2026 awards include track paper awards, poster and service awards, and student awards.</p>
+    <p>ICHI 2026 awards include track paper awards, poster awards, service and volunteer awards, and student awards.</p>
     <nav class="award-links" aria-label="Awards sections">
       <a href="#track-paper-awards">Track Paper Awards</a>
-      <a href="#poster-service-awards">Poster &amp; Service Awards</a>
+      <a href="#poster-awards">Poster Awards</a>
+      <a href="#service-volunteer-awards">Service &amp; Volunteer Awards</a>
       <a href="#student-awards">Student Awards</a>
       <a href="#student-travel-awards">Student Travel Awards</a>
       <a href="#young-scholar-awards">Young Scholar Awards</a>
@@ -697,11 +711,11 @@
     </div>
   </section>
 
-  <section class="award-section" id="poster-service-awards" aria-labelledby="poster-service-awards-title">
+  <section class="award-section" id="poster-awards" aria-labelledby="poster-awards-title">
     <div class="section-heading">
       <div>
-        <p class="award-eyebrow">Poster &amp; Service Awards</p>
-        <h2 id="poster-service-awards-title">Best Poster Awards</h2>
+        <p class="award-eyebrow">Poster Awards</p>
+        <h2 id="poster-awards-title">Best Poster Awards</h2>
       </div>
       <p class="sponsor">Poster awards sponsored by Regenstrief Institute and Indiana University</p>
     </div>
@@ -724,12 +738,29 @@
         <h3>To be announced</h3>
         <p>Recipient information will be added after it is finalized.</p>
       </article>
+    </div>
+  </section>
 
+  <section class="award-section" id="service-volunteer-awards" aria-labelledby="service-volunteer-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Service &amp; Volunteer Awards</p>
+        <h2 id="service-volunteer-awards-title">Service &amp; Volunteer Awards</h2>
+      </div>
+    </div>
+
+    <div class="service-awards-grid">
       <article class="status-card service-card">
         <p class="award-label">Best Service Award</p>
         <h3>Meagan Teals</h3>
         <p>University of Minnesota</p>
         <p><strong>Sponsored by:</strong> Division of Computational Health Sciences</p>
+      </article>
+
+      <article class="status-card service-card">
+        <p class="award-label">Volunteer Award</p>
+        <h3>Yu Hou</h3>
+        <p>University of Minnesota</p>
       </article>
     </div>
   </section>
@@ -811,11 +842,6 @@
         <article class="person-card">
           <h4>Bofan He</h4>
           <p>New York Institute of Technology</p>
-        </article>
-        <article class="person-card">
-          <p class="award-label">Volunteer Award</p>
-          <h4>Yu Hou</h4>
-          <p>University of Minnesota</p>
         </article>
       </div>
     </div>
