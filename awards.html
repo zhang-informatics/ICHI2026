@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
   <style>
     .awards-page {
-      padding: 3rem 0 4rem;
+      padding: 3rem 0 4.5rem;
       overflow-x: hidden;
     }
 
@@ -16,81 +16,289 @@
       min-width: 0;
     }
 
-    .awards-intro {
-      max-width: 920px;
-      padding-left: 1.2rem;
-      border-left: 6px solid var(--umn-gold);
-      margin-bottom: 2.5rem;
+    .award-overview {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #eadfce;
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(122, 0, 25, 0.08), rgba(255, 204, 51, 0.13)),
+        #fffaf0;
+      box-shadow: 0 18px 36px rgba(77, 45, 32, 0.08);
+      padding: clamp(1.35rem, 3vw, 2.1rem);
+      margin-bottom: 2.8rem;
     }
 
-    .awards-kicker {
-      margin: 0 0 0.35rem;
+    .award-overview::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: linear-gradient(90deg, var(--umn-maroon), var(--umn-gold));
+    }
+
+    .award-eyebrow {
+      margin: 0 0 0.4rem;
       color: var(--umn-maroon);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 900;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
-    .awards-intro h2 {
-      margin: 0 0 0.75rem;
+    .award-overview h2 {
+      max-width: 840px;
+      margin: 0;
       color: var(--umn-maroon);
       font-size: clamp(2rem, 4vw, 2.8rem);
-      line-height: 1.08;
+      line-height: 1.05;
       overflow-wrap: anywhere;
     }
 
-    .awards-intro p,
-    .award-section p {
-      color: #473d38;
-      font-size: 1.02rem;
-      line-height: 1.75;
+    .award-overview p:not(.award-eyebrow) {
+      max-width: 820px;
+      margin-top: 0.9rem;
+      color: #4c4039;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
     }
 
-    .awards-intro p + p {
-      margin-top: 0.75rem;
+    .award-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.25rem;
+    }
+
+    .award-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid rgba(122, 0, 25, 0.22);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--umn-maroon);
+      font-weight: 900;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .award-links a:hover,
+    .award-links a:focus {
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(122, 0, 25, 0.12);
+      transform: translateY(-1px);
     }
 
     .award-section {
-      margin-top: 2.75rem;
+      margin-top: 3rem;
     }
 
-    .award-section-header {
+    .section-heading {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 1rem;
-      padding-bottom: 0.65rem;
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.75rem;
       border-bottom: 2px solid var(--umn-gold);
     }
 
-    .award-section-header h2 {
+    .section-heading h2 {
       margin: 0;
       color: var(--umn-maroon);
       font-size: clamp(1.55rem, 3vw, 2.2rem);
       line-height: 1.15;
     }
 
-    .award-section-header span {
+    .section-heading p {
+      margin: 0;
+    }
+
+    .section-heading .sponsor {
       color: #655b55;
       font-size: 0.95rem;
       line-height: 1.35;
       text-align: right;
+      overflow-wrap: anywhere;
     }
 
-    .recipient-grid {
+    .track-block {
+      margin-top: 2.25rem;
+    }
+
+    .track-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .track-header h3 {
+      margin: 0;
+      color: #2f2724;
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+      line-height: 1.2;
+    }
+
+    .track-header .track-sponsor {
+      color: #6d625c;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      text-align: right;
+    }
+
+    .paper-awards-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
+    .paper-award-card,
     .recipient-card,
-    .placeholder-card {
+    .person-card,
+    .status-card {
       border: 1px solid #e5dad0;
       border-radius: 8px;
       background: #fff;
       box-shadow: 0 10px 24px rgba(77, 45, 32, 0.06);
+    }
+
+    .paper-award-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      min-height: 100%;
+      padding: 1.15rem;
+      border-top: 6px solid var(--track-color, var(--umn-maroon));
+    }
+
+    .award-label {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      max-width: 100%;
+      padding: 0.25rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(255, 204, 51, 0.26);
+      color: var(--umn-maroon);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .paper-award-card h4,
+    .status-card h3,
+    .recipient-card h3,
+    .person-card h4 {
+      margin: 0;
+      color: var(--umn-maroon);
+      line-height: 1.25;
+    }
+
+    .paper-award-card h4 {
+      font-size: 1.05rem;
+      overflow-wrap: anywhere;
+    }
+
+    .award-meta {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+
+    .award-meta div {
+      display: grid;
+      gap: 0.15rem;
+    }
+
+    .meta-label {
+      color: #7a6e66;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .award-meta p,
+    .status-card p,
+    .recipient-card p,
+    .person-card p {
+      margin: 0;
+      color: #3f3631;
+      font-size: 0.96rem;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .analytics-track {
+      --track-color: var(--umn-maroon);
+    }
+
+    .systems-track {
+      --track-color: #12838b;
+    }
+
+    .human-factors-track {
+      --track-color: #5a4aa3;
+    }
+
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .status-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      padding: 1.1rem;
+      border-top: 6px solid var(--track-color, var(--umn-maroon));
+    }
+
+    .status-card.pending {
+      background: linear-gradient(180deg, #fff, #fffbef);
+    }
+
+    .status-card.service-card {
+      --track-color: #2b8f50;
+    }
+
+    .student-intro {
+      max-width: 920px;
+      padding: 1.05rem 1.15rem;
+      border-left: 6px solid var(--umn-gold);
+      background: #fffaf0;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1.25rem;
+    }
+
+    .student-intro p {
+      margin: 0;
+      color: #473d38;
+      font-size: 1.01rem;
+      line-height: 1.68;
+    }
+
+    .student-intro p + p {
+      margin-top: 0.75rem;
+    }
+
+    .recipient-grid,
+    .student-awards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
     }
 
     .recipient-card {
@@ -101,10 +309,7 @@
     }
 
     .recipient-card h3 {
-      margin: 0;
-      color: var(--umn-maroon);
       font-size: 1.16rem;
-      line-height: 1.3;
     }
 
     .recipient-card .institution {
@@ -125,52 +330,122 @@
       overflow-wrap: anywhere;
     }
 
-    .placeholder-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
+    .student-subsection {
+      margin-top: 2rem;
     }
 
-    .placeholder-card {
-      padding: 1.1rem;
-      min-height: 128px;
+    .student-subsection h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 0.85rem;
+      color: #2f2724;
+      font-size: 1.35rem;
+      line-height: 1.25;
     }
 
-    .placeholder-card h3 {
-      margin: 0 0 0.55rem;
+    .sponsor-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid #eed073;
+      border-radius: 999px;
+      background: #fff7d0;
       color: var(--umn-maroon);
-      font-size: 1.08rem;
-      line-height: 1.3;
+      font-size: 0.78rem;
+      font-weight: 900;
+      line-height: 1.2;
     }
 
-    .placeholder-card p {
-      margin: 0;
-      color: #625850;
-      font-size: 0.97rem;
-      line-height: 1.55;
+    .person-card {
+      padding: 0.95rem;
+      border-left: 5px solid var(--track-color, var(--umn-maroon));
     }
 
-    .poster-placeholder {
-      max-width: 520px;
+    .person-card h4 {
+      font-size: 1rem;
     }
 
-    @media (max-width: 850px) {
-      main.container.awards-page {
-        width: calc(100vw - 2rem);
-        max-width: calc(100vw - 2rem);
+    .person-card p {
+      color: #5f554f;
+      font-size: 0.92rem;
+    }
+
+    .young-scholar-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .rising-star-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    @media (max-width: 1050px) {
+      .paper-awards-grid,
+      .poster-grid,
+      .recipient-grid,
+      .student-awards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .award-section-header {
+      .young-scholar-grid,
+      .rising-star-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
+      main.container.awards-page {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .section-heading,
+      .track-header {
         align-items: flex-start;
         flex-direction: column;
       }
 
-      .award-section-header span {
+      .award-overview,
+      .award-section,
+      .track-block,
+      .paper-awards-grid,
+      .poster-grid,
+      .recipient-grid,
+      .student-awards-grid,
+      .young-scholar-grid,
+      .rising-star-grid,
+      .paper-award-card,
+      .status-card,
+      .recipient-card,
+      .person-card,
+      .student-intro {
+        width: 100%;
+        max-width: calc(100vw - 2rem);
+      }
+
+      .section-heading .sponsor,
+      .track-header .track-sponsor {
         text-align: left;
       }
 
       .recipient-grid,
-      .placeholder-grid {
+      .student-awards-grid,
+      .paper-awards-grid,
+      .poster-grid,
+      .young-scholar-grid,
+      .rising-star-grid {
         grid-template-columns: 1fr;
       }
 
@@ -178,21 +453,49 @@
         padding-top: 2.25rem;
       }
 
-      .awards-intro {
-        padding-left: 0.9rem;
-      }
-
-      .awards-intro h2 {
+      .award-overview h2 {
         font-size: 1.75rem;
+        overflow-wrap: normal;
       }
 
-      .award-section-header h2 {
+      .section-heading h2 {
         font-size: 1.55rem;
       }
 
       .recipient-card,
-      .placeholder-card {
+      .paper-award-card,
+      .status-card,
+      .person-card {
         padding: 1rem;
+      }
+
+      .award-links a {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .student-subsection h3 {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 520px) {
+      main.container.awards-page,
+      .award-overview,
+      .award-section,
+      .track-block,
+      .paper-awards-grid,
+      .poster-grid,
+      .recipient-grid,
+      .student-awards-grid,
+      .young-scholar-grid,
+      .rising-star-grid,
+      .paper-award-card,
+      .status-card,
+      .recipient-card,
+      .person-card,
+      .student-intro {
+        max-width: min(calc(100vw - 2rem), 358px);
       }
     }
   </style>
@@ -215,91 +518,403 @@
 </section>
 
 <main class="container awards-page">
-  <section class="awards-intro" aria-labelledby="student-travel-awards">
-    <div class="awards-kicker">Student Travel Awards</div>
-    <h2 id="student-travel-awards">ICHI 2026 Student Travel Awards</h2>
-    <p>The ICHI 2026 Student Travel Awards are sponsored by the Institute for Healthcare Informatics to support student participation in the IEEE International Conference on Healthcare Informatics. These awards recognize promising student researchers whose accepted work contributes to the advancement of healthcare informatics.</p>
-    <p>The awardees were selected by the ICHI 2026 Student Travel Award Selection Committee, co-chaired by Dr. Christopher C. Yang and Dr. Zhe He.</p>
+  <section class="award-overview" aria-labelledby="awards-overview">
+    <p class="award-eyebrow">ICHI 2026 Awards</p>
+    <h2 id="awards-overview">Celebrating ICHI 2026 award recipients</h2>
+    <p>ICHI 2026 awards include track paper awards, poster and service awards, and student awards.</p>
+    <nav class="award-links" aria-label="Awards sections">
+      <a href="#track-paper-awards">Track Paper Awards</a>
+      <a href="#poster-service-awards">Poster &amp; Service Awards</a>
+      <a href="#student-awards">Student Awards</a>
+      <a href="#student-travel-awards">Student Travel Awards</a>
+      <a href="#young-scholar-awards">Young Scholar Awards</a>
+    </nav>
   </section>
 
-  <section class="award-section" aria-labelledby="award-recipients">
-    <div class="award-section-header">
-      <h2 id="award-recipients">2026 Award Recipients</h2>
+  <section class="award-section" id="track-paper-awards" aria-labelledby="track-paper-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Track Paper Awards</p>
+        <h2 id="track-paper-awards-title">Best Paper Awards</h2>
+      </div>
+      <p class="sponsor">Sponsored by Regenstrief Institute and Indiana University</p>
     </div>
 
-    <div class="recipient-grid">
-      <article class="recipient-card">
-        <h3>Mostafa Habibi</h3>
-        <p class="institution">The University of Texas at Dallas</p>
-        <p class="paper-title">&ldquo;A Scalable Dual-Camera Platform for Behavioral Assessment in Healthcare&rdquo;</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Reem Al-Saidi</h3>
-        <p class="institution">University of Windsor</p>
-        <p class="paper-title">&ldquo;Vulnerabilities in the Tower: Assessing Embedding Nucleotide Inference Risks in Hybrid CNN-Transformer Genomic Large Language Models (HgLLMs)&rdquo;</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Shun-Ting Chang</h3>
-        <p class="institution">National Tsing Hua University</p>
-        <p class="paper-title">&ldquo;Pathology Shortcuts: Detecting and Mitigating Reliance on Non-Target Pathologies in Chest X-ray AI&rdquo;</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Xiaoyang Wang</h3>
-        <p class="institution">Drexel University</p>
-        <p class="paper-title">&ldquo;MediHive: A Decentralized Agent Collective for Medical Reasoning&rdquo;</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Baris Karacan</h3>
-        <p class="institution">University of Illinois Chicago</p>
-        <p class="paper-title">&ldquo;Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort&rdquo;</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Yuanying Pang</h3>
-        <p class="institution">Florida State University</p>
-        <p class="paper-title">&ldquo;Voices from Reddit: Users&rsquo; Experiences and Opinions with Generative AI for Health Problems&rdquo;</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="award-section" aria-labelledby="best-paper-awards">
-    <div class="award-section-header">
-      <h2 id="best-paper-awards">Best Paper Awards</h2>
-      <span>Recipients will be listed after the banquet.</span>
-    </div>
-
-    <div class="placeholder-grid">
-      <article class="placeholder-card">
+    <div class="track-block analytics-track">
+      <div class="track-header">
         <h3>Analytics Track</h3>
-        <p>To be announced after the banquet.</p>
-      </article>
+      </div>
+      <div class="paper-awards-grid">
+        <article class="paper-award-card">
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Harnessing Language Models for Preoperative Frailty Detection in Clinical Notes&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Chen Bai, Masoud Rouhizadeh, Catherine Price, Nicole Lavin, Raed Yacoub, Mohammad Al-Ani, Todd Manini, Yonghui Wu, and Mamoun Mardini</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>University of Florida; Virginia Commonwealth University</p>
+            </div>
+          </div>
+        </article>
 
-      <article class="placeholder-card">
-        <h3>Human Factors Track</h3>
-        <p>To be announced after the banquet.</p>
-      </article>
+        <article class="paper-award-card">
+          <p class="award-label">Outstanding Paper Award</p>
+          <h4>&ldquo;Three Data Bipartitioning Methods to Improve Prediction of Time to Death&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Michael Sossi and Alex Freitas</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliation</span>
+              <p>University of Kent</p>
+            </div>
+          </div>
+        </article>
 
-      <article class="placeholder-card">
+        <article class="paper-award-card">
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Ontokeeper-Desktop: A Semiotic Driven Ontology Evaluation Tool for Biomedical Ontologies&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Muhammad Amith, Xubing Hao, Yang Gong, Licong Cui, and Cui Tao</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>University of Texas Medical Branch; University of Texas Health Science Center at Houston; Mayo Clinic</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="track-block systems-track">
+      <div class="track-header">
         <h3>Systems Track</h3>
-        <p>To be announced after the banquet.</p>
+      </div>
+      <div class="paper-awards-grid">
+        <article class="paper-award-card">
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Toward Accessible Psychotherapy Training Using AI-Driven Interactive Patient Avatars&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Pascal Riachi, Sofie Kamber, Stella Brogna, Andrew Gloster, and Rafael Wampfler</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>ETH Zurich; University of Lucerne</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-award-card">
+          <p class="award-label">Outstanding Paper Award</p>
+          <h4>&ldquo;Real-Time Environment-Specific Deep Denoising for Edge-Assisted Hearing Aids&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Yumna Anwar, Ian Pope, Yu-Hsiang Wu, Steve Goddard, and Octav Chipara</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliation</span>
+              <p>University of Iowa</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-award-card">
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Hardware-Aware Edge Deep Learning for Multimodal Biomedical Monitoring on Resource-Constrained SoCs&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Sara Aly and Shahnam Mirzaei</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliation</span>
+              <p>California State University, Northridge</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="track-block human-factors-track">
+      <div class="track-header">
+        <h3>Human Factors Track</h3>
+      </div>
+      <div class="paper-awards-grid">
+        <article class="paper-award-card">
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Multimodal VAE Nowcasting with LOCF-Residual Correction for Annual Checkups Under Deviation Regimes and Fragmented Modalities&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Chenhui Huang, Fumiyuki Nihey, Yuki Kosaka, Kentaro Nakahara, Yoshinori Tamada, and Koichi Murashita</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>NEC Corporation; Hirosaki University</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-award-card">
+          <p class="award-label">Outstanding Paper Award</p>
+          <h4>&ldquo;Patient-Centered Design Recommendations for AI-Generated Discharge Summaries&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Pantea Habibi, Haleh Vatani, Paul Landes, Barbara Di Eugenio, Richard Cameron, Andrew Boyd, Pamela Martyn-Nemeth, Carolyn Dickens, Karen Dunn Lopez, and Debaleena Chattopadhyay</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>University of Illinois at Chicago; University of Iowa</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-award-card">
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Promise and Caution: Mapping Opportunities for AI Decision Support in Emergency Medical Services&rdquo;</h4>
+          <div class="award-meta">
+            <div>
+              <span class="meta-label">Authors</span>
+              <p>Zhan Zhang, Vanessa Agbugba, Enze Bai, Sian Billings, Xiao Luo, and Kathleen Adelgais Pace</p>
+            </div>
+            <div>
+              <span class="meta-label">Affiliations</span>
+              <p>Southern Methodist University; University of Colorado</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="award-section" id="poster-service-awards" aria-labelledby="poster-service-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Poster &amp; Service Awards</p>
+        <h2 id="poster-service-awards-title">Best Poster Awards</h2>
+      </div>
+      <p class="sponsor">Poster awards sponsored by Regenstrief Institute and Indiana University</p>
+    </div>
+
+    <div class="poster-grid">
+      <article class="status-card pending">
+        <p class="award-label">Honorable Mention Poster Award</p>
+        <h3>To be announced</h3>
+        <p>Recipient information will be added after it is finalized.</p>
+      </article>
+
+      <article class="status-card pending">
+        <p class="award-label">Outstanding Poster Award</p>
+        <h3>To be announced</h3>
+        <p>Recipient information will be added after it is finalized.</p>
+      </article>
+
+      <article class="status-card pending">
+        <p class="award-label">Best Poster Award</p>
+        <h3>To be announced</h3>
+        <p>Recipient information will be added after it is finalized.</p>
+      </article>
+
+      <article class="status-card service-card">
+        <p class="award-label">Best Service Award</p>
+        <h3>Meagan Teals</h3>
+        <p>University of Minnesota</p>
+        <p><strong>Sponsored by:</strong> Division of Computational Health Sciences</p>
       </article>
     </div>
   </section>
 
-  <section class="award-section" aria-labelledby="best-poster-awards">
-    <div class="award-section-header">
-      <h2 id="best-poster-awards">Best Poster Awards</h2>
-      <span>Recipients will be listed after the banquet.</span>
+  <section class="award-section" id="student-awards" aria-labelledby="student-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Student Awards</p>
+        <h2 id="student-awards-title">ICHI 2026 Student Awards</h2>
+      </div>
+      <p class="sponsor">Sponsored by IHI, TCII, NSF</p>
     </div>
 
-    <article class="placeholder-card poster-placeholder">
-      <h3>Best Poster Awards</h3>
-      <p>To be announced after the banquet.</p>
-    </article>
+    <div class="student-subsection" id="student-travel-awards">
+      <h3>Student Travel Awards <span class="sponsor-pill">Institute for Healthcare Informatics</span></h3>
+      <div class="student-intro">
+        <p>The ICHI 2026 Student Travel Awards are sponsored by the Institute for Healthcare Informatics to support student participation in the IEEE International Conference on Healthcare Informatics. These awards recognize promising student researchers whose accepted work contributes to the advancement of healthcare informatics.</p>
+        <p>The awardees were selected by the ICHI 2026 Student Travel Award Selection Committee, co-chaired by Dr. Christopher C. Yang and Dr. Zhe He.</p>
+      </div>
+
+      <div class="recipient-grid">
+        <article class="recipient-card">
+          <h3>Mostafa Habibi</h3>
+          <p class="institution">The University of Texas at Dallas</p>
+          <p class="paper-title">&ldquo;A Scalable Dual-Camera Platform for Behavioral Assessment in Healthcare&rdquo;</p>
+        </article>
+
+        <article class="recipient-card">
+          <h3>Reem Al-Saidi</h3>
+          <p class="institution">University of Windsor</p>
+          <p class="paper-title">&ldquo;Vulnerabilities in the Tower: Assessing Embedding Nucleotide Inference Risks in Hybrid CNN-Transformer Genomic Large Language Models (HgLLMs)&rdquo;</p>
+        </article>
+
+        <article class="recipient-card">
+          <h3>Shun-Ting Chang</h3>
+          <p class="institution">National Tsing Hua University</p>
+          <p class="paper-title">&ldquo;Pathology Shortcuts: Detecting and Mitigating Reliance on Non-Target Pathologies in Chest X-ray AI&rdquo;</p>
+        </article>
+
+        <article class="recipient-card">
+          <h3>Xiaoyang Wang</h3>
+          <p class="institution">Drexel University</p>
+          <p class="paper-title">&ldquo;MediHive: A Decentralized Agent Collective for Medical Reasoning&rdquo;</p>
+        </article>
+
+        <article class="recipient-card">
+          <h3>Baris Karacan</h3>
+          <p class="institution">University of Illinois Chicago</p>
+          <p class="paper-title">&ldquo;Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort&rdquo;</p>
+        </article>
+
+        <article class="recipient-card">
+          <h3>Yuanying Pang</h3>
+          <p class="institution">Florida State University</p>
+          <p class="paper-title">&ldquo;Voices from Reddit: Users&rsquo; Experiences and Opinions with Generative AI for Health Problems&rdquo;</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="student-subsection">
+      <h3>Student Awards <span class="sponsor-pill">TCII</span></h3>
+      <div class="student-awards-grid">
+        <article class="person-card">
+          <h4>Brayan Gutierrez</h4>
+          <p>Rice University</p>
+        </article>
+        <article class="person-card">
+          <h4>Md Rakibuz Sultan</h4>
+          <p>University of Louisiana at Lafayette</p>
+        </article>
+        <article class="person-card">
+          <h4>Shufan Ming</h4>
+          <p>University of Illinois Urbana-Champaign</p>
+        </article>
+        <article class="person-card">
+          <h4>Chenyu Zhu</h4>
+          <p>University of California, Davis</p>
+        </article>
+        <article class="person-card">
+          <h4>Bofan He</h4>
+          <p>New York Institute of Technology</p>
+        </article>
+        <article class="person-card">
+          <p class="award-label">Volunteer Award</p>
+          <h4>Yu Hou</h4>
+          <p>University of Minnesota</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="student-subsection" id="young-scholar-awards">
+      <h3>Young Scholar Outstanding Paper Awards</h3>
+      <div class="young-scholar-grid">
+        <article class="person-card systems-track">
+          <h4>Heather Zhang</h4>
+          <p>Creekside High School</p>
+        </article>
+        <article class="person-card systems-track">
+          <h4>Ellen Bu</h4>
+          <p>Richard Montgomery High School</p>
+        </article>
+        <article class="person-card systems-track">
+          <h4>Sophia Wang</h4>
+          <p>Horace Greeley High School</p>
+        </article>
+        <article class="person-card systems-track">
+          <h4>Chenyu Zhu</h4>
+          <p>University of California, Davis</p>
+        </article>
+        <article class="person-card systems-track">
+          <h4>Joyce Wu</h4>
+          <p>Academy for Allied Health Sciences</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="student-subsection">
+      <h3>Young Scholar Rising Star Awards</h3>
+      <div class="rising-star-grid">
+        <article class="person-card human-factors-track">
+          <h4>Rishik Kondadadi</h4>
+          <p>Eastview High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Nathan Zhuang</h4>
+          <p>Western Canada High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>S L Richris</h4>
+          <p>Amrita Vishwa Vidyapeetham</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Long Nguyen</h4>
+          <p>New Mexico Institute of Mining and Technology</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Newton Niu</h4>
+          <p>Kent School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Yashasvi Kompella</h4>
+          <p>Edison High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Eren Yigidim</h4>
+          <p>Atlanta International School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Claire Chen</h4>
+          <p>Creekside Middle School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Raymond Cui</h4>
+          <p>White Station High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Harsha Poonepalle</h4>
+          <p>Lambert High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Eden Wu</h4>
+          <p>North Allegheny Intermediate High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Isabel Yang</h4>
+          <p>Ponte Vedra High</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Alethea Liu</h4>
+          <p>Millburn High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Anthony Fu</h4>
+          <p>Dutch Fork High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Aarit Atreja</h4>
+          <p>Stanford Online High School</p>
+        </article>
+        <article class="person-card human-factors-track">
+          <h4>Logan Wu</h4>
+          <p>Eastside High School</p>
+        </article>
+      </div>
+    </div>
   </section>
 </main>
 
