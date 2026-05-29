@@ -367,6 +367,36 @@
       line-height: 1.2;
     }
 
+    .doctoral-travel-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      border: 1px solid #e8d7a2;
+      border-top: 6px solid var(--umn-gold);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255, 204, 51, 0.16), rgba(122, 0, 25, 0.05)),
+        #fffdf7;
+      box-shadow: 0 10px 24px rgba(77, 45, 32, 0.06);
+    }
+
+    .doctoral-travel-card h3 {
+      margin: 0.65rem 0 0.35rem;
+      color: var(--umn-maroon);
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    .doctoral-travel-card p:not(.award-label) {
+      margin: 0;
+      color: #3f3631;
+      font-size: 1rem;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
     .person-card {
       padding: 0.95rem;
       border-left: 5px solid var(--track-color, var(--umn-maroon));
@@ -415,8 +445,10 @@
       }
 
       main.container.awards-page {
-        width: 100%;
-        max-width: 100%;
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
         padding-left: 1rem;
         padding-right: 1rem;
       }
@@ -440,10 +472,16 @@
       .paper-award-card,
       .status-card,
       .recipient-card,
+      .doctoral-travel-card,
       .person-card,
       .student-intro {
         width: 100%;
         max-width: calc(100vw - 2rem);
+      }
+
+      .award-overview {
+        margin-left: 0;
+        margin-right: 0;
       }
 
       .section-heading .sponsor,
@@ -466,12 +504,18 @@
       }
 
       .award-overview h2 {
-        font-size: 1.75rem;
-        overflow-wrap: normal;
+        font-size: 1.45rem;
+        overflow-wrap: anywhere;
       }
 
       .section-heading h2 {
         font-size: 1.55rem;
+      }
+
+      .award-overview p:not(.award-eyebrow),
+      .section-heading .sponsor {
+        font-size: 0.95rem;
+        overflow-wrap: anywhere;
       }
 
       .recipient-card,
@@ -488,6 +532,11 @@
 
       .student-subsection h3 {
         flex-wrap: wrap;
+      }
+
+      .doctoral-travel-card {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
       }
     }
 
@@ -506,6 +555,7 @@
       .paper-award-card,
       .status-card,
       .recipient-card,
+      .doctoral-travel-card,
       .person-card,
       .student-intro {
         max-width: min(calc(100vw - 2rem), 358px);
@@ -540,6 +590,7 @@
       <a href="#poster-awards">Poster Awards</a>
       <a href="#service-volunteer-awards">Service &amp; Volunteer Awards</a>
       <a href="#student-awards">Student Awards</a>
+      <a href="#doctoral-student-travel-awards">Doctoral Student Travel Awards</a>
       <a href="#student-travel-awards">Student Travel Awards</a>
       <a href="#young-scholar-awards">Young Scholar Awards</a>
     </nav>
@@ -560,16 +611,16 @@
       </div>
       <div class="paper-awards-grid">
         <article class="paper-award-card">
-          <p class="award-label">Honorable Mention Paper Award</p>
-          <h4>&ldquo;Harnessing Language Models for Preoperative Frailty Detection in Clinical Notes&rdquo;</h4>
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Ontokeeper-Desktop: A Semiotic Driven Ontology Evaluation Tool for Biomedical Ontologies&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Chen Bai, Masoud Rouhizadeh, Catherine Price, Nicole Lavin, Raed Yacoub, Mohammad Al-Ani, Todd Manini, Yonghui Wu, and Mamoun Mardini</p>
+              <p>Muhammad Amith, Xubing Hao, Yang Gong, Licong Cui, and Cui Tao</p>
             </div>
             <div>
               <span class="meta-label">Affiliations</span>
-              <p>University of Florida; Virginia Commonwealth University</p>
+              <p>University of Texas Medical Branch; University of Texas Health Science Center at Houston; Mayo Clinic</p>
             </div>
           </div>
         </article>
@@ -590,16 +641,16 @@
         </article>
 
         <article class="paper-award-card">
-          <p class="award-label">Best Paper Award</p>
-          <h4>&ldquo;Ontokeeper-Desktop: A Semiotic Driven Ontology Evaluation Tool for Biomedical Ontologies&rdquo;</h4>
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Harnessing Language Models for Preoperative Frailty Detection in Clinical Notes&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Muhammad Amith, Xubing Hao, Yang Gong, Licong Cui, and Cui Tao</p>
+              <p>Chen Bai, Masoud Rouhizadeh, Catherine Price, Nicole Lavin, Raed Yacoub, Mohammad Al-Ani, Todd Manini, Yonghui Wu, and Mamoun Mardini</p>
             </div>
             <div>
               <span class="meta-label">Affiliations</span>
-              <p>University of Texas Medical Branch; University of Texas Health Science Center at Houston; Mayo Clinic</p>
+              <p>University of Florida; Virginia Commonwealth University</p>
             </div>
           </div>
         </article>
@@ -612,16 +663,16 @@
       </div>
       <div class="paper-awards-grid">
         <article class="paper-award-card">
-          <p class="award-label">Honorable Mention Paper Award</p>
-          <h4>&ldquo;Toward Accessible Psychotherapy Training Using AI-Driven Interactive Patient Avatars&rdquo;</h4>
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Hardware-Aware Edge Deep Learning for Multimodal Biomedical Monitoring on Resource-Constrained SoCs&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Pascal Riachi, Sofie Kamber, Stella Brogna, Andrew Gloster, and Rafael Wampfler</p>
+              <p>Sara Aly and Shahnam Mirzaei</p>
             </div>
             <div>
-              <span class="meta-label">Affiliations</span>
-              <p>ETH Zurich; University of Lucerne</p>
+              <span class="meta-label">Affiliation</span>
+              <p>California State University, Northridge</p>
             </div>
           </div>
         </article>
@@ -642,16 +693,16 @@
         </article>
 
         <article class="paper-award-card">
-          <p class="award-label">Best Paper Award</p>
-          <h4>&ldquo;Hardware-Aware Edge Deep Learning for Multimodal Biomedical Monitoring on Resource-Constrained SoCs&rdquo;</h4>
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Toward Accessible Psychotherapy Training Using AI-Driven Interactive Patient Avatars&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Sara Aly and Shahnam Mirzaei</p>
+              <p>Pascal Riachi, Sofie Kamber, Stella Brogna, Andrew Gloster, and Rafael Wampfler</p>
             </div>
             <div>
-              <span class="meta-label">Affiliation</span>
-              <p>California State University, Northridge</p>
+              <span class="meta-label">Affiliations</span>
+              <p>ETH Zurich; University of Lucerne</p>
             </div>
           </div>
         </article>
@@ -664,16 +715,16 @@
       </div>
       <div class="paper-awards-grid">
         <article class="paper-award-card">
-          <p class="award-label">Honorable Mention Paper Award</p>
-          <h4>&ldquo;Multimodal VAE Nowcasting with LOCF-Residual Correction for Annual Checkups Under Deviation Regimes and Fragmented Modalities&rdquo;</h4>
+          <p class="award-label">Best Paper Award</p>
+          <h4>&ldquo;Promise and Caution: Mapping Opportunities for AI Decision Support in Emergency Medical Services&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Chenhui Huang, Fumiyuki Nihey, Yuki Kosaka, Kentaro Nakahara, Yoshinori Tamada, and Koichi Murashita</p>
+              <p>Zhan Zhang, Vanessa Agbugba, Enze Bai, Sian Billings, Xiao Luo, and Kathleen Adelgais Pace</p>
             </div>
             <div>
               <span class="meta-label">Affiliations</span>
-              <p>NEC Corporation; Hirosaki University</p>
+              <p>Southern Methodist University; University of Colorado</p>
             </div>
           </div>
         </article>
@@ -694,16 +745,16 @@
         </article>
 
         <article class="paper-award-card">
-          <p class="award-label">Best Paper Award</p>
-          <h4>&ldquo;Promise and Caution: Mapping Opportunities for AI Decision Support in Emergency Medical Services&rdquo;</h4>
+          <p class="award-label">Honorable Mention Paper Award</p>
+          <h4>&ldquo;Multimodal VAE Nowcasting with LOCF-Residual Correction for Annual Checkups Under Deviation Regimes and Fragmented Modalities&rdquo;</h4>
           <div class="award-meta">
             <div>
               <span class="meta-label">Authors</span>
-              <p>Zhan Zhang, Vanessa Agbugba, Enze Bai, Sian Billings, Xiao Luo, and Kathleen Adelgais Pace</p>
+              <p>Chenhui Huang, Fumiyuki Nihey, Yuki Kosaka, Kentaro Nakahara, Yoshinori Tamada, and Koichi Murashita</p>
             </div>
             <div>
               <span class="meta-label">Affiliations</span>
-              <p>Southern Methodist University; University of Colorado</p>
+              <p>NEC Corporation; Hirosaki University</p>
             </div>
           </div>
         </article>
@@ -818,6 +869,17 @@
           <p class="paper-title">&ldquo;Voices from Reddit: Users&rsquo; Experiences and Opinions with Generative AI for Health Problems&rdquo;</p>
         </article>
       </div>
+    </div>
+
+    <div class="student-subsection" id="doctoral-student-travel-awards">
+      <article class="doctoral-travel-card">
+        <div>
+          <p class="award-label">Doctoral Student Travel Award</p>
+          <h3>NSF-Sponsored Doctoral Student Travel Awards</h3>
+          <p>The NSF-sponsored Doctoral Student Travel Awards support all ICHI 2026 Doctoral Consortium students.</p>
+        </div>
+        <span class="sponsor-pill">NSF Sponsored</span>
+      </article>
     </div>
 
     <div class="student-subsection">
