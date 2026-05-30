@@ -52,6 +52,85 @@
       line-height: 1.6;
     }
 
+    .program-map-panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0 0 1.6rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid #e4d9cf;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(77, 45, 32, 0.055);
+    }
+
+    .program-map-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+    }
+
+    .program-map-heading h2 {
+      margin: 0;
+      color: var(--umn-maroon);
+      font-size: clamp(1.18rem, 1.8vw, 1.48rem);
+      line-height: 1.18;
+    }
+
+    .program-map-heading p {
+      margin: 0;
+      color: #6a5c55;
+      font-size: 0.94rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .program-map-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.65rem;
+    }
+
+    .program-map-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.42rem;
+      min-height: 42px;
+      padding: 0.62rem 0.88rem;
+      border: 1px solid #dfcfc3;
+      border-radius: 999px;
+      background: #fffaf4;
+      color: var(--umn-maroon);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 5px 14px rgba(77, 45, 32, 0.06);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .program-map-button::before {
+      content: "";
+      width: 0.58rem;
+      height: 0.58rem;
+      border-radius: 999px;
+      background: #ffcc33;
+      box-shadow: 0 0 0 4px rgba(255, 204, 51, 0.22);
+    }
+
+    .program-map-button:hover,
+    .program-map-button:focus-visible {
+      transform: translateY(-1px);
+      border-color: rgba(122, 0, 25, 0.35);
+      box-shadow: 0 10px 22px rgba(77, 45, 32, 0.1);
+      outline: none;
+    }
+
     .agenda-day {
       margin-top: 2rem;
     }
@@ -985,6 +1064,142 @@
       outline: none;
     }
 
+    .venue-map-modal[hidden] {
+      display: none;
+    }
+
+    .venue-map-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1200;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+    }
+
+    .venue-map-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(31, 22, 20, 0.64);
+      backdrop-filter: blur(3px);
+    }
+
+    .venue-map-dialog {
+      position: relative;
+      width: min(1060px, calc(100vw - 2rem));
+      max-height: calc(100vh - 2rem);
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid #e5d9cf;
+      background: #fff;
+      box-shadow: 0 24px 60px rgba(25, 18, 16, 0.26);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .venue-map-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.2rem 4.4rem 1rem 1.35rem;
+      border-bottom: 1px solid #eee3da;
+      background: linear-gradient(180deg, #faf4ee 0%, #fff 100%);
+    }
+
+    .venue-map-title-wrap {
+      min-width: 0;
+    }
+
+    .venue-map-kicker {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      background: rgba(122, 0, 25, 0.08);
+      color: var(--umn-maroon);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .venue-map-title {
+      margin: 0;
+      color: #2f2724;
+      font-size: clamp(1.3rem, 2.4vw, 1.85rem);
+      line-height: 1.18;
+    }
+
+    .venue-map-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      min-height: 40px;
+      padding: 0.58rem 0.88rem;
+      border-radius: 999px;
+      background: var(--umn-maroon);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .venue-map-download:hover,
+    .venue-map-download:focus-visible {
+      background: #5f0016;
+      outline: none;
+    }
+
+    .venue-map-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #e3d8cf;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.94);
+      color: var(--umn-maroon);
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .venue-map-close:hover,
+    .venue-map-close:focus-visible {
+      background: #f8f1eb;
+      outline: none;
+    }
+
+    .venue-map-body {
+      overflow: auto;
+      padding: 1rem;
+      background: #f7f1eb;
+    }
+
+    .venue-map-frame {
+      display: grid;
+      place-items: center;
+      min-height: min(62vh, 620px);
+      border-radius: 18px;
+      border: 1px solid #e1d5cb;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7);
+    }
+
+    .venue-map-frame img {
+      display: block;
+      width: min(100%, 900px);
+      height: auto;
+      max-height: calc(100vh - 210px);
+      object-fit: contain;
+    }
+
     @media (max-width: 900px) {
       .agenda-day-header {
         flex-direction: column;
@@ -1001,6 +1216,15 @@
         max-width: 1200px;
       }
 
+      .program-map-panel {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .program-map-actions {
+        justify-content: flex-start;
+      }
+
       .agenda-table-wrap {
         overflow-x: auto;
       }
@@ -1015,6 +1239,24 @@
     }
 
     @media (max-width: 640px) {
+      .program-map-actions {
+        display: grid;
+        width: 100%;
+      }
+
+      .program-map-button {
+        width: 100%;
+      }
+
+      .venue-map-header {
+        flex-direction: column;
+        padding-right: 3.6rem;
+      }
+
+      .venue-map-download {
+        width: 100%;
+      }
+
       .program-keynote-card {
         grid-template-columns: 1fr;
       }
@@ -1058,6 +1300,22 @@
       <li>For meal information, please view the <a href="assets/docs/Meal%20Agenda.pdf" target="_blank" rel="noopener noreferrer">Meal Agenda</a>.</li>
     </ul>
   </section>
+
+  <section class="program-map-panel" aria-label="Coffman Memorial Union maps">
+    <div class="program-map-heading">
+      <h2>Venue Maps</h2>
+      <p>Coffman Memorial Union</p>
+    </div>
+    <div class="program-map-actions">
+      <button type="button" class="program-map-button venue-map-trigger" data-map-key="first-floor" aria-haspopup="dialog">
+        First Floor Map
+      </button>
+      <button type="button" class="program-map-button venue-map-trigger" data-map-key="third-floor" aria-haspopup="dialog">
+        Third Floor Map
+      </button>
+    </div>
+  </section>
+
   <section class="agenda-day" id="monday-june-1">
   <div class="agenda-day-header">
     <h2>Monday, June 1</h2>
@@ -1525,6 +1783,25 @@
   </div>
 </section>
 
+<div class="venue-map-modal" id="venue-map-modal" hidden>
+  <div class="venue-map-backdrop" data-venue-map-close="true"></div>
+  <div class="venue-map-dialog" role="dialog" aria-modal="true" aria-labelledby="venue-map-title">
+    <button type="button" class="venue-map-close" id="venue-map-close" aria-label="Close map dialog">×</button>
+    <div class="venue-map-header">
+      <div class="venue-map-title-wrap">
+        <div class="venue-map-kicker">Venue Map</div>
+        <h3 class="venue-map-title" id="venue-map-title"></h3>
+      </div>
+      <a class="venue-map-download" id="venue-map-download" href="#" download>Download Map</a>
+    </div>
+    <div class="venue-map-body">
+      <div class="venue-map-frame">
+        <img id="venue-map-image" src="" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="program-detail-modal" id="program-detail-modal" hidden>
   <div class="program-detail-backdrop" data-program-detail-close="true"></div>
   <div class="program-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="program-detail-title">
@@ -1559,8 +1836,28 @@
   const programDetailSubtitle = document.getElementById('program-detail-subtitle');
   const programDetailMeta = document.getElementById('program-detail-meta');
   const programDetailBody = document.getElementById('program-detail-body');
+  const venueMapModal = document.getElementById('venue-map-modal');
+  const venueMapClose = document.getElementById('venue-map-close');
+  const venueMapTitle = document.getElementById('venue-map-title');
+  const venueMapImage = document.getElementById('venue-map-image');
+  const venueMapDownload = document.getElementById('venue-map-download');
+  const venueMaps = {
+    'first-floor': {
+      title: 'Coffman Memorial Union First Floor Map',
+      src: 'assets/images/Coffman%20First%20Floor%20Map.png',
+      alt: 'Coffman Memorial Union first floor map',
+      fileName: 'Coffman First Floor Map.png'
+    },
+    'third-floor': {
+      title: 'Coffman Memorial Union Third Floor Map',
+      src: 'assets/images/Coffman%20Third%20Floor%20Map.png',
+      alt: 'Coffman Memorial Union third floor map',
+      fileName: 'Coffman Third Floor Map.png'
+    }
+  };
   let programDetailData = {};
   let lastProgramDetailTrigger = null;
+  let lastVenueMapTrigger = null;
 
   function escapeHtml(value) {
     return String(value ?? '')
@@ -1922,9 +2219,41 @@
     }
   }
 
+  function openVenueMap(mapKey, trigger) {
+    const map = venueMaps[mapKey];
+    if (!map) {
+      return;
+    }
+
+    lastVenueMapTrigger = trigger || null;
+    venueMapTitle.textContent = map.title;
+    venueMapImage.src = map.src;
+    venueMapImage.alt = map.alt;
+    venueMapDownload.href = map.src;
+    venueMapDownload.download = map.fileName;
+    venueMapModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    venueMapClose.focus();
+  }
+
+  function closeVenueMap() {
+    venueMapModal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastVenueMapTrigger) {
+      lastVenueMapTrigger.focus();
+    }
+  }
+
   programDetailClose.addEventListener('click', closeProgramDetail);
+  venueMapClose.addEventListener('click', closeVenueMap);
 
   document.addEventListener('click', (event) => {
+    const venueMapTrigger = event.target.closest('.venue-map-trigger[data-map-key]');
+    if (venueMapTrigger) {
+      openVenueMap(venueMapTrigger.dataset.mapKey, venueMapTrigger);
+      return;
+    }
+
     const trigger = event.target.closest('.program-detail-trigger[data-detail-key]');
     if (trigger) {
       const opened = openProgramDetail(trigger.dataset.detailKey, trigger);
@@ -1937,9 +2266,18 @@
     if (event.target.closest('[data-program-detail-close="true"]')) {
       closeProgramDetail();
     }
+
+    if (event.target.closest('[data-venue-map-close="true"]')) {
+      closeVenueMap();
+    }
   });
 
   document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !venueMapModal.hidden) {
+      closeVenueMap();
+      return;
+    }
+
     if (event.key === 'Escape' && !programDetailModal.hidden) {
       closeProgramDetail();
       return;
