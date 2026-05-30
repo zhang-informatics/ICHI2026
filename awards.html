@@ -96,6 +96,7 @@
 
     .award-section {
       margin-top: 3rem;
+      scroll-margin-top: 180px;
     }
 
     .section-heading {
@@ -125,6 +126,19 @@
       line-height: 1.35;
       text-align: right;
       overflow-wrap: anywhere;
+    }
+
+    .selection-note {
+      margin: -0.35rem 0 1.15rem;
+      color: #5b504a;
+      font-size: 0.96rem;
+      font-weight: 700;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .selection-note strong {
+      color: var(--umn-maroon);
     }
 
     .track-block {
@@ -304,10 +318,16 @@
     }
 
     .recipient-grid,
-    .student-awards-grid {
+    .student-awards-grid,
+    .doctoral-paper-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
+    }
+
+    .doctoral-paper-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 1rem;
     }
 
     .recipient-card {
@@ -341,6 +361,7 @@
 
     .student-subsection {
       margin-top: 2rem;
+      scroll-margin-top: 180px;
     }
 
     .student-subsection h3 {
@@ -428,7 +449,8 @@
       .poster-grid,
       .service-awards-grid,
       .recipient-grid,
-      .student-awards-grid {
+      .student-awards-grid,
+      .doctoral-paper-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -467,6 +489,7 @@
       .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
+      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid,
       .paper-award-card,
@@ -494,6 +517,7 @@
       .paper-awards-grid,
       .poster-grid,
       .service-awards-grid,
+      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid {
         grid-template-columns: 1fr;
@@ -550,6 +574,7 @@
       .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
+      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid,
       .paper-award-card,
@@ -584,14 +609,14 @@
   <section class="award-overview" aria-labelledby="awards-overview">
     <p class="award-eyebrow">ICHI 2026 Awards</p>
     <h2 id="awards-overview">Celebrating ICHI 2026 award recipients</h2>
-    <p>ICHI 2026 awards include track paper awards, poster awards, service and volunteer awards, and student awards.</p>
+    <p>ICHI 2026 awards include track paper awards, poster awards, service and volunteer awards, student awards, doctoral student travel awards, and young scholar awards.</p>
     <nav class="award-links" aria-label="Awards sections">
       <a href="#track-paper-awards">Track Paper Awards</a>
       <a href="#poster-awards">Poster Awards</a>
       <a href="#service-volunteer-awards">Service &amp; Volunteer Awards</a>
+      <a href="#student-travel-awards">Student Travel Awards</a>
       <a href="#student-awards">Student Awards</a>
       <a href="#doctoral-student-travel-awards">Doctoral Student Travel Awards</a>
-      <a href="#student-travel-awards">Student Travel Awards</a>
       <a href="#young-scholar-awards">Young Scholar Awards</a>
     </nav>
   </section>
@@ -604,6 +629,7 @@
       </div>
       <p class="sponsor">Sponsored by Regenstrief Institute and Indiana University</p>
     </div>
+    <p class="selection-note">Recipients were selected by the corresponding track award selection co-chairs.</p>
 
     <div class="track-block analytics-track">
       <div class="track-header">
@@ -770,6 +796,7 @@
       </div>
       <p class="sponsor">Poster awards sponsored by Regenstrief Institute and Indiana University</p>
     </div>
+    <p class="selection-note">Poster award recipients are selected by the poster award selection co-chairs.</p>
 
     <div class="poster-grid">
       <article class="status-card pending">
@@ -799,6 +826,7 @@
         <h2 id="service-volunteer-awards-title">Service &amp; Volunteer Awards</h2>
       </div>
     </div>
+    <p class="selection-note">Recipients were selected by the service and volunteer award selection co-chairs.</p>
 
     <div class="service-awards-grid">
       <article class="status-card service-card">
@@ -822,14 +850,14 @@
         <p class="award-eyebrow">Student Awards</p>
         <h2 id="student-awards-title">ICHI 2026 Student Awards</h2>
       </div>
-      <p class="sponsor">Sponsored by IHI, TCII, NSF</p>
+      <p class="sponsor">Sponsored by IHI and TCII</p>
     </div>
+    <p class="selection-note">Student travel awardees and student award recipients were selected by the ICHI 2026 Student Award Selection Committee, co-chaired by Dr. Christopher C. Yang and Dr. Zhe He.</p>
 
     <div class="student-subsection" id="student-travel-awards">
       <h3>Student Travel Awards <span class="sponsor-pill">Institute for Healthcare Informatics</span></h3>
       <div class="student-intro">
         <p>The ICHI 2026 Student Travel Awards are sponsored by the Institute for Healthcare Informatics to support student participation in the IEEE International Conference on Healthcare Informatics. These awards recognize promising student researchers whose accepted work contributes to the advancement of healthcare informatics.</p>
-        <p>The awardees were selected by the ICHI 2026 Student Travel Award Selection Committee, co-chaired by Dr. Christopher C. Yang and Dr. Zhe He.</p>
       </div>
 
       <div class="recipient-grid">
@@ -871,17 +899,6 @@
       </div>
     </div>
 
-    <div class="student-subsection" id="doctoral-student-travel-awards">
-      <article class="doctoral-travel-card">
-        <div>
-          <p class="award-label">Doctoral Student Travel Award</p>
-          <h3>NSF-Sponsored Doctoral Student Travel Awards</h3>
-          <p>The NSF-sponsored Doctoral Student Travel Awards support all ICHI 2026 Doctoral Consortium students.</p>
-        </div>
-        <span class="sponsor-pill">NSF Sponsored</span>
-      </article>
-    </div>
-
     <div class="student-subsection">
       <h3>Student Awards <span class="sponsor-pill">TCII</span></h3>
       <div class="student-awards-grid">
@@ -907,8 +924,90 @@
         </article>
       </div>
     </div>
+  </section>
 
-    <div class="student-subsection" id="young-scholar-awards">
+  <section class="award-section" id="doctoral-student-travel-awards" aria-labelledby="doctoral-student-travel-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Doctoral Student Travel Awards</p>
+        <h2 id="doctoral-student-travel-awards-title">NSF-Sponsored Doctoral Student Travel Awards</h2>
+      </div>
+      <p class="sponsor">NSF Sponsored</p>
+    </div>
+    <p class="selection-note">Awardees were selected by the Doctoral Consortium Co-Chairs: <strong>Dezhi Wu, PhD</strong> and <strong>Gondy Leroy, PhD</strong>.</p>
+
+    <article class="doctoral-travel-card">
+      <div>
+        <p class="award-label">Doctoral Student Travel Award</p>
+        <h3>Doctoral Consortium Awardees</h3>
+        <p>The NSF-sponsored Doctoral Student Travel Awards support all ICHI 2026 Doctoral Consortium students.</p>
+      </div>
+      <span class="sponsor-pill">NSF Sponsored</span>
+    </article>
+
+    <div class="doctoral-paper-grid">
+      <article class="recipient-card">
+        <h3>Ha Na Cho</h3>
+        <p class="paper-title">&ldquo;Towards Trustworthy and Deployable Multimodal Artificial Intelligence for Discharge Planning&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Sai Vuruma</h3>
+        <p class="paper-title">&ldquo;Towards Robust Clinical Reasoning in LLM-aided Clinical Decision Support&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Rachel Stephens</h3>
+        <p class="paper-title">&ldquo;Preliminary Benchmarking for Semantic Clinical Artificial Intelligence (SCAI)&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Sukrut Shishupal</h3>
+        <p class="paper-title">&ldquo;A Reusable Shapelet Library for Temporal Exposure Pattern Discovery&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Timoteo Kelly</h3>
+        <p class="paper-title">&ldquo;Hierarchy of Distrust: Modeling Privacy, Application, and Provider Trust in mHealth&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Bharat Sowrya Yaddanapalli</h3>
+        <p class="paper-title">&ldquo;CARE: A Multi-Agent Framework for Real-Time Adaptive Vocal Interaction in Dementia Care&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Md Jobair Hossain Faruk</h3>
+        <p class="paper-title">&ldquo;Reinforcement-Guided Adaptive Multimodal Classical-Quantum Learning with Generative Reasoning for Clinical Decision Support&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Kinjal Bhatt</h3>
+        <p class="paper-title">&ldquo;Exploring the Impact of Smart Water Bottles on Hydration and Productivity in Corporate Environments&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Iyinoluwa Tugbobo</h3>
+        <p class="paper-title">&ldquo;Understanding Patient Portal Enrollment and Forecasting Messaging Volume for Practive Clinician Burnout Intervention&rdquo;</p>
+      </article>
+
+      <article class="recipient-card">
+        <h3>Almonzer Salah Nooraldaim Mohamed</h3>
+        <p class="paper-title">&ldquo;Expert-Driven and Subgroup-Adaptive Multi-Task Survival Modeling for Dental Implant Outcomes&rdquo;</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="award-section" id="young-scholar-awards" aria-labelledby="young-scholar-awards-title">
+    <div class="section-heading">
+      <div>
+        <p class="award-eyebrow">Young Scholar Awards</p>
+        <h2 id="young-scholar-awards-title">Young Scholar Awards</h2>
+      </div>
+    </div>
+    <p class="selection-note">Recipients were selected by the Young Scholar award selection co-chairs.</p>
+
+    <div class="student-subsection">
       <h3>Young Scholar Outstanding Paper Awards</h3>
       <div class="young-scholar-grid">
         <article class="person-card systems-track">
