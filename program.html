@@ -52,6 +52,98 @@
       line-height: 1.6;
     }
 
+    .program-agenda-download {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0 0 1.4rem;
+      padding: 1.05rem 1.15rem;
+      border: 1px solid rgba(122, 0, 25, 0.2);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(122, 0, 25, 0.95) 0%, rgba(122, 0, 25, 0.86) 52%, rgba(96, 0, 20, 0.94) 100%);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(77, 45, 32, 0.14);
+    }
+
+    .program-agenda-download-copy {
+      min-width: 0;
+    }
+
+    .program-agenda-kicker {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0.3rem;
+      padding: 0.22rem 0.5rem;
+      border: 1px solid rgba(255, 204, 51, 0.58);
+      border-radius: 999px;
+      background: rgba(255, 204, 51, 0.12);
+      color: #ffe89c;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .program-agenda-download h2 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(1.22rem, 2vw, 1.68rem);
+      line-height: 1.16;
+    }
+
+    .program-agenda-download p {
+      margin: 0.28rem 0 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .program-agenda-download-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      flex: 0 0 auto;
+      padding: 0.72rem 1rem;
+      border: 1px solid rgba(255, 204, 51, 0.72);
+      border-radius: 999px;
+      background: #ffcc33;
+      color: var(--umn-maroon);
+      font-size: 0.95rem;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .program-agenda-download-button::before {
+      content: "PDF";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.15rem;
+      height: 1.35rem;
+      border-radius: 0.35rem;
+      background: rgba(122, 0, 25, 0.14);
+      color: var(--umn-maroon);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .program-agenda-download-button:hover,
+    .program-agenda-download-button:focus-visible {
+      transform: translateY(-1px);
+      background: #ffda66;
+      box-shadow: 0 14px 26px rgba(0, 0, 0, 0.22);
+      outline: none;
+    }
+
     .program-map-panel {
       display: flex;
       align-items: center;
@@ -1221,6 +1313,11 @@
         flex-direction: column;
       }
 
+      .program-agenda-download {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
       .program-map-actions {
         justify-content: flex-start;
       }
@@ -1245,6 +1342,10 @@
       }
 
       .program-map-button {
+        width: 100%;
+      }
+
+      .program-agenda-download-button {
         width: 100%;
       }
 
@@ -1299,6 +1400,17 @@
       <li>For young scholar presentations, please follow the <a href="assets/docs/Young%20Scholar%20Presentation%20Guidelines.pdf" target="_blank" rel="noopener noreferrer">Young Scholar Presentation & Poster Guidelines</a>.</li>
       <li>For meal information, please view the <a href="assets/docs/Meal%20Agenda.pdf" target="_blank" rel="noopener noreferrer">Meal Agenda</a>.</li>
     </ul>
+  </section>
+
+  <section class="program-agenda-download" aria-label="Final conference agenda PDF">
+    <div class="program-agenda-download-copy">
+      <span class="program-agenda-kicker">Final Agenda PDF</span>
+      <h2>Final 2026 ICHI Conference Agenda</h2>
+      <p>Download the full PDF agenda for conference reference.</p>
+    </div>
+    <a class="program-agenda-download-button" href="assets/docs/FINAL%202026%20ICHI%20Conference%20Agenda.pdf" target="_blank" rel="noopener noreferrer" download>
+      Download Agenda
+    </a>
   </section>
 
   <section class="program-map-panel" aria-label="Coffman Memorial Union maps">
