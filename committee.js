@@ -66,7 +66,7 @@ const committeeData = {
         { name: "Suhyun Park, PhD, RN", title: "Women in HI Event Chair", affiliation: "UTHealth Houston, USA", image: "assets/images/sunyun_park.jpg", email: "Suhyun.Park@uth.tmc.edu" }
     ],
     "Publication Co-Chairs": [
-        { name: "Ming Huang, PhD", title: "Publication Co-Chair", affiliation: "University of Texas Health Science Center at Houston, USA", image: "assets/images/ming_huang.png", email: "Ming.Huang@uth.tmc.edu" },
+        { name: "Ming Huang, PhD", title: "Publication Co-Chair", affiliation: "University of Texas Health Science Center at Houston, USA", image: "assets/images/ming_huang.png", email: "ming.huang@austin.utexas.edu" },
         { name: "Patrizia Vizza, PhD", title: "Publication Co-Chair", affiliation: "University of Calabria, Italy", image: "assets/images/patrizia_vizza.jpg", email: "patrizia.vizza@dimes.unical.it" },
         { name: "Vipina Kuttichi Keloth, PhD", title: "Publication Co-Chair", affiliation: "Yale University, USA", image: "assets/images/vipina_keloth.png", email: "vipina.kuttichikeloth@yale.edu" }
     ],
