@@ -318,16 +318,10 @@
     }
 
     .recipient-grid,
-    .student-awards-grid,
-    .doctoral-paper-grid {
+    .student-awards-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
-    }
-
-    .doctoral-paper-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-top: 1rem;
     }
 
     .recipient-card {
@@ -388,36 +382,6 @@
       line-height: 1.2;
     }
 
-    .doctoral-travel-card {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: center;
-      gap: 1rem;
-      padding: 1.25rem;
-      border: 1px solid #e8d7a2;
-      border-top: 6px solid var(--umn-gold);
-      border-radius: 8px;
-      background:
-        linear-gradient(135deg, rgba(255, 204, 51, 0.16), rgba(122, 0, 25, 0.05)),
-        #fffdf7;
-      box-shadow: 0 10px 24px rgba(77, 45, 32, 0.06);
-    }
-
-    .doctoral-travel-card h3 {
-      margin: 0.65rem 0 0.35rem;
-      color: var(--umn-maroon);
-      font-size: 1.35rem;
-      line-height: 1.25;
-    }
-
-    .doctoral-travel-card p:not(.award-label) {
-      margin: 0;
-      color: #3f3631;
-      font-size: 1rem;
-      line-height: 1.55;
-      overflow-wrap: anywhere;
-    }
-
     .person-card {
       padding: 0.95rem;
       border-left: 5px solid var(--track-color, var(--umn-maroon));
@@ -449,8 +413,7 @@
       .poster-grid,
       .service-awards-grid,
       .recipient-grid,
-      .student-awards-grid,
-      .doctoral-paper-grid {
+      .student-awards-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -489,13 +452,11 @@
       .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
-      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid,
       .paper-award-card,
       .status-card,
       .recipient-card,
-      .doctoral-travel-card,
       .person-card,
       .student-intro {
         width: 100%;
@@ -517,7 +478,6 @@
       .paper-awards-grid,
       .poster-grid,
       .service-awards-grid,
-      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid {
         grid-template-columns: 1fr;
@@ -557,11 +517,6 @@
       .student-subsection h3 {
         flex-wrap: wrap;
       }
-
-      .doctoral-travel-card {
-        grid-template-columns: 1fr;
-        align-items: flex-start;
-      }
     }
 
     @media (max-width: 520px) {
@@ -574,13 +529,11 @@
       .service-awards-grid,
       .recipient-grid,
       .student-awards-grid,
-      .doctoral-paper-grid,
       .young-scholar-grid,
       .rising-star-grid,
       .paper-award-card,
       .status-card,
       .recipient-card,
-      .doctoral-travel-card,
       .person-card,
       .student-intro {
         max-width: min(calc(100vw - 2rem), 358px);
@@ -609,14 +562,13 @@
   <section class="award-overview" aria-labelledby="awards-overview">
     <p class="award-eyebrow">ICHI 2026 Awards</p>
     <h2 id="awards-overview">Celebrating ICHI 2026 award recipients</h2>
-    <p>ICHI 2026 awards include track paper awards, poster awards, service and volunteer awards, student awards, doctoral student travel awards, and young scholar awards.</p>
+    <p>ICHI 2026 awards include track paper awards, poster awards, service and volunteer awards, student awards, and young scholar awards.</p>
     <nav class="award-links" aria-label="Awards sections">
       <a href="#track-paper-awards">Track Paper Awards</a>
       <a href="#poster-awards">Poster Awards</a>
       <a href="#service-volunteer-awards">Service &amp; Volunteer Awards</a>
       <a href="#student-travel-awards">Student Travel Awards</a>
       <a href="#student-awards">Student Awards</a>
-      <a href="#doctoral-student-travel-awards">Doctoral Student Travel Awards</a>
       <a href="#young-scholar-awards">Young Scholar Awards</a>
     </nav>
   </section>
@@ -939,78 +891,6 @@
           <p>New York Institute of Technology</p>
         </article>
       </div>
-    </div>
-  </section>
-
-  <section class="award-section" id="doctoral-student-travel-awards" aria-labelledby="doctoral-student-travel-awards-title">
-    <div class="section-heading">
-      <div>
-        <p class="award-eyebrow">Doctoral Student Travel Awards</p>
-        <h2 id="doctoral-student-travel-awards-title">NSF-Sponsored Doctoral Student Travel Awards</h2>
-      </div>
-      <p class="sponsor">NSF Sponsored</p>
-    </div>
-    <p class="selection-note">Awardees were selected by the Doctoral Consortium Co-Chairs: <strong>Dezhi Wu, PhD</strong> and <strong>Gondy Leroy, PhD</strong>.</p>
-
-    <article class="doctoral-travel-card">
-      <div>
-        <p class="award-label">Doctoral Student Travel Award</p>
-        <h3>Doctoral Consortium Awardees</h3>
-        <p>The NSF-sponsored Doctoral Student Travel Awards support all ICHI 2026 Doctoral Consortium students.</p>
-      </div>
-      <span class="sponsor-pill">NSF Sponsored</span>
-    </article>
-
-    <div class="doctoral-paper-grid">
-      <article class="recipient-card">
-        <h3>Ha Na Cho</h3>
-        <p class="institution">University of California, Irvine</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Sai Vuruma</h3>
-        <p class="institution">University of South Carolina</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Rachel Stephens</h3>
-        <p class="institution">University at Buffalo</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Sukrut Shishupal</h3>
-        <p class="institution">University of Utah</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Timoteo Kelly</h3>
-        <p class="institution">University of Missouri-Columbia</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Bharat Sowrya Yaddanapalli</h3>
-        <p class="institution">University of South Carolina</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Md Jobair Hossain Faruk</h3>
-        <p class="institution">New York Institute of Technology</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Kinjal Bhatt</h3>
-        <p class="institution">Judson University</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Iyinoluwa Tugbobo</h3>
-        <p class="institution">Johns Hopkins University</p>
-      </article>
-
-      <article class="recipient-card">
-        <h3>Almonzer Salah Nooraldaim Mohamed</h3>
-        <p class="institution">Xi’an Jiaotong University</p>
-      </article>
     </div>
   </section>
 
